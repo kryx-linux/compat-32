@@ -1,0 +1,36 @@
+# Description: An image loading library for GTK+
+# URL: http://www.gtk.org/
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: glib-32 xorg-libx11-32 libpng-32 libtiff-32 libjpeg-32 gdk-pixbuf
+
+name=gdk-pixbuf-32
+version=2.26.4
+release=1
+source=(http://download.gnome.org/sources/gdk-pixbuf/${version%.*}/gdk-pixbuf-$version.tar.xz \
+        gdk-pixbuf.loaders-32 gdk-pixbuf-register.sh)
+
+build() {
+	cd gdk-pixbuf-$version
+
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--libdir=/usr/lib32 \
+		--program-suffix=-32 \
+		--without-libjasper \
+		--disable-nls \
+		--with-x11
+
+	make
+	make DESTDIR=$PKG install
+
+	install -m 0644 $SRC/gdk-pixbuf.loaders-32 \
+		$PKG/usr/lib32/gdk-pixbuf-2.0/2.10.0/loaders.cache
+
+	install -m 0755 $SRC/gdk-pixbuf-register.sh \
+		$PKG/usr/bin/gdk-pixbuf-register-32
+
+	rm -r $PKG/usr/share/gtk-doc
+	rmdir $PKG/usr/share
+	rm -rf $PKG/usr/{include,man}
+}

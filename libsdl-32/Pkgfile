@@ -1,0 +1,29 @@
+# Description: SDL, Simple DirectMedia Layer 
+# URL: http://www.libsdl.org
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: sten, nick dot steeves at shaw dot ca
+# Depends on: alsa-lib-32 mesa3d-32 glib-32 libsdl
+
+name=libsdl-32
+version=1.2.15
+release=1
+source=(http://www.libsdl.org/release/SDL-$version.tar.gz)
+
+build() {
+  cd SDL-$version
+
+  ./configure --prefix=/usr \
+              --mandir=/usr/man \
+              --libdir=/usr/lib32 \
+              --includedir=/usr/include32 \
+              --datarootdir=/usr/share32 \
+              --program-suffix=-32 \
+              --enable-alsa
+              
+  make
+  make DESTDIR=$PKG install
+  rm -r $PKG/usr/man
+
+  # --program-suffix=-32 is being ignored
+  mv $PKG/usr/bin/sdl-config $PKG/usr/bin/sdl-config-32
+}

@@ -1,0 +1,29 @@
+# Description: CDDA extraction tool with jitter correction
+# URL:         http://xiph.org/paranoia/
+# Maintainer:  Juergen Daubert, jue at crux dot nu
+# Depends on: cdparanoia
+
+name=cdparanoia-32
+version=10.2
+release=2
+source=(http://downloads.xiph.org/releases/cdparanoia/cdparanoia-III-$version.src.tgz
+	cdparanoia-$version-gcc43.patch
+	cdparanoia-$version-ldflags.patch)
+
+build() {
+	cd cdparanoia-III-$version
+	patch -p 0 -i $SRC/cdparanoia-$version-gcc43.patch
+	patch -p 1 -i $SRC/cdparanoia-$version-ldflags.patch
+	autoreconf
+
+	./configure \
+		--prefix=/usr \
+		--mandir=$PKG/usr/man \
+		--libdir=$PKG/usr/lib32 \
+		--host=i686-pc-linux-gnu
+
+    make -j 1
+    make prefix=$PKG/usr install
+
+    rm -rf $PKG/{etc,var} $PKG/usr/{bin,etc,include,man,sbin,share}
+}

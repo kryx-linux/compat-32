@@ -1,0 +1,20 @@
+# Description: Userspace interface to kernel DRM services
+# URL: http://dri.freedesktop.org/
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: libpthread-stubs-32 xorg-libpciaccess-32 libdrm
+
+name=libdrm-32
+version=2.4.40
+release=1
+source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.bz2)
+
+build() {
+    cd libdrm-$version
+    ./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--mandir=/usr/man \
+		--enable-udev
+    make
+    make DESTDIR=$PKG install
+	rm -rf $PKG/usr/{include,man}
+}

@@ -1,0 +1,34 @@
+# Description: A library for configuring and customizing font access
+# URL:         http://fontconfig.org/wiki/
+# Maintainer:  Tilman Sauerbeck, tilman at crux dot nu
+# Depends on:  freetype-32 expat-32 bzip2-32 fontconfig
+
+name=fontconfig-32
+version=2.10.0
+release=2
+source=(http://fontconfig.org/release/fontconfig-$version.tar.bz2)
+
+build() {
+    cd fontconfig-$version
+
+	sed -e 's|^confdir=.*|confdir=@baseconfigdir@|' -i fontconfig.pc.in
+
+    ./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--sysconfdir=/etc \
+		--mandir=/usr/man \
+		--localstatedir=/var \
+		--with-xmldir=/etc/fonts \
+		--with-templatedir=/etc/fonts/conf.avail
+
+    make
+    make DESTDIR=$PKG install
+
+    # Enabling autohinting by default
+    pushd $PKG/etc/fonts/conf.d
+	ln -sf /etc/fonts/conf.avail/10-autohint.conf
+    popd
+
+    rm -f $PKG/etc/fonts/conf.d/README
+    rm -r $PKG/usr/{bin,include,man,share} $PKG/{etc,var}
+}

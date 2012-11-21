@@ -1,0 +1,27 @@
+# Description: Low-level data structure handling, portability wrappers, and interfaces for runtime functionality
+# URL: http://www.gtk.org/
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Depends on: libpcre-32 libffi-32 python-32
+
+name=glib-32
+version=2.32.4
+release=1
+source=(http://download.gnome.org/sources/glib/2.32/glib-$version.tar.xz)
+
+build() {
+	cd glib-$version
+
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--mandir=/usr/man \
+		--with-pcre=system \
+		--with-runtime-libdir=../../lib32 \
+		--with-gio-module-dir=/lib32/gio/modules
+
+	make
+	make -j 1 DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/{gtk-doc,locale}
+	rm -rf $PKG/usr/share/bash_completion
+	rm -rf $PKG/usr/{bin,include,man,share}
+}

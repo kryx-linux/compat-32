@@ -1,0 +1,21 @@
+# Description: Mesa 3D demos
+# URL: http://www.mesa3d.org
+# Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
+# Depends on: glew mesa3d
+
+name=mesa-demos-32
+version=8.0.1
+release=1
+source=(ftp://ftp.freedesktop.org/pub/mesa/demos/$version/mesa-demos-$version.tar.bz2)
+
+build() {
+	cd mesa-demos-$version
+
+	./configure --prefix=/usr 
+
+	make -C src/xdemos/ glxinfo glxgears
+
+	install -d $PKG/usr/bin
+	install -m 0755 src/xdemos/glxgears $PKG/usr/bin/glxgears-32
+	install -m 0755 src/xdemos/glxinfo $PKG/usr/bin/glxinfo-32
+}

@@ -1,0 +1,63 @@
+drwxr-xr-x	root/root	lib32/
+drwxr-xr-x	root/root	lib32/gio/
+drwxr-xr-x	root/root	lib32/gio/modules/
+lrwxrwxrwx	root/root	lib32/libgio-2.0.so.0 -> libgio-2.0.so.0.3200.4
+-rwxr-xr-x	root/root	lib32/libgio-2.0.so.0.3200.4
+lrwxrwxrwx	root/root	lib32/libglib-2.0.so.0 -> libglib-2.0.so.0.3200.4
+-rwxr-xr-x	root/root	lib32/libglib-2.0.so.0.3200.4
+lrwxrwxrwx	root/root	lib32/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.3200.4
+-rwxr-xr-x	root/root	lib32/libgmodule-2.0.so.0.3200.4
+lrwxrwxrwx	root/root	lib32/libgobject-2.0.so.0 -> libgobject-2.0.so.0.3200.4
+-rwxr-xr-x	root/root	lib32/libgobject-2.0.so.0.3200.4
+lrwxrwxrwx	root/root	lib32/libgthread-2.0.so.0 -> libgthread-2.0.so.0.3200.4
+-rwxr-xr-x	root/root	lib32/libgthread-2.0.so.0.3200.4
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib32/
+drwxr-xr-x	root/root	usr/lib32/gdbus-2.0/
+drwxr-xr-x	root/root	usr/lib32/gdbus-2.0/codegen/
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/__init__.py
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/__init__.pyc
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/__init__.pyo
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/codegen.py
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/codegen.pyc
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/codegen.pyo
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/codegen_docbook.py
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/codegen_docbook.pyc
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/codegen_docbook.pyo
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/codegen_main.py
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/codegen_main.pyc
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/codegen_main.pyo
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/config.py
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/config.pyc
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/config.pyo
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/dbustypes.py
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/dbustypes.pyc
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/dbustypes.pyo
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/parser.py
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/parser.pyc
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/parser.pyo
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/utils.py
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/utils.pyc
+-rw-r--r--	root/root	usr/lib32/gdbus-2.0/codegen/utils.pyo
+drwxr-xr-x	root/root	usr/lib32/glib-2.0/
+drwxr-xr-x	root/root	usr/lib32/glib-2.0/include/
+-rw-r--r--	root/root	usr/lib32/glib-2.0/include/glibconfig.h
+-rwxr-xr-x	root/root	usr/lib32/libgio-2.0.la
+lrwxrwxrwx	root/root	usr/lib32/libgio-2.0.so -> ../../lib32/libgio-2.0.so.0.3200.4
+-rwxr-xr-x	root/root	usr/lib32/libglib-2.0.la
+lrwxrwxrwx	root/root	usr/lib32/libglib-2.0.so -> ../../lib32/libglib-2.0.so.0.3200.4
+-rwxr-xr-x	root/root	usr/lib32/libgmodule-2.0.la
+lrwxrwxrwx	root/root	usr/lib32/libgmodule-2.0.so -> ../../lib32/libgmodule-2.0.so.0.3200.4
+-rwxr-xr-x	root/root	usr/lib32/libgobject-2.0.la
+lrwxrwxrwx	root/root	usr/lib32/libgobject-2.0.so -> ../../lib32/libgobject-2.0.so.0.3200.4
+-rwxr-xr-x	root/root	usr/lib32/libgthread-2.0.la
+lrwxrwxrwx	root/root	usr/lib32/libgthread-2.0.so -> ../../lib32/libgthread-2.0.so.0.3200.4
+drwxr-xr-x	root/root	usr/lib32/pkgconfig/
+-rw-r--r--	root/root	usr/lib32/pkgconfig/gio-2.0.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/gio-unix-2.0.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/glib-2.0.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/gmodule-2.0.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/gmodule-export-2.0.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/gmodule-no-export-2.0.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/gobject-2.0.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/gthread-2.0.pc

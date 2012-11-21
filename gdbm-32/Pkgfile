@@ -1,0 +1,22 @@
+# Description: GNU database library for C
+# URL:         http://www.gnu.org/software/gdbm/gdbm.html
+# Maintainer:  CRUX System Team, core-ports at crux dot nu
+
+name=gdbm-32
+version=1.10
+release=1
+source=(http://ftp.gnu.org/gnu/gdbm/gdbm-$version.tar.gz)
+
+build() {
+	export CC="${CC:-gcc} ${CFLAGS}"
+
+    cd gdbm-$version
+    
+    ./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--enable-libgdbm-compat
+
+    make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/{bin,include,man,share}
+}

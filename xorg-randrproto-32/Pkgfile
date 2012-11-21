@@ -1,0 +1,20 @@
+# Description: xorg proto randrproto
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-randrproto
+
+name=xorg-randrproto-32
+version=1.4.0
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/randrproto-$version.tar.bz2)
+
+build() {
+	cd randrproto-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{include,share}
+}

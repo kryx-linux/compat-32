@@ -1,0 +1,18 @@
+# Description: Mesa OpenGL Utility library
+# URL: http://www.mesa3d.org
+# Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
+# Depends on: mesa3d-32, glu
+
+name=glu-32
+version=9.0.0
+release=1
+source=(ftp://ftp.freedesktop.org/pub/mesa/glu/glu-$version.tar.bz2)
+
+build() {
+	cd glu-$version
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/include
+}

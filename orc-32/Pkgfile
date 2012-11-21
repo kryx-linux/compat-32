@@ -1,0 +1,23 @@
+# Description: The Oil Runtime Compiler.
+# URL: http://code.entropywave.com/projects/orc/
+# Maintainer: Danny Rawlins, monster dot romster at gmail dot com
+# Packager: Syl, syl at clyl dot net
+# Depends on: orc
+
+name=orc-32
+version=0.4.16
+release=1
+source=(http://code.entropywave.com/download/orc/orc-$version.tar.gz)
+
+build() {
+	cd orc-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/{etc,var} $PKG/usr/{bin,etc,include,man,sbin,share}
+}

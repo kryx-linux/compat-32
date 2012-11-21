@@ -1,0 +1,19 @@
+# Description: xorg lib libXcursor
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-libxrender-32 xorg-libxfixes-32 xorg-libx11-32 xorg-fixesproto-32 xorg-libxcursor
+
+name=xorg-libxcursor-32
+version=1.1.13
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libXcursor-$version.tar.bz2)
+
+build() {
+	cd libXcursor-$version
+
+	./configure --prefix=/usr --mandir=/usr/man --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/{include,man}
+}

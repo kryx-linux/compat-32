@@ -1,0 +1,37 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib32/
+drwxr-xr-x	root/root	usr/lib32/cairo/
+-rw-r--r--	root/root	usr/lib32/cairo/libcairo-trace.a
+-rwxr-xr-x	root/root	usr/lib32/cairo/libcairo-trace.la
+lrwxrwxrwx	root/root	usr/lib32/cairo/libcairo-trace.so -> libcairo-trace.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib32/cairo/libcairo-trace.so.0 -> libcairo-trace.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib32/cairo/libcairo-trace.so.0.0.0
+-rw-r--r--	root/root	usr/lib32/libcairo-gobject.a
+-rwxr-xr-x	root/root	usr/lib32/libcairo-gobject.la
+lrwxrwxrwx	root/root	usr/lib32/libcairo-gobject.so -> libcairo-gobject.so.2.11200.4
+lrwxrwxrwx	root/root	usr/lib32/libcairo-gobject.so.2 -> libcairo-gobject.so.2.11200.4
+-rwxr-xr-x	root/root	usr/lib32/libcairo-gobject.so.2.11200.4
+-rw-r--r--	root/root	usr/lib32/libcairo-script-interpreter.a
+-rwxr-xr-x	root/root	usr/lib32/libcairo-script-interpreter.la
+lrwxrwxrwx	root/root	usr/lib32/libcairo-script-interpreter.so -> libcairo-script-interpreter.so.2.11200.4
+lrwxrwxrwx	root/root	usr/lib32/libcairo-script-interpreter.so.2 -> libcairo-script-interpreter.so.2.11200.4
+-rwxr-xr-x	root/root	usr/lib32/libcairo-script-interpreter.so.2.11200.4
+-rw-r--r--	root/root	usr/lib32/libcairo.a
+-rwxr-xr-x	root/root	usr/lib32/libcairo.la
+lrwxrwxrwx	root/root	usr/lib32/libcairo.so -> libcairo.so.2.11200.4
+lrwxrwxrwx	root/root	usr/lib32/libcairo.so.2 -> libcairo.so.2.11200.4
+-rwxr-xr-x	root/root	usr/lib32/libcairo.so.2.11200.4
+drwxr-xr-x	root/root	usr/lib32/pkgconfig/
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-fc.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-ft.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-gobject.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-pdf.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-png.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-ps.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-script.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-svg.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-xcb-shm.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-xcb.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-xlib-xrender.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo-xlib.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/cairo.pc

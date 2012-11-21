@@ -1,0 +1,17 @@
+# Description: Library for manipulation of TIFF (Tag Image File Format) images
+# URL:         http://libtiff.maptools.org/
+# Maintainer:  Tilman Sauerbeck, tilman at crux dot nu
+# Depends on:  libjpeg-32 zlib-32 libtiff
+
+name=libtiff-32
+version=4.0.3
+release=1
+source=(http://download.osgeo.org/libtiff/tiff-$version.tar.gz)
+
+build() {
+    cd tiff-$version
+    ./configure --prefix=/usr --libdir=/usr/lib32 --mandir=/usr/man
+    make
+    make DESTDIR=$PKG install
+    rm -rf $PKG/usr/{bin,include,share,man}
+}

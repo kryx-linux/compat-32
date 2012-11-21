@@ -1,0 +1,25 @@
+# Description: An abstraction library that comes between applications and audio visualisation plugins.
+# URL: http://sourceforge.net/apps/mediawiki/libvisual/
+# Maintainer: Danny Rawlins, monster dot romster at gmail dot com
+# Packager: sten, nick dot steeves at shaw dot ca
+# Depends on: libvisual
+
+name=libvisual-32
+version=0.4.0
+release=1
+source=(http://downloads.sourceforge.net/project/libvisual/libvisual/libvisual-$version/libvisual-$version.tar.bz2)
+
+build() {
+	cd libvisual-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--enable-extra-optimization
+
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share
+
+	rm -rf $PKG/{etc,var} $PKG/usr/{bin,etc,include,man,sbin,share}
+}

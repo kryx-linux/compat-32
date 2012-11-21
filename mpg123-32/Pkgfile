@@ -1,0 +1,24 @@
+# Description: Commandline MP3 player 
+# URL:         http://www.mpg123.de
+# Maintainer:  Juergen Daubert, jue at crux dot nu
+# Depends on:  libtool alsa-lib-32 mpg123
+
+name=mpg123-32
+version=1.14.4
+release=1
+source=(http://www.mpg123.de/download/mpg123-$version.tar.bz2)
+
+build() {
+    cd mpg123-$version
+    ./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--host=i686-pc-linux-gnu \
+                --mandir=/usr/man \
+                --with-module-suffix=.so \
+                --with-audio=alsa,oss,dummy \
+                --with-default-audio=alsa
+    make
+    make DESTDIR=$PKG install
+
+	rm -rf $PKG/{etc,var} $PKG/usr/{doc,bin,etc,include,man,sbin,share}
+}

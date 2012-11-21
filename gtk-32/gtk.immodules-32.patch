@@ -1,0 +1,12 @@
+diff -urN gtk+-2.24.8.orig/gtk/gtkrc.c gtk+-2.24.8/gtk/gtkrc.c
+--- gtk+-2.24.8.orig/gtk/gtkrc.c	2011-11-10 11:38:03.000000000 -0600
++++ gtk+-2.24.8/gtk/gtkrc.c	2011-12-16 10:04:07.947129223 -0600
+@@ -450,7 +450,7 @@
+       if (im_module_file)
+ 	result = g_strdup (im_module_file);
+       else
+-	result = g_build_filename (GTK_SYSCONFDIR, "gtk-2.0", "gtk.immodules", NULL);
++	result = g_build_filename (GTK_SYSCONFDIR, "gtk-2.0", "gtk.immodules-32", NULL);
+     }
+ 
+   return result;

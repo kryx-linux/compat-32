@@ -1,0 +1,24 @@
+# Description: Mesa 3D Graphics Library
+# URL: http://www.mesa3d.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: libdrm-32 xorg-makedepend xorg-glproto-32 xorg-xextproto-32 xorg-dri2proto-32 xorg-libx11-32 xorg-xf86vidmodeproto-32 xorg-libxext-32 xorg-libxxf86vm-32 xorg-libxt-32 xorg-libxdamage-32 xorg-libpciaccess-32 expat-32 talloc-32 mesa3d
+
+name=mesa3d-32
+version=9.0
+release=1
+source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
+
+build() {
+	cd Mesa-$version
+
+	autoreconf --install --symlink
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--with-dri-drivers=i915,i965,r200,radeon,swrast,nouveau \
+		--with-gallium-drivers=i915,r600,svga,nouveau \
+		--host=i686-pc-linux-gnu
+
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/{bin,etc,include}
+}

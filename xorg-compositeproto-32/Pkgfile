@@ -1,0 +1,20 @@
+# Description: xorg proto compositeproto
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-compositeproto
+
+name=xorg-compositeproto-32
+version=0.4.2
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/compositeproto-$version.tar.bz2)
+
+build() {
+	cd compositeproto-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/{include,share}
+}

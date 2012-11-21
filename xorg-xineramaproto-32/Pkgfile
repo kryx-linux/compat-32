@@ -1,0 +1,19 @@
+# Description: xorg proto xineramaproto
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-xineramaproto
+
+name=xorg-xineramaproto-32
+version=1.2.1
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/xineramaproto-$version.tar.bz2)
+
+build() {
+	cd xineramaproto-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/include
+}
