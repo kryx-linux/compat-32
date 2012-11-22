@@ -3,7 +3,7 @@
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=libpthread-stubs-32
-version=0.2
+version=0.3
 release=1
 source=(http://xcb.freedesktop.org/dist/libpthread-stubs-$version.tar.bz2)
 
