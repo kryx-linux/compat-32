@@ -1,16 +1,16 @@
-diff -urN pango-1.26.2.orig/pango/modules.c pango-1.26.2/pango/modules.c
---- pango-1.26.2.orig/pango/modules.c	2009-11-23 00:30:39.000000000 -0600
-+++ pango-1.26.2/pango/modules.c	2011-12-16 09:57:12.249116902 -0600
-@@ -509,7 +509,7 @@
+diff -urN pango-1.32.4.orig/pango/modules.c pango-1.32.4/pango/modules.c
+--- pango-1.32.4.orig/pango/modules.c	2012-09-17 07:05:56.000000000 -0500
++++ pango-1.32.4/pango/modules.c	2012-12-19 19:26:32.371006924 -0600
+@@ -549,7 +549,7 @@
+       files = g_new (char *, 3);
  
-   if (!file_str)
-     file_str = g_build_filename (pango_get_sysconf_subdirectory (),
--				 "pango.modules",
-+				 "pango.modules-32",
- 				 NULL);
- 
-   files = pango_split_file_list (file_str);
-@@ -620,7 +620,7 @@
+       files[0] = g_build_filename (pango_get_sysconf_subdirectory (),
+-                                   "pango.modules",
++                                   "pango.modules-32",
+                                    NULL);
+       files[1] = g_build_filename (pango_get_lib_subdirectory (),
+                                    MODULE_VERSION,
+@@ -668,7 +668,7 @@
        if (!no_module_warning)
  	{
  	  gchar *filename = g_build_filename (pango_get_sysconf_subdirectory (),

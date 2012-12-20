@@ -1,10 +1,10 @@
 # Description: A library for layout and rendering of text
 # URL: http://www.gtk.org/
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Depends on: cairo-32 glib-32 xorg-libsm-32 xorg-libxext-32 xorg-libxft-32 pango
+# Depends on: cairo-32 glib-32 xorg-libsm-32 xorg-libxext-32 xorg-libxft-32 pango harfbuzz-32
 
 name=pango-32
-version=1.30.1
+version=1.32.4
 release=1
 source=(http://download.gnome.org/sources/pango/${version%.*}/pango-$version.tar.xz
 	pango.modules-32 pango.modules-32.patch)
@@ -27,5 +27,4 @@ build() {
 		$PKG/usr/etc/pango/pango.modules-32
 
 	rm -r $PKG/usr/{include,man,share}
-	rm $PKG/usr/etc/pango/pangox.aliases
 }
