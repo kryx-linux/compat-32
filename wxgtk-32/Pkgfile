@@ -1,0 +1,44 @@
+# Description: wxWidgets for GTK+.
+# URL: http://www.wxwidgets.org/
+# Maintainer: Danny Rawlins, monster dot romster at gmail dot com
+# Packager: Antti Nykanen, aon at iki dot fi
+# Depends on: glitz-32 gtk-32 glu-32 wxgtk
+
+name=wxgtk-32
+version=2.8.12.1
+release=1
+#source=(http://downloads.sourceforge.net/project/wxwindows/$version/wxGTK-$version.tar.bz2)
+source=(http://downloads.sourceforge.net/project/wxpython/wxPython/$version/wxPython-src-$version.tar.bz2)
+
+build() {
+#	cd wxGTK-$version
+	cd wxPython-src-$version
+
+	# brakes pcsx2
+	CXXFLAGS="${CFLAGS//-fvisibility-inlines-hidden/}"
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--bindir=/usr/lib32/wx/bin \
+		--with-gtk=2 \
+		--with-opengl \
+		--enable-unicode \
+		--disable-precomp-headers
+
+	make
+	make DESTDIR=$PKG install
+
+	cd contrib/src
+	make
+	make DESTDIR=$PKG install
+
+	ln -sf /usr/lib32/wx/config/gtk2-unicode-release-${version:0:3} \
+		$PKG/usr/lib32/wx/bin/wx-config
+
+	rm -r \
+		$PKG/usr/share/locale \
+		$PKG/usr/share/bakefile \
+		$PKG/usr/include \
+		$PKG/usr/share
+}
