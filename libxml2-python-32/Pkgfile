@@ -5,18 +5,18 @@
 
 name=libxml2-python-32
 version=2.9.0
-release=1
+release=2
 source=(ftp://xmlsoft.org/libxml2/libxml2-$version.tar.gz \
         libxml2-python-config.patch)
 
 build () {
     cd libxml2-$version
-    
+
     patch -p1 -i $SRC/libxml2-python-config.patch
 
     ./configure --prefix=/usr --libdir=/usr/lib32
     cd python
-	sed -i -e 's|PYTHON_INCLUDES = /usr/include/python2.7|PYTHON_INCLUDES = /usr/include32/python2.7|' Makefile
+
     make
     make DESTDIR=$PKG install
     
