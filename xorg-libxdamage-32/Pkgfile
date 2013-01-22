@@ -4,7 +4,7 @@
 # Depends on: xorg-libx11-32 xorg-fixesproto-32 xorg-libxfixes-32 xorg-xextproto-32 xorg-damageproto-32 xorg-libxdamage
 
 name=xorg-libxdamage-32
-version=1.1.3
+version=1.1.4
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXdamage-$version.tar.bz2)
 
