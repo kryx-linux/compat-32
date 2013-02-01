@@ -1,7 +1,6 @@
 # Description: wxWidgets for GTK+.
 # URL: http://www.wxwidgets.org/
 # Maintainer: Danny Rawlins, monster dot romster at gmail dot com
-# Packager: Antti Nykanen, aon at iki dot fi
 # Depends on: glitz-32 gtk-32 glu-32 wxgtk
 
 name=wxgtk-32

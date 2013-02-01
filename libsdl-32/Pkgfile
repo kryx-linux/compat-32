@@ -1,7 +1,6 @@
 # Description: SDL, Simple DirectMedia Layer 
 # URL: http://www.libsdl.org
 # Maintainer: Jose V Beneyto, sepen at crux dot nu
-# Packager: sten, nick dot steeves at shaw dot ca
 # Depends on: alsa-lib-32 mesa3d-32 glib-32 libsdl
 
 name=libsdl-32

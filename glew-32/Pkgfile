@@ -1,7 +1,6 @@
 # Description: The OpenGL Extension Wrangler Library.
 # URL: http://glew.sourceforge.net/
 # Maintainer: Danny Rawlins, monster dot romster at gmail dot com
-# Packager: Johannes Winkelmann, jw at smts dot ch
 # Depends on: mesa3d-32 xorg-libxi-32 xorg-libxmu-32 glew
 
 name=glew-32
