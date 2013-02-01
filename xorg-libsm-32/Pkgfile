@@ -1,6 +1,6 @@
 # Description: X Session Management client library
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-libice-32, xorg-xproto-32, xorg-xtrans-32 xorg-libsm
 
 name=xorg-libsm-32

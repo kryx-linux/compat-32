@@ -1,6 +1,6 @@
 # Description: Perl Compatible Regular Expressions
 # URL:         http://www.pcre.org
-# Maintainer:  CRUX System Team, core-ports at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=libpcre-32
 version=8.32

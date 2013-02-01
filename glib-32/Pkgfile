@@ -1,6 +1,6 @@
 # Description: Low-level data structure handling, portability wrappers, and interfaces for runtime functionality
 # URL: http://www.gtk.org/
-# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libpcre-32 libffi-32 python-32
 
 name=glib-32

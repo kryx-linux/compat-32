@@ -1,6 +1,6 @@
 # Description: Lets users edit command lines as they are typed in
 # URL:         http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
-# Maintainer:  CRUX System Team, core-ports at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on:  ncurses-32
 
 name=readline-32

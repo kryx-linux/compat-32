@@ -1,6 +1,6 @@
 # Description:  Unicode annotation data library.
 # URL: http://libuninameslist.sourceforge.net/
-# Maintainer: Danny Rawlins, monster dot romster at gmail dot com
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libuninameslist
 
 name=libuninameslist-32

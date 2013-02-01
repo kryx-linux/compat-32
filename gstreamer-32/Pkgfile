@@ -1,6 +1,6 @@
 # Description: Gstreamer is a library that allows the construction of graphs of media-handling components.
 # URL: http://gstreamer.freedesktop.org/
-# Maintainer: Danny Rawlins, monster dot romster at gmail dot com
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: glib-32 libxml2-32 python-32 gstreamer
 
 name=gstreamer-32

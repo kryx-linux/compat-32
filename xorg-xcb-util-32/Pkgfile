@@ -1,6 +1,6 @@
 # Description: XCB utilities library
 # URL: http://xcb.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-libxcb-32 xorg-xcb-util
 
 name=xorg-xcb-util-32

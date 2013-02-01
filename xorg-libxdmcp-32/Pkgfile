@@ -1,6 +1,6 @@
 # Description: xorg lib libXdmcp
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-xproto-32 xorg-libxdmcp
 
 name=xorg-libxdmcp-32

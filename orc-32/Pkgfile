@@ -1,6 +1,6 @@
 # Description: The Oil Runtime Compiler.
 # URL: http://code.entropywave.com/projects/orc/
-# Maintainer: Danny Rawlins, monster dot romster at gmail dot com
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: orc
 
 name=orc-32

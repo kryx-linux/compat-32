@@ -1,6 +1,6 @@
 # Description: Python bindings for the XML library version 2
 # URL:         http://xmlsoft.org/
-# Maintainer:  Juergen Daubert, jue at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on:  python-32 libxml2-32 libxml2-python
 
 name=libxml2-python-32

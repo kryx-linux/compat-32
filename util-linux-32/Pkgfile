@@ -1,6 +1,6 @@
 # Description: Miscellaneous system utilities
 # URL:         http://userweb.kernel.org/~kzak/util-linux/
-# Maintainer:  CRUX System Team, core-ports at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on:  ncurses-32 zlib-32
 
 name=util-linux-32

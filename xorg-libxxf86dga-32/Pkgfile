@@ -1,6 +1,6 @@
 # Description: xorg lib libXxf86dga
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-xproto-32 xorg-libx11-32 xorg-libxext-32 xorg-xf86dgaproto-32 xorg-libxxf86dga
 
 name=xorg-libxxf86dga-32

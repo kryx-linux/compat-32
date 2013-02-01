@@ -1,6 +1,6 @@
 # Description: nVIDIA Linux Display Driver
 # URL: http://www.nvidia.com/
-# Maintainer: Juergen Daubert, jue at crux dot nu 
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: gl-select xorg-libxv-32 xorg-libxvmc-32 nvidia
 
 name=nvidia-32

@@ -1,6 +1,6 @@
 # Description: xorg proto xextproto
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-xextproto
 
 name=xorg-xextproto-32

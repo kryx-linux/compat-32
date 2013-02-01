@@ -1,6 +1,6 @@
 # Description: Library for manipulation of TIFF (Tag Image File Format) images
 # URL:         http://libtiff.maptools.org/
-# Maintainer:  Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on:  libjpeg-32 zlib-32 libtiff
 
 name=libtiff-32

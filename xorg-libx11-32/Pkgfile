@@ -1,6 +1,6 @@
 # Description: X client library
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-libxcb-32 xorg-xf86bigfontproto-32 xorg-xextproto-32 xorg-xtrans-32 xorg-kbproto-32 xorg-inputproto-32 xorg-libx11
 
 name=xorg-libx11-32

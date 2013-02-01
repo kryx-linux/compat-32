@@ -1,6 +1,6 @@
 # Description: xorg lib libXmu
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-libxt-32 xorg-xextproto-32 xorg-libxext-32 xorg-libx11-32 xorg-libxmu
 
 name=xorg-libxmu-32

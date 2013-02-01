@@ -1,6 +1,6 @@
 # Description: X font rendering client library
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-libxrender-32 freetype-32 fontconfig-32 xorg-libxft
 
 name=xorg-libxft-32

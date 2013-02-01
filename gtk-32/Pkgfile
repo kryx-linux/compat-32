@@ -1,6 +1,6 @@
 # Description: A multi-platform toolkit for creating graphical user interfaces
 # URL: http://www.gtk.org/
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: atk-32 hicolor-icon-theme gdk-pixbuf-32 pango-32 xorg-libsm-32 xorg-libxcursor-32 xorg-libxinerama-32 xorg-libxrandr-32 xorg-libxcomposite-32 gtk
 
 name=gtk-32
