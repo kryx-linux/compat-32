@@ -1,6 +1,6 @@
 # Description: An image loading library for GTK+
 # URL: http://www.gtk.org/
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: glib-32 xorg-libx11-32 libpng-32 libtiff-32 libjpeg-32 gdk-pixbuf
 
 name=gdk-pixbuf-32

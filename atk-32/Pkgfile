@@ -1,6 +1,6 @@
 # Description: A set of interfaces for accessibility
 # URL: http://www.gtk.org/
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: glib-32 atk
 
 name=atk-32

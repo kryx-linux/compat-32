@@ -1,6 +1,6 @@
 # Description: Very high-quality data compression program
 # URL: http://www.bzip.org/
-# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=bzip2-32
 version=1.0.6

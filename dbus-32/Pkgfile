@@ -1,6 +1,6 @@
 # Description: A message bus system
 # URL: http://freedesktop.org/wiki/Software/dbus
-# Maintainer: Fredrik Rinnestam, fredrik at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: expat-32 dbus
 
 name=dbus-32
