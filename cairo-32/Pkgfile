@@ -4,7 +4,7 @@
 # Depends on: fontconfig-32 libpng-32 xorg-libxext-32 xorg-libxrender-32 xorg-libpixman-32 xorg-xcb-util-32 glib-32 cairo
 
 name=cairo-32
-version=1.12.12
+version=1.12.14
 release=1
 source=(http://cairographics.org/releases/cairo-$version.tar.xz)
 
