@@ -1,0 +1,20 @@
+# Description: X Screen Saver extension client library
+# URL: http://xorg.freedesktop.org
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: xorg-libx11-32 xorg-xextproto-32 xorg-libxext-32 xorg-scrnsaverproto-32 xorg-libxscrnsaver
+
+name=xorg-libxscrnsaver-32
+version=1.2.2
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/lib/libXScrnSaver-$version.tar.bz2)
+
+build() {
+	cd libXScrnSaver-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32 --mandir=/usr/man
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{man,include}
+}
