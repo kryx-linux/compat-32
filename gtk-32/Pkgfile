@@ -4,7 +4,7 @@
 # Depends on: atk-32 hicolor-icon-theme gdk-pixbuf-32 pango-32 xorg-libsm-32 xorg-libxcursor-32 xorg-libxinerama-32 xorg-libxrandr-32 xorg-libxcomposite-32 gtk
 
 name=gtk-32
-version=2.24.15
+version=2.24.16
 release=1
 source=(http://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.xz \
         gtk.immodules-32 gtk-register-32.sh gtk.immodules-32.patch)
