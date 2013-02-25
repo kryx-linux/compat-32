@@ -4,7 +4,7 @@
 # Depends on: libdrm-32 xorg-makedepend xorg-glproto-32 xorg-xextproto-32 xorg-dri2proto-32 xorg-libx11-32 xorg-xf86vidmodeproto-32 xorg-libxext-32 xorg-libxxf86vm-32 xorg-libxt-32 xorg-libxdamage-32 xorg-libpciaccess-32 expat-32 talloc-32 mesa3d
 
 name=mesa3d-32
-version=9.0.2
+version=9.0.3
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
 
