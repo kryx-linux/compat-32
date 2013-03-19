@@ -4,17 +4,18 @@
 # Depends on:  ncurses-32 readline-32 sqlite3
 
 name=sqlite3-32
-version=3.7.15.2
+version=3.7.16
 release=1
 _version=$(printf "%i%.2i%.2i%.2i" ${version//./ })
 
-source=(http://www.sqlite.org/sqlite-autoconf-${_version}.tar.gz)
+source=(http://www.sqlite.org/2013/sqlite-autoconf-${_version}.tar.gz)
 
 build () {
     cd sqlite-autoconf-${_version}
-	CFLAGS="-DSQLITE_SECURE_DELETE=1 -DSQLITE_ENABLE_UNLOCK_NOTIFY $CFLAGS" \
+    CFLAGS="-DSQLITE_SECURE_DELETE=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 \
+    -DSQLITE_ENABLE_UNLOCK_NOTIFY $CFLAGS" \
     ./configure --prefix=/usr --mandir=/usr/man --libdir=/usr/lib32
     make
     make DESTDIR=$PKG install
-	rm -rf $PKG/usr/{bin,include,man}
+    rm -r $PKG/usr/{bin,include,man}
 }
