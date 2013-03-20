@@ -4,7 +4,7 @@
 # Depends on: orc
 
 name=orc-32
-version=0.4.16
+version=0.4.17
 release=1
 source=(http://code.entropywave.com/download/orc/orc-$version.tar.gz)
 
@@ -18,5 +18,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/{etc,var} $PKG/usr/{bin,etc,include,man,sbin,share}
+	rm -r $PKG/usr/{bin,include,share}
 }
