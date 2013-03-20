@@ -3,7 +3,7 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=libffi-32
-version=3.0.12
+version=3.0.13
 release=1
 source=(ftp://sourceware.org/pub/libffi/libffi-$version.tar.gz)
 
@@ -11,8 +11,8 @@ build() {
     cd libffi-$version
 
     ./configure --prefix=/usr --libdir=/usr/lib32 --mandir=/usr/man
-	sed -i -e 's,\(toolexeclibdir = $(libdir)\).*,\1,' \
-		x86_64-unknown-linux-gnu/Makefile
+    sed -i -e 's,\(toolexeclibdir = $(libdir)\).*,\1,' \
+        x86_64-unknown-linux-gnu/Makefile
     make
     make DESTDIR=$PKG install
     rm -r $PKG/usr/{man,share}
