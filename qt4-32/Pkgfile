@@ -5,7 +5,7 @@
 
 name=qt4-32
 version=4.8.4
-release=1
+release=2
 source=(http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-$version.tar.gz)
 
 build () {
@@ -20,13 +20,14 @@ build () {
                 -bindir /usr/share/qt4/bin \
                 -headerdir /usr/share/qt4/include \
                 -libdir /usr/share/qt4/lib32 \
-                -plugindir /usr/share/qt4/plugins \
+                -plugindir /usr/share/qt4/plugins-32 \
                 -platform linux-g++ -release -shared -sm \
                 -nis -verbose -system-zlib \
                 -system-lib{png,jpeg} -xmlpatterns \
                 -no-{cups,fast,nas-sound,phonon} \
+                -no-sql-{db2,ibase,mysql,oci,odbc,psql,sqlite,sqlite2,sqlite_symbian,symsql,tds} \
                 -x{cursor,inerama,kb,randr,render} \
-                -nomake demos -nomake examples -nomake docs \
+                -nomake demos -nomake examples -nomake docs -nomake translations \
                 -no-separate-debug-info -opensource -confirm-license
 
     LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$PWD/lib" make
@@ -42,10 +43,8 @@ build () {
 		$PKG/usr/share/qt4/bin \
 		$PKG/usr/share/qt4/include \
 		$PKG/usr/share/qt4/mkspecs \
-		$PKG/usr/share/qt4/plugins \
 		$PKG/usr/share/qt4/q3porting.xml \
 		$PKG/usr/share/qt4/imports \
 		$PKG/usr/share/qt4/tests \
-		$PKG/usr/share/qt4/translations \
 		$PKG/usr/share/qt4/phrasebooks
 }
