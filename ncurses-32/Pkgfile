@@ -18,7 +18,8 @@ build() {
 --with-shared \
 --without-debug \
 --without-ada \
---without-tests
+--without-tests \
+--without-gpm
 "
 
     ./configure $OPTIONS
