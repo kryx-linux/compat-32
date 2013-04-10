@@ -4,8 +4,8 @@
 # Depends on: glu-32 xorg-libxi-32 freeglut
 
 name=freeglut-32
-version=2.8.0
-release=2
+version=2.8.1
+release=1
 source=(http://download.sourceforge.net/freeglut/freeglut-$version.tar.gz)
 
 build() {
