@@ -4,7 +4,7 @@
 # Depends on:  cairo-32 harfbuzz
 
 name=harfbuzz-32
-version=0.9.14
+version=0.9.15
 release=1
 source=(http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-$version.tar.bz2)
 
@@ -17,5 +17,5 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/{bin,include}
+	rm -r $PKG/usr/{bin,include}
 }
