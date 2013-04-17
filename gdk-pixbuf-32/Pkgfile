@@ -4,7 +4,7 @@
 # Depends on: glib-32 xorg-libx11-32 libpng-32 libtiff-32 libjpeg-32 gdk-pixbuf
 
 name=gdk-pixbuf-32
-version=2.26.5
+version=2.28.1
 release=1
 source=(http://download.gnome.org/sources/gdk-pixbuf/${version%.*}/gdk-pixbuf-$version.tar.xz \
         gdk-pixbuf.loaders-32 gdk-pixbuf-register.sh)
@@ -32,5 +32,5 @@ build() {
 
 	rm -r $PKG/usr/share/gtk-doc
 	rmdir $PKG/usr/share
-	rm -rf $PKG/usr/{include,man}
+	rm -r $PKG/usr/{include,man}
 }
