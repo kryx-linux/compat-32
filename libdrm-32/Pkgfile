@@ -18,4 +18,5 @@ build() {
     make
     make DESTDIR=$PKG install
     rm -r $PKG/usr/include
+    rm -rf $PKG/usr/man
 }
