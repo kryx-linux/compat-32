@@ -4,9 +4,9 @@
 # Depends on:  ncurses-32 zlib-32
 
 name=util-linux-32
-version=2.22.2
+version=2.23
 release=1
-source=(http://ftp.kernel.org/pub/linux/utils/util-linux/v2.22/util-linux-$version.tar.xz)
+source=(http://ftp.kernel.org/pub/linux/utils/util-linux/v2.23/util-linux-$version.tar.xz)
 
 build() {
     cd util-linux-$version
