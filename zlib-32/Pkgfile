@@ -3,9 +3,9 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=zlib-32
-version=1.2.7
-release=2
-source=(http://www.zlib.net/zlib-$version.tar.bz2)
+version=1.2.8
+release=1
+source=(http://www.zlib.net/zlib-$version.tar.gz)
 
 build() {
     cd zlib-$version
