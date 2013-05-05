@@ -5,11 +5,18 @@
 
 name=mesa3d-32
 version=9.1.2
-release=1
+release=2
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
 
 build() {
 	cd Mesa-$version
+
+	# Do not fail to compile if llvm is installed and llvm-32 is not installed,
+	# required for gallium llvm support.
+	local f
+	for f in $(grep -r -l llvm-config | xargs); do
+		sed -i -e 's|llvm-config|llvm-config-32|g' $f
+	done
 
 	autoreconf --install --symlink
 	./configure --prefix=/usr \
