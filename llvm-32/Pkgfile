@@ -1,0 +1,43 @@
+# Description: LLVM including clang
+# URL: http://llvm.org
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Packager: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: python-32 llvm
+
+name=llvm-32
+version=3.2
+release=1
+source=(http://llvm.org/releases/$version/{llvm,clang}-$version.src.tar.gz)
+
+build() {
+	mv clang-$version.src llvm-$version.src/tools/clang
+
+	cd llvm-$version.src
+
+	sed -i \
+		-e 's|$(PROJ_prefix)/share/man|$(PROJ_prefix)/man|g' \
+		-e 's|$(PROJ_prefix)/lib|$(PROJ_prefix)/lib32|g' \
+		Makefile.config.in
+
+	sed -i -e 's|"@LLVM_SYSTEM_LIBS@"|"/usr/lib32"|g' tools/llvm-config/BuildVariables.inc.in
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--mandir=/usr/man \
+		--host=i686-pc-linux-gnu \
+		--without-oprofile
+
+	make $MAKEFLAGS
+	make DESTDIR=$PKG install
+
+	mv $PKG/usr/bin/llvm-config $SRC
+	rm -r $PKG/usr/{bin,docs,man,include}
+
+	find $PKG -name .dir -delete
+
+	install -m 0755 -D $SRC/llvm-config $PKG/usr/bin/llvm-config-32
+
+	# ugly hack
+	mv $PKG/usr/lib $PKG/usr/lib32
+}
