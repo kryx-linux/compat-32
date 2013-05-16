@@ -11,6 +11,9 @@ source=(http://download.gnome.org/sources/glib/${version:0:4}/glib-$version.tar.
 build() {
 	cd glib-$version
 
+	aclocal
+	automake
+
 	./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
 		--mandir=/usr/man \
