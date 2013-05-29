@@ -4,9 +4,9 @@
 # Depends on:  python-32 libxml2-32 libxml2-python
 
 name=libxml2-python-32
-version=2.9.0
-release=2
-source=(ftp://xmlsoft.org/libxml2/libxml2-$version.tar.gz \
+version=2.9.1
+release=1
+source=(ftp://xmlsoft.org/libxml2/libxml2-$version.tar.gz
         libxml2-python-config.patch)
 
 build () {
@@ -19,8 +19,12 @@ build () {
 
     make
     make DESTDIR=$PKG install
-    
+
+    mv $PKG/usr/lib $PKG/usr/lib32
     rm $PKG/usr/lib32/python2.7/site-packages/libxml2mod.{a,la}
-    rm -r $PKG/usr/share
+    rm -r $PKG/usr/share/doc
+    rmdir $PKG/usr/share
+
+    python -mcompileall $PKG
 }
 
