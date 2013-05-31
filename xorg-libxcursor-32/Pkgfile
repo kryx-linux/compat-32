@@ -1,10 +1,10 @@
-# Description: xorg lib libXcursor
+# Description: X cursor management library
 # URL: http://xorg.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-libxrender-32 xorg-libxfixes-32 xorg-libx11-32 xorg-fixesproto-32 xorg-libxcursor
 
 name=xorg-libxcursor-32
-version=1.1.13
+version=1.1.14
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXcursor-$version.tar.bz2)
 
@@ -15,5 +15,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/{include,man}
+
+	rm -r $PKG/usr/{include,man}
 }
