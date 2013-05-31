@@ -4,7 +4,7 @@
 # Depends on: xorg-libx11-32 xorg-xproto-32 xorg-fixesproto-32 xorg-xextproto-32 xorg-libxfixes
 
 name=xorg-libxfixes-32
-version=5.0
+version=5.0.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXfixes-$version.tar.bz2)
 
@@ -15,5 +15,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/{include,man}
+
+	rm -r $PKG/usr/{include,man}
 }
