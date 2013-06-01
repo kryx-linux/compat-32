@@ -4,7 +4,7 @@
 # Depends on: xorg-libx11-32 xorg-randrproto-32 xorg-xextproto-32 xorg-libxext-32 xorg-libxrender-32 xorg-renderproto-32 xorg-libxrandr
 
 name=xorg-libxrandr-32
-version=1.4.0
+version=1.4.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXrandr-$version.tar.bz2)
 
@@ -15,5 +15,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/{include,man}
+
+	rm -r $PKG/usr/{include,man}
 }
