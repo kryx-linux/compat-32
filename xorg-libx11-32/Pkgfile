@@ -4,7 +4,7 @@
 # Depends on: xorg-libxcb-32 xorg-xf86bigfontproto-32 xorg-xextproto-32 xorg-xtrans-32 xorg-kbproto-32 xorg-inputproto-32 xorg-libx11
 
 name=xorg-libx11-32
-version=1.5.0
+version=1.6.0
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libX11-$version.tar.bz2)
 
@@ -16,5 +16,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/{include,man,share}
+	rm -r $PKG/usr/{include,man,share}
 }
