@@ -1,21 +1,29 @@
 # Description: An OpenType text shaping engine
 # URL:         http://www.freedesktop.org/wiki/Software/HarfBuzz
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on:  cairo-32 icu-32 harfbuzz
+# Depends on:  cairo-32 harfbuzz
 
 name=harfbuzz-32
-version=0.9.17
-release=2
+version=0.9.18
+release=1
 source=(http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-$version.tar.bz2)
 
 build() {
 	cd harfbuzz-$version
 
+	sed -i s/"SUBDIRS = api shaping"/"SUBDIRS = shaping"/g test/Makefile.in
+
 	./configure \
 		--prefix=/usr \
-		--libdir=/usr/lib32
+		--libdir=/usr/lib32 \
+		--with-glib \
+		--with-freetype \
+		--with-cairo \
+		--with-icu=no
+
 
 	make
 	make DESTDIR=$PKG install
+
 	rm -r $PKG/usr/{bin,include}
 }
