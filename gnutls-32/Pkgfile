@@ -1,0 +1,30 @@
+# Description: A library that provides a secure layer over a reliable transport layer
+# URL: http://gnutls.org/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: nettle-32 libidn-32 gnutls
+
+name=gnutls-32
+version=3.2.1
+release=1
+source=(ftp://ftp.gnutls.org/gcrypt/gnutls/v${version%.*}/gnutls-$version.tar.xz)
+
+build() {
+	cd gnutls-$version
+
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--libdir=/usr/lib32 \
+		--host=i686-pc-linux-gnu \
+		--without-p11-kit \
+		--disable-guile
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{bin,include,man}
+	rm -rf $PKG/usr/share/{info,locale}
+
+	# Remove empty directories
+	find $PKG -depth -empty -exec rm -r {} \;
+}
