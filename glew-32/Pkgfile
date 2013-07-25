@@ -4,7 +4,7 @@
 # Depends on: mesa3d-32 xorg-libxi-32 xorg-libxmu-32 glew
 
 name=glew-32
-version=1.9.0
+version=1.10.0
 release=1
 source=(http://downloads.sourceforge.net/project/glew/glew/$version/glew-$version.tgz)
 
@@ -14,7 +14,7 @@ build() {
 	make \
 		CC="${CC:-gcc}" \
 		LD="${CC:-gcc}" \
-		CFLAGS.EXTRA="$CFLAGS" \
+		CFLAGS.EXTRA="$CFLAGS -fPIC" \
 		LDFLAGS.EXTRA="$LDFLAGS"
 
 	make LIBDIR="$PKG/usr/lib32" GLEW_DEST=$PKG/usr install
