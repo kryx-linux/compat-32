@@ -5,15 +5,17 @@
 
 name=nettle-32
 version=2.7.1
-release=2
+release=3
 source=(http://www.lysator.liu.se/~nisse/archive/nettle-$version.tar.gz)
 
 build() {
 	cd nettle-$version
 
-	# make check requires
-	#export CC="gcc -m32"
-	# else it'll fail on /some/ tests
+	# do not remove this unless you check with
+	# make check and wine iexplore https://...
+	[ "$CC" ] || CC=gcc
+	export CC="$CC -m32"
+	# else it'll fail on /some/ tests and iexplore https
 	# last tested on version 2.7.1
 
 	./configure \
@@ -22,6 +24,7 @@ build() {
 		--with-include-path=/usr/lib32/gmp
 
 	make
+	#make check
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/{bin,include}
