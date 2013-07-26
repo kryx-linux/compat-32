@@ -1,5 +1,8 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
+drwxr-xr-x	root/root	usr/lib32/gmp/
+-rw-r--r--	root/root	usr/lib32/gmp/gmp.h
+-rw-r--r--	root/root	usr/lib32/gmp/gmpxx.h
 -rw-r--r--	root/root	usr/lib32/libgmp.a
 -rwxr-xr-x	root/root	usr/lib32/libgmp.la
 lrwxrwxrwx	root/root	usr/lib32/libgmp.so -> libgmp.so.10.1.2
