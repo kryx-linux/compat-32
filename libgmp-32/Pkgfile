@@ -4,28 +4,22 @@
 
 name=libgmp-32
 version=5.1.2
-release=2
+release=3
 source=(ftp://ftp.gmplib.org/pub/gmp-$version/gmp-$version.tar.xz)
 
 build() {
-	cd gmp-$version
+    cd gmp-$version
 
-	export ABI=32
+    ABI=32 ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --enable-cxx
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--includedir=/usr/lib32/gmp \
-		--enable-cxx
+    make
+    make DESTDIR=$PKG install
 
-	#Put gmp.h in the same folder as gmpxx.h
-	sed -i 's/$(exec_prefix)\/include/$\(includedir\)/' Makefile
+    mv $PKG/usr/include/gmp{,-32}.h
+    rm $PKG/usr/include/gmpxx.h
 
-	make
-	make DESTDIR=$PKG install
-
-	rm -rf $PKG/usr/share/info
-
-	# Remove empty directories
-	find $PKG -depth -empty -exec rm -r {} \;
+    rm -r $PKG/usr/share
 }
