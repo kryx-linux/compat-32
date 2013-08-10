@@ -1,0 +1,29 @@
+# Description: Free Lossless Audio Codec.
+# URL: http://xiph.org/flac/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: libogg-32
+
+name=flac-32
+version=1.2.1
+release=3
+source=(http://downloads.sourceforge.net/project/flac/flac-src/flac-$version-src/flac-$version.tar.gz
+	flac.diff)
+
+build() {
+	cd flac-$version
+
+	export LDFLAGS="$LDFLAGS -L/usr/lib32"
+
+	# fix compilation with gcc 4.3
+	patch -Np1 -i $SRC/flac.diff
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -r $PKG/usr/{bin,man,include,share/{doc,aclocal}}
+	rmdir $PKG/usr/share
+}
