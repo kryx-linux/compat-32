@@ -1,33 +1,26 @@
 # Description: A multi-platform toolkit for creating graphical user interfaces
 # URL: http://www.gtk.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: atk-32 hicolor-icon-theme gdk-pixbuf-32 pango-32 xorg-libsm-32 xorg-libxcursor-32 xorg-libxinerama-32 xorg-libxrandr-32 xorg-libxcomposite-32 gtk
+# Depends on: atk-32 gdk-pixbuf-32 pango-32 xorg-libsm-32 xorg-libxcursor-32 xorg-libxinerama-32 xorg-libxrandr-32 xorg-libxcomposite-32 gtk
 
 name=gtk-32
-version=2.24.19
+version=2.24.21
 release=1
-source=(http://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.xz \
-        gtk.immodules-32 gtk-register-32.sh gtk.immodules-32.patch)
+source=(http://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.xz)
 
 build() {
 	cd gtk+-$version
-	patch -p1 -i $SRC/gtk.immodules-32.patch
 
 	./configure \
 		--prefix=/usr \
 		--mandir=/usr/man \
 		--libdir=/usr/lib32 \
-		--program-suffix=-32 \
 		--disable-cups
 
 	make
 	make DESTDIR=$PKG install
 
-	install -d $PKG/usr/etc/gtk-2.0
-	install -m 0644 $SRC/gtk.immodules-32 $PKG/usr/etc/gtk-2.0/
-	rm $PKG/usr/bin/gtk-demo-32
-
-	install -m 0755 $SRC/gtk-register-32.sh $PKG/usr/bin/gtk-register-32
-	rm -rf $PKG/usr/{include,man,share}
-	rm $PKG/usr/etc/gtk-2.0/im-multipress.conf
+	mv $PKG/usr/bin/gtk-query-immodules-2.0 $PKG/usr/bin/gtk-query-immodules-2.0-32
+	rm $PKG/usr/bin/{gtk-builder-convert,gtk-demo,gtk-update-icon-cache}
+	rm -r $PKG/usr/etc $PKG/usr/{include,share}
 }
