@@ -5,9 +5,8 @@
 
 name=gdk-pixbuf-32
 version=2.28.2
-release=1
-source=(http://download.gnome.org/sources/gdk-pixbuf/${version%.*}/gdk-pixbuf-$version.tar.xz \
-        gdk-pixbuf.loaders-32 gdk-pixbuf-register.sh)
+release=2
+source=(http://download.gnome.org/sources/gdk-pixbuf/${version%.*}/gdk-pixbuf-$version.tar.xz)
 
 build() {
 	cd gdk-pixbuf-$version
@@ -16,7 +15,6 @@ build() {
 		--prefix=/usr \
 		--mandir=/usr/man \
 		--libdir=/usr/lib32 \
-		--program-suffix=-32 \
 		--without-libjasper \
 		--disable-nls \
 		--with-x11
@@ -24,13 +22,7 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	install -m 0644 $SRC/gdk-pixbuf.loaders-32 \
-		$PKG/usr/lib32/gdk-pixbuf-2.0/2.10.0/loaders.cache
-
-	install -m 0755 $SRC/gdk-pixbuf-register.sh \
-		$PKG/usr/bin/gdk-pixbuf-register-32
-
-	rm -r $PKG/usr/share/gtk-doc
-	rmdir $PKG/usr/share
-	rm -r $PKG/usr/{include,man}
+	mv $PKG/usr/bin/gdk-pixbuf-query-loaders $PKG/usr/bin/gdk-pixbuf-query-loaders-32
+	rm $PKG/usr/bin/{gdk-pixbuf-pixdata,gdk-pixbuf-csource}
+	rm -r $PKG/usr/{include,man} $PKG/usr/share/gtk-doc
 }

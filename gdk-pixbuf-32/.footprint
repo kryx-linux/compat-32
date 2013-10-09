@@ -1,13 +1,9 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/gdk-pixbuf-csource-32
--rwxr-xr-x	root/root	usr/bin/gdk-pixbuf-pixdata-32
 -rwxr-xr-x	root/root	usr/bin/gdk-pixbuf-query-loaders-32
--rwxr-xr-x	root/root	usr/bin/gdk-pixbuf-register-32
 drwxr-xr-x	root/root	usr/lib32/
 drwxr-xr-x	root/root	usr/lib32/gdk-pixbuf-2.0/
 drwxr-xr-x	root/root	usr/lib32/gdk-pixbuf-2.0/2.10.0/
--rw-r--r--	root/root	usr/lib32/gdk-pixbuf-2.0/2.10.0/loaders.cache
 drwxr-xr-x	root/root	usr/lib32/gdk-pixbuf-2.0/2.10.0/loaders/
 -rwxr-xr-x	root/root	usr/lib32/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ani.la
 -rwxr-xr-x	root/root	usr/lib32/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-ani.so
@@ -52,3 +48,4 @@ lrwxrwxrwx	root/root	usr/lib32/libgdk_pixbuf_xlib-2.0.so.0 -> libgdk_pixbuf_xlib
 drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gdk-pixbuf-2.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gdk-pixbuf-xlib-2.0.pc
+drwxr-xr-x	root/root	usr/share/
