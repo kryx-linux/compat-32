@@ -20,11 +20,10 @@ build () {
     make
     make DESTDIR=$PKG install
 
-    mv $PKG/usr/lib $PKG/usr/lib32
     rm $PKG/usr/lib32/python2.7/site-packages/libxml2mod.{a,la}
     rm -r $PKG/usr/share/doc
     rmdir $PKG/usr/share
 
-    python -mcompileall $PKG
+    python -mcompileall $PKG/usr/lib32/python2.7/
 }
 
