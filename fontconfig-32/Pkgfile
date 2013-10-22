@@ -4,7 +4,7 @@
 # Depends on:  freetype-32 expat-32 bzip2-32 fontconfig
 
 name=fontconfig-32
-version=2.10.2
+version=2.11.0
 release=1
 source=(http://fontconfig.org/release/fontconfig-$version.tar.bz2)
 
