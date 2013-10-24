@@ -1,31 +1,23 @@
 # Description: Miscellaneous system utilities
 # URL:         http://userweb.kernel.org/~kzak/util-linux/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on:  ncurses-32 zlib-32
 
 name=util-linux-32
 version=2.24
-release=1
-source=(http://ftp.kernel.org/pub/linux/utils/util-linux/v2.23/util-linux-$version.tar.xz)
+release=2
+source=(http://www.kernel.org/pub/linux/utils/util-linux/v$version/util-linux-$version.tar.xz)
 
 build() {
-    cd util-linux-$version
+	cd util-linux-$version
 
-    ./configure --prefix=/usr \
-                --mandir=/usr/man \
-                --libdir=/usr/lib32 \
-                --disable-{nls,wall} \
-                --disable-{login,su,sulogin,runuser} \
-                --enable-{write,raw,kill}
-    make
-    make DESTDIR=$PKG install
+	./configure \
+		--without-ncurses \
+		--libdir=/usr/lib32
 
-    install -d $PKG/{etc,var/{lib/libuuid,run/uuidd}}
-    touch $PKG/etc/adjtime
+	make lib{uuid,blkid,mount}.la
 
-    rm -r $PKG/usr/share
-    rm $PKG/sbin/{mkfs.bfs,mkfs.minix,fsck.minix}
-    rm $PKG/usr/man/man8/{fsck.minix,mkfs.bfs,mkfs.minix}.8
-
-    rm -rf $PKG/{etc,var} $PKG/usr/{bin,etc,include,man,sbin,share} $PKG/{bin,sbin}
+	make \
+		DESTDIR=$PKG \
+		install-usrlib_execLTLIBRARIES \
+		install-pkgconfigDATA
 }
