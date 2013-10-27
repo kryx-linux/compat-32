@@ -5,7 +5,7 @@
 
 name=libxml2-python-32
 version=2.9.1
-release=1
+release=2
 source=(ftp://xmlsoft.org/libxml2/libxml2-$version.tar.gz
         libxml2-python-config.patch)
 
@@ -14,11 +14,18 @@ build () {
 
     patch -p1 -i $SRC/libxml2-python-config.patch
 
+    # --libdir=/usr/lib32 is unpredictable version 2.9.1
     ./configure --prefix=/usr --libdir=/usr/lib32
     cd python
 
     make
     make DESTDIR=$PKG install
+
+    # --libdir is not to be trusted some sort of race at configure
+    # library will either end up in lib or lib32 depending on mood
+    if [ -e $PKG/usr/lib ]; then
+        mv $PKG/usr/lib $PKG/usr/lib32
+    fi
 
     rm $PKG/usr/lib32/python2.7/site-packages/libxml2mod.{a,la}
     rm -r $PKG/usr/share/doc
@@ -26,4 +33,3 @@ build () {
 
     python -mcompileall $PKG/usr/lib32/python2.7/
 }
-
