@@ -1,0 +1,20 @@
+# Description: POSIX.1e capabilities library
+# URL:         http://sites.google.com/site/fullycapable/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on:  attr-32
+
+name=libcap-32
+version=2.22
+release=1
+source=(http://crux.s3.amazonaws.com/dist/libcap-$version.tar.bz2)
+
+build() {
+	cd libcap-$version
+
+	sed -i "/^CFLAGS/s/-O2/$CFLAGS/" Make.Rules 
+
+	make -C libcap
+	make -C libcap DESTDIR=$PKG man_prefix=/usr lib=/usr/lib32 install
+
+	rm -r $PKG/usr/include
+}
