@@ -4,7 +4,7 @@
 # Depends on: cairo-32 glib-32 xorg-libsm-32 xorg-libxext-32 xorg-libxft-32 pango harfbuzz-32
 
 name=pango-32
-version=1.32.5
+version=1.36.1
 release=1
 source=(http://download.gnome.org/sources/pango/${version%.*}/pango-$version.tar.xz
 	pango.modules-32 pango.modules-32.patch)
