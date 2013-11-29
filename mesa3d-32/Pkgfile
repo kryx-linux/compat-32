@@ -4,8 +4,8 @@
 # Depends on: expat-32 libdrm-32 libxml2-python-32 talloc-32 xorg-dri2proto-32 xorg-glproto-32 xorg-libxdamage-32 xorg-libxt-32 xorg-libxvmc-32 xorg-libxxf86vm-32 mesa3d
 
 name=mesa3d-32
-version=9.2.3
-release=3
+version=9.2.4
+release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
 
 build() {
