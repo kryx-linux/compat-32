@@ -4,7 +4,7 @@
 # Depends on: python-32 xorg-xcb-proto
 
 name=xorg-xcb-proto-32
-version=1.9
+version=1.10
 release=1
 source=(http://xcb.freedesktop.org/dist/xcb-proto-$version.tar.bz2)
 
