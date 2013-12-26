@@ -4,7 +4,7 @@
 # Depends on: xorg-xcb-proto-32 xorg-libxdmcp-32 xorg-libxau-32 libxslt-32 libpthread-stubs-32 xorg-libxcb
 
 name=xorg-libxcb-32
-version=1.9.3
+version=1.10
 release=1
 source=(http://xcb.freedesktop.org/dist/libxcb-$version.tar.bz2)
 

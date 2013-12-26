@@ -72,9 +72,9 @@ lrwxrwxrwx	root/root	usr/lib32/libxcb-shm.so.0 -> libxcb-shm.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib32/libxcb-shm.so.0.0.0
 -rw-r--r--	root/root	usr/lib32/libxcb-sync.a
 -rwxr-xr-x	root/root	usr/lib32/libxcb-sync.la
-lrwxrwxrwx	root/root	usr/lib32/libxcb-sync.so -> libxcb-sync.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib32/libxcb-sync.so.0 -> libxcb-sync.so.0.0.0
--rwxr-xr-x	root/root	usr/lib32/libxcb-sync.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib32/libxcb-sync.so -> libxcb-sync.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib32/libxcb-sync.so.1 -> libxcb-sync.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib32/libxcb-sync.so.1.0.0
 -rw-r--r--	root/root	usr/lib32/libxcb-xevie.a
 -rwxr-xr-x	root/root	usr/lib32/libxcb-xevie.la
 lrwxrwxrwx	root/root	usr/lib32/libxcb-xevie.so -> libxcb-xevie.so.0.0.0
@@ -95,6 +95,11 @@ lrwxrwxrwx	root/root	usr/lib32/libxcb-xfixes.so.0 -> libxcb-xfixes.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib32/libxcb-xinerama.so -> libxcb-xinerama.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib32/libxcb-xinerama.so.0 -> libxcb-xinerama.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib32/libxcb-xinerama.so.0.0.0
+-rw-r--r--	root/root	usr/lib32/libxcb-xkb.a
+-rwxr-xr-x	root/root	usr/lib32/libxcb-xkb.la
+lrwxrwxrwx	root/root	usr/lib32/libxcb-xkb.so -> libxcb-xkb.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib32/libxcb-xkb.so.1 -> libxcb-xkb.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib32/libxcb-xkb.so.1.0.0
 -rw-r--r--	root/root	usr/lib32/libxcb-xprint.a
 -rwxr-xr-x	root/root	usr/lib32/libxcb-xprint.la
 lrwxrwxrwx	root/root	usr/lib32/libxcb-xprint.so -> libxcb-xprint.so.0.0.0
@@ -140,6 +145,7 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-xf86dri.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-xfixes.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-xinerama.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-xkb.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-xprint.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-xtest.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-xv.pc
