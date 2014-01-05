@@ -3,20 +3,21 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=gdbm-32
-version=1.10
+version=1.11
 release=1
 source=(http://ftp.gnu.org/gnu/gdbm/gdbm-$version.tar.gz)
 
 build() {
 	export CC="${CC:-gcc} ${CFLAGS}"
 
-    cd gdbm-$version
+	cd gdbm-$version
     
-    ./configure --prefix=/usr \
+	./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
 		--enable-libgdbm-compat
 
-    make
+	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/{bin,include,man,share}
+
+	rm -r $PKG/usr/{bin,include,share}
 }
