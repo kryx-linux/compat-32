@@ -1,7 +1,7 @@
 # Description: Qt Free Edition
 # URL: http://www.trolltech.com
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: fontconfig-32 glib-32 libmng-32 libpng-32 mesa3d-32 xorg-libxcursor-32 xorg-libxi-32 xorg-libxinerama-32 xorg-libxrandr-32 dbus-32 qt4
+# Depends on: fontconfig-32 glib-32 libmng-32 libpng-32 mesa3d-32 xorg-libxcursor-32 xorg-libxi-32 xorg-libxinerama-32 xorg-libxrandr-32 dbus-32 gst-plugins-base-32 qt4
 
 name=qt4-32
 version=4.8.5
