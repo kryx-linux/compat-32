@@ -1,0 +1,30 @@
+# Description: Userspace device management daemon
+# URL:         http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: kmod-32 eudev
+
+name=eudev-32
+version=1.4
+release=1
+source=(http://dev.gentoo.org/~blueness/eudev/eudev-$version.tar.gz)
+
+build() {
+    cd eudev-$version
+
+    sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in
+    
+    ./configure --prefix=/usr \
+                --libdir=/usr/lib32 \
+                --sysconfdir=/etc \
+                --disable-introspection \
+                --disable-gudev \
+                --disable-manpages \
+                --disable-keymap \
+                --enable-modules \
+                --enable-libkmod
+
+    make
+    make install DESTDIR=$PKG
+
+	rm -r $PKG/etc $PKG/usr/{bin,include,lib,sbin,share}
+}
