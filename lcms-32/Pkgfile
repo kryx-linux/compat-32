@@ -1,7 +1,7 @@
 # Description: Little CMS. A free color management engine.
 # URL: http://www.littlecms.com/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: zlib-32 libtiff-32 libjpeg-32 lcms
+# Depends on: zlib-32 libtiff-32 libjpeg-turbo-32 lcms
 
 name=lcms-32
 version=1.19
