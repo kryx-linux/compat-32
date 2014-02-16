@@ -1,23 +1,23 @@
 # Description: libmng - Mutliple Image Network Graphics 
 # URL: http://www.libmng.com
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: zlib-32 libjpeg-32 lcms-32
+# Depends on: zlib-32 libjpeg-turbo-32 lcms2-32
 
 name=libmng-32
-version=1.0.10
+version=2.0.2
 release=1
 source=(http://downloads.sourceforge.net/libmng/libmng-$version.tar.gz)
 
 build() {
-    cd libmng-$version
+	cd libmng-$version
 
-    ln -s makefiles/configure.in .
-    ln -s makefiles/Makefile.am .
-    sed -i '/AM_C_PROTOTYPES/d' configure.in
-    autoreconf --force --install
-    ./configure --prefix=/usr --libdir=/usr/lib32 --mandir=/usr/man
-    make
-    make DESTDIR=$PKG install
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--mandir=/usr/man
 
-    rm -r $PKG/usr/{include,man}
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{include,man}
 }
