@@ -1,0 +1,23 @@
+# Description: Little CMS intends to be an small-footprint color management engine
+# URL:         http://www.littlecms.com/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: zlib-32 libtiff-32 libjpeg-turbo-32 lcms2
+
+name=lcms2-32
+version=2.5
+release=1
+source=(http://downloads.sourceforge.net/project/lcms/lcms/$version/lcms2-$version.tar.gz)
+
+build() {
+	cd lcms2-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--mandir=/usr/man
+		
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{bin,include,man}
+}
