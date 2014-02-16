@@ -1,0 +1,20 @@
+# Description: X shared memory fences
+# URL: http://xorg.freedesktop.org
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: xorg-xproto-32 xorg-libxshmfence
+
+name=xorg-libxshmfence-32
+version=1.1
+release=1
+source=(http://xorg.freedesktop.org/archive/individual/lib/libxshmfence-$version.tar.bz2)
+
+build() {
+	cd libxshmfence-$version
+
+	./configure --prefix=/usr --libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/include
+}
