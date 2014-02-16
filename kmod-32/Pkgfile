@@ -1,0 +1,26 @@
+# Description: Kernel module utilities and library
+# URL:         http://git.kernel.org/?p=utils/kernel/kmod/kmod.git
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Sepends on: kmod
+
+name=kmod-32
+version=16
+release=1
+source=(https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz)
+
+build() {
+	cd kmod-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--bindir=/sbin \
+		--sysconfdir=/etc \
+		--disable-manpages \
+		--with-rootlibdir=/lib32
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/sbin $PKG/usr/{include,share}
+}
