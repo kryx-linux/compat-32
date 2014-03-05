@@ -28,15 +28,10 @@ build() {
     install -m 0755 libnvidia-tls.so.$version      $PKG/usr/lib32
     install -m 0755 libnvcuvid.so.$version         $PKG/usr/lib32
     install -m 0755 tls/libnvidia-tls.so.$version  $PKG/usr/lib32/tls
-    install -m 0755 libvdpau.so.$version           $PKG/usr/lib32
     install -m 0755 libvdpau_nvidia.so.$version    $PKG/usr/lib32/vdpau
-    install -m 0755 libvdpau_trace.so.$version     $PKG/usr/lib32/vdpau
     
     ln -s libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so.1
     ln -s libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so
-
-    ln -s libvdpau_trace.so.$version $PKG/usr/lib32/vdpau/libvdpau_trace.so.1
-    ln -s libvdpau_trace.so.$version $PKG/usr/lib32/vdpau/libvdpau_trace.so
 
     ln -s libnvcuvid.so.$version $PKG/usr/lib32/libnvcuvid.so.1
     ln -s libnvcuvid.so.$version $PKG/usr/lib32/libnvcuvid.so
