@@ -4,9 +4,9 @@
 # Depends on:  attr-32
 
 name=libcap-32
-version=2.22
+version=2.24
 release=1
-source=(http://crux.s3.amazonaws.com/dist/libcap-$version.tar.bz2)
+source=(https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-$version.tar.xz)
 
 build() {
 	cd libcap-$version
@@ -14,7 +14,7 @@ build() {
 	sed -i "/^CFLAGS/s/-O2/$CFLAGS/" Make.Rules 
 
 	make -C libcap
-	make -C libcap DESTDIR=$PKG man_prefix=/usr lib=/usr/lib32 install
+	make -C libcap RAISE_SETFCAP=no DESTDIR=$PKG prefix=/usr lib=lib32 install
 
 	rm -r $PKG/usr/include
 }
