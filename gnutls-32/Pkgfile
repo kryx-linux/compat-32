@@ -4,7 +4,7 @@
 # Depends on: nettle-32 libidn-32 gnutls
 
 name=gnutls-32
-version=3.2.10
+version=3.2.12
 release=1
 source=(ftp://ftp.gnutls.org/gcrypt/gnutls/v${version%.*}/gnutls-$version.tar.xz)
 

@@ -4,10 +4,9 @@
 # Depends on: gl-select xorg-libxv-32 xorg-libxvmc-32 nvidia
 
 name=nvidia-32
-version=331.38
+version=331.49
 release=1
-source=(ftp://download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run \
-        nvidia-makefile.patch)
+source=(ftp://download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
 
 build() {
     sh NVIDIA-Linux-x86-$version.run --extract-only
@@ -21,7 +20,9 @@ build() {
     install -m 0755 libnvidia-cfg.so.$version      $PKG/usr/lib32
     install -m 0755 libnvidia-compiler.so.$version $PKG/usr/lib32
     install -m 0755 libnvidia-encode.so.$version   $PKG/usr/lib32
+    install -m 0755 libnvidia-fbc.so.$version      $PKG/usr/lib32
     install -m 0755 libnvidia-glcore.so.$version   $PKG/usr/lib32
+    install -m 0755 libnvidia-ifr.so.$version      $PKG/usr/lib32
     install -m 0755 libnvidia-ml.so.$version       $PKG/usr/lib32
     install -m 0755 libnvidia-opencl.so.$version   $PKG/usr/lib32
     install -m 0755 libnvidia-tls.so.$version      $PKG/usr/lib32
