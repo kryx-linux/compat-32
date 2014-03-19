@@ -4,7 +4,7 @@
 # Depends on: zlib-32 libtiff-32 libjpeg-turbo-32 lcms2
 
 name=lcms2-32
-version=2.5
+version=2.6
 release=1
 source=(http://downloads.sourceforge.net/project/lcms/lcms/$version/lcms2-$version.tar.gz)
 
