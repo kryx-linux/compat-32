@@ -1,35 +1,43 @@
 # Description: Mesa 3D Graphics Library
 # URL: http://www.mesa3d.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: expat-32 libdrm-32 libxml2-python-32 talloc-32 xorg-dri2proto-32 xorg-glproto-32 xorg-libxdamage-32 xorg-libxt-32 xorg-libxvmc-32 xorg-libxxf86vm-32 mesa3d
+# Depends on: elfutils-32 expat-32 libdrm-32 libxml2-python-32 llvm-32 talloc-32 xorg-dri2proto-32 xorg-glproto-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxt-32 xorg-libxvmc-32 xorg-libxxf86vm-32 eudev-32 mesa3d
 
 name=mesa3d-32
-version=9.2.5
-release=2
+version=10.0.3
+release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
 
 build() {
 	cd Mesa-$version
 
-	# Do not fail to compile if llvm is installed and
-	# llvm-32 is not installed,
-	# required for gallium llvm support.
 	local f
 	for f in $(grep -r -l llvm-config | xargs); do
 		sed -i -e 's|llvm-config|llvm-config-32|g' $f
 	done
 
 	autoreconf --install --symlink
+
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
-		--with-dri-drivers=i915,i965,r200,radeon,swrast,nouveau \
-		--with-gallium-drivers=i915,r600,svga,nouveau \
-		--enable-texture-float --enable-glx-tls \
+		--enable-gallium-egl \
+		--enable-gallium-gbm \
+		--enable-gallium-llvm \
+		--enable-gbm \
+		--enable-gles1 \
+		--enable-gles2 \
+		--enable-glx-tls \
 		--enable-osmesa \
+		--enable-texture-float \
+		--enable-xa \
+		--with-egl-platforms=drm \
+		--with-llvm-shared-libs \
+		--with-gallium-drivers=r300,r600,svga,swrast,radeonsi,nouveau \
 		--host=i686-pc-linux-gnu
 
 	make
 	make DESTDIR=$PKG install
+
 	rm -r $PKG/usr/{etc,include}
 }
