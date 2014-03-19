@@ -4,7 +4,7 @@
 # Depends on:  zlib-32 libpng
 
 name=libpng-32
-version=1.6.7
+version=1.6.10
 release=1
 source=(http://download.sourceforge.net/libpng/libpng-$version.tar.xz \
 	http://downloads.sourceforge.net/project/libpng-apng/libpng16/$version/libpng-$version-apng.patch.gz)
@@ -16,5 +16,6 @@ build() {
 
     make
     make DESTDIR=$PKG install
+
     rm -r $PKG/usr/{bin,include,man}
 }
