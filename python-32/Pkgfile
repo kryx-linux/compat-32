@@ -5,11 +5,15 @@
 
 name=python-32
 version=2.7.6
-release=1
-source=(http://www.python.org/ftp/python/$version/Python-$version.tar.xz)
+release=2
+source=(http://www.python.org/ftp/python/$version/Python-$version.tar.xz
+	python-$version-readline-6.3.patch)
 
 build () {
     cd Python-$version
+
+    # http://bugs.python.org/issue20374
+    patch -p1 -i $SRC/python-$version-readline-6.3.patch
 
     # set OPT to the python default without -O3
     # our CFLAGS are used as well
