@@ -3,12 +3,12 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=libgmp-32
-version=5.1.3
+version=6.0.0a
 release=1
-source=(ftp://ftp.gmplib.org/pub/gmp-$version/gmp-$version.tar.xz)
+source=(ftp://ftp.gmplib.org/pub/gmp-${version%a}/gmp-$version.tar.xz)
 
 build() {
-    cd gmp-$version
+    cd gmp-${version%a}
 
     ABI=32 ./configure \
         --prefix=/usr \
