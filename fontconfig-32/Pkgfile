@@ -4,14 +4,12 @@
 # Depends on:  freetype-32 expat-32 bzip2-32 fontconfig
 
 name=fontconfig-32
-version=2.11.0
+version=2.11.1
 release=1
 source=(http://fontconfig.org/release/fontconfig-$version.tar.bz2)
 
 build() {
     cd fontconfig-$version
-
-	sed -e 's|^confdir=.*|confdir=@baseconfigdir@|' -i fontconfig.pc.in
 
     ./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
@@ -24,11 +22,5 @@ build() {
     make
     make DESTDIR=$PKG install
 
-    # Enabling autohinting by default
-    pushd $PKG/etc/fonts/conf.d
-	ln -sf /etc/fonts/conf.avail/10-autohint.conf
-    popd
-
-    rm -f $PKG/etc/fonts/conf.d/README
     rm -r $PKG/usr/{bin,include,man,share} $PKG/{etc,var}
 }
