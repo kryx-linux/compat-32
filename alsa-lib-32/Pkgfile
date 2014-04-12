@@ -4,7 +4,7 @@
 # Depends on: alsa-lib
 
 name=alsa-lib-32
-version=1.0.27.1
+version=1.0.27.2
 release=1
 source=(http://crux.nu/files/distfiles/alsa-lib-$version.tar.bz2)
 
