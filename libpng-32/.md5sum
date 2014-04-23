@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 3404257f66d4a118b26ccc3fc4788810  libpng-1.6.10-apng.patch.gz
 5f414b20f683b1d96b163c89e3eff768  libpng-1.6.10.tar.xz
+=======
+92b457d42c0c6ae4dd2bc8876be19488  libpng-1.5.18-apng.patch.gz
+23fb6a0e9f4dbaab7b34b6fd317a4f2d  libpng-1.5.18.tar.xz
+>>>>>>> libpng-32: 1.5.17 -> 1.5.18
