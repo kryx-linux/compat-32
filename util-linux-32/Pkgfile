@@ -3,7 +3,7 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=util-linux-32
-version=2.24.1
+version=2.24.2
 release=1
 source=(http://www.kernel.org/pub/linux/utils/util-linux/v${version%.*}/util-linux-$version.tar.xz)
 
