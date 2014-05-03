@@ -1,12 +1,11 @@
 # Description: Library for manipulating sound files.
 # URL: http://www.mega-nerd.com/libsndfile
-# Maintainer: Danny Rawlins, monster dot romster at gmail dot com
-# Packager: Jay Dolan, jdolan at jdolan dot dyndns dot org
-# Depends on: flac-32 alsa-lib-32 libvorbis-32
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: flac-32 alsa-lib-32 libvorbis-32 libsndfile
 
 name=libsndfile-32
 version=1.0.25
-release=1
+release=2
 source=(http://www.mega-nerd.com/libsndfile/files/libsndfile-$version.tar.gz)
 
 build() {
@@ -24,6 +23,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 	
-	rm -r $PKG/usr/{bin,man,include,share/doc}
-	rmdir $PKG/usr/share
+	rm -r $PKG/usr/{bin,man,include,share}
 }
