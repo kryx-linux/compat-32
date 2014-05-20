@@ -1,24 +1,24 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
--rwxr-xr-x	root/root	usr/lib32/libGL.so.331.67
-lrwxrwxrwx	root/root	usr/lib32/libGL_so_1_2_nvidia -> libGL.so.331.67
+-rwxr-xr-x	root/root	usr/lib32/libGL.so.331.79
+lrwxrwxrwx	root/root	usr/lib32/libGL_so_1_2_nvidia -> libGL.so.331.79
 -rwxr-xr-x	root/root	usr/lib32/libOpenCL.so.1.0.0
--rwxr-xr-x	root/root	usr/lib32/libcuda.so.331.67
-lrwxrwxrwx	root/root	usr/lib32/libnvcuvid.so -> libnvcuvid.so.331.67
-lrwxrwxrwx	root/root	usr/lib32/libnvcuvid.so.1 -> libnvcuvid.so.331.67
--rwxr-xr-x	root/root	usr/lib32/libnvcuvid.so.331.67
--rwxr-xr-x	root/root	usr/lib32/libnvidia-cfg.so.331.67
--rwxr-xr-x	root/root	usr/lib32/libnvidia-compiler.so.331.67
--rwxr-xr-x	root/root	usr/lib32/libnvidia-encode.so.331.67
--rwxr-xr-x	root/root	usr/lib32/libnvidia-fbc.so.331.67
--rwxr-xr-x	root/root	usr/lib32/libnvidia-glcore.so.331.67
--rwxr-xr-x	root/root	usr/lib32/libnvidia-ifr.so.331.67
--rwxr-xr-x	root/root	usr/lib32/libnvidia-ml.so.331.67
--rwxr-xr-x	root/root	usr/lib32/libnvidia-opencl.so.331.67
--rwxr-xr-x	root/root	usr/lib32/libnvidia-tls.so.331.67
+-rwxr-xr-x	root/root	usr/lib32/libcuda.so.331.79
+lrwxrwxrwx	root/root	usr/lib32/libnvcuvid.so -> libnvcuvid.so.331.79
+lrwxrwxrwx	root/root	usr/lib32/libnvcuvid.so.1 -> libnvcuvid.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/libnvcuvid.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/libnvidia-cfg.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/libnvidia-compiler.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/libnvidia-encode.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/libnvidia-fbc.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/libnvidia-glcore.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/libnvidia-ifr.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/libnvidia-ml.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/libnvidia-opencl.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/libnvidia-tls.so.331.79
 drwxr-xr-x	root/root	usr/lib32/tls/
--rwxr-xr-x	root/root	usr/lib32/tls/libnvidia-tls.so.331.67
+-rwxr-xr-x	root/root	usr/lib32/tls/libnvidia-tls.so.331.79
 drwxr-xr-x	root/root	usr/lib32/vdpau/
-lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_nvidia.so -> libvdpau_nvidia.so.331.67
-lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_nvidia.so.1 -> libvdpau_nvidia.so.331.67
--rwxr-xr-x	root/root	usr/lib32/vdpau/libvdpau_nvidia.so.331.67
+lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_nvidia.so -> libvdpau_nvidia.so.331.79
+lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_nvidia.so.1 -> libvdpau_nvidia.so.331.79
+-rwxr-xr-x	root/root	usr/lib32/vdpau/libvdpau_nvidia.so.331.79
