@@ -5,7 +5,7 @@
 
 name=libsdl-32
 version=1.2.15
-release=1
+release=2
 source=(http://www.libsdl.org/release/SDL-$version.tar.gz)
 
 build() {
@@ -14,14 +14,12 @@ build() {
   ./configure --prefix=/usr \
               --mandir=/usr/man \
               --libdir=/usr/lib32 \
-              --includedir=/usr/include32 \
-              --datarootdir=/usr/share32 \
               --program-suffix=-32 \
               --enable-alsa
               
   make
   make DESTDIR=$PKG install
-  rm -r $PKG/usr/man
+  rm -r $PKG/usr/{include,man,share}
 
   # --program-suffix=-32 is being ignored
   mv $PKG/usr/bin/sdl-config $PKG/usr/bin/sdl-config-32
