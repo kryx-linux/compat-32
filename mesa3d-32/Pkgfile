@@ -1,10 +1,10 @@
 # Description: Mesa 3D Graphics Library
 # URL: http://www.mesa3d.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: elfutils-32 expat-32 libdrm-32 libxml2-python-32 llvm-32 talloc-32 xorg-dri2proto-32 xorg-glproto-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxt-32 xorg-libxvmc-32 xorg-libxxf86vm-32 eudev-32 mesa3d
+# Depends on: elfutils-32 expat-32 libdrm-32 libxml2-python-32 llvm-32 talloc-32 xorg-dri2proto-32 xorg-dri3proto-32 xorg-glproto-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxt-32 xorg-libxvmc-32 xorg-libxxf86vm-32 eudev-32 mesa3d xorg-presentproto-32
 
 name=mesa3d-32
-version=10.0.3
+version=10.1.5
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
 
