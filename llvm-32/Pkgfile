@@ -5,8 +5,8 @@
 # Depends on: python-32 llvm
 
 name=llvm-32
-version=3.3
-release=2
+version=3.4.1
+release=1
 source=(http://llvm.org/releases/$version/{llvm,cfe}-$version.src.tar.gz)
 
 build() {
@@ -30,8 +30,9 @@ build() {
 		--libdir=/usr/lib32 \
 		--host=i686-pc-linux-gnu \
 		--without-oprofile \
-		--enable-shared \
-		--enable-experimental-targets=R600
+		--enable-cxx11 \
+		--enable-targets=x86,x86_64,r600 \
+		--enable-shared
 
 	make $MAKEFLAGS
 	make DESTDIR=$PKG install
@@ -39,8 +40,6 @@ build() {
 	mv $PKG/usr/bin/llvm-config $PKG/
 	mv $PKG/usr/include/llvm/Config/{,llvm-}config.h $PKG/
 	rm -r $PKG/usr/{bin,docs,include}
-
-	#find $PKG -name .dir -delete
 
 	# multilib
 	install -d $PKG/usr/{bin,include/llvm/Config}
@@ -50,4 +49,7 @@ build() {
 
 	# remove example hello transform
 	rm $PKG/usr/lib32/LLVMHello.so
+
+	# fix broken symlink
+	ln -sf libLLVM-$version.so $PKG/usr/lib32/libLLVM-${version%.*}.so
 }
