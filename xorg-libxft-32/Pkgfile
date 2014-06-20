@@ -4,7 +4,7 @@
 # Depends on: xorg-libxrender-32 freetype-32 fontconfig-32 xorg-libxft
 
 name=xorg-libxft-32
-version=2.3.1
+version=2.3.2
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXft-$version.tar.bz2)
 
@@ -15,5 +15,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/{include,man}
+
+	rm -r $PKG/usr/{include,man}
 }
