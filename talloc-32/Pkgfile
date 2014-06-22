@@ -4,10 +4,10 @@
 # Depends on: python-32 talloc
 
 name=talloc-32
-version=2.1.0
+version=2.1.1
 release=1
 source=(ftp://ftp.samba.org/pub/talloc/talloc-$version.tar.gz
-        talloc.3)
+	talloc.3)
 
 build() {
 	cd talloc-$version
@@ -27,7 +27,5 @@ build() {
 	mv $PKG/usr/lib/* $PKG/usr/lib32/
 	rmdir $PKG/usr/lib
 
-	install -d $PKG/usr/man/man3
-	install -m 644 talloc.3 $PKG/usr/man/man3
-	rm -r $PKG/usr/{include,man}
+	rm -r $PKG/usr/include
 }
