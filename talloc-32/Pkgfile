@@ -28,4 +28,5 @@ build() {
 	rmdir $PKG/usr/lib
 
 	rm -r $PKG/usr/include
+	rm -rf $PKG/usr/man
 }
