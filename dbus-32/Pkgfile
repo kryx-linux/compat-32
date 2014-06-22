@@ -4,7 +4,7 @@
 # Depends on: expat-32 dbus
 
 name=dbus-32
-version=1.6.20
+version=1.8.4
 release=1
 source=(http://dbus.freedesktop.org/releases/dbus/dbus-$version.tar.gz)
 
@@ -23,5 +23,6 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/var $PKG/usr/{bin,etc,include,man,sbin,share}
+	rm -r $PKG/var $PKG/usr/{bin,etc,include,sbin,share}
+	rm -rf $PKG/usr/man
 }
