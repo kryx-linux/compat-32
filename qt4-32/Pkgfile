@@ -4,7 +4,7 @@
 # Depends on: fontconfig-32 glib-32 libmng-32 libpng-32 mesa3d-32 xorg-libxcursor-32 xorg-libxi-32 xorg-libxinerama-32 xorg-libxrandr-32 dbus-32 gst-plugins-base-32 qt4
 
 name=qt4-32
-version=4.8.5
+version=4.8.6
 release=1
 source=(http://download.qt-project.org/official_releases/qt/${version%.*}/$version/qt-everywhere-opensource-src-$version.tar.gz)
 

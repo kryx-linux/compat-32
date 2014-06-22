@@ -4,10 +4,9 @@
 # Depends on: expat-32 dbus
 
 name=dbus-32
-version=1.6.18
+version=1.6.20
 release=1
-source=(http://dbus.freedesktop.org/releases/dbus/dbus-$version.tar.gz \
-rc.dbus 30-dbus.launch)
+source=(http://dbus.freedesktop.org/releases/dbus/dbus-$version.tar.gz)
 
 build() {
 	cd dbus-$version
@@ -23,9 +22,6 @@ build() {
 		--with-system-pid-file=/var/run/dbus/dbus.pid
 	make
 	make DESTDIR=$PKG install
-	install -D -m 0755 $SRC/rc.dbus $PKG/etc/rc.d/dbus
-	install -D -m 0755 $SRC/30-dbus.launch \
-		$PKG/etc/X11/xinit/xinitrc.d/30-dbus.launch
-	rm -r $PKG/usr/share/doc
-	rm -rf $PKG/{etc,var} $PKG/usr/{bin,etc,include,man,sbin,share}
+
+	rm -r $PKG/var $PKG/usr/{bin,etc,include,man,sbin,share}
 }
