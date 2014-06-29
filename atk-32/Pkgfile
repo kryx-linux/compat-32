@@ -4,7 +4,7 @@
 # Depends on: glib-32 atk
 
 name=atk-32
-version=2.10.0
+version=2.12.0
 release=1
 source=(http://download.gnome.org/sources/atk/${version:0:4}/atk-$version.tar.xz)
 
