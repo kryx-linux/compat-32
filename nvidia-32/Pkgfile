@@ -4,7 +4,7 @@
 # Depends on: gl-select xorg-libxv-32 xorg-libxvmc-32 nvidia
 
 name=nvidia-32
-version=331.79
+version=331.89
 release=1
 source=(ftp://download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
 
@@ -35,6 +35,8 @@ build() {
 
     ln -s libnvcuvid.so.$version $PKG/usr/lib32/libnvcuvid.so.1
     ln -s libnvcuvid.so.$version $PKG/usr/lib32/libnvcuvid.so
+
+    ln -s libOpenCL.so.1.0.0 $PKG/usr/lib32/libOpenCL.so
 
     # additional symlinks required by gl-select
     ln -s libGL.so.$version $PKG/usr/lib32/libGL_so_1_2_nvidia
