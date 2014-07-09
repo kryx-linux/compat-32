@@ -78,3 +78,16 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/glesv2.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/osmesa.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xatracker.pc
+drwxr-xr-x	root/root	usr/lib32/vdpau/
+-rwxr-xr-x	root/root	usr/lib32/vdpau/libvdpau_nouveau.la
+lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_nouveau.so -> libvdpau_nouveau.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_nouveau.so.1 -> libvdpau_nouveau.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib32/vdpau/libvdpau_nouveau.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib32/vdpau/libvdpau_r600.la
+lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_r600.so -> libvdpau_r600.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_r600.so.1 -> libvdpau_r600.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib32/vdpau/libvdpau_r600.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib32/vdpau/libvdpau_radeonsi.la
+lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_radeonsi.so -> libvdpau_radeonsi.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_radeonsi.so.1 -> libvdpau_radeonsi.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib32/vdpau/libvdpau_radeonsi.so.1.0.0
