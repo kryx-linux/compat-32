@@ -4,7 +4,7 @@
 # Depends on: alsa-lib
 
 name=alsa-lib-32
-version=1.0.27.2
+version=1.0.28
 release=1
 source=(http://crux.nu/files/distfiles/alsa-lib-$version.tar.bz2)
 
@@ -13,5 +13,6 @@ build() {
 	./configure --prefix=/usr --libdir=/usr/lib32 --disable-python
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/{bin,include,share}
+
+	rm -r $PKG/usr/{bin,include,share}
 }
