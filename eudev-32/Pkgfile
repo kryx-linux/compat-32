@@ -4,7 +4,7 @@
 # Depends on: kmod-32 eudev
 
 name=eudev-32
-version=1.8
+version=1.9
 release=1
 source=(http://dev.gentoo.org/~blueness/eudev/eudev-$version.tar.gz)
 
@@ -15,16 +15,21 @@ build() {
     
     ./configure --prefix=/usr \
                 --libdir=/usr/lib32 \
+                --sbindir=/sbin --bindir=/sbin \
                 --sysconfdir=/etc \
+                --with-rootprefix= \
+                --with-rootlibdir=/usr/lib32 \
+                --libexecdir=/usr/lib32 \
                 --disable-introspection \
                 --disable-gudev \
                 --disable-manpages \
                 --disable-keymap \
+                --enable-split-usr \
                 --enable-modules \
                 --enable-libkmod
 
     make CFLAGS="$CFLAGS -D_GNU_SOURCE"
     make install DESTDIR=$PKG
 
-	rm -r $PKG/etc $PKG/usr/{bin,include,lib,sbin,share}
+    rm -r $PKG/etc $PKG/sbin $PKG/usr/{include,lib32/udev,share}
 }
