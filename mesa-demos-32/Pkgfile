@@ -4,7 +4,7 @@
 # Depends on: glew-32 glu-32
 
 name=mesa-demos-32
-version=8.1.0
+version=8.2.0
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/demos/$version/mesa-demos-$version.tar.bz2)
 
