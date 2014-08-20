@@ -1,23 +1,32 @@
 # Description: Miscellaneous system utilities
 # URL:         http://userweb.kernel.org/~kzak/util-linux/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: ncurses-32
 
 name=util-linux-32
-version=2.24.2
+version=2.25
 release=1
-source=(http://www.kernel.org/pub/linux/utils/util-linux/v${version%.*}/util-linux-$version.tar.xz)
+source=(http://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
 build() {
 	cd util-linux-$version
 
 	./configure \
-		--without-ncurses \
-		--libdir=/usr/lib32
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--mandir=/usr/man \
+		--disable-nls \
+		--disable-{login,su,sulogin,nologin} \
+		--enable-{write,raw,kill} \
+		--without-python
 
-	make lib{uuid,blkid,mount}.la
+	make
+	make DESTDIR=$PKG install
 
-	make \
-		DESTDIR=$PKG \
-		install-usrlib_execLTLIBRARIES \
-		install-pkgconfigDATA
+	rm -r \
+		$PKG/{bin,sbin} \
+		$PKG/usr/{bin,sbin,man,include} \
+		$PKG//usr/share/{bash-completion,doc}
+
+	rmdir $PKG/usr/share
 }
