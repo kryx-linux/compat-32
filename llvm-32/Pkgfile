@@ -5,7 +5,7 @@
 # Depends on: python-32 llvm
 
 name=llvm-32
-version=3.4.1
+version=3.4.2
 release=1
 source=(http://llvm.org/releases/$version/{llvm,cfe}-$version.src.tar.gz)
 
@@ -49,7 +49,4 @@ build() {
 
 	# remove example hello transform
 	rm $PKG/usr/lib32/LLVMHello.so
-
-	# fix broken symlink
-	ln -sf libLLVM-$version.so $PKG/usr/lib32/libLLVM-${version%.*}.so
 }
