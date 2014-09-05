@@ -1,7 +1,7 @@
 # Description: A free and portable TrueType font rendering engine
 # URL:         http://www.freetype.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on:  zlib-32 freetype
+# Depends on: zlib-32 libpng-32 freetype
 
 name=freetype-32
 version=2.5.3
@@ -9,13 +9,17 @@ release=1
 source=(http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2)
 
 build() {
-    cd freetype-$version
-    ./configure --prefix=/usr \
+	cd freetype-$version
+
+	 ./configure \
+		--prefix=/usr \
 		--libdir=/usr/lib32 \
 		--with-zlib \
 		--disable-nls
-    make
-    make DESTDIR=$PKG install
+
+	make
+	make DESTDIR=$PKG install
+
 	rm -rf $PKG/usr/{include,share}
 	mv $PKG/usr/bin/freetype-config{,-32}
 }
