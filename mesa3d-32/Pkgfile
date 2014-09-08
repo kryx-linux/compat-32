@@ -5,7 +5,7 @@
 
 name=mesa3d-32
 version=10.2.7
-release=1
+release=2
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
 
 build() {
@@ -32,8 +32,8 @@ build() {
 		--enable-texture-float \
 		--enable-xa \
 		--enable-vdpau \
+		--enable-llvm-shared-libs \
 		--with-egl-platforms=drm \
-		--with-llvm-shared-libs \
 		--with-gallium-drivers=r300,r600,svga,swrast,radeonsi,nouveau \
 		--host=i686-pc-linux-gnu
 
