@@ -3,19 +3,20 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=xz-32
-version=5.0.5
+version=5.0.6
 release=1
 source=(http://tukaani.org/xz/xz-$version.tar.bz2)
 
 build() {
-cd xz-$version
-	./configure --prefix=/usr \
+	cd xz-$version
+
+	./configure \
+		--prefix=/usr \
 		--libdir=/usr/lib32 \
-		--disable-nls 
+		--disable-nls
+
 	make
 	make DESTDIR=$PKG install
-
-	ln -s liblzma.so.$version $PKG/usr/lib32/liblzma.so.0
 
 	rm -r $PKG/usr/{bin,include,share}
 }
