@@ -1,4 +1,4 @@
-# Description: XCB library
+# Description: X11 client-side library
 # URL: http://xcb.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-xcb-proto-32 xorg-libxdmcp-32 xorg-libxau-32 libxslt-32 libpthread-stubs-32 xorg-libxcb
