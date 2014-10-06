@@ -1,0 +1,25 @@
+# Description: PulseAudio emulation for ALSA.
+# URL:         https://github.com/i-rinat/apulse
+# Maintainer:  CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Packager:    Thomas Penteker, tek at serverop dot de
+# Depends on:  cmake
+
+name=apulse-32
+version=0.1.2
+release=1
+source=(https://github.com/i-rinat/apulse/archive/v${version}.tar.gz)
+
+build() {
+  cd apulse-$version
+  sed -i -e "s:/lib/apulse:/lib32:" CMakeLists.txt
+
+  mkdir build
+  cd build
+
+  cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release ..
+
+  make
+  make DESTDIR=$PKG install
+
+  mv $PKG/usr/bin/apulse $PKG/usr/bin/apulse-32
+}
