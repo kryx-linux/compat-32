@@ -1,3 +1,3 @@
-9d0df57845af8acd1027a7df5c18d017  mksslcert.sh
-c8dc151a671b9b92ff3e4c118b174972  openssl-1.0.1i.tar.gz
-bcc6cecf10603a07b9a2261c75aff1c6  openssl-32.patch
+79557e38ae66cfcd9444463ab55eb411  openssl-1.0.1c-32bit_x86_64-1.patch
+ffcc8ee49222d341cdab991aca3c5827  openssl-1.0.1e-fix_parallel_build-1.patch
+f7175c9cd3c39bb1907ac8bba9df8ed3  openssl-1.0.1j.tar.gz

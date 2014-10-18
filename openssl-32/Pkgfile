@@ -1,24 +1,58 @@
 # Description: Secure Sockets Layer and Transport Layer Security tools
-# URL:         http://www.openssl.org/
+# URL: http://www.openssl.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=openssl-32
-version=1.0.1i
+version=1.0.1j
 release=1
-source=(http://www.openssl.org/source/openssl-$version.tar.gz \
-        mksslcert.sh $name.patch)
+source=(http://www.openssl.org/source/openssl-$version.tar.gz
+	http://svn.cross-lfs.org/svn/repos/patches/openssl/openssl-1.0.1c-32bit_x86_64-1.patch
+	http://svn.cross-lfs.org/svn/repos/patches/openssl/openssl-1.0.1e-fix_parallel_build-1.patch)
 
 build() {
-	unset CC CXX
-	export MAKEFLAGS="${MAKEFLAGS} -j1"
 	cd openssl-$version
-	patch -p1 -i $SRC/$name.patch
-	./Configure linux-x86_64-32 --prefix=/usr --libdir=/usr/lib32 --openssldir=/etc/ssl shared
-    sed -i "s|-O3|$CFLAGS|" Makefile
-    make
-    make INSTALL_PREFIX=$PKG LIBDIR=lib32 MANDIR=/usr/man MANSUFFIX=ssl install
-    find $PKG -name "*fips*" -delete
-    chmod -R +w $PKG
-    install -D -m 755 $SRC/mksslcert.sh $PKG/usr/bin/mksslcert
-	rm -rf $PKG/usr/{bin,include,man} $PKG/etc
+
+	# Make sure we only ever touch Makefile.org and avoid patching a file
+	# that gets blown away anyways by the Configure script
+	rm Makefile
+
+	patch -p1 -i $SRC/openssl-1.0.1c-32bit_x86_64-1.patch
+	patch -p1 -i $SRC/openssl-1.0.1e-fix_parallel_build-1.patch
+
+	# Disable fips and man pages
+	sed \
+		-e '/DIRS/s| fips | |g' \
+		-e '/^install:/s|install_docs||' \
+		-i Makefile.org
+
+	./Configure \
+		linux-x86_64-32 \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--openssldir=/etc/ssl shared
+
+	# Clean out hardcoded flags
+	local CFLAG=$(grep ^CFLAG= Makefile | LC_ALL=C sed \
+		-e 's|^CFLAG=||' \
+		-e 's|-fomit-frame-pointer ||g' \
+		-e 's|-O[0-9] ||g' \
+		-e 's|-march=[-a-z0-9]* ||g' \
+		-e 's|-mcpu=[-a-z0-9]* ||g' \
+		-e 's|-m[a-z0-9]* ||g' \
+	)
+	sed \
+		-e "/^CFLAG/s|=.*|=${CFLAG} ${CFLAGS}|" \
+		-e "/^SHARED_LDFLAGS=/s|$| ${LDFLAGS}|" \
+		-i Makefile
+
+	make
+	make \
+		INSTALL_PREFIX=$PKG \
+		LIBDIR=lib32 \
+		MANDIR=/usr/man \
+		MANSUFFIX=ssl \
+		install
+
+	chmod -R +w $PKG
+	rm -r $PKG/usr/{bin,include,man} $PKG/etc
 }
