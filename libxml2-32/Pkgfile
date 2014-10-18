@@ -1,21 +1,23 @@
 # Description: XML library version 2
-# URL:         http://xmlsoft.org/
+# URL: http://xmlsoft.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on:  zlib-32, xz-32, libxml2
+# Depends on: zlib-32 xz-32 libxml2
 
 name=libxml2-32
-version=2.9.1
+version=2.9.2
 release=1
 source=(ftp://xmlsoft.org/libxml2/libxml2-$version.tar.gz)
 
-build () {
-    cd libxml2-$version
+build() {
+	cd libxml2-$version
 
-    ./configure --prefix=/usr \
+	./configure \
+		--prefix=/usr \
 		--libdir=/usr/lib32 \
-                --mandir=/usr/man \
-                --without-python
-    make
-    make DESTDIR=$PKG install
-    rm -r $PKG/usr/{bin,include,man,share}
+		--mandir=/usr/man \
+		--without-python
+
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/{bin,include,man,share}
 }
