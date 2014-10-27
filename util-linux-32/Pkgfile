@@ -4,7 +4,7 @@
 # Depends on: ncurses-32
 
 name=util-linux-32
-version=2.25.1
+version=2.25.2
 release=1
 source=(http://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
