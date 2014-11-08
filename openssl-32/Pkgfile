@@ -6,8 +6,11 @@ name=openssl-32
 version=1.0.1j
 release=1
 source=(http://www.openssl.org/source/openssl-$version.tar.gz
-	http://svn.cross-lfs.org/svn/repos/patches/openssl/openssl-1.0.1c-32bit_x86_64-1.patch
-	http://svn.cross-lfs.org/svn/repos/patches/openssl/openssl-1.0.1e-fix_parallel_build-1.patch)
+	openssl-1.0.1c-32bit_x86_64-1.patch
+	openssl-1.0.1e-fix_parallel_build-1.patch)
+
+# Patches from
+# http://svn.cross-lfs.org/svn/repos/patches/openssl/
 
 build() {
 	cd openssl-$version
