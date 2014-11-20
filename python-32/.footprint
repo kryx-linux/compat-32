@@ -91,3 +91,4 @@ drwxr-xr-x	root/root	usr/lib32/python2.7/lib-dynload/
 -rwxr-xr-x	root/root	usr/lib32/python2.7/lib-dynload/time.so
 -rwxr-xr-x	root/root	usr/lib32/python2.7/lib-dynload/unicodedata.so
 -rwxr-xr-x	root/root	usr/lib32/python2.7/lib-dynload/zlib.so
+drwxr-xr-x	root/root	usr/lib32/python2.7/site-packages/
