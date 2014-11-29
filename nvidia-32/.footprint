@@ -14,6 +14,8 @@ lrwxrwxrwx	root/root	usr/lib32/libnvcuvid.so.1 -> libnvcuvid.so.340.58
 -rwxr-xr-x	root/root	usr/lib32/libnvidia-fbc.so.340.58
 -rwxr-xr-x	root/root	usr/lib32/libnvidia-glcore.so.340.58
 -rwxr-xr-x	root/root	usr/lib32/libnvidia-ifr.so.340.58
+lrwxrwxrwx	root/root	usr/lib32/libnvidia-ml.so -> libnvidia-ml.so.340.58
+lrwxrwxrwx	root/root	usr/lib32/libnvidia-ml.so.1 -> libnvidia-ml.so.340.58
 -rwxr-xr-x	root/root	usr/lib32/libnvidia-ml.so.340.58
 -rwxr-xr-x	root/root	usr/lib32/libnvidia-opencl.so.340.58
 -rwxr-xr-x	root/root	usr/lib32/libnvidia-tls.so.340.58
