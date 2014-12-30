@@ -5,7 +5,7 @@
 
 name=libvdpau-32
 version=0.9
-release=1
+release=2
 source=(http://people.freedesktop.org/~aplattner/vdpau/libvdpau-$version.tar.gz)
 
 build() {
@@ -15,7 +15,8 @@ build() {
 		--prefix=/usr \
 		--mandir=/usr/man \
 		--libdir=/usr/lib32 \
-		--disable-dependency-tracking
+		--disable-dependency-tracking \
+		--disable-documentation
 
 	make
 	make DESTDIR=$PKG install
