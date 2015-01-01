@@ -1,4 +1,4 @@
-# Description: nVIDIA Linux Display Driver
+# Description: nVIDIA Linux Display Driver (long lived branch version)
 # URL: http://www.nvidia.com/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: gl-select xorg-libxv-32 xorg-libxvmc-32 nvidia
