@@ -1,15 +1,18 @@
 # Description: Kernel module utilities and library
 # URL:         http://git.kernel.org/?p=utils/kernel/kmod/kmod.git
-# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Sepends on: kmod
 
 name=kmod-32
 version=19
-release=1
-source=(https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz)
+release=2
+source=(https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz
+	kmod-19-diagnostics-color-removal.patch)
 
 build() {
 	cd kmod-$version
+
+	patch -p1 -i $SRC/kmod-19-diagnostics-color-removal.patch
 
 	./configure \
 		--prefix=/usr \
