@@ -4,7 +4,7 @@
 # Depends on: bzip2-32 xz-32 zlib-32 elfutils
 
 name=elfutils-32
-version=0.159
+version=0.161
 release=1
 source=(https://fedorahosted.org/releases/e/l/elfutils/$version/elfutils-$version.tar.bz2)
 
