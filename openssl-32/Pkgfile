@@ -3,7 +3,7 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=openssl-32
-version=1.0.1j
+version=1.0.1k
 release=1
 source=(http://www.openssl.org/source/openssl-$version.tar.gz
 	openssl-1.0.1c-32bit_x86_64-1.patch
