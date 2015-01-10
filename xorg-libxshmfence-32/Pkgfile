@@ -4,7 +4,7 @@
 # Depends on: xorg-xproto-32 xorg-libxshmfence
 
 name=xorg-libxshmfence-32
-version=1.1
+version=1.2
 release=1
 source=(http://xorg.freedesktop.org/archive/individual/lib/libxshmfence-$version.tar.bz2)
 
