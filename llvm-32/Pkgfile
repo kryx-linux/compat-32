@@ -7,14 +7,10 @@
 name=llvm-32
 version=3.4.2
 release=1
-source=(http://llvm.org/releases/$version/{llvm,cfe}-$version.src.tar.gz)
+source=(http://llvm.org/releases/$version/llvm-$version.src.tar.gz)
 
 build() {
-	mv cfe-$version.src llvm-$version.src/tools/clang
-
 	cd llvm-$version.src
-
-	rm -rf tools/clang
 
 	sed -i -e '/ActiveLibDir = ActivePrefix/s|lib|lib32|' \
 		tools/llvm-config/llvm-config.cpp
