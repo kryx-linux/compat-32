@@ -1,3 +1,3 @@
-79557e38ae66cfcd9444463ab55eb411  openssl-1.0.1c-32bit_x86_64-1.patch
-ffcc8ee49222d341cdab991aca3c5827  openssl-1.0.1e-fix_parallel_build-1.patch
-d4f002bd22a56881340105028842ae1f  openssl-1.0.1k.tar.gz
+0f2e2ca7ca4494444c400fe22e585238  openssl-1.0.2-32bit_x86_64.patch
+e936de65cb67896b130e287fe3a624fa  openssl-1.0.2-parallel-build.patch
+38373013fc85c790aabf8837969c5eba  openssl-1.0.2.tar.gz

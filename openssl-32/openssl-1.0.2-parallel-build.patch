@@ -1,13 +1,106 @@
-Submitted By:            Armin K. <krejzi at email dot com>
-Date:                    2013-05-05
-Initial Package Version: 1.0.1e
-Upstream Status:         Unknown
-Origin:                  https://github.com/Alexpux/Qt-builds/tree/master/patches/openssl
-Description:             Fixes build with make -jx, where x is greater than 1.
+http://rt.openssl.org/Ticket/Display.html?id=2084&user=guest&pass=guest
 
---- a/crypto/Makefile	2013-02-11 16:26:04.000000000 +0100
-+++ b/crypto/Makefile	2013-05-05 20:06:34.872208113 +0200
-@@ -86,11 +86,11 @@
+--- a/Makefile.org
++++ b/Makefile.org
+@@ -247,17 +247,17 @@
+ build_libs: build_crypto build_ssl build_engines
+ 
+ build_crypto:
+-	@dir=crypto; target=all; $(BUILD_ONE_CMD)
++	+@dir=crypto; target=all; $(BUILD_ONE_CMD)
+-build_ssl:
++build_ssl: build_crypto
+-	@dir=ssl; target=all; $(BUILD_ONE_CMD)
++	+@dir=ssl; target=all; $(BUILD_ONE_CMD)
+-build_engines:
++build_engines: build_crypto
+-	@dir=engines; target=all; $(BUILD_ONE_CMD)
++	+@dir=engines; target=all; $(BUILD_ONE_CMD)
+-build_apps:
++build_apps: build_libs
+-	@dir=apps; target=all; $(BUILD_ONE_CMD)
++	+@dir=apps; target=all; $(BUILD_ONE_CMD)
+-build_tests:
++build_tests: build_libs
+-	@dir=test; target=all; $(BUILD_ONE_CMD)
++	+@dir=test; target=all; $(BUILD_ONE_CMD)
+-build_tools:
++build_tools: build_libs
+-	@dir=tools; target=all; $(BUILD_ONE_CMD)
++	+@dir=tools; target=all; $(BUILD_ONE_CMD)
+ 
+ all_testapps: build_libs build_testapps
+ build_testapps:
+@@ -497,9 +497,9 @@
+ dist_pem_h:
+ 	(cd crypto/pem; $(MAKE) -e $(BUILDENV) pem.h; $(MAKE) clean)
+ 
+-install: all install_docs install_sw
++install: install_docs install_sw
+ 
+-install_sw:
++install_dirs:
+ 	@$(PERL) $(TOP)/util/mkdir-p.pl $(INSTALL_PREFIX)$(INSTALLTOP)/bin \
+ 		$(INSTALL_PREFIX)$(INSTALLTOP)/$(LIBDIR) \
+ 		$(INSTALL_PREFIX)$(INSTALLTOP)/$(LIBDIR)/engines \
+@@ -508,6 +508,13 @@
+ 		$(INSTALL_PREFIX)$(OPENSSLDIR)/misc \
+ 		$(INSTALL_PREFIX)$(OPENSSLDIR)/certs \
+ 		$(INSTALL_PREFIX)$(OPENSSLDIR)/private
++	@$(PERL) $(TOP)/util/mkdir-p.pl \
++		$(INSTALL_PREFIX)$(MANDIR)/man1 \
++		$(INSTALL_PREFIX)$(MANDIR)/man3 \
++		$(INSTALL_PREFIX)$(MANDIR)/man5 \
++		$(INSTALL_PREFIX)$(MANDIR)/man7
++
++install_sw: install_dirs
+ 	@set -e; headerlist="$(EXHEADER)"; for i in $$headerlist;\
+ 	do \
+ 	(cp $$i $(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl/$$i; \
+@@ -511,7 +511,7 @@
+ 	(cp $$i $(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl/$$i; \
+ 	chmod 644 $(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl/$$i ); \
+ 	done;
+-	@set -e; target=install; $(RECURSIVE_BUILD_CMD)
++	+@set -e; target=install; $(RECURSIVE_BUILD_CMD)
+ 	@set -e; liblist="$(LIBS)"; for i in $$liblist ;\
+ 	do \
+ 		if [ -f "$$i" ]; then \
+@@ -593,12 +600,7 @@
+ 		done; \
+ 	done
+ 
+-install_docs:
+-	@$(PERL) $(TOP)/util/mkdir-p.pl \
+-		$(INSTALL_PREFIX)$(MANDIR)/man1 \
+-		$(INSTALL_PREFIX)$(MANDIR)/man3 \
+-		$(INSTALL_PREFIX)$(MANDIR)/man5 \
+-		$(INSTALL_PREFIX)$(MANDIR)/man7
++install_docs: install_dirs
+ 	@pod2man="`cd ./util; ./pod2mantest $(PERL)`"; \
+ 	here="`pwd`"; \
+ 	filecase=; \
+--- a/Makefile.shared
++++ b/Makefile.shared
+@@ -105,6 +105,7 @@ LINK_SO=	\
+     SHAREDFLAGS="$${SHAREDFLAGS:-$(CFLAGS) $(SHARED_LDFLAGS)}"; \
+     LIBPATH=`for x in $$LIBDEPS; do echo $$x; done | sed -e 's/^ *-L//;t' -e d | uniq`; \
+     LIBPATH=`echo $$LIBPATH | sed -e 's/ /:/g'`; \
++    [ -e $$SHLIB$$SHLIB_SOVER$$SHLIB_SUFFIX ] && exit 0; \
+     LD_LIBRARY_PATH=$$LIBPATH:$$LD_LIBRARY_PATH \
+     $${SHAREDCMD} $${SHAREDFLAGS} \
+ 	-o $$SHLIB$$SHLIB_SOVER$$SHLIB_SUFFIX \
+@@ -122,6 +124,7 @@ SYMLINK_SO=	\
+ 			done; \
+ 		fi; \
+ 		if [ -n "$$SHLIB_SOVER" ]; then \
++			[ -e "$$SHLIB$$SHLIB_SUFFIX" ] || \
+ 			( $(SET_X); rm -f $$SHLIB$$SHLIB_SUFFIX; \
+ 			  ln -s $$prev $$SHLIB$$SHLIB_SUFFIX ); \
+ 		fi; \
+--- a/crypto/Makefile
++++ b/crypto/Makefile
+@@ -85,11 +85,11 @@
  	@if [ -z "$(THIS)" ]; then $(MAKE) -f $(TOP)/Makefile reflect THIS=$@; fi
  
  subdirs:
@@ -15,22 +108,22 @@ Description:             Fixes build with make -jx, where x is greater than 1.
 +	+@target=all; $(RECURSIVE_MAKE)
  
  files:
- 	$(PERL) $(TOP)/util/files.pl Makefile >> $(TOP)/MINFO
+ 	$(PERL) $(TOP)/util/files.pl "CPUID_OBJ=$(CPUID_OBJ)" Makefile >> $(TOP)/MINFO
 -	@target=files; $(RECURSIVE_MAKE)
 +	+@target=files; $(RECURSIVE_MAKE)
  
  links:
  	@$(PERL) $(TOP)/util/mklink.pl ../include/openssl $(EXHEADER)
-@@ -101,7 +101,7 @@
+@@ -100,7 +100,7 @@
  # lib: $(LIB): are splitted to avoid end-less loop
  lib:	$(LIB)
  	@touch lib
 -$(LIB):	$(LIBOBJ)
 +$(LIB):	$(LIBOBJ) | subdirs
  	$(AR) $(LIB) $(LIBOBJ)
- 	[ -z "$(FIPSLIBDIR)" ] || $(AR) $(LIB) $(FIPSLIBDIR)fipscanister.o
  	$(RANLIB) $(LIB) || echo Never mind.
-@@ -112,7 +112,7 @@
+ 
+@@ -110,7 +110,7 @@
  	fi
  
  libs:
@@ -39,7 +132,7 @@ Description:             Fixes build with make -jx, where x is greater than 1.
  
  install:
  	@[ -n "$(INSTALLTOP)" ] # should be set by top Makefile...
-@@ -121,7 +121,7 @@
+@@ -119,7 +119,7 @@
  	(cp $$i $(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl/$$i; \
  	chmod 644 $(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl/$$i ); \
  	done;
@@ -48,8 +141,8 @@ Description:             Fixes build with make -jx, where x is greater than 1.
  
  lint:
  	@target=lint; $(RECURSIVE_MAKE)
---- a/engines/Makefile	2013-02-11 16:26:04.000000000 +0100
-+++ b/engines/Makefile	2013-05-05 20:06:34.872208113 +0200
+--- a/engines/Makefile
++++ b/engines/Makefile
 @@ -72,7 +72,7 @@
  
  all:	lib subdirs
@@ -77,105 +170,9 @@ Description:             Fixes build with make -jx, where x is greater than 1.
  
  tags:
  	ctags $(SRC)
---- a/Makefile.org	2013-02-11 16:26:04.000000000 +0100
-+++ b/Makefile.org	2013-05-05 20:06:34.862207917 +0200
-@@ -273,17 +273,17 @@
- build_libs: build_crypto build_ssl build_engines
- 
- build_crypto:
--	@dir=crypto; target=all; $(BUILD_ONE_CMD)
--build_ssl:
--	@dir=ssl; target=all; $(BUILD_ONE_CMD)
--build_engines:
--	@dir=engines; target=all; $(BUILD_ONE_CMD)
--build_apps:
--	@dir=apps; target=all; $(BUILD_ONE_CMD)
--build_tests:
--	@dir=test; target=all; $(BUILD_ONE_CMD)
--build_tools:
--	@dir=tools; target=all; $(BUILD_ONE_CMD)
-+	+@dir=crypto; target=all; $(BUILD_ONE_CMD)
-+build_ssl: build_crypto
-+	+@dir=ssl; target=all; $(BUILD_ONE_CMD)
-+build_engines: build_crypto
-+	+@dir=engines; target=all; $(BUILD_ONE_CMD)
-+build_apps: build_libs
-+	+@dir=apps; target=all; $(BUILD_ONE_CMD)
-+build_tests: build_libs
-+	+@dir=test; target=all; $(BUILD_ONE_CMD)
-+build_tools: build_libs
-+	+@dir=tools; target=all; $(BUILD_ONE_CMD)
- 
- all_testapps: build_libs build_testapps
- build_testapps:
-@@ -537,9 +537,9 @@
- dist_pem_h:
- 	(cd crypto/pem; $(MAKE) -e $(BUILDENV) pem.h; $(MAKE) clean)
- 
--install: all install_docs install_sw
-+install: install_docs install_sw
- 
--install_sw:
-+install_dirs:
- 	@$(PERL) $(TOP)/util/mkdir-p.pl $(INSTALL_PREFIX)$(INSTALLTOP)/bin \
- 		$(INSTALL_PREFIX)$(INSTALLTOP)/$(LIBDIR) \
- 		$(INSTALL_PREFIX)$(INSTALLTOP)/$(LIBDIR)/engines \
-@@ -548,12 +548,19 @@
- 		$(INSTALL_PREFIX)$(OPENSSLDIR)/misc \
- 		$(INSTALL_PREFIX)$(OPENSSLDIR)/certs \
- 		$(INSTALL_PREFIX)$(OPENSSLDIR)/private
-+	@$(PERL) $(TOP)/util/mkdir-p.pl \
-+		$(INSTALL_PREFIX)$(MANDIR)/man1 \
-+		$(INSTALL_PREFIX)$(MANDIR)/man3 \
-+		$(INSTALL_PREFIX)$(MANDIR)/man5 \
-+		$(INSTALL_PREFIX)$(MANDIR)/man7
-+
-+install_sw: install_dirs
- 	@set -e; headerlist="$(EXHEADER)"; for i in $$headerlist;\
- 	do \
- 	(cp $$i $(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl/$$i; \
- 	chmod 644 $(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl/$$i ); \
- 	done;
--	@set -e; target=install; $(RECURSIVE_BUILD_CMD)
-+	+@set -e; target=install; $(RECURSIVE_BUILD_CMD)
- 	@set -e; liblist="$(LIBS)"; for i in $$liblist ;\
- 	do \
- 		if [ -f "$$i" ]; then \
-@@ -633,12 +640,7 @@
- 		done; \
- 	done
- 
--install_docs:
--	@$(PERL) $(TOP)/util/mkdir-p.pl \
--		$(INSTALL_PREFIX)$(MANDIR)/man1 \
--		$(INSTALL_PREFIX)$(MANDIR)/man3 \
--		$(INSTALL_PREFIX)$(MANDIR)/man5 \
--		$(INSTALL_PREFIX)$(MANDIR)/man7
-+install_docs: install_dirs
- 	@pod2man="`cd ./util; ./pod2mantest $(PERL)`"; \
- 	here="`pwd`"; \
- 	filecase=; \
---- a/Makefile.shared	2013-02-11 16:26:04.000000000 +0100
-+++ b/Makefile.shared	2013-05-05 20:06:34.872208113 +0200
-@@ -105,6 +105,7 @@
-     SHAREDFLAGS="$${SHAREDFLAGS:-$(CFLAGS) $(SHARED_LDFLAGS)}"; \
-     LIBPATH=`for x in $$LIBDEPS; do echo $$x; done | sed -e 's/^ *-L//;t' -e d | uniq`; \
-     LIBPATH=`echo $$LIBPATH | sed -e 's/ /:/g'`; \
-+    [ -e $$SHLIB$$SHLIB_SOVER$$SHLIB_SUFFIX ] && exit 0; \
-     LD_LIBRARY_PATH=$$LIBPATH:$$LD_LIBRARY_PATH \
-     $${SHAREDCMD} $${SHAREDFLAGS} \
- 	-o $$SHLIB$$SHLIB_SOVER$$SHLIB_SUFFIX \
-@@ -122,6 +123,7 @@
- 			done; \
- 		fi; \
- 		if [ -n "$$SHLIB_SOVER" ]; then \
-+			[ -e "$$SHLIB$$SHLIB_SUFFIX" ] || \
- 			( $(SET_X); rm -f $$SHLIB$$SHLIB_SUFFIX; \
- 			  ln -s $$prev $$SHLIB$$SHLIB_SUFFIX ); \
- 		fi; \
---- a/test/Makefile	2013-02-11 16:26:04.000000000 +0100
-+++ b/test/Makefile	2013-05-05 20:06:34.872208113 +0200
-@@ -124,7 +124,7 @@
+--- a/test/Makefile
++++ b/test/Makefile
+@@ -123,7 +123,7 @@
  tags:
  	ctags $(SRC)
  
@@ -338,3 +335,20 @@ Description:             Fixes build with make -jx, where x is greater than 1.
  
  # DO NOT DELETE THIS LINE -- make depend depends on it.
  
+--- a/crypto/objects/Makefile
++++ b/crypto/objects/Makefile
+@@ -44,11 +44,11 @@ obj_dat.h: obj_dat.pl obj_mac.h
+ # objects.pl both reads and writes obj_mac.num
+ obj_mac.h: objects.pl objects.txt obj_mac.num
+ 	$(PERL) objects.pl objects.txt obj_mac.num obj_mac.h
+-	@sleep 1; touch obj_mac.h; sleep 1
+ 
+-obj_xref.h: objxref.pl obj_xref.txt obj_mac.num
++# This doesn't really need obj_mac.h, but since that rule reads & writes
++# obj_mac.num, we can't run in parallel with it.
++obj_xref.h: objxref.pl obj_xref.txt obj_mac.num obj_mac.h
+ 	$(PERL) objxref.pl obj_mac.num obj_xref.txt > obj_xref.h
+-	@sleep 1; touch obj_xref.h; sleep 1
+ 
+ files:
+ 	$(PERL) $(TOP)/util/files.pl Makefile >> $(TOP)/MINFO

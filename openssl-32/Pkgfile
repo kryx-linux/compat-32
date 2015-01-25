@@ -3,14 +3,11 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=openssl-32
-version=1.0.1k
+version=1.0.2
 release=1
 source=(http://www.openssl.org/source/openssl-$version.tar.gz
-	openssl-1.0.1c-32bit_x86_64-1.patch
-	openssl-1.0.1e-fix_parallel_build-1.patch)
-
-# Patches from
-# http://svn.cross-lfs.org/svn/repos/patches/openssl/
+	openssl-1.0.2-32bit_x86_64.patch
+	openssl-1.0.2-parallel-build.patch)
 
 build() {
 	cd openssl-$version
@@ -19,8 +16,8 @@ build() {
 	# that gets blown away anyways by the Configure script
 	rm Makefile
 
-	patch -p1 -i $SRC/openssl-1.0.1c-32bit_x86_64-1.patch
-	patch -p1 -i $SRC/openssl-1.0.1e-fix_parallel_build-1.patch
+	patch -p1 -i $SRC/openssl-1.0.2-32bit_x86_64.patch
+	patch -p1 -i $SRC/openssl-1.0.2-parallel-build.patch
 
 	# Disable fips and man pages
 	sed \

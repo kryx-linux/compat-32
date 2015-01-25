@@ -1,0 +1,26 @@
+Submitted By: Ryan Oliver <ryan.oliver AT pha.com.au>
+Date: 2004-10-24
+Initial Package Version: 0.9.7d
+Origin: Ryan Oliver
+Upstream Status:
+Description: This patch adds a CONFIG_TARGET for x86_64 which sets
+  compiler/linker flags correctly when building openssl 32bit on a bi-arch
+  system. To build 32bit on bi-arch x86_64, configure with
+    ./Configure linux-x86_64-32 ...
+
+  Rediffed for 0.9.8k - By Jim Gifford 2009-03-25
+  Redone for 1.0.0c - By William Harrington 2010-10-15
+  Redone for 1.0.1c - By William Harrington 2012-09-08
+  Redone for 1.0.2  - By Danny Rawlins 2015-01-25
+
+diff -pruN openssl-1.0.2.orig/Configure openssl-1.0.2/Configure
+--- openssl-1.0.2.orig/Configure	2015-01-25 02:13:39.725669931 +0000
++++ openssl-1.0.2/Configure	2015-01-25 02:16:28.942665050 +0000
+@@ -400,6 +400,7 @@ my %table=(
+ "linux-x86_64",	"gcc:-m64 -DL_ENDIAN -DTERMIO -O3 -Wall::-D_REENTRANT::-ldl:SIXTY_FOUR_BIT_LONG RC4_CHUNK DES_INT DES_UNROLL:${x86_64_asm}:elf:dlfcn:linux-shared:-fPIC:-m64:.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR):::64",
+ "linux-x86_64-clang",	"clang: -m64 -DL_ENDIAN -DTERMIO -O3 -Weverything $clang_disabled_warnings -Qunused-arguments::-D_REENTRANT::-ldl:SIXTY_FOUR_BIT_LONG RC4_CHUNK DES_INT DES_UNROLL:${x86_64_asm}:elf:dlfcn:linux-shared:-fPIC:-m64:.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR):::64",
+ "linux-x86_64-icc", "icc:-DL_ENDIAN -DTERMIO -O2::-D_REENTRANT::-ldl -no_cpprt:SIXTY_FOUR_BIT_LONG RC4_CHUNK DES_INT DES_UNROLL:${x86_64_asm}:elf:dlfcn:linux-shared:-fPIC::.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR):::64",
++"linux-x86_64-32",     "gcc:-m32 -DL_ENDIAN -DTERMIO -O3 -fomit-frame-pointer -mcpu=k8 -Wall::-D_REENTRANT::-ldl:BN_LLONG ${x86_gcc_des} ${x86_gcc_opts}:${x86_elf_asm}:dlfcn:linux-shared:-fPIC:-m32:.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR)",
+ "linux-x32",	"gcc:-mx32 -DL_ENDIAN -DTERMIO -O3 -Wall::-D_REENTRANT::-ldl:SIXTY_FOUR_BIT RC4_CHUNK_LL DES_INT DES_UNROLL:${x86_64_asm}:elf:dlfcn:linux-shared:-fPIC:-mx32:.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR):::x32",
+ "linux64-s390x",	"gcc:-m64 -DB_ENDIAN -DTERMIO -O3 -Wall::-D_REENTRANT::-ldl:SIXTY_FOUR_BIT_LONG RC4_CHAR RC4_CHUNK DES_INT DES_UNROLL:${s390x_asm}:64:dlfcn:linux-shared:-fPIC:-m64:.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR):::64",
+ #### So called "highgprs" target for z/Architecture CPUs
