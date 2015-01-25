@@ -5,14 +5,11 @@
 
 name=kmod-32
 version=19
-release=2
-source=(https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz
-	kmod-19-diagnostics-color-removal.patch)
+release=3
+source=(https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz)
 
 build() {
 	cd kmod-$version
-
-	patch -p1 -i $SRC/kmod-19-diagnostics-color-removal.patch
 
 	./configure \
 		--prefix=/usr \
