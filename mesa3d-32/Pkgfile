@@ -4,7 +4,7 @@
 # Depends on: elfutils-32 expat-32 libdrm-32 libvdpau-32 libxml2-python-32 llvm-32 talloc-32 xorg-dri2proto-32 xorg-dri3proto-32 xorg-glproto-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxt-32 xorg-libxvmc-32 xorg-libxxf86vm-32 eudev-32 mesa3d xorg-presentproto-32
 
 name=mesa3d-32
-version=10.4.2
+version=10.4.3
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
 
@@ -16,7 +16,6 @@ build() {
 		sed -i -e 's|llvm-config|llvm-config-32|g' $f
 	done
 
-	patch -p1 -i $SRC/mesa3d-10.3.6-xmlconfig-path.patch
 	autoreconf --install --symlink
 
 	./configure \
@@ -41,5 +40,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{etc,include}
+	rm -r $PKG/usr/include $PKG/etc
 }
