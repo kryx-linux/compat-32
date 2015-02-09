@@ -5,7 +5,7 @@
 name=libgmp-32
 version=6.0.0a
 release=1
-source=(ftp://ftp.gmplib.org/pub/gmp-${version%a}/gmp-$version.tar.xz)
+source=(https://gmplib.org/download/gmp/gmp-$version.tar.xz)
 
 build() {
     cd gmp-${version%a}
