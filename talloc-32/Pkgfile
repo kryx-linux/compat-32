@@ -6,7 +6,7 @@
 name=talloc-32
 version=2.1.1
 release=1
-source=(ftp://ftp.samba.org/pub/talloc/talloc-$version.tar.gz
+source=(http://samba.org/ftp/talloc/talloc-$version.tar.gz
 	talloc.3)
 
 build() {
