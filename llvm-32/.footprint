@@ -8,8 +8,8 @@ drwxr-xr-x	root/root	usr/include/llvm/Config/
 -rw-r--r--	root/root	usr/include/llvm/Config/llvm-config-32.h
 drwxr-xr-x	root/root	usr/lib32/
 -rwxr-xr-x	root/root	usr/lib32/BugpointPasses.so
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-3.5.1.so -> libLLVM-3.5.so
--rwxr-xr-x	root/root	usr/lib32/libLLVM-3.5.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-3.6.0.so -> libLLVM-3.6.so
+-rwxr-xr-x	root/root	usr/lib32/libLLVM-3.6.so
 -rwxr-xr-x	root/root	usr/lib32/libLLVMAnalysis.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMAsmParser.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMAsmPrinter.a
@@ -23,12 +23,10 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM-3.5.1.so -> libLLVM-3.5.so
 -rwxr-xr-x	root/root	usr/lib32/libLLVMInstCombine.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMInstrumentation.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMInterpreter.a
--rwxr-xr-x	root/root	usr/lib32/libLLVMJIT.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMLTO.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMLineEditor.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMLinker.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMMC.a
--rwxr-xr-x	root/root	usr/lib32/libLLVMMCAnalysis.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMMCDisassembler.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMMCJIT.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMMCParser.a
@@ -36,6 +34,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM-3.5.1.so -> libLLVM-3.5.so
 -rwxr-xr-x	root/root	usr/lib32/libLLVMObject.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMOption.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMProfileData.a
+-rwxr-xr-x	root/root	usr/lib32/libLLVMR600AsmParser.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMR600AsmPrinter.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMR600CodeGen.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMR600Desc.a
