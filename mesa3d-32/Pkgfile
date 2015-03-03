@@ -5,8 +5,9 @@
 
 name=mesa3d-32
 version=10.4.5
-release=1
-source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
+release=2
+source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2
+	0196-gallivm-Update-for-RTDyldMemoryManager-becoming-an-u.patch)
 
 build() {
 	cd Mesa-$version
@@ -16,6 +17,7 @@ build() {
 		sed -i -e 's|llvm-config|llvm-config-32|g' $f
 	done
 
+	patch -p1 -i $SRC/0196-gallivm-Update-for-RTDyldMemoryManager-becoming-an-u.patch
 	autoreconf --install --symlink
 
 	./configure \
