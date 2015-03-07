@@ -1,22 +1,24 @@
 # Description: Mesa 3D Graphics Library
 # URL: http://www.mesa3d.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: elfutils-32 eudev-32 expat-32 libdrm-32 libvdpau-32 libxml2-python-32 llvm-32 mesa3d talloc-32 xorg-dri3proto-32 xorg-glproto-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxt-32 xorg-libxvmc-32 xorg-libxxf86vm-32 xorg-presentproto-32
+# Depends on: elfutils-32 expat-32 libdrm-32 libvdpau-32 libxml2-python-32 llvm-32 talloc-32 xorg-dri2proto-32 xorg-dri3proto-32 xorg-glproto-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxt-32 xorg-libxvmc-32 xorg-libxxf86vm-32 eudev-32 mesa3d xorg-presentproto-32
 
 name=mesa3d-32
-version=10.5.0
-release=1
-source=(ftp://ftp.freedesktop.org/pub/mesa/$version/mesa-$version.tar.xz)
+version=10.4.5
+release=2
+source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2
+	0196-gallivm-Update-for-RTDyldMemoryManager-becoming-an-u.patch)
 
 build() {
-	cd mesa-$version
+	cd Mesa-$version
 
 	local f
 	for f in $(grep -r -l llvm-config | xargs); do
 		sed -i -e 's|llvm-config|llvm-config-32|g' $f
 	done
 
-	autoreconf --install --symlink --force
+	patch -p1 -i $SRC/0196-gallivm-Update-for-RTDyldMemoryManager-becoming-an-u.patch
+	autoreconf --install --symlink
 
 	./configure \
 		--prefix=/usr \
