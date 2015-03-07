@@ -4,8 +4,8 @@
 # Sepends on: kmod
 
 name=kmod-32
-version=19
-release=3
+version=20
+release=1
 source=(https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz)
 
 build() {
