@@ -4,7 +4,7 @@
 # Depends on: python-32 talloc
 
 name=talloc-32
-version=2.1.1
+version=2.1.2
 release=1
 source=(http://samba.org/ftp/talloc/talloc-$version.tar.gz
 	talloc.3)
