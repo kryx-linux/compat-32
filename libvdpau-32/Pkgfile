@@ -4,8 +4,8 @@
 # Depends on: xorg-libxext-32 xorg-dri2proto-32 libvdpau
 
 name=libvdpau-32
-version=0.9
-release=2
+version=1.0
+release=1
 source=(http://people.freedesktop.org/~aplattner/vdpau/libvdpau-$version.tar.gz)
 
 build() {
