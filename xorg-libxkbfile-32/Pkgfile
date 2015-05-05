@@ -4,7 +4,7 @@
 # Depends on: xorg-libx11-32 xorg-kbproto-32 xorg-libxkbfile
 
 name=xorg-libxkbfile-32
-version=1.0.8
+version=1.0.9
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libxkbfile-$version.tar.bz2)
 
