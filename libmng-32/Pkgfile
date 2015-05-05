@@ -4,7 +4,7 @@
 # Depends on: zlib-32 libjpeg-turbo-32 lcms2-32
 
 name=libmng-32
-version=2.0.2
+version=2.0.3
 release=1
 source=(http://downloads.sourceforge.net/libmng/libmng-$version.tar.gz)
 
