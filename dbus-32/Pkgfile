@@ -4,12 +4,13 @@
 # Depends on: expat-32 dbus
 
 name=dbus-32
-version=1.8.14
+version=1.8.18
 release=1
 source=(http://dbus.freedesktop.org/releases/dbus/dbus-$version.tar.gz)
 
 build() {
 	cd dbus-$version
+
 	./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
 		--with-dbus-daemondir=/usr/sbin \
@@ -20,6 +21,7 @@ build() {
 		--with-dbus-user=messagebus \
 		--with-xml=expat \
 		--with-system-pid-file=/var/run/dbus/dbus.pid
+
 	make
 	make DESTDIR=$PKG install
 
