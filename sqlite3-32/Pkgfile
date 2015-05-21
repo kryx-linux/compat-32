@@ -15,7 +15,7 @@ build () {
     CFLAGS="-DSQLITE_SECURE_DELETE=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 \
     -DSQLITE_ENABLE_UNLOCK_NOTIFY $CFLAGS" \
     ./configure --prefix=/usr --mandir=/usr/man --libdir=/usr/lib32
-    make
+    make -j1
     make DESTDIR=$PKG install
     rm -r $PKG/usr/{bin,include,man}
 }
