@@ -4,7 +4,7 @@
 # Depends on: zlib-32 libpng-32 freetype
 
 name=freetype-32
-version=2.5.5
+version=2.6
 release=1
 source=(http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2)
 
