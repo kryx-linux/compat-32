@@ -4,7 +4,7 @@
 # Depends on: kmod-32 eudev
 
 name=eudev-32
-version=3.0
+version=3.1.2
 release=1
 source=(http://dev.gentoo.org/~blueness/eudev/eudev-$version.tar.gz
 	eudev-remove_gperf_dep.patch
@@ -38,5 +38,5 @@ build() {
     make CFLAGS="$CFLAGS -D_GNU_SOURCE"
     make install DESTDIR=$PKG
 
-    rm -r $PKG/etc $PKG/sbin $PKG/usr/{include,lib32/udev,share}
+    rm -r $PKG/{etc,sbin} $PKG/usr/{include,lib32/udev,share}
 }
