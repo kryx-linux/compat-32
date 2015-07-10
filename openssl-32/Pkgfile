@@ -6,7 +6,8 @@ name=openssl-32
 version=1.0.2d
 release=1
 source=(http://www.openssl.org/source/openssl-$version.tar.gz
-	openssl-1.0.2a-32bit_x86_64.patch)
+	openssl-1.0.2a-32bit_x86_64.patch
+	openssl-1.0.2d-parallel-build.patch)
 
 build() {
 	cd openssl-$version
@@ -16,7 +17,7 @@ build() {
 	rm Makefile
 
 	patch -p1 -i $SRC/openssl-1.0.2a-32bit_x86_64.patch
-	#patch -p1 -i $SRC/openssl-1.0.2a-parallel-build.patch
+	patch -p1 -i $SRC/openssl-1.0.2d-parallel-build.patch
 
 	# Disable fips and man pages
 	sed \
