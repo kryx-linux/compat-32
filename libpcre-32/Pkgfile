@@ -4,14 +4,19 @@
 
 name=libpcre-32
 version=8.37
-release=1
-source=(ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-$version.tar.bz2)
+release=2
+source=(ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-$version.tar.bz2
+    libpcre-8.37-CVE-2015-3210.patch
+    libpcre-8.37-CVE-2015-5073.patch)
 
 build() {
     cd pcre-$version
 
+    patch -p1 -i $SRC/libpcre-8.37-CVE-2015-3210.patch
+    patch -p1 -i $SRC/libpcre-8.37-CVE-2015-5073.patch
+
     ./configure --prefix=/usr \
-		--libdir=/usr/lib32 \
+                --libdir=/usr/lib32 \
                 --mandir=/usr/man \
                 --enable-utf8 \
                 --enable-unicode-properties \
