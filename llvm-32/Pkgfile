@@ -5,7 +5,7 @@
 # Depends on: python-32 llvm
 
 name=llvm-32
-version=3.6.1
+version=3.6.2
 release=1
 source=(http://llvm.org/releases/$version/llvm-$version.src.tar.xz)
 
