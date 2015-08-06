@@ -4,7 +4,7 @@
 # Depends on:  zlib-32 libpng
 
 name=libpng-32
-version=1.6.17
+version=1.6.18
 release=1
 source=(http://download.sourceforge.net/libpng/libpng-$version.tar.xz
 	http://downloads.sourceforge.net/project/libpng-apng/libpng16/$version/libpng-$version-apng.patch.gz)
