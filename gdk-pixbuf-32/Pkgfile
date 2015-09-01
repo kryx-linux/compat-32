@@ -4,7 +4,7 @@
 # Depends on: gdk-pixbuf glib-32 libpng-32 libtiff-32 xorg-libx11-32
 
 name=gdk-pixbuf-32
-version=2.30.8
+version=2.31.6
 release=1
 source=(http://download.gnome.org/sources/gdk-pixbuf/${version%.*}/gdk-pixbuf-$version.tar.xz)
 
