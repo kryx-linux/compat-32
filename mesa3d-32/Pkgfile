@@ -4,7 +4,7 @@
 # Depends on: elfutils-32 eudev-32 expat-32 libdrm-32 libvdpau-32 llvm-32 mesa3d xorg-dri3proto-32 xorg-glproto-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-presentproto-32
 
 name=mesa3d-32
-version=10.6.6
+version=10.6.7
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/mesa-$version.tar.xz)
 
