@@ -4,15 +4,12 @@
 # Depends on: cairo-32 glib-32 xorg-libsm-32 xorg-libxext-32 xorg-libxft-32 pango harfbuzz-32
 
 name=pango-32
-version=1.36.7
+version=1.38.0
 release=1
-source=(http://download.gnome.org/sources/pango/${version%.*}/pango-$version.tar.xz
-	pango-register-32.sh pango.modules-32.patch)
+source=(http://download.gnome.org/sources/pango/${version:0:4}/pango-$version.tar.xz)
 
 build() {
 	cd pango-$version
-
-	patch -p1 -i $SRC/pango.modules-32.patch
 
 	./configure \
 		--prefix=/usr \
@@ -22,11 +19,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-
-	install -d $PKG/usr/etc/pango
-
-	install -m 0755 -D $SRC/pango-register-32.sh \
-		$PKG/usr/sbin/pango-register-32
 
 	rm -r $PKG/usr/{include,man,share}
 }
