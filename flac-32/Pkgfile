@@ -4,15 +4,12 @@
 # Depends on: libogg-32
 
 name=flac-32
-version=1.3.0
+version=1.3.1
 release=1
-source=(http://downloads.xiph.org/releases/flac/flac-$version.tar.xz
-	flac-realloc.patch)
+source=(http://downloads.xiph.org/releases/flac/flac-$version.tar.xz)
 
 build() {
 	cd flac-$version
-
-	patch -p1 -i $SRC/flac-realloc.patch
 
 	./configure \
 		--prefix=/usr \
