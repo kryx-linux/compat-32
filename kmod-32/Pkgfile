@@ -4,7 +4,7 @@
 # Sepends on: kmod
 
 name=kmod-32
-version=21
+version=22
 release=1
 source=(https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-$version.tar.xz)
 
