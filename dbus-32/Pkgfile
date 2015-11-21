@@ -4,7 +4,7 @@
 # Depends on: expat-32 dbus
 
 name=dbus-32
-version=1.10.2
+version=1.10.4
 release=1
 source=(http://dbus.freedesktop.org/releases/dbus/dbus-$version.tar.gz)
 
@@ -16,9 +16,8 @@ build() {
 		--with-dbus-daemondir=/usr/sbin \
 		--localstatedir=/var \
 		--libexecdir=/usr/lib32/dbus \
-		--disable-static \
 		--with-dbus-user=messagebus \
-		--with-xml=expat \
+		--with-init-scripts=none \
 		--with-system-pid-file=/var/run/dbus/dbus.pid
 
 	make
