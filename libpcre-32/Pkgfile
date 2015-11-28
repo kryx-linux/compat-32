@@ -3,17 +3,12 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=libpcre-32
-version=8.37
-release=2
-source=(ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-$version.tar.bz2
-    01-seven-security-patches.patch
-    libpcre-8.37-CVE-2015-5073.patch)
+version=8.38
+release=1
+source=(ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-$version.tar.bz2)
 
 build() {
     cd pcre-$version
-
-    patch -p1 -i $SRC/01-seven-security-patches.patch
-    patch -p1 -i $SRC/libpcre-8.37-CVE-2015-5073.patch
 
     ./configure --prefix=/usr \
                 --libdir=/usr/lib32 \
@@ -21,16 +16,9 @@ build() {
                 --enable-utf8 \
                 --enable-unicode-properties \
                 --enable-jit
+
     make
     make DESTDIR=$PKG install
-
-    install -d $PKG/lib32
-    local lib
-    for lib in libpcre libpcrecpp libpcreposix ; do
-        mv $PKG/usr/lib32/${lib}.so* $PKG/lib32
-        ln -sf ../../lib32/$(readlink $PKG/lib32/${lib}.so) $PKG/usr/lib32/${lib}.so
-        rm $PKG/lib32/${lib}.so
-    done
 
     rm -r $PKG/usr/{bin,include,man,share}
 }
