@@ -5,7 +5,7 @@
 # Depends on: python-32 llvm
 
 name=llvm-32
-version=3.6.2
+version=3.7.0
 release=1
 source=(http://llvm.org/releases/$version/llvm-$version.src.tar.xz)
 
@@ -21,7 +21,10 @@ build() {
 	sed -i -e 's|$(PROJ_prefix)/lib|$(PROJ_prefix)/lib32|g' \
 		Makefile.config.in
 
-	./configure \
+	mkdir build
+	cd build
+
+	../configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
 		--host=i686-pc-linux-gnu \
