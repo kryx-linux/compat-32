@@ -22,7 +22,6 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/QtSvg.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/QtTest.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/QtUiTools.pc
--rw-r--r--	root/root	usr/lib32/pkgconfig/QtWebKit.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/QtXml.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/QtXmlPatterns.pc
 lrwxrwxrwx	root/root	usr/lib32/qt4 -> ../share/qt4/lib32
@@ -131,12 +130,6 @@ lrwxrwxrwx	root/root	usr/share/qt4/lib32/libQtTest.so.4.8 -> libQtTest.so.4.8.6
 -rwxr-xr-x	root/root	usr/share/qt4/lib32/libQtTest.so.4.8.6
 -rw-r--r--	root/root	usr/share/qt4/lib32/libQtUiTools.a
 -rw-r--r--	root/root	usr/share/qt4/lib32/libQtUiTools.prl
--rw-r--r--	root/root	usr/share/qt4/lib32/libQtWebKit.la
--rw-r--r--	root/root	usr/share/qt4/lib32/libQtWebKit.prl
-lrwxrwxrwx	root/root	usr/share/qt4/lib32/libQtWebKit.so -> libQtWebKit.so.4.9.4
-lrwxrwxrwx	root/root	usr/share/qt4/lib32/libQtWebKit.so.4 -> libQtWebKit.so.4.9.4
-lrwxrwxrwx	root/root	usr/share/qt4/lib32/libQtWebKit.so.4.9 -> libQtWebKit.so.4.9.4
--rwxr-xr-x	root/root	usr/share/qt4/lib32/libQtWebKit.so.4.9.4
 -rw-r--r--	root/root	usr/share/qt4/lib32/libQtXml.la
 -rw-r--r--	root/root	usr/share/qt4/lib32/libQtXml.prl
 lrwxrwxrwx	root/root	usr/share/qt4/lib32/libQtXml.so -> libQtXml.so.4.8.6
@@ -165,7 +158,6 @@ drwxr-xr-x	root/root	usr/share/qt4/plugins-32/codecs/
 drwxr-xr-x	root/root	usr/share/qt4/plugins-32/designer/
 -rwxr-xr-x	root/root	usr/share/qt4/plugins-32/designer/libqdeclarativeview.so
 -rwxr-xr-x	root/root	usr/share/qt4/plugins-32/designer/libqt3supportwidgets.so
--rwxr-xr-x	root/root	usr/share/qt4/plugins-32/designer/libqwebview.so
 drwxr-xr-x	root/root	usr/share/qt4/plugins-32/graphicssystems/
 -rwxr-xr-x	root/root	usr/share/qt4/plugins-32/graphicssystems/libqglgraphicssystem.so
 -rwxr-xr-x	root/root	usr/share/qt4/plugins-32/graphicssystems/libqtracegraphicssystem.so

@@ -45,6 +45,5 @@ build () {
 		$PKG/usr/share/qt4/mkspecs \
 		$PKG/usr/share/qt4/q3porting.xml \
 		$PKG/usr/share/qt4/imports \
-		$PKG/usr/share/qt4/tests \
 		$PKG/usr/share/qt4/phrasebooks
 }
