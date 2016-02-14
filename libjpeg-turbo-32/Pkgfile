@@ -4,8 +4,8 @@
 # Depends on: libjpeg-turbo
 
 name=libjpeg-turbo-32
-version=1.4.1
-release=2
+version=1.4.2
+release=1
 source=(http://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-$version.tar.gz)
 
 build() {
