@@ -4,7 +4,7 @@
 # Depends on: zlib-32 libpng-32 freetype
 
 name=freetype-32
-version=2.6.2
+version=2.6.3
 release=1
 source=(http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2)
 
@@ -19,6 +19,6 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -rf $PKG/usr/{include,share}
+	rm -r $PKG/usr/{include,share}
 	mv $PKG/usr/bin/freetype-config{,-32}
 }
