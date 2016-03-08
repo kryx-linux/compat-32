@@ -4,7 +4,7 @@
 # Depends on: nettle-32 libidn-32 gnutls
 
 name=gnutls-32
-version=3.4.9
+version=3.4.10
 release=1
 source=(ftp://ftp.gnutls.org/gcrypt/gnutls/v${version%.*}/gnutls-$version.tar.xz)
 
@@ -13,7 +13,6 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--mandir=/usr/man \
 		--libdir=/usr/lib32 \
 		--host=i686-pc-linux-gnu \
 		--without-p11-kit \
@@ -21,16 +20,13 @@ build() {
 		--disable-guile
 
 	# fix man3 files installation
-
 	sed -e '/INSTALL_DATA.*files/ s/$(INSTALL_DATA)/cp/' \
 		-i doc/manpages/Makefile
 
 	make
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{bin,include,man}
-	rm -rf $PKG/usr/share/{info,locale}
-
-	# Remove empty directories
-	find $PKG -depth -empty -exec rm -r {} \;
+	rm -r \
+		$PKG/usr/share/{info,locale,man} \
+		$PKG/usr/{bin,include,share}
 }
