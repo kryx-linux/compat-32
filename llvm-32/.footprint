@@ -8,8 +8,8 @@ drwxr-xr-x	root/root	usr/include/llvm/Config/
 -rw-r--r--	root/root	usr/include/llvm/Config/llvm-config-32.h
 drwxr-xr-x	root/root	usr/lib32/
 -rwxr-xr-x	root/root	usr/lib32/BugpointPasses.so
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-3.7.0.so -> libLLVM-3.7.so
--rwxr-xr-x	root/root	usr/lib32/libLLVM-3.7.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-3.8.0.so -> libLLVM-3.8.so
+-rwxr-xr-x	root/root	usr/lib32/libLLVM-3.8.so
 -rwxr-xr-x	root/root	usr/lib32/libLLVMAMDGPUAsmParser.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMAMDGPUAsmPrinter.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMAMDGPUCodeGen.a
@@ -23,6 +23,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM-3.7.0.so -> libLLVM-3.7.so
 -rwxr-xr-x	root/root	usr/lib32/libLLVMBitWriter.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMCodeGen.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMCore.a
+-rwxr-xr-x	root/root	usr/lib32/libLLVMDebugInfoCodeView.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMDebugInfoDWARF.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMDebugInfoPDB.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMExecutionEngine.a
@@ -49,6 +50,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM-3.7.0.so -> libLLVM-3.7.so
 -rwxr-xr-x	root/root	usr/lib32/libLLVMScalarOpts.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMSelectionDAG.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMSupport.a
+-rwxr-xr-x	root/root	usr/lib32/libLLVMSymbolize.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMTableGen.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMTarget.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMTransformUtils.a
@@ -60,7 +62,6 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM-3.7.0.so -> libLLVM-3.7.so
 -rwxr-xr-x	root/root	usr/lib32/libLLVMX86Disassembler.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMX86Info.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMX86Utils.a
--rwxr-xr-x	root/root	usr/lib32/libLLVMipa.a
 -rwxr-xr-x	root/root	usr/lib32/libLLVMipo.a
 -rwxr-xr-x	root/root	usr/lib32/libLTO.a
 -rwxr-xr-x	root/root	usr/lib32/libLTO.so
