@@ -4,7 +4,7 @@
 # Depends on: libpcre-32 libffi-32 python-32
 
 name=glib-32
-version=2.46.2
+version=2.48.0
 release=1
 source=(http://download.gnome.org/sources/glib/${version:0:4}/glib-$version.tar.xz)
 
@@ -16,7 +16,6 @@ build() {
 
 	./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
-		--mandir=/usr/man \
 		--with-pcre=system \
 		--with-runtime-libdir=../../lib32 \
 		--with-gio-module-dir=/lib32/gio/modules
@@ -26,5 +25,5 @@ build() {
 
 	rm -rf $PKG/usr/share/{gtk-doc,locale}
 	rm -rf $PKG/usr/share/bash_completion
-	rm -rf $PKG/usr/{bin,include,man,share}
+	rm -rf $PKG/usr/{bin,include,share}
 }
