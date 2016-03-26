@@ -4,16 +4,19 @@
 # Depends on: expat
 
 name=expat-32
-version=2.1.0
+version=2.1.1
 release=1
-source=(http://download.sourceforge.net/expat/expat-$version.tar.gz)
+source=(http://download.sourceforge.net/expat/expat-$version.tar.bz2)
 
 build() { 
-    cd expat-$version
-    ./configure --prefix=/usr \
-		--libdir=/usr/lib32 \
-		--mandir=/usr/man
-    make
-    make INSTALL_ROOT=$PKG install
-	rm -rf $PKG/usr/{bin,include,man}
+	cd expat-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32
+
+	make
+	make INSTALL_ROOT=$PKG install
+
+	rm -r $PKG/usr/{bin,include,share/man,share}
 }
