@@ -1,10 +1,10 @@
 # Description: Userspace device management daemon
-# URL:         http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
+# URL: http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: kmod-32 eudev
 
 name=eudev-32
-version=3.1.5
+version=3.2
 release=1
 source=(http://dev.gentoo.org/~blueness/eudev/eudev-$version.tar.gz)
 
