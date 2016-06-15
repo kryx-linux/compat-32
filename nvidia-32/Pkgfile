@@ -4,7 +4,7 @@
 # Depends on: gl-select xorg-libxv-32 xorg-libxvmc-32 nvidia
 
 name=nvidia-32
-version=361.45.11
+version=367.27
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
 
@@ -29,7 +29,8 @@ build() {
     install -m 0755 libnvcuvid.so.$version         $PKG/usr/lib32
     install -m 0755 tls/libnvidia-tls.so.$version  $PKG/usr/lib32/tls
     install -m 0755 libvdpau_nvidia.so.$version    $PKG/usr/lib32/vdpau
-    
+    install -m 0755 libnvidia-fatbinaryloader.so.$version $PKG/usr/lib32
+
     ln -s libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so.1
     ln -s libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so
 
