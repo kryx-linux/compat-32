@@ -3,7 +3,7 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=libpcre-32
-version=8.38
+version=8.39
 release=1
 source=(ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-$version.tar.bz2)
 
@@ -12,7 +12,6 @@ build() {
 
     ./configure --prefix=/usr \
                 --libdir=/usr/lib32 \
-                --mandir=/usr/man \
                 --enable-utf8 \
                 --enable-unicode-properties \
                 --enable-jit
@@ -20,5 +19,5 @@ build() {
     make
     make DESTDIR=$PKG install
 
-    rm -r $PKG/usr/{bin,include,man,share}
+    rm -r $PKG/usr/{bin,include,share/man,share}
 }
