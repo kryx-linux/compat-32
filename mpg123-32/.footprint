@@ -5,9 +5,9 @@ lrwxrwxrwx	root/root	usr/lib32/libmpg123.so -> libmpg123.so.0.42.2
 lrwxrwxrwx	root/root	usr/lib32/libmpg123.so.0 -> libmpg123.so.0.42.2
 -rwxr-xr-x	root/root	usr/lib32/libmpg123.so.0.42.2
 -rwxr-xr-x	root/root	usr/lib32/libout123.la
-lrwxrwxrwx	root/root	usr/lib32/libout123.so -> libout123.so.0.1.3
-lrwxrwxrwx	root/root	usr/lib32/libout123.so.0 -> libout123.so.0.1.3
--rwxr-xr-x	root/root	usr/lib32/libout123.so.0.1.3
+lrwxrwxrwx	root/root	usr/lib32/libout123.so -> libout123.so.0.1.4
+lrwxrwxrwx	root/root	usr/lib32/libout123.so.0 -> libout123.so.0.1.4
+-rwxr-xr-x	root/root	usr/lib32/libout123.so.0.1.4
 drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/libmpg123.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/libout123.pc
