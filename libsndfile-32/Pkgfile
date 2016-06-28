@@ -4,24 +4,22 @@
 # Depends on: flac-32 alsa-lib-32 libvorbis-32 libsndfile
 
 name=libsndfile-32
-version=1.0.25
-release=2
+version=1.0.27
+release=1
 source=(http://www.mega-nerd.com/libsndfile/files/libsndfile-$version.tar.gz)
 
 build() {
 	cd libsndfile-$version
 
-	export GETCONF="getconf -v POSIX_V7_ILP32_OFFBIG"
-	export GETCONF_DIR="/usr/lib32/getconf"
+	#export GETCONF="getconf -v POSIX_V7_ILP32_OFFBIG"
+	#export GETCONF_DIR="/usr/lib32/getconf"
 
 	./configure \
 		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--mandir=/usr/man \
-		--disable-static
+		--libdir=/usr/lib32
 
 	make
 	make DESTDIR=$PKG install
 	
-	rm -r $PKG/usr/{bin,man,include,share}
+	rm -r $PKG/usr/{bin,include,share/man,share}
 }
