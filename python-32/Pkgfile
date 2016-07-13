@@ -4,7 +4,7 @@
 # Depends on:  db-32 gdbm-32 openssl-32 bzip2-32 zlib-32 sqlite3-32 python
 
 name=python-32
-version=2.7.11
+version=2.7.12
 release=1
 source=(http://www.python.org/ftp/python/$version/Python-$version.tar.xz)
 
@@ -16,7 +16,6 @@ build() {
     OPT="-Wall -Wstrict-prototypes -fwrapv" \
     ./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
-		--mandir=/usr/man \
 		--enable-shared \
 		--with-threads \
 		--enable-ipv6
@@ -30,7 +29,7 @@ build() {
     ln -s /usr/lib32/libpython2.7.so $PKG/usr/lib32/python2.7/config/libpython2.7.so
 
     mv $PKG/usr/include/python2.7/pyconfig.h $PKG/
-    rm -r $PKG/usr/{bin,include,lib,man}
+    rm -r $PKG/usr/{bin,include,lib,share/man}
     install -d $PKG/usr/include/python2.7
     mv $PKG/pyconfig.h $PKG/usr/include/python2.7/pyconfig-32.h
 
