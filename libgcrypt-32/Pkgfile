@@ -4,7 +4,7 @@
 # Depends on: libgcrypt libgpg-error-32
 
 name=libgcrypt-32
-version=1.7.1
+version=1.7.2
 release=1
 source=(ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-$version.tar.bz2)
 
