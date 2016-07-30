@@ -4,7 +4,7 @@
 # Depends on:  freetype-32 expat-32 bzip2-32 fontconfig
 
 name=fontconfig-32
-version=2.11.1
+version=2.12.0
 release=1
 source=(http://fontconfig.org/release/fontconfig-$version.tar.bz2)
 
@@ -14,7 +14,6 @@ build() {
     ./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
 		--sysconfdir=/etc \
-		--mandir=/usr/man \
 		--localstatedir=/var \
 		--with-xmldir=/etc/fonts \
 		--with-templatedir=/etc/fonts/conf.avail
@@ -22,5 +21,5 @@ build() {
     make
     make DESTDIR=$PKG install
 
-    rm -r $PKG/usr/{bin,include,man,share} $PKG/{etc,var}
+    rm -r $PKG/usr/{bin,include,share/man,share} $PKG/{etc,var}
 }
