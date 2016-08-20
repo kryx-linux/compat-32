@@ -4,7 +4,7 @@
 # Depends on: openal alsa-lib-32 cmake
 
 name=openal-32
-version=1.15.1
+version=1.17.2
 release=1
 source=(http://kcat.strangesoft.net/openal-releases/openal-soft-$version.tar.bz2)
 
