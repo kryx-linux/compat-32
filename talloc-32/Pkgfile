@@ -4,22 +4,18 @@
 # Depends on: python-32 talloc
 
 name=talloc-32
-version=2.1.5
+version=2.1.8
 release=1
-source=(http://samba.org/ftp/talloc/talloc-$version.tar.gz
-	talloc.3)
+source=(http://samba.org/ftp/talloc/talloc-$version.tar.gz)
 
 build() {
 	cd talloc-$version
 
-	./configure --prefix=/usr \
-		--mandir=/usr/man \
+	./configure \
+		--prefix=/usr \
 		--libdir=/usr/lib32 \
+		--bundled-libraries=NONE \
 		--enable-talloc-compat1
-
-	# Don't depend on xsltproc or docbook.sourceforge.net being available
-	cp $SRC/talloc.3 .
-	touch talloc.3 talloc.3.html
 
 	make
 	make install DESTDIR=$PKG
@@ -28,5 +24,4 @@ build() {
 	rmdir $PKG/usr/lib
 
 	rm -r $PKG/usr/include
-	rm -rf $PKG/usr/man
 }
