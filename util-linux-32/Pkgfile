@@ -4,7 +4,7 @@
 # Depends on: ncurses-32
 
 name=util-linux-32
-version=2.28
+version=2.28.1
 release=1
 source=(http://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
@@ -14,7 +14,6 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
-		--mandir=/usr/man \
 		--disable-nls \
 		--disable-{login,su,sulogin,nologin,runuser} \
 		--disable-chfn-chsh \
@@ -26,7 +25,7 @@ build() {
 
 	rm -r \
 		$PKG/{bin,sbin} \
-		$PKG/usr/{bin,sbin,man,include} \
+		$PKG/usr/{bin,sbin,share/man,include} \
 		$PKG//usr/share/{bash-completion,doc}
 
 	rmdir $PKG/usr/share
