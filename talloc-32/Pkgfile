@@ -24,4 +24,7 @@ build() {
 	rmdir $PKG/usr/lib
 
 	rm -r $PKG/usr/include
+
+	# remove man pages when docbook-xsl is installed
+	rm -rf $PKG/usr/share/man
 }
