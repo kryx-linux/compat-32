@@ -1,10 +1,10 @@
 # Description: Low-level data structure handling, portability wrappers, and interfaces for runtime functionality
 # URL: http://www.gtk.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libpcre-32 libffi-32 python-32
+# Depends on: libffi-32 libpcre-32 python-32 util-linux-32 glib
 
 name=glib-32
-version=2.48.2
+version=2.50.0
 release=1
 source=(http://download.gnome.org/sources/glib/${version:0:4}/glib-$version.tar.xz)
 
