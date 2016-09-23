@@ -4,15 +4,12 @@
 # Depends on: atk-32 gdk-pixbuf-32 pango-32 xorg-libsm-32 xorg-libxcursor-32 xorg-libxinerama-32 xorg-libxrandr-32 xorg-libxcomposite-32 gtk
 
 name=gtk-32
-version=2.24.30
+version=2.24.31
 release=1
-source=(http://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.xz
-	CVE-2013-7447.patch)
+source=(http://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.xz)
 
 build() {
 	cd gtk+-$version
-
-	patch -p1 -i $SRC/CVE-2013-7447.patch
 
 	./configure \
 		--prefix=/usr \
