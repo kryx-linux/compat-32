@@ -4,7 +4,7 @@
 # Depends on: xorg-fixesproto-32 xorg-libx11-32
 
 name=xorg-libxfixes-32
-version=5.0.2
+version=5.0.3
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXfixes-$version.tar.bz2)
 
