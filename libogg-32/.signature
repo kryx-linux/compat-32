@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXcC6zOGHaxgu9BYsbDurjNCKPTZMRXFw6zyZlpW39WlEVtZGYBqRirxegm2hCwJuCQEAAnYa67oMDbWWryfouA4=
+SHA256 (Pkgfile) = cf786e86c5617150090caf5114f8bf2a6b57d5c92467bc1cd44cf4e5654538e0
+SHA256 (.footprint) = 4b3ff990af423faea9b2fd3f3bfc0abe339f5d1101da7d2757944d48a0e9002b
+SHA256 (libogg-1.3.2.tar.xz) = 3f687ccdd5ac8b52d76328fbbfebc70c459a40ea891dbf3dccb74a210826e79b

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXX2nHcukmzykQAwx91mewIPuVSGR8bBdATmiyup+WLg51Rgrl5g/kAOMo1aB14HZU20v0CFVih6kwCZtH3fAUg0=
+SHA256 (Pkgfile) = afce4b65ac5016bdbbc7c3147ce19a4062b1dcee7aa9f8d0bd4ac100b3faa311
+SHA256 (.footprint) = 75294243fa387973c5869121f337f8a30436dfe5f00016a9aeeceeb017b88b4c
+SHA256 (renderproto-0.11.1.tar.bz2) = 06735a5b92b20759204e4751ecd6064a2ad8a6246bb65b3078b862a00def2537

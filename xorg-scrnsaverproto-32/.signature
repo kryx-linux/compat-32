@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXTJg4FGQXLfkqLWYFpLF8aLV40J8CpVj/T6z1wODNVJKLZLSnHFnyNTuUZNkMoxzTwECRC+uaR0VzCBDkGLXvAQ=
+SHA256 (Pkgfile) = 2ba51b4b6b157c1a64d3e6e8bf152d9fa28d97362672762ae6a61195ff761d29
+SHA256 (.footprint) = d5c1bbe6441db60161fba81d20a6c025630dad26149f887ad74554b078299c77
+SHA256 (scrnsaverproto-1.2.2.tar.bz2) = 8bb70a8da164930cceaeb4c74180291660533ad3cc45377b30a795d1b85bcd65

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXVG5i2512z1qzPfULvepjjX3LCVmjsten4vmQdmkzDoD2SWlNF0G4uvPBZON3l7s8foxQQ34QKYoPCXAPgyceQk=
+SHA256 (Pkgfile) = 4e8d14f91d715bb56fb821f3924c7d9e4bfe83c603857df7a91cbcc209e7ce13
+SHA256 (.footprint) = cf9bbce9dd7bcb808f93c6a0efffc5dad59e3d188aadddb84c299fd2a978e0eb
+SHA256 (xf86dgaproto-2.1.tar.bz2) = ac5ef65108e1f2146286e53080975683dae49fc94680042e04bd1e2010e99050

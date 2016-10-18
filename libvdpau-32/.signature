@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXQYnKk37z1JxSBujMiroXgt5X0nh4KpTXm+X2KD02qMcO7y45MV8vk1WSn+Yl2UYBTuJO4sOkG4j5GmpUcsI2gY=
+SHA256 (Pkgfile) = c0cda681be615b90f720333a56cc429009a766d3809f3feeab3135156f0836f6
+SHA256 (.footprint) = 5fdbb00ba29e5b7b0388770e4c2671ec70f9be7bd29a2677eaab9330164fbfa3
+SHA256 (libvdpau-1.1.1.tar.gz) = 5fe093302432ef05086ca2ee429c789b7bf843e166d482d166e56859b08bef55

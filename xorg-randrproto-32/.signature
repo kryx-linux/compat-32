@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXVRxz5bC23eTRQk/qGA6YNEkLqicThnCCvMbqnBWSYlIF1aY3t75gDfbc41JAl2SCSH5dmplim0isJDZ3V+CPQQ=
+SHA256 (Pkgfile) = 0c4428425cafe24c8f145ed5d1ab3c5b3c716e7e480bef1de56f4538aaf2963b
+SHA256 (.footprint) = 48cdb4236fbe2c5a60f331c29e61ae0d1d81a9814763f93cf8e4e5a57b584175
+SHA256 (randrproto-1.5.0.tar.bz2) = 4c675533e79cd730997d232c8894b6692174dce58d3e207021b8f860be498468

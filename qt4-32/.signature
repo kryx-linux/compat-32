@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXUhWM5DuudX3QNYqaDGcawikTvgdVa/S5w4rLFSlnzbHW4Y1JbRq7CrAwDFcgJ6Qk9SYHWuBUWVrykzxtYwroAg=
+SHA256 (Pkgfile) = 02bdf4d365e6cf6825aa3f35323d7cec0d20590bdc1a519c7e548e9a8d7555c1
+SHA256 (.footprint) = e170376c765f16ff7b42d0b2c7b7c62b16bc91181cfcd1e8164f776a249f0684
+SHA256 (qt-everywhere-opensource-src-4.8.7.tar.gz) = e2882295097e47fe089f8ac741a95fef47e0a73a3f3cdf21b56990638f626ea0

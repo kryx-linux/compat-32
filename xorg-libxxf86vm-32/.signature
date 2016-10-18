@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXfh1MqgTNlLtaLyvvnyUdqTODZ1BMydAkd9yNKskN8UDhYjAFP1d0bD+ovbSdHyLLZR85wMhapwHK5Gr99fbKwM=
+SHA256 (Pkgfile) = a55021cde3018eb0c3901ad2f2333d06b0ac74e0a1be799ceecbc14ecb11e0b1
+SHA256 (.footprint) = 20a4fba7120e4562ddaba93d779a551f49a33cb594e898086067507f122b55c5
+SHA256 (libXxf86vm-1.1.4.tar.bz2) = afee27f93c5f31c0ad582852c0fb36d50e4de7cd585fcf655e278a633d85cd57

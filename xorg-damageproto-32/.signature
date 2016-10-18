@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXSIBhz2CS4kyc3D0WCFSEoVIDz2dxwDK67XSjlVCxYBOWSxbrW46HDAmEHNKR2aIQMJXVJoSDxq9YoCwJ1hSrQw=
+SHA256 (Pkgfile) = 2d3bbd5c52313e84a0851bf8899526bb7e78637697f8a0cd87cbe259f9d100d7
+SHA256 (.footprint) = 2a216f5cf0a4123ecee4a142f6dcdabbfa8eb3e97ebba32d2f3465c5f1865b2e
+SHA256 (damageproto-1.2.1.tar.bz2) = 5c7c112e9b9ea8a9d5b019e5f17d481ae20f766cb7a4648360e7c1b46fc9fc5b

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXc2EivZHg2RzJYCbKmdFek3f0thQF6C1I10GoUrlgCcUjmaMm5PTLWBrE+R4IxP9XFf1YxO6DwOkuOo5+uZLZQ4=
+SHA256 (Pkgfile) = d56d5964549f864b50bd9955fd1a6695feaeb5e607a0d5e96c39f707461f7e71
+SHA256 (.footprint) = d8421c15c038bf8ec609075b1dd0aee30293320cf85d1de6710d0d2eb12e646f
+SHA256 (ncurses-6.0.tar.gz) = f551c24b30ce8bfb6e96d9f59b42fbea30fa3a6123384172f9e7284bcf647260

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXWeUxrAuyngetrZeLvT1N0OKIdjuAXX1sHE2NFM4iNfdop2fi55BYyFqprSriorJH2SVpOYoqLgbH1E6QlJ3fgU=
+SHA256 (Pkgfile) = 9683a005ca53ba36001157dc2dc58aefded4d661966b64805ed305871272d5d3
+SHA256 (.footprint) = 432d833c1749d8122d93c269718266034ea96128f5fdbaa14445178f80578284
+SHA256 (gtk+-2.24.31.tar.xz) = 68c1922732c7efc08df4656a5366dcc3afdc8791513400dac276009b40954658

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXSU0iWn0In77+DJK/e8gOC5Sc8+MY4IowlADOpf5DS4HIy14Yu+AAFutiC6Zupsk6V0O6zOBjGTUhYkTJUHEbQU=
+SHA256 (Pkgfile) = f2314f0d29d9c03d056ff04afed79b9f78a89755667762b7312575ef85b69bbc
+SHA256 (.footprint) = 4b9a0dd6b328af05252ba00f9c0f81197ad31a690851313991836459c6ab5c86
+SHA256 (cairo-1.14.6.tar.xz) = 613cb38447b76a93ff7235e17acd55a78b52ea84a9df128c3f2257f8eaa7b252

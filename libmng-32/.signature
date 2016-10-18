@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXefcPRfpArMahzHowZvfeLJll4f7zSXHwXjLbPddxz5YBBLxq9Mh8T/IbtnQ3aOhPgkxHRfaP5E/wp//+DE6+AQ=
+SHA256 (Pkgfile) = 32d5a790ee7ed3bd98445115c026b33c78a21569b5538e81ac57fa9e8d7408c3
+SHA256 (.footprint) = ce0d5bf993b206c7d3e972299f279b6c46a1c478d4a08d9f70792a09f5a55565
+SHA256 (libmng-2.0.3.tar.gz) = cf112a1fb02f5b1c0fce5cab11ea8243852c139e669c44014125874b14b7dfaa

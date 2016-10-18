@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXe0q47/plw6tA3EWL2jMUz39YEHuNUO2dpQSBp5z33Il5tH3BS1ybJHML9GFpBwcMVoR5xQBzGkQ/rJmH9qPsQI=
+SHA256 (Pkgfile) = e5be48aea771402cd932c8d8a03e15e4beff76ab773dfe3b293bf13ac9b09da8
+SHA256 (.footprint) = d64f924855846c76ad1cc2ffcb6f978d2cd2c1055fac09bc959b5873e2ef65bf
+SHA256 (glu-9.0.0.tar.bz2) = 1f7ad0d379a722fcbd303aa5650c6d7d5544fde83196b42a73d1193568a4df12
