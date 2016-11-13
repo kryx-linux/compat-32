@@ -6,7 +6,7 @@
 
 name=llvm-32
 version=3.9.0
-release=1
+release=2
 source=(http://llvm.org/releases/$version/llvm-$version.src.tar.xz)
 
 build() {
@@ -19,8 +19,8 @@ build() {
 		-DLLVM_ENABLE_CXX1Y=1 \
 		-DLLVM_INCLUDE_EXAMPLES=0 \
 		-DLLVM_INCLUDE_TESTS=0 \
-		-DLLVM_TARGETS_TO_BUILD='X86;AMDGPU' \
-		-DBUILD_SHARED_LIBS=1 \
+		-DLLVM_TARGETS_TO_BUILD='X86;AMDGPU;BPF' \
+		-DLLVM_BUILD_LLVM_DYLIB=1 \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DLLVM_LIBDIR_SUFFIX=32 \
@@ -33,7 +33,7 @@ build() {
 	install -t $SRC/keep $PKG/usr/bin/llvm-config $PKG/usr/include/llvm/Config/llvm-config.h
 
 	# remove unneeded files
-	rm -r $PKG/usr/{bin,include,lib32/LLVMHello.so}
+	rm -r $PKG/usr/{bin,include}
 
 	# install 32bit header and config
 	install -m 0755 -D $SRC/keep/llvm-config $PKG/usr/bin/llvm-config-32
