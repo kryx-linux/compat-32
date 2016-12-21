@@ -4,7 +4,7 @@
 # Depends on:  libjpeg-turbo-32 zlib-32 libtiff
 
 name=libtiff-32
-version=4.0.6
+version=4.0.7
 release=1
 source=(http://download.osgeo.org/libtiff/tiff-$version.tar.gz)
 
@@ -13,11 +13,10 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--mandir=/usr/man
+		--libdir=/usr/lib32
 
 	make
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{bin,include,share,man}
+	rm -r $PKG/usr/{bin,include,share/man,share}
 }
