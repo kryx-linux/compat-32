@@ -4,7 +4,7 @@
 # Depends on: alsa-lib-32 cdparanoia-32 gstreamer-32 libtheora-32 libvisual-32 orc-32 pango-32 util-linux-32 xorg-libxv-32 gst-plugins-base
 
 name=gst-plugins-base-32
-version=1.8.2
+version=1.10.2
 release=1
 source=(http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-$version.tar.xz)
 
