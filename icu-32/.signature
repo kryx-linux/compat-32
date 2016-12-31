@@ -1,5 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXUBBDmGpzL81TXKj1fnODPFgElfI+HD57Vqz8uKod4gSqVJ+DGP+qoIKRQf0jV2VtRagF658z/hfwQKucBjP2gI=
-SHA256 (Pkgfile) = d1e7222c04c7ede3c24cf5f1f105662a71b2e5fea621a84a5d44feb9062dbaca
-SHA256 (.footprint) = 3268f8b4f01a301e3f23b788c2b7e7e68d4662143f955f631fc31a4004f8714b
-SHA256 (icu4c-56_1-src.tgz) = 3a64e9105c734dcf631c0b3ed60404531bce6c0f5a64bfe1a6402a4cc2314816
+RWSwxGo/zH7eXUaiXLvDmPS/iyXiCH5SoPbnAdTwsZj/cxT3k1OwbOR+EHWd2+6ALuxtY1x0v2tx3kuJpjONZMEcdfv2VIHJQws=
+SHA256 (Pkgfile) = c7f7de215ede2abc8baf176da71accee78666295b901d23f935140df2b93c4aa
+SHA256 (.footprint) = dd0dded1e7f4d3ee5d96d467cd28f4a54871993d39793e5da243b4ad0f0e448d
+SHA256 (icu4c-58_2-src.tgz) = 2b0a4410153a9b20de0e20c7d8b66049a72aef244b53683d0d7521371683da0c
+SHA256 (icu-58.1-remove-bashisms.patch) = 8a2177d5f549168d5680d6477381a9f6f5ca0bd8f6bd23cc30d7f953e10907bc
+SHA256 (icu-58.1-iterator.patch) = 468bba2185584c30a5b096d7c85d0afa739067594f0883b6f8f448b1bf996801
