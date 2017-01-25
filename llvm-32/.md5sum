@@ -1,1 +1,2 @@
-f2093e98060532449eb7d2fcfd0bc6c6  llvm-3.9.0.src.tar.xz
+7b8219e2b0d15e96a09dbe8bc2614777  0009-Revert-AMDGPU-Fix-an-interaction-between-WQM-and-pol.patch
+3259018a7437e157f3642df80f1983ea  llvm-3.9.1.src.tar.xz
