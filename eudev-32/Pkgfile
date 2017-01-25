@@ -4,7 +4,7 @@
 # Depends on: kmod-32 eudev
 
 name=eudev-32
-version=3.2
+version=3.2.1
 release=1
 source=(http://dev.gentoo.org/~blueness/eudev/eudev-$version.tar.gz)
 
@@ -14,8 +14,12 @@ build() {
     # needed for static linking, e.g. dmsetup.static
     sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in
 
+    # fix for gperf 3.1
+    # https://github.com/gentoo/eudev/commit/5bab4d8de0dcbb8e2e7d4d5125b4aea1652a0d60
+    sed -i '/*keyboard_lookup_key/d' src/udev/udev-builtin-keyboard.c
+
     autoreconf --force --install
-    
+
     ./configure --prefix=/usr \
                 --libdir=/usr/lib32 \
                 --sbindir=/sbin --bindir=/sbin \
