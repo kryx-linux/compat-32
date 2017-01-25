@@ -4,7 +4,7 @@
 # Depends on: nss nspr-32 sqlite3-32 zlib-32
 
 name=nss-32
-version=3.27.2
+version=3.28.1
 release=1
 source=(http://ftp.mozilla.org/pub/security/nss/releases/NSS_${version//./_}_RTM/src/nss-$version.tar.gz
 	nss-config.in nss.pc.in)
