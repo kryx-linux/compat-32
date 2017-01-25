@@ -4,7 +4,7 @@
 # Depends on: eudev-32 readline-32 zlib-32
 
 name=util-linux-32
-version=2.29
+version=2.29.1
 release=1
 source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
