@@ -1,21 +1,26 @@
 # Description: a free alternative to the OpenGL Utility Toolkit (GLUT) library
-# URL: http://freeglut.sourceforge.net
+# URL: https://freeglut.sourceforge.net
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: glu-32 xorg-libxi-32 freeglut
+# Depends on: glu-32 xorg-libxi-32 freeglut xorg-libxxf86vm-32
 
 name=freeglut-32
-version=2.8.1
+version=3.0.0
 release=1
-source=(http://download.sourceforge.net/freeglut/freeglut-$version.tar.gz)
+source=(https://download.sourceforge.net/freeglut/freeglut-$version.tar.gz)
 
 build() {
-    cd freeglut-$version
-    sed -i -e '/^SUBDIRS =/s/progs //' Makefile.in
-    ./configure --prefix=/usr \
-        --libdir=/usr/lib32 \
-        --disable-warnings \
-        --disable-dependency-tracking
-    make
-    make DESTDIR=$PKG install
-    rm -rf $PKG/usr/include
+	cd freeglut-$version
+
+	install -d build
+	cd build
+
+	cmake .. \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib32 \
+		-DCMAKE_BUILD_TYPE=Release
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/include
 }
