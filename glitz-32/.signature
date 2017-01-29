@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTz32e9Eyx4ku1vs8sI8HgheLJh1ERe2UEVDeOZL79kd4gb3gbyDExEf5MrV9k/vbF/2ecuTdT2DmYNcidc6gAw=
-SHA256 (Pkgfile) = e2541210bca40a077fed00606bb7deb14cbbea9462005a1ed9370c0de1b52084
-SHA256 (.footprint) = 0f6d02badb22fd310b4842d958ea49e76575869c8cd5a2cc769c68d35dcb830f
-SHA256 (glitz-0.5.6.tar.gz) = 132adf06e48531f4c01b6ba5843881e2b584a170c5222353d03cbef736d4a471
-SHA256 (glitz-0.5.6-configure.patch.xz) = d636e125197475f1e3611147a6e41c1d99780508968625508556c54af23cb0b7
