@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQokplSv0Fae3PMvUtLSvHKMFGq5jjTDGzpDEw2HqP2l09CrohVXSieQkvwisoPP/jr+YaEaJ92782swOBSeyQY=
-SHA256 (Pkgfile) = 55ff92ea05d064711ba9ee3dc1c88c169c64008d1edc13435626322c0638a776
-SHA256 (.footprint) = 68126a1bc95acc3503c1dccf57516c4473b3b43b2a6bb26636993b8e90e56bcc
-SHA256 (llvm-3.9.0.src.tar.xz) = 66c73179da42cee1386371641241f79ded250e117a79f571bbd69e56daa48948
+RWSwxGo/zH7eXepOzlEla4ovYdza7SzaHHMMMCiuHwtrc6xblyIdDrkKjsDogAUqhya5IKVH0jBWkA9Sc3voPTggtsl+l676cQU=
+SHA256 (Pkgfile) = 5b3c482d992d9f66ceae6e40b414fe1cf3d6b7fad23cada4420a14d2a1d122cf
+SHA256 (.footprint) = 617bfee732c4d597c192d9520d58d2c59196c3a35f25000ec7204786ae5b30b2
+SHA256 (llvm-3.9.1.src.tar.xz) = 1fd90354b9cf19232e8f168faf2220e79be555df3aa743242700879e8fd329ee
+SHA256 (0009-Revert-AMDGPU-Fix-an-interaction-between-WQM-and-pol.patch) = 782e014661ae77b48468103d6879acd415c1fb8e90ccdc26fe1007265fd22c42
