@@ -4,9 +4,9 @@
 # Depends on: nss nspr-32 sqlite3-32 zlib-32
 
 name=nss-32
-version=3.27.1
+version=3.28.1
 release=1
-source=(http://ftp.mozilla.org/pub/security/nss/releases/NSS_${version/./_}_RTM/src/nss-$version.tar.gz
+source=(http://ftp.mozilla.org/pub/security/nss/releases/NSS_${version//./_}_RTM/src/nss-$version.tar.gz
 	nss-config.in nss.pc.in)
 
 build() {
@@ -20,7 +20,6 @@ build() {
 	export NSPR_LIB_DIR=/usr/lib32
 	export NSS_USE_SYSTEM_SQLITE=1
 	export NSS_ENABLE_ECC=1
-	export NSS_ENABLE_TLS_1_3=1
 	export BUILD_OPT=1
 	export XCFLAGS="${CFLAGS}"
 	export NSS_DISABLE_GTESTS=1

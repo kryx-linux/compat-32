@@ -4,9 +4,9 @@
 # Depends on: orc
 
 name=orc-32
-version=0.4.25
+version=0.4.26
 release=1
-source=(http://gstreamer.freedesktop.org/src/orc/orc-$version.tar.xz)
+source=(https://gstreamer.freedesktop.org/src/orc/orc-$version.tar.xz)
 
 build() {
 	cd orc-$version
