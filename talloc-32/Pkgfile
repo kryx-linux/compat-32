@@ -1,12 +1,12 @@
 # Description: Hierarchical, reference counted memory pool system with destructors
-# URL: http://talloc.samba.org/
+# URL: https://talloc.samba.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: python-32 talloc
 
 name=talloc-32
 version=2.1.8
 release=1
-source=(http://samba.org/ftp/talloc/talloc-$version.tar.gz)
+source=(https://samba.org/ftp/talloc/talloc-$version.tar.gz)
 
 build() {
 	cd talloc-$version
