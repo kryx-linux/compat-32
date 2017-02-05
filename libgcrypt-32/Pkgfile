@@ -1,15 +1,15 @@
 # Description: A general purpose cryptographic library based on GnuPG
-# URL: http://www.gnupg.org/
+# URL: https://www.gnupg.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libgcrypt libgpg-error-32
 
 name=libgcrypt-32
-version=1.7.5
+version=1.7.6
 release=1
-source=(ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-$version.tar.bz2)
+source=(https://www.gnupg.org/ftp/gcrypt/${name%-*}/${name%-*}-$version.tar.bz2)
 
 build() {
-	cd libgcrypt-$version
+	cd ${name%-*}-$version
 
 	./configure \
 		--prefix=/usr \
