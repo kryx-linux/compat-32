@@ -1,15 +1,15 @@
 # Description: Userspace interface to kernel DRM services
-# URL: http://dri.freedesktop.org/
+# URL: https://dri.freedesktop.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libpthread-stubs-32 xorg-libpciaccess-32 libdrm
 
 name=libdrm-32
-version=2.4.74
+version=2.4.75
 release=1
-source=(http://dri.freedesktop.org/libdrm/libdrm-$version.tar.bz2)
+source=(https://dri.freedesktop.org/${name%-*}/${name%-*}-$version.tar.bz2)
 
 build() {
-	cd libdrm-$version
+	cd ${name%-*}-$version
 
 	./configure \
 		--prefix=/usr \
