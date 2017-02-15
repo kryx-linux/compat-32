@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXaW7B6XWKQyZIgkCcT5CeiIQBrBfts4Xsyc1D8tGVApXs+rypXok8tnzDNC70i6LypfdhTKF0/PtjwNDEKBB2QY=
-SHA256 (Pkgfile) = 043291cbaed890d53cb145a079f71b94b987b4b2a16e4f901252d2be97cbc398
-SHA256 (.footprint) = 33814bf478240943de892863e121b2d27ab59cb48f7111d6e68f8bc3cbc5a51c
-SHA256 (libpthread-stubs-0.3.tar.bz2) = 35b6d54e3cc6f3ba28061da81af64b9a92b7b757319098172488a660e3d87299
