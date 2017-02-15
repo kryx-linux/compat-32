@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTsZJ/cp6aE1Lmda9eZnEqO+IQMHTEdQmnbxZv+mCwxKEWSRzmSFjPY+YL0jMcZ/STKJs7XbS0zvqrrWc2JOkgM=
-SHA256 (Pkgfile) = 062be4a787657f810052ac39e313a85f883f4299b91cd24ac20516229d251733
+RWSwxGo/zH7eXaUPM8asQbyBxvvSerToK7QRNZ4uAnZ7DBotM7jIBMBGJGgoK0d0HNK5YanvaBHUYCQLfWKqSxVk+tiiRmrc0QU=
+SHA256 (Pkgfile) = 7cd7ae120345d3281c096e53a119eebdf0463f64ca23acadea2fe87d097aa50c
 SHA256 (.footprint) = 275a67ca1409ff848582439b4a2b8fcbcfa4bc17107dca085fe6793216bc1d7c
-SHA256 (presentproto-1.0.tar.bz2) = 812c7d48721f909a0f7a2cb1e91f6eead76159a36c4712f4579ca587552839ce
+SHA256 (presentproto-1.1.tar.bz2) = f69b23a8869f78a5898aaf53938b829c8165e597cda34f06024d43ee1e6d26b9
