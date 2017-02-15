@@ -1,0 +1,25 @@
+# Description: A tool for transfering files with URL syntax
+# Maintainer:  CRUX compat-32 Team, compat-32-ports at crux dot nu
+# URL:         https://curl.haxx.se/
+# Depends on:  openssl-32 zlib-32 curl
+
+name=curl-32
+version=7.52.1
+release=1
+source=(https://curl.haxx.se/download/${name%-*}-$version.tar.lzma 0002-vtls-s-SSLEAY-OPENSSL.patch)
+
+build() {
+    cd ${name%-*}-$version
+    patch -p1 -i $SRC/0002-vtls-s-SSLEAY-OPENSSL.patch
+    ./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+                --enable-ipv6 \
+                --without-libidn \
+                --without-cyassl \
+                --enable-threaded-resolver \
+                --with-ca-bundle=/etc/ssl/cert.pem
+    make
+    make DESTDIR=$PKG install
+
+    rm -r $PKG/usr/{bin,include,share/aclocal,share/man,share}
+}
