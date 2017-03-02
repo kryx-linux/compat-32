@@ -1,15 +1,15 @@
 # Description: A message bus system
-# URL: http://freedesktop.org/wiki/Software/dbus
+# URL: https://freedesktop.org/wiki/Software/dbus
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: expat-32 dbus
 
 name=dbus-32
-version=1.10.14
+version=1.10.16
 release=1
-source=(http://dbus.freedesktop.org/releases/dbus/dbus-$version.tar.gz)
+source=(https://${name%-*}.freedesktop.org/releases/${name%-*}/${name%-*}-$version.tar.gz)
 
 build() {
-	cd dbus-$version
+	cd ${name%-*}-$version
 
 	./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
