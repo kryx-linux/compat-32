@@ -1,16 +1,16 @@
 # Description: Library of PNG support functions.
-# URL:         http://www.libpng.org
+# URL:         https://www.libpng.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on:  zlib-32 libpng
 
 name=libpng-32
-version=1.6.27
+version=1.6.28
 release=1
-source=(http://download.sourceforge.net/libpng/libpng-$version.tar.xz
+source=(https://download.sourceforge.net/${name%-*}/${name%-*}-$version.tar.xz
 	libpng-apng.patch)
 
 build() {
-	cd libpng-$version
+	cd ${name%-*}-$version
 
 	patch -p0 -i $SRC/libpng-apng.patch
 
