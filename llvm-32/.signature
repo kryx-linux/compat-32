@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXepOzlEla4ovYdza7SzaHHMMMCiuHwtrc6xblyIdDrkKjsDogAUqhya5IKVH0jBWkA9Sc3voPTggtsl+l676cQU=
-SHA256 (Pkgfile) = 5b3c482d992d9f66ceae6e40b414fe1cf3d6b7fad23cada4420a14d2a1d122cf
-SHA256 (.footprint) = 617bfee732c4d597c192d9520d58d2c59196c3a35f25000ec7204786ae5b30b2
-SHA256 (llvm-3.9.1.src.tar.xz) = 1fd90354b9cf19232e8f168faf2220e79be555df3aa743242700879e8fd329ee
-SHA256 (0009-Revert-AMDGPU-Fix-an-interaction-between-WQM-and-pol.patch) = 782e014661ae77b48468103d6879acd415c1fb8e90ccdc26fe1007265fd22c42
+RWSwxGo/zH7eXeMWnHa1+GhZmm8p/XjXxDUT3NvF0i8gTakOsqoM0FGkzr8xpnEPu9rcsxf6joyU4XV4BtNQiHEZ0P1xMJP5Eww=
+SHA256 (Pkgfile) = 50c7c7711e30167233df0c5fe6735dc9086bfb2b86240f403a267007429cd3ff
+SHA256 (.footprint) = ce8ddfd8741e4498a3d779abebf4653a7e4a0a501cef4ca2387d95c61a10a98b
+SHA256 (llvm-4.0.0.src.tar.xz) = 8d10511df96e73b8ff9e7abbfb4d4d432edbdbe965f1f4f07afaf370b8a533be
