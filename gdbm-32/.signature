@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXeGx/nMG1sRoSEhPHu7b/eqMfWtpNB60GRRRD2x265RD5uoL3kpvpwfPpbx3Ek/UboOuwtxIXAhealwaksytOg8=
-SHA256 (Pkgfile) = dd596edffbc44f65241ea37ccff2748fb469a27c31d628575d1740565ddcbba2
+RWSwxGo/zH7eXeoQHLPDwOcC6C4D6+cgnkeI3Lm8cwRE8wuOw9hyhrxUXfjM1fGUuLtZs+aO0EeajocWPfevKP9sErY4e7C8pwk=
+SHA256 (Pkgfile) = abf43fc712482770da1227431eeafe742d7df19715ee65b921db8832d22fb943
 SHA256 (.footprint) = 31a3f4b7cd9a65b9558c3bf033b98cf211c08a335113dea6837675550851e13b
-SHA256 (gdbm-1.12.tar.gz) = d97b2166ee867fd6ca5c022efee80702d6f30dd66af0e03ed092285c3af9bcea
+SHA256 (gdbm-1.13.tar.gz) = 9d252cbd7d793f7b12bcceaddda98d257c14f4d1890d851c386c37207000a253
