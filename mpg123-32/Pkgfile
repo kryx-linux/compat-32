@@ -1,15 +1,15 @@
 # Description: Commandline MP3 player 
-# URL:         http://www.mpg123.de
+# URL:         https://www.mpg123.de
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on:  libtool alsa-lib-32 mpg123
 
 name=mpg123-32
-version=1.23.8
+version=1.24.0
 release=1
-source=(http://www.mpg123.de/download/mpg123-$version.tar.bz2)
+source=(https://www.mpg123.de/download/${name%-*}-$version.tar.bz2)
 
 build() {
-    cd mpg123-$version
+    cd ${name%-*}-$version
 
     ./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
