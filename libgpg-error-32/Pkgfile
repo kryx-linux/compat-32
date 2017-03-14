@@ -1,15 +1,15 @@
 # Description: A small library defining error values for GnuPG components
-# URL: http://www.gnupg.org/
+# URL: https://www.gnupg.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libgpg-error
 
 name=libgpg-error-32
-version=1.26
+version=1.27
 release=1
-source=(https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-$version.tar.bz2)
+source=(https://www.gnupg.org/ftp/gcrypt/${name%-*}/${name%-*}-$version.tar.bz2)
 
 build() {
-	cd libgpg-error-$version
+	cd ${name%-*}-$version
 
 	./configure \
 		--prefix=/usr \
