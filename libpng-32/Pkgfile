@@ -4,9 +4,11 @@
 # Depends on:  zlib-32 libpng
 
 name=libpng-32
-version=1.6.28
+version=1.6.29
+_base=${version:0:3}
+_base=${_base/./}
 release=1
-source=(https://download.sourceforge.net/${name%-*}/${name%-*}-$version.tar.xz
+source=(https://downloads.sourceforge.net/project/${name%-*}/${name%-*}$_base/$version/${name%-*}-$version.tar.xz
 	libpng-apng.patch)
 
 build() {
