@@ -1,15 +1,15 @@
 # Description: pthread dummy implementation
-# URL: http://xcb.freedesktop.org
+# URL: https://xcb.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libpthread-stubs
 
 name=libpthread-stubs-32
-version=0.3
+version=0.4
 release=1
-source=(http://xcb.freedesktop.org/dist/libpthread-stubs-$version.tar.bz2)
+source=(https://xcb.freedesktop.org/dist/${name%-*}-$version.tar.bz2)
 
 build() {
-	cd libpthread-stubs-$version
+	cd ${name%-*}-$version
 
 	./configure --prefix=/usr --libdir=/usr/lib32
 
