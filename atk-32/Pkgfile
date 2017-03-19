@@ -1,15 +1,15 @@
 # Description: A set of interfaces for accessibility
-# URL: http://www.gtk.org/
+# URL: https://www.gtk.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: glib-32 atk
 
 name=atk-32
-version=2.22.0
+version=2.24.0
 release=1
-source=(http://download.gnome.org/sources/atk/${version:0:4}/atk-$version.tar.xz)
+source=(https://download.gnome.org/sources/${name%-*}/${version:0:4}/${name%-*}-$version.tar.xz)
 
 build() {
-	cd atk-$version
+	cd ${name%-*}-$version
 	./configure --prefix=/usr --libdir=/usr/lib32
 	make
 	make DESTDIR=$PKG install
