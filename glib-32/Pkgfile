@@ -4,12 +4,12 @@
 # Depends on: libffi-32 libpcre-32 python-32 util-linux-32 glib
 
 name=glib-32
-version=2.50.3
+version=2.52.1
 release=1
-source=(https://download.gnome.org/sources/glib/${version:0:4}/glib-$version.tar.xz)
+source=(https://download.gnome.org/sources/glib/${version:0:4}/${name%-*}-$version.tar.xz)
 
 build() {
-	cd glib-$version
+	cd ${name%-*}-$version
 
 	aclocal
 	automake
