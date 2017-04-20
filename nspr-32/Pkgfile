@@ -1,18 +1,18 @@
 # Description: Netscape Portable Runtime library
-# URL: http://www.mozilla.org/projects/nspr/
+# URL: https://www.mozilla.org/projects/nspr/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: nspr
 
 name=nspr-32
-version=4.13.1
+version=4.14
 release=1
-source=(http://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v$version/src/nspr-$version.tar.gz
+source=(https://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v$version/src/${name%-*}-$version.tar.gz
         nspr.pc.in)
 
 build() {
     local NSPR_LIBS NSPR_CFLAGS NSPR_VERSION
 
-    cd nspr-$version/nspr
+    cd ${name%-*}-$version/nspr
 
     ./configure \
         --prefix=/usr \
