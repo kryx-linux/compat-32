@@ -4,12 +4,12 @@
 # Depends on: python-32 talloc
 
 name=talloc-32
-version=2.1.8
+version=2.1.9
 release=1
-source=(https://samba.org/ftp/talloc/talloc-$version.tar.gz)
+source=(https://samba.org/ftp/${name%-*}/${name%-*}-$version.tar.gz)
 
 build() {
-	cd talloc-$version
+	cd ${name%-*}-$version
 
 	./configure \
 		--prefix=/usr \
