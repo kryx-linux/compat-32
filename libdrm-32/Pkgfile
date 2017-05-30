@@ -4,7 +4,7 @@
 # Depends on: libpthread-stubs-32 xorg-libpciaccess-32 libdrm
 
 name=libdrm-32
-version=2.4.80
+version=2.4.81
 release=1
 source=(https://dri.freedesktop.org/${name%-*}/${name%-*}-$version.tar.bz2)
 
@@ -20,5 +20,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
+
 	rm -r $PKG/usr/include
 }
