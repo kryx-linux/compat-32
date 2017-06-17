@@ -4,12 +4,12 @@
 # Depends on: fontconfig-32 libpng-32 xorg-libxext-32 xorg-libxrender-32 xorg-libpixman-32 xorg-xcb-util-32 glib-32 cairo
 
 name=cairo-32
-version=1.15.4
+version=1.15.6
 release=1
-source=(https://cairographics.org/snapshots/cairo-$version.tar.xz)
+source=(https://cairographics.org/snapshots/${name%-*}-$version.tar.xz)
 
 build() {
-	cd cairo-$version
+	cd ${name%-*}-$version
 
 	./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
