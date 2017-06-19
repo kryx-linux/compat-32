@@ -1,16 +1,17 @@
 # Description: A fast, non-validating, stream-oriented XML parsing library
-# URL:         http://expat.sourceforge.net/
+# URL:         https://libexpat.github.io/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: expat
 
 name=expat-32
-version=2.2.0
+version=2.2.1
 release=1
 source=(http://download.sourceforge.net/expat/expat-$version.tar.bz2)
 
 build() { 
 	cd expat-$version
 
+	CONFIG_SHELL=/bin/bash \
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32
