@@ -4,7 +4,7 @@
 # Depends on: openal alsa-lib-32 cmake
 
 name=openal-32
-version=1.17.2
+version=1.18.0
 release=1
 source=(http://kcat.strangesoft.net/openal-releases/openal-soft-$version.tar.bz2)
 
@@ -13,7 +13,7 @@ build() {
 
 	cmake ../ \
 		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DLIB_SUFFIX=32 \
+		-DCMAKE_INSTALL_LIBDIR=lib32 \
 		-DOSS=OFF \
 		-DALSOFT_EXAMPLES=OFF \
 		-DQT_QMAKE_EXECUTABLE=qmake-disabled \
