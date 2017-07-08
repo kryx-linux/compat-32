@@ -4,7 +4,7 @@
 # Depends on:  libtool alsa-lib-32 mpg123
 
 name=mpg123-32
-version=1.25.0
+version=1.25.1
 release=1
 source=(https://www.mpg123.de/download/${name%-*}-$version.tar.bz2)
 
@@ -14,7 +14,6 @@ build() {
     ./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
 		--host=i686-pc-linux-gnu \
-                --with-module-suffix=.so \
                 --with-audio=alsa,oss,dummy \
                 --with-default-audio=alsa
 
