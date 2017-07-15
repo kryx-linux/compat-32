@@ -4,12 +4,12 @@
 # Depends on: expat
 
 name=expat-32
-version=2.2.1
+version=2.2.2
 release=1
-source=(http://download.sourceforge.net/expat/expat-$version.tar.bz2)
+source=(https://downloads.sourceforge.net/project/${name%-*}/${name%-*}/$version/${name%-*}-$version.tar.bz2)
 
 build() { 
-	cd expat-$version
+	cd ${name%-*}-$version
 
 	CONFIG_SHELL=/bin/bash \
 	./configure \
