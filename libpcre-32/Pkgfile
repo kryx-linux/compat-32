@@ -3,9 +3,9 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=libpcre-32
-version=8.40
+version=8.41
 release=1
-source=(ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-$version.tar.bz2)
+source=(https://ftp.pcre.org/pub/pcre/pcre-$version.tar.bz2)
 
 build() {
     cd pcre-$version
