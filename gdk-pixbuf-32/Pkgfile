@@ -4,13 +4,14 @@
 # Depends on: gdk-pixbuf glib-32 libpng-32 libtiff-32 xorg-libx11-32
 
 name=gdk-pixbuf-32
-version=2.36.7
+version=2.36.8
 release=1
 source=(https://download.gnome.org/sources/${name%-*}/${version%.*}/${name%-*}-$version.tar.xz)
 
 build() {
 	cd ${name%-*}-$version
 
+	PKG_CONFIG_LIBDIR+=':/usr/share/pkgconfig' \
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
