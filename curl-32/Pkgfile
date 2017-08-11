@@ -4,9 +4,9 @@
 # Depends on:  openssl-32 zlib-32 curl
 
 name=curl-32
-version=7.54.1
+version=7.55.0
 release=1
-source=(https://curl.haxx.se/download/${name%-*}-$version.tar.lzma)
+source=(https://curl.haxx.se/download/${name%-*}-$version.tar.xz)
 
 build() {
     cd ${name%-*}-$version
@@ -21,5 +21,5 @@ build() {
     make
     make DESTDIR=$PKG install
 
-    rm -r $PKG/usr/{bin,include,share/aclocal,share/man,share}
+    rm -r $PKG/usr/{bin,include,share/man,share}
 }
