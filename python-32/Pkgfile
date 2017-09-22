@@ -4,9 +4,9 @@
 # Depends on:  db-32 gdbm-32 openssl-32 bzip2-32 zlib-32 sqlite3-32 python
 
 name=python-32
-version=2.7.13
+version=2.7.14
 release=1
-source=(http://www.python.org/ftp/python/$version/Python-$version.tar.xz)
+source=(https://www.python.org/ftp/python/$version/Python-$version.tar.xz)
 
 build() {
     cd Python-$version
