@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXcuSWZ8qeM/2PMYZIW/Yg4U6KPJYAdLt9DfV1F4mH0CuuRWqIuP4RNVfoK2SqusWz2SyaVgg87L3SOPLBYIhXAs=
-SHA256 (Pkgfile) = 6c1dcb9ab187bf05220dae9850fdf3d89e7b52204eb8704dc11a8b2c46b79139
-SHA256 (.footprint) = aa6f6f152653cd741f0c4717879450cae0bffddf245fa6ff95a8b8a1e058ef39
-SHA256 (gst-plugins-base-1.12.2.tar.xz) = 5067dce3afe197a9536fea0107c77213fab536dff4a213b07fc60378d5510675
+RWSwxGo/zH7eXQ+GEjVz6FEcH0TEttpAOJHdNkn724ZF3Tgjyq7twrQZkVyM02pxHE3epF6dRqbtaUTrpBShoHyot2IAaHvgCAg=
+SHA256 (Pkgfile) = f5870860925962c1994ee09215d0502f949d689908ea815c74aff8ada212a468
+SHA256 (.footprint) = 33fe1ad972330658f7c9f6c1829d112da79066c63d98a0400a1355a8eafc12ed
+SHA256 (gst-plugins-base-1.12.3.tar.xz) = d3d37b8489d37fa0018973d850bd2067b98af335fef2fa543ee7d40359e3cea5
