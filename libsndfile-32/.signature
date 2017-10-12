@@ -1,5 +1,9 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTVq5wyOT+SD/YtteLwGgLJ+ErIBqpRkBZqcj0YzrtjNC+a74JevLoxJE4X4eNE/PDtcIXeGrNdIZ/CZklzACQg=
-SHA256 (Pkgfile) = 9ba2003177983c8df5ed01f9c3f41b29c9e1ac26ad1d10594cf0f27ca29325e8
-SHA256 (.footprint) = 97afec8b6b0843718e206500475cdec6460b50cf4413b6fc11c2dee5d64a95fb
-SHA256 (libsndfile-1.0.27.tar.gz) = a391952f27f4a92ceb2b4c06493ac107896ed6c76be9a613a4731f076d30fac0
+RWSwxGo/zH7eXY9lrmt21lTD16pDKR/G+ahUF7bC/7h/cLPOm6qgO9zzvHO9MfRveX3yJFnBzD1XiU+SvguWOKH/w7AmXVgAMQo=
+SHA256 (Pkgfile) = 840182a302849c5ce52e8609ad68696410657df7c2e3d4625dd78a5a0a772a4e
+SHA256 (.footprint) = c75bcf48d68e0f95036dd9a429c6d6adb118c9205d21de20eb30d4f65784e8f9
+SHA256 (libsndfile-1.0.28.tar.gz) = 1ff33929f042fa333aed1e8923aa628c3ee9e1eb85512686c55092d1e5a9dfa9
+SHA256 (0001-FLAC-Fix-a-buffer-read-overrun.patch) = 256eda5665ccad5a38030594f83a16ae9b271f8d0dd31f4d3b650bafaf93aef0
+SHA256 (0002-src-flac.c-Fix-a-buffer-read-overflow.patch) = 9d86583733521602e6b5ca52730bfe0727b9beef513db82552930477bf3c99e2
+SHA256 (0010-src-aiff.c-Fix-a-buffer-read-overflow.patch) = 3635a53dae48f02123872c9c0234ca55b38bc260dc37a5813b7211da85ba73f3
+SHA256 (0020-src-common.c-Fix-heap-buffer-overflows-when-writing.patch) = 7a2a37bcae3f4c48a79b06127964d34fbaf66011a31060680516434848800aad
