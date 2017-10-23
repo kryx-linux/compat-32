@@ -4,7 +4,7 @@
 # Depends on: libffi-32 python-32 llvm
 
 name=llvm-32
-version=4.0.1
+version=5.0.0
 release=1
 source=(https://llvm.org/releases/$version/llvm-$version.src.tar.xz)
 
@@ -35,7 +35,7 @@ build() {
 	install -t $SRC/keep $PKG/usr/bin/llvm-config $PKG/usr/include/llvm/Config/llvm-config.h
 
 	# remove unneeded files
-	rm -r $PKG/usr/{bin,include}
+	rm -r $PKG/usr/{bin,include,share/opt-viewer}
 
 	# install 32bit header and config
 	install -m 0755 -D $SRC/keep/llvm-config $PKG/usr/bin/llvm-config-32
