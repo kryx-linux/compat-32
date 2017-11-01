@@ -1,7 +1,7 @@
 # Description: X11 toolkit intrinsics library
 # URL: http://xorg.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: xorg-libsm-32 xorg-libx11-32 xorg-xproto-32 xorg-kbproto-32 xorg-libxt
+# Depends on: xorg-libsm-32 xorg-libx11-32 xorg-libxt
 
 name=xorg-libxt-32
 version=1.1.5

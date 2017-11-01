@@ -1,7 +1,7 @@
 # Description: X11 Testing resource extension library
 # URL: http://xorg.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: xorg-libx11-32 xorg-libxext-32 xorg-libxi-32 xorg-recordproto-32 xorg-libxtst
+# Depends on: xorg-libxi-32 xorg-libxtst xorg-recordproto-32
 
 name=xorg-libxtst-32
 version=1.2.3

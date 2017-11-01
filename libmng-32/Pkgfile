@@ -1,7 +1,7 @@
 # Description: libmng - Mutliple Image Network Graphics 
 # URL: http://www.libmng.com
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: zlib-32 libjpeg-turbo-32 lcms2-32
+# Depends on: lcms2-32
 
 name=libmng-32
 version=2.0.3
