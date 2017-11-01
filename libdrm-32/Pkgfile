@@ -4,7 +4,7 @@
 # Depends on: libpthread-stubs-32 xorg-libpciaccess-32 libdrm
 
 name=libdrm-32
-version=2.4.85
+version=2.4.87
 release=1
 source=(https://dri.freedesktop.org/${name%-*}/${name%-*}-$version.tar.bz2)
 
