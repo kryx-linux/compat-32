@@ -4,14 +4,13 @@
 # Depends on: expat
 
 name=expat-32
-version=2.2.4
+version=2.2.5
 release=1
 source=(https://downloads.sourceforge.net/project/${name%-*}/${name%-*}/$version/${name%-*}-$version.tar.bz2)
 
 build() { 
 	cd ${name%-*}-$version
 
-	CONFIG_SHELL=/bin/bash \
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32
