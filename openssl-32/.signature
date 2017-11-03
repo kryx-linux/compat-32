@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXcJT7w2mVw2uTWn2vPTPnm+ZZ/6Y/nV+9HtThFsvb2s9XttG0rtEbnwezicWh16xRt4gWhAU6PCjJcTfLWg5qAU=
-SHA256 (Pkgfile) = 49c18aa93df0530bc755f19ab91c71781b4a1a7cf8072dc9265f1770736ce447
+RWSwxGo/zH7eXf1r6BkOiTRmSEiVRtoSeoApM1Sa1RtJhEcka3lvlJstz1zAcfkzqOZJLWPKl3Nw2sSbmKMROlIxgSm0acgCZAA=
+SHA256 (Pkgfile) = c52168b0dd7a220acb7301415a77d16db16edc3528ce7c1b200719b008521b01
 SHA256 (.footprint) = 92da0c574f0e1db473777dc0918a674a6de940bb94484cd7c271b56922973ce6
-SHA256 (openssl-1.0.2l.tar.gz) = ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c
+SHA256 (openssl-1.0.2m.tar.gz) = 8c6ff15ec6b319b50788f42c7abc2890c08ba5a1cdcd3810eb9092deada37b0f
 SHA256 (openssl-1.0.2a-32bit_x86_64.patch) = e6dfe859ad64fa365e83dd88ce9fd3d31e4d6407257002d157d8b98314bf2813
 SHA256 (openssl-1.0.2d-parallel-build.patch) = deaf6f3af41874ecc6d63841ea14b8e6c71cea81d4a511a754bc90c9a993147f
