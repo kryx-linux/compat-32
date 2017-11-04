@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXVtk6JEuMqbEBMoZQo7/ut7p6G1CI26pywI87Pmtmn+IHRQhQibBvS/D0fbjyj+PGJiOn6+HzCj7vFyVA6lRng8=
-SHA256 (Pkgfile) = 1bc46461c1a38981facf8df4fb5afa8d1a79283afbbee692c03007f35f05eefb
+RWSwxGo/zH7eXcxIMwZSoTZ9o3u8rOGwYwcJox9aHfTqHaWKJw0ZbupX4RHQlYfpXAPJJlfDXSSl5WQMM1CS0s2bBcrf+737QgQ=
+SHA256 (Pkgfile) = e7d3acbb6e06ce4d232af950e2bec6bf66cd8caf9180dafc1c814fdea8e726d9
 SHA256 (.footprint) = ba4ac6881fb9d13fddfe9153c0cd81278640c1b352e383c72a791bc1a2e26a2e
-SHA256 (libxml2-2.9.6.tar.gz) = 8b9038cca7240e881d462ea391882092dfdc6d4f483f72683e817be08df5ebbc
+SHA256 (libxml2-2.9.7.tar.gz) = f63c5e7d30362ed28b38bfa1ac6313f9a80230720b7fb6c80575eeab3ff5900c
 SHA256 (libxml2-python-config.patch) = 86c3ebf2f5af78bdddcf885fb18bb21e0c4277a9321802270eda7deff1d347b4
