@@ -6,7 +6,7 @@
 name=libtiff-32
 version=4.0.9
 release=1
-source=(https://download.osgeo.org/libtiff/tiff-$version.tar.gz)
+source=(http://download.osgeo.org/libtiff/tiff-$version.tar.gz)
 
 build() {
 	cd tiff-$version
