@@ -4,17 +4,16 @@
 # Depends on: icu
 
 name=icu-32
-version=58.2
+version=60.1
 release=1
-source=(http://download.icu-project.org/files/icu4c/$version/icu4c-${version//./_}-src.tgz
-	icu-58.1-remove-bashisms.patch
-	icu-58.1-iterator.patch)
+source=(http://download.icu-project.org/files/icu4c/$version/icu4c-${version//./_}-src.tgz)
 
 build() {
 	cd icu/source
 
-	patch -p1 -i $SRC/icu-58.1-remove-bashisms.patch
-	patch -p1 -i $SRC/icu-58.1-iterator.patch
+	# icu tries to use clang by default
+	[ "$CC" ] || export CC=gcc
+	[ "$CXX" ] || export CXX=g++
 
 	./configure \
 		--prefix=/usr \

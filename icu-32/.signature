@@ -1,7 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXUaiXLvDmPS/iyXiCH5SoPbnAdTwsZj/cxT3k1OwbOR+EHWd2+6ALuxtY1x0v2tx3kuJpjONZMEcdfv2VIHJQws=
-SHA256 (Pkgfile) = c7f7de215ede2abc8baf176da71accee78666295b901d23f935140df2b93c4aa
-SHA256 (.footprint) = dd0dded1e7f4d3ee5d96d467cd28f4a54871993d39793e5da243b4ad0f0e448d
-SHA256 (icu4c-58_2-src.tgz) = 2b0a4410153a9b20de0e20c7d8b66049a72aef244b53683d0d7521371683da0c
-SHA256 (icu-58.1-remove-bashisms.patch) = 8a2177d5f549168d5680d6477381a9f6f5ca0bd8f6bd23cc30d7f953e10907bc
-SHA256 (icu-58.1-iterator.patch) = 468bba2185584c30a5b096d7c85d0afa739067594f0883b6f8f448b1bf996801
+RWSwxGo/zH7eXRe2sNBgD1JNEuc+/J6gixxvnVU3P5L5Np3sqGcT5yGd1qbP4huQk/0Pw7bby1w/AQS8ZtnN3UX1KKZWE9yfEww=
+SHA256 (Pkgfile) = 8b23954533ae3ebd2e9fc4db9e62a27aa807be463a692af22828fa8ebc78fdc4
+SHA256 (.footprint) = 428d69d3ccebfaa60e9f1ca1cb67fe7e7735510c41763283cfb57e933275789b
+SHA256 (icu4c-60_1-src.tgz) = f8f5a6c8fbf32c015a467972bdb1477dc5f5d5dfea908b6ed218715eeb5ee225
