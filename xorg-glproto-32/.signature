@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXXg23EdV/PsNyCyTSnntKKZUojA5BbDYh34TDXcXhk9AwJYEsvGJHkCcdEDbUBkQ/BjExkHJ55cg4GaC8Xa6dwc=
-SHA256 (Pkgfile) = 2160a977727f7c9105eaa371cdc39d008c721c6c528e058fc746317045cf6227
+RWSwxGo/zH7eXde8Jhwze+9s+Xfu42QWI2xt96SWo61tJBe4VB6uIaZsMFo52RcFLTRmaA40T5urpiY+DqIzNG4OslcXzkphDQY=
+SHA256 (Pkgfile) = cf39333e78ac972a294ddf3c61644a006f46ccb2ea33a8da9274af3ab71a5d20
 SHA256 (.footprint) = 9def08525fe1793483c312fda8a709fce4e1260a6cc03fea45a686c4513ef9db
 SHA256 (glproto-1.4.17.tar.bz2) = adaa94bded310a2bfcbb9deb4d751d965fcfe6fb3a2f6d242e2df2d6589dbe40

@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXT6TvMmg9CFycb4d7qAakNldC+EKKl9oj2WpEpfqlfLxCPf4/ZNFMVN1T4MZk+ZW0p0jPv/CkgVDlXPaynEv0wM=
-SHA256 (Pkgfile) = 6550c2f94fbcea256128e49dae2626fea1e59f1efbfea8a89cff84b8bf2b1d11
+RWSwxGo/zH7eXXgg1Oar/l77LFhMcFNdqTNccsi59fNbfWK2IbICeFmMDi6N4w+L2CEsQ51CdkzQ4iOYinBx4E9JWqqqUyaeTAA=
+SHA256 (Pkgfile) = c1e0017274663ac99211419cc143dfff0ac1d510ce4cef2405990e16e14c4dd1
 SHA256 (.footprint) = 367d8076e5613a8744d2258bd9508d0bac200b2a33b29b7cc77b00a1a4d798d3
 SHA256 (xineramaproto-1.2.1.tar.bz2) = 977574bb3dc192ecd9c55f59f991ec1dff340be3e31392c95deff423da52485b

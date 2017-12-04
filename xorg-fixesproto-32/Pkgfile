@@ -6,7 +6,7 @@
 name=xorg-fixesproto-32
 version=5.0
 release=1
-source=(http://xorg.freedesktop.org/releases/individual/proto/fixesproto-$version.tar.bz2)
+source=(https://www.x.org/releases/individual/proto/fixesproto-$version.tar.bz2)
 
 build() {
 	cd fixesproto-$version

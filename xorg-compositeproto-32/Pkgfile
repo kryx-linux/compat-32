@@ -6,7 +6,7 @@
 name=xorg-compositeproto-32
 version=0.4.2
 release=1
-source=(http://xorg.freedesktop.org/releases/individual/proto/compositeproto-$version.tar.bz2)
+source=(https://www.x.org/releases/individual/proto/compositeproto-$version.tar.bz2)
 
 build() {
 	cd compositeproto-$version

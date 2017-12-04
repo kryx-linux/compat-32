@@ -6,7 +6,7 @@
 name=xorg-videoproto-32
 version=2.3.3
 release=1
-source=(http://xorg.freedesktop.org/releases/individual/proto/videoproto-$version.tar.bz2)
+source=(https://www.x.org/releases/individual/proto/videoproto-$version.tar.bz2)
 
 build() {
 	cd videoproto-$version

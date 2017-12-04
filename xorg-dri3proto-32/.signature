@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXc33kTIe9yxWYuNL0Po/Z2kqTw3uYZ3d3SC2QjthvyGGzClBaqDoN1WExvNkzrr4PYxk1L8QAmZgHAdEywBF5wE=
-SHA256 (Pkgfile) = e94aa2791add6976c11ca7bab34b3ce2ebcfbc5f124d04c325b447cb63eff6f9
+RWSwxGo/zH7eXdvpeDt214O4fwcmpN+XNyurSMxl1QSXQPslTsnPEcQ5kbSzGt/LbzxQBnc3ne1yE4gydEOxZ+TfjHr/4OO1MQ4=
+SHA256 (Pkgfile) = 70150075c2499c9fe8f56df6c3a644086f6ff40bce9090077386cb31ef80ea61
 SHA256 (.footprint) = 35f084536fe98cb724d183e604f52a415c0e42d773a145d117628a7abc39892f
 SHA256 (dri3proto-1.0.tar.bz2) = 01be49d70200518b9a6b297131f6cc71f4ea2de17436896af153226a774fc074

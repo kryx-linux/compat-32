@@ -6,7 +6,7 @@
 name=xorg-libxcb-32
 version=1.12
 release=1
-source=(http://xcb.freedesktop.org/dist/libxcb-$version.tar.bz2)
+source=(https://www.x.org/releases/individual/xcb/libxcb-$version.tar.bz2)
 
 build() {
 	cd libxcb-$version

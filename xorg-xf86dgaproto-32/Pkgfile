@@ -6,7 +6,7 @@
 name=xorg-xf86dgaproto-32
 version=2.1
 release=1
-source=(http://xorg.freedesktop.org/releases/individual/proto/xf86dgaproto-$version.tar.bz2)
+source=(https://www.x.org/releases/individual/proto/xf86dgaproto-$version.tar.bz2)
 
 build() {
 	cd xf86dgaproto-$version

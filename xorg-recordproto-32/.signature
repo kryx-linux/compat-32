@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXXdWb0NVu1YLc1AA6mmtzP0gPszz7ASHbAkVFFNQoQF2aYGJrqlEJ/r55r05pfzCKumTV1ln5rnOjIFZQpPoxQc=
-SHA256 (Pkgfile) = ea90238c06794f04a4fe0a70b098938c1cfd9a9e82f57a4b17f62a4f239627b2
+RWSwxGo/zH7eXawG/Z8ulDgZ36HSh28yjrarufMTLs2y0oNI4MsSpLCc3mden2abxuGBnARLgzlZn2eg2DFxiSqNwdBO1So+SQc=
+SHA256 (Pkgfile) = 5ce70513dab18c8b82fb597200d86143e176af79ae18d936bf283a7a39b698a7
 SHA256 (.footprint) = 9e79a525f49a684a0a0eef675a714e36f4561bebea5ba0ab4dbc2bc24be643ee
 SHA256 (recordproto-1.14.2.tar.bz2) = a777548d2e92aa259f1528de3c4a36d15e07a4650d0976573a8e2ff5437e7370
