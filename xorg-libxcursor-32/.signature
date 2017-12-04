@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXRZKA+QlP3HVUnKhq/r6vzxWoHYBse0BKWtWDG6wUEJnjgvXhqJSxXZJ093EWeQZFQRS15YlGBY+qIm5PmQJYQs=
-SHA256 (Pkgfile) = e2075bb36cc2ade7091e778430e0aac7ab5796bd31f1a1ffcad7c96eabdef967
+RWSwxGo/zH7eXWP0XurFgDjbRfCkSOkF7zPT2ulx6rr22vXMWpi/s7UyETf17tx3XfI7/Y/OYM2P77a7hapCZ3X5SgLgywlPuQU=
+SHA256 (Pkgfile) = b680f1bf307e954cc5df30a129197a7afd14ea58cd6ff5f35a5e0712309af441
 SHA256 (.footprint) = 987a280727a428a2c91a0ed5e5f46a0c5568befc824d724bcc3252483bae377d
-SHA256 (libXcursor-1.1.14.tar.bz2) = 9bc6acb21ca14da51bda5bc912c8955bc6e5e433f0ab00c5e8bef842596c33df
+SHA256 (libXcursor-1.1.15.tar.bz2) = 294e670dd37cd23995e69aae626629d4a2dfe5708851bbc13d032401b7a3df6b
