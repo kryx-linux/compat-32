@@ -4,7 +4,7 @@
 # Depends on: nvidia xorg-libxvmc-32
 
 name=nvidia-32
-version=384.98
+version=384.111
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
 
