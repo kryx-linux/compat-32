@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXfctuazaCp0coRLgIEbj21rBjIT4m5On7TPBJKvdcjlmYSLTDjqBMx1s8FrgQkLAsGhSs9bTJ1WW4YrgIZvycwk=
-SHA256 (Pkgfile) = a0ac2bac4cb485663c447768bfc9fbaf34e299ba36b1dee44094067613d7f004
-SHA256 (.footprint) = 03e4d7964c709496621fa8affba36eb212850d65a86aaa8c824068d54c39ad10
-SHA256 (kmod-24.tar.xz) = 610b8d1df172acc39a4fdf1eaa47a57b04873c82f32152e7a62e29b6ff9cb397
+RWSwxGo/zH7eXTmK8/KILM508VBWYTZ10P7p8NjjRlbcaH0sjclIXthdLB6kUj6/Z9XkQhxwzo67b9EfjbCVXQfbVct+rATMTAk=
+SHA256 (Pkgfile) = ad4fdfc9269c4d57a0f9aab26b19297b55b1d19e1f04d45e782bb9e1aefb2a1d
+SHA256 (.footprint) = abe0d2baa54cc08061de806c9ff84ab793aebd5ec8c55ef6235fd941255ea879
+SHA256 (kmod-25.tar.xz) = 7165e6496656159dcb909a91ed708a0fe273a4b128b4b1dc997ccb5189eef1cd
