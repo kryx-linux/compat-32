@@ -4,7 +4,7 @@
 # Depends on: atk-32 gdk-pixbuf-32 gtk pango-32 xorg-libxcomposite-32 xorg-libxcursor-32 xorg-libxinerama-32 xorg-libxrandr-32
 
 name=gtk-32
-version=2.24.31
+version=2.24.32
 release=1
 source=(http://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.xz)
 
