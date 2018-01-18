@@ -49,10 +49,6 @@ lrwxrwxrwx	root/root	usr/lib32/libgbm.so.1 -> libgbm.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib32/libglapi.so -> libglapi.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib32/libglapi.so.0 -> libglapi.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib32/libglapi.so.0.0.0
--rwxr-xr-x	root/root	usr/lib32/libvulkan_intel.la
--rwxr-xr-x	root/root	usr/lib32/libvulkan_intel.so
--rwxr-xr-x	root/root	usr/lib32/libvulkan_radeon.la
--rwxr-xr-x	root/root	usr/lib32/libvulkan_radeon.so
 -rwxr-xr-x	root/root	usr/lib32/libxatracker.la
 lrwxrwxrwx	root/root	usr/lib32/libxatracker.so -> libxatracker.so.2.3.0
 lrwxrwxrwx	root/root	usr/lib32/libxatracker.so.2 -> libxatracker.so.2.3.0
@@ -83,8 +79,3 @@ lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_radeonsi.so -> libvdpau_radeonsi.s
 lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_radeonsi.so.1 -> libvdpau_radeonsi.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib32/vdpau/libvdpau_radeonsi.so.1.0 -> libvdpau_radeonsi.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib32/vdpau/libvdpau_radeonsi.so.1.0.0
-drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/vulkan/
-drwxr-xr-x	root/root	usr/share/vulkan/icd.d/
--rw-r--r--	root/root	usr/share/vulkan/icd.d/intel_icd.i686.json
--rw-r--r--	root/root	usr/share/vulkan/icd.d/radeon_icd.i686.json
