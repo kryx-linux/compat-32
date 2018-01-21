@@ -36,7 +36,7 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/LLVMProcessSources.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/TableGen.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/VersionFromVCS.cmake
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-5.0.0.so -> libLLVM-5.0.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-5.0.1.so -> libLLVM-5.0.so
 -rwxr-xr-x	root/root	usr/lib32/libLLVM-5.0.so
 lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-5.0.so
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUAsmParser.a
@@ -108,6 +108,6 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-5.0.so
 -rw-r--r--	root/root	usr/lib32/libLLVMXRay.a
 -rw-r--r--	root/root	usr/lib32/libLLVMipo.a
 lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.5
-lrwxrwxrwx	root/root	usr/lib32/libLTO.so.5 -> libLTO.so.5.0.0
--rwxr-xr-x	root/root	usr/lib32/libLTO.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib32/libLTO.so.5 -> libLTO.so.5.0.1
+-rwxr-xr-x	root/root	usr/lib32/libLTO.so.5.0.1
 drwxr-xr-x	root/root	usr/share/
