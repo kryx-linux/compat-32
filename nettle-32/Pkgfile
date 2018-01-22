@@ -4,9 +4,9 @@
 # Depends on: nettle libgmp-32
 
 name=nettle-32
-version=3.3
+version=3.4
 release=1
-source=(http://www.lysator.liu.se/~nisse/archive/nettle-$version.tar.gz)
+source=(https://www.lysator.liu.se/~nisse/archive/nettle-$version.tar.gz)
 
 build() {
 	cd nettle-$version
