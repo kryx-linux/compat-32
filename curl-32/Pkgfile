@@ -4,7 +4,7 @@
 # Depends on:  openssl-32 zlib-32 curl
 
 name=curl-32
-version=7.57.0
+version=7.58.0
 release=1
 source=(https://curl.haxx.se/download/${name%-*}-$version.tar.xz)
 
