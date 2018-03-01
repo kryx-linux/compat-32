@@ -4,12 +4,12 @@
 # Depends on: glew-32 glu-32
 
 name=mesa-demos-32
-version=8.3.0
+version=8.4.0
 release=1
-source=(ftp://ftp.freedesktop.org/pub/mesa/demos/$version/mesa-demos-$version.tar.bz2)
+source=(https://mesa.freedesktop.org/archive/demos/${name%-*}-$version.tar.bz2)
 
 build() {
-	cd mesa-demos-$version
+	cd ${name%-*}-$version
 
 	./configure --prefix=/usr 
 
