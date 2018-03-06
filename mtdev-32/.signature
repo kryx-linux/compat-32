@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXcjI77ex9WHeNyw+XF5BbEi3mE4qyA3QHYzxcff4wPAk0dw19brlC2Xhp8zEM3cEGZFZ1YNT2XfL7w5kj/fxpQI=
+SHA256 (Pkgfile) = 0a3008dcc0ce8f23cdf4b35b6bb6b85a9533fdf3f22111a3a78908ba9520a25d
+SHA256 (.footprint) = f4bd905d88fb0eb14fafd80145c3229f038cf06a618968c168aa99598be897ec
+SHA256 (mtdev-1.1.5.tar.gz) = a662924dd09cf538c8df66514da345e40c3cbfa880cc7262bc3b55ee46d0c1f4
