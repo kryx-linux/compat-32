@@ -4,9 +4,9 @@
 # Depends on: python-32 libxml2-32 libxml2-python
 
 name=libxml2-python-32
-version=2.9.7
+version=2.9.8
 release=1
-source=(ftp://xmlsoft.org/libxml2/libxml2-$version.tar.gz
+source=(http://xmlsoft.org/sources/libxml2-$version.tar.gz
 	libxml2-python-config.patch)
 
 build() {
