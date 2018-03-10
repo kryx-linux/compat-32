@@ -1,10 +1,10 @@
 # Description: A library for configuring and customizing font access
 # URL:         http://fontconfig.org/wiki/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on:  freetype-32 expat-32 bzip2-32 fontconfig
+# Depends on:  freetype-32 expat-32 bzip2-32 util-linux-32 fontconfig
 
 name=fontconfig-32
-version=2.12.6
+version=2.13.0
 release=1
 source=(https://fontconfig.org/release/fontconfig-$version.tar.bz2)
 
