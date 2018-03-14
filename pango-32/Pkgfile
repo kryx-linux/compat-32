@@ -1,10 +1,10 @@
 # Description: A library for layout and rendering of text
 # URL: http://www.gtk.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: harfbuzz-32 xorg-libsm-32 xorg-libxft-32 pango
+# Depends on: fribidi-32 harfbuzz-32 xorg-libsm-32 xorg-libxft-32 pango
 
 name=pango-32
-version=1.40.14
+version=1.42.0
 release=1
 source=(https://download.gnome.org/sources/pango/${version:0:4}/${name%-*}-$version.tar.xz)
 
