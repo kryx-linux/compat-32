@@ -3,7 +3,7 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=libpcre-32
-version=8.41
+version=8.42
 release=1
 source=(https://ftp.pcre.org/pub/pcre/pcre-$version.tar.bz2)
 
