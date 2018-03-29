@@ -1,13 +1,13 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
-lrwxrwxrwx	root/root	usr/lib32/libpytalloc-util.so -> libpytalloc-util.so.2.1.11
-lrwxrwxrwx	root/root	usr/lib32/libpytalloc-util.so.2 -> libpytalloc-util.so.2.1.11
--rwxr-xr-x	root/root	usr/lib32/libpytalloc-util.so.2.1.11
--rwxr-xr-x	root/root	usr/lib32/libtalloc-compat1-2.1.11.so
-lrwxrwxrwx	root/root	usr/lib32/libtalloc.so -> libtalloc.so.2.1.11
-lrwxrwxrwx	root/root	usr/lib32/libtalloc.so.1 -> libtalloc-compat1-2.1.11.so
-lrwxrwxrwx	root/root	usr/lib32/libtalloc.so.2 -> libtalloc.so.2.1.11
--rwxr-xr-x	root/root	usr/lib32/libtalloc.so.2.1.11
+lrwxrwxrwx	root/root	usr/lib32/libpytalloc-util.so -> libpytalloc-util.so.2.1.12
+lrwxrwxrwx	root/root	usr/lib32/libpytalloc-util.so.2 -> libpytalloc-util.so.2.1.12
+-rwxr-xr-x	root/root	usr/lib32/libpytalloc-util.so.2.1.12
+-rwxr-xr-x	root/root	usr/lib32/libtalloc-compat1-2.1.12.so
+lrwxrwxrwx	root/root	usr/lib32/libtalloc.so -> libtalloc.so.2.1.12
+lrwxrwxrwx	root/root	usr/lib32/libtalloc.so.1 -> libtalloc-compat1-2.1.12.so
+lrwxrwxrwx	root/root	usr/lib32/libtalloc.so.2 -> libtalloc.so.2.1.12
+-rwxr-xr-x	root/root	usr/lib32/libtalloc.so.2.1.12
 drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/pytalloc-util.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/talloc.pc
