@@ -1,6 +1,10 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
 drwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/
+drwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/include/
+drwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/include/gst/
+drwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/include/gst/gl/
+-rw-r--r--	root/root	usr/lib32/gstreamer-1.0/include/gst/gl/gstglconfig.h
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstadder.la
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstadder.so
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstalsa.la
@@ -27,6 +31,8 @@ drwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstlibvisual.so
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstogg.la
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstogg.so
+-rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstopengl.la
+-rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstopengl.so
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstpango.la
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstpango.so
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstpbtypes.la
@@ -75,6 +81,10 @@ lrwxrwxrwx	root/root	usr/lib32/libgstaudio-1.0.so.0 -> libgstaudio-1.0.so.0.1400
 lrwxrwxrwx	root/root	usr/lib32/libgstfft-1.0.so -> libgstfft-1.0.so.0.1400.0
 lrwxrwxrwx	root/root	usr/lib32/libgstfft-1.0.so.0 -> libgstfft-1.0.so.0.1400.0
 -rwxr-xr-x	root/root	usr/lib32/libgstfft-1.0.so.0.1400.0
+-rwxr-xr-x	root/root	usr/lib32/libgstgl-1.0.la
+lrwxrwxrwx	root/root	usr/lib32/libgstgl-1.0.so -> libgstgl-1.0.so.0.1400.0
+lrwxrwxrwx	root/root	usr/lib32/libgstgl-1.0.so.0 -> libgstgl-1.0.so.0.1400.0
+-rwxr-xr-x	root/root	usr/lib32/libgstgl-1.0.so.0.1400.0
 -rwxr-xr-x	root/root	usr/lib32/libgstpbutils-1.0.la
 lrwxrwxrwx	root/root	usr/lib32/libgstpbutils-1.0.so -> libgstpbutils-1.0.so.0.1400.0
 lrwxrwxrwx	root/root	usr/lib32/libgstpbutils-1.0.so.0 -> libgstpbutils-1.0.so.0.1400.0
@@ -108,6 +118,7 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-app-1.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-audio-1.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-fft-1.0.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-gl-1.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-pbutils-1.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-plugins-base-1.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-riff-1.0.pc
