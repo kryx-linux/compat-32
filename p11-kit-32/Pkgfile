@@ -1,0 +1,28 @@
+# Description: Provides a way to load and enumerate PKCS#11 modules
+# URL: http://p11-glue.freedesktop.org/p11-kit.html
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: libtasn1-32 libffi-32 p11-kit
+
+name=p11-kit-32
+version=0.23.10
+release=1
+source=(https://github.com/p11-glue/${name%-*}/releases/download/$version/${name%-*}-$version.tar.gz)
+
+build() {
+	cd ${name%-*}-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--libexecdir=/usr/lib32 \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--host=i686-pc-linux-gnu \
+		--with-module-path=/usr/lib32/pkcs11 \
+		--with-trust-paths=/etc/ssl
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/etc $PKG/usr/{bin,include,share}
+}
