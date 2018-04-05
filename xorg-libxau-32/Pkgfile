@@ -1,7 +1,7 @@
 # Description: X Authorization routines
 # URL: http://xorg.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: xorg-xproto-32 xorg-libxau
+# Depends on: xorg-libxau
 
 name=xorg-libxau-32
 version=1.0.8
@@ -11,9 +11,9 @@ source=(https://www.x.org/releases/individual/lib/libXau-$version.tar.bz2)
 build() {
 	cd libXau-$version
 
-	./configure --prefix=/usr --mandir=/usr/man --libdir=/usr/lib32
+	./configure --prefix=/usr --libdir=/usr/lib32
 
 	make
 	make DESTDIR=$PKG install
-	rm -r $PKG/usr/{include,man}
+	rm -r $PKG/usr/{include,share}
 }

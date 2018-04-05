@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXbGulNeE4EWOnehlHx7lDz1GXDM0CnKtHKWVC3Dg9GOP2GfFxhzYiy3a9Z+PNkooy077M1CT1VsU8PQCT5GpvQk=
-SHA256 (Pkgfile) = a25a81f3a8d8f5ca3423fd4a629112395e035414b06827b2c9cc5156b4bf6482
+RWSwxGo/zH7eXQub4Ah84JC9eIuUe4nvCqCxbiOyJojMZYq+7XGUaXPa6zdVS+vhSNfVxbAR0siTA8Q/urbfYFjBHc+Z+GWF0gI=
+SHA256 (Pkgfile) = 175d4ecc6708500bbb3be814191a26af7850bf551d9c6a429e8dd764a3618e2d
 SHA256 (.footprint) = 837888d9294e3fbd47f1b01a944f2dedc23d45a915799bc61abbce23b408e99a
 SHA256 (libXrandr-1.5.1.tar.bz2) = 1ff9e7fa0e4adea912b16a5f0cfa7c1d35b0dcda0e216831f7715c8a3abcf51a

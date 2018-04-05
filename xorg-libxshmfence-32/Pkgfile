@@ -1,7 +1,7 @@
 # Description: X shared memory fences
 # URL: http://xorg.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: xorg-xproto-32 xorg-libxshmfence
+# Depends on: xorg-libxshmfence
 
 name=xorg-libxshmfence-32
 version=1.3
