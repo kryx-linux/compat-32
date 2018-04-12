@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXcnZ3PhnHljW/TL2NEPpZqE4WJRCEys94rMkHLowExbDK5GjMhyG9gwRREaV8Dxvwh+rQrGAceLz0bPQGZoRRgc=
-SHA256 (Pkgfile) = 6c71f5eb2e3a5533dfff5666d49ba44d5c1d0a3c68bf1569a1be3c6ae7dd4e7b
-SHA256 (.footprint) = db82a21e417c0bedaca8c123a7e3f403e28d31275386f7f713eae0b24e1522f7
-SHA256 (talloc-2.1.12.tar.gz) = 987c0cf6815e948d20caaca04eba9b823e67773f361ffafe676e24b953cc604b
+RWSwxGo/zH7eXVi9Sr0/SZ4Vvm7Uq4uTx3FYF+bIKBiUc2XJEnRx6M2aUagIASNPbT32+BscGgZYWHuVU3D8aW2zwZoWjxH8UAo=
+SHA256 (Pkgfile) = b2351cb16c35fcbb14f55040e4a9147c5957feb87f534098b56a725340cba610
+SHA256 (.footprint) = c8df521231b76c1e83158037eb9ad3f08fe54bad2c8b3034f695b8c11834ca85
+SHA256 (talloc-2.1.13.tar.gz) = 84f399dbf0ad97006a2b4953ea99452d033faac15aabfddd4ba61734764c6047
