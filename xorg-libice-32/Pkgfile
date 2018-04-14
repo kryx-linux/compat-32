@@ -1,7 +1,7 @@
 # Description: xorg lib libICE
 # URL: http://xorg.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: xorg-xtrans-32 xorg-libice
+# Depends on: xorg-xtrans-32 xorg-libice xorg-xorgproto-32
 
 name=xorg-libice-32
 version=1.0.9
