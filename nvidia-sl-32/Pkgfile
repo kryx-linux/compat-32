@@ -4,20 +4,25 @@
 # Depends on: nvidia-sl xorg-libxvmc-32
 
 name=nvidia-sl-32
-version=387.34
+version=396.24
 release=1
-source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
+source=(
+https://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run
+#http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run
+)
 
 build() {
-    sh NVIDIA-Linux-x86-$version.run --extract-only
-    cd NVIDIA-Linux-x86-$version
+    #sh NVIDIA-Linux-x86-$version.run --extract-only
+    sh NVIDIA-Linux-x86_64-$version.run --extract-only
+    #cd NVIDIA-Linux-x86-$version
+    cd NVIDIA-Linux-x86_64-$version/32
 
     # libraries
     install -d $PKG/usr/lib32/{tls,vdpau}
     install -m 0755 libGL.so.$version              $PKG/usr/lib32
     install -m 0755 libOpenCL.so.1.0.0             $PKG/usr/lib32
     install -m 0755 libcuda.so.$version            $PKG/usr/lib32
-    install -m 0755 libnvidia-cfg.so.$version      $PKG/usr/lib32
+    #install -m 0755 libnvidia-cfg.so.$version      $PKG/usr/lib32
     install -m 0755 libnvidia-compiler.so.$version $PKG/usr/lib32
     install -m 0755 libnvidia-encode.so.$version   $PKG/usr/lib32
     install -m 0755 libnvidia-fbc.so.$version      $PKG/usr/lib32
@@ -30,6 +35,7 @@ build() {
     install -m 0755 tls/libnvidia-tls.so.$version  $PKG/usr/lib32/tls
     install -m 0755 libvdpau_nvidia.so.$version    $PKG/usr/lib32/vdpau
     install -m 0755 libnvidia-fatbinaryloader.so.$version $PKG/usr/lib32
+    install -m 0755 libnvidia-glvkspirv.so.$version $PKG/usr/lib32
 
     ln -s libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so.1
     ln -s libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so
