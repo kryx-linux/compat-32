@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXfveJAhlMf2m+Jm8hIuZtS7nS5KIIPNutqeUpX+ipWCOo9++O0rOtIqtg+qA134iJb80ThedqX7+eDS6HXPD4g8=
-SHA256 (Pkgfile) = 2714f64b25ae509cf6c08ee464f38b19c5430a440ab04a381c2b6af2f45cda96
+RWSwxGo/zH7eXZiG/BGXYfap7GvpkcFISYv8oJIpAVHYv/549OhQMSRJP9bvtIu8S45T+CagomSWBYU9UZb992A7FVwjF695gA4=
+SHA256 (Pkgfile) = dc658fea2494f474ccb4ff4cce206dfe075c9fcf60df14aef3f71b67370ab27b
 SHA256 (.footprint) = 443a1d2ce220ec5895c13c4d95bf28f36f2ab95bbd7b4ae2adaede2db4d66670
-SHA256 (libinput-1.10.6.tar.xz) = 4207742c96980584112b19090413f2d390c6acaaf51c4aac1df9edbbcdfb9b39
+SHA256 (libinput-1.11.0.tar.xz) = 64a36c4f826f4b5d473bf2cb803122f96390a18243ec810f2ce8ac5076a0bc12
