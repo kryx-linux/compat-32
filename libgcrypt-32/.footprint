@@ -2,6 +2,6 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
 -rw-r--r--	root/root	usr/lib32/libgcrypt.a
 -rwxr-xr-x	root/root	usr/lib32/libgcrypt.la
-lrwxrwxrwx	root/root	usr/lib32/libgcrypt.so -> libgcrypt.so.20.2.2
-lrwxrwxrwx	root/root	usr/lib32/libgcrypt.so.20 -> libgcrypt.so.20.2.2
--rwxr-xr-x	root/root	usr/lib32/libgcrypt.so.20.2.2
+lrwxrwxrwx	root/root	usr/lib32/libgcrypt.so -> libgcrypt.so.20.2.3
+lrwxrwxrwx	root/root	usr/lib32/libgcrypt.so.20 -> libgcrypt.so.20.2.3
+-rwxr-xr-x	root/root	usr/lib32/libgcrypt.so.20.2.3
