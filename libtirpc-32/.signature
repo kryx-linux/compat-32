@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXYbqNbX4kmK3saEABJnEZ6y//UdknsS3Pnjw8SKtWrOu7AEpEBIb3KlCvquub5iC4F2mElIRrydwgk84BUmxeQg=
+SHA256 (Pkgfile) = eb7ff743a617389622a55f12fdc9e92428290f89dffeaf831dfc29fd2fc1ed36
+SHA256 (.footprint) = fdb4f0ce084a49253514056f04c87cd327201089580073fe928cfae35b258021
+SHA256 (libtirpc-1.0.3.tar.bz2) = 86c3a78fc1bddefa96111dd233124c703b22a78884203c55c3e06b3be6a0fd5e
