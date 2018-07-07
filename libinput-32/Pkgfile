@@ -4,7 +4,7 @@
 # Depends on: mtdev-32 eudev-32 xorg-libevdev-32 libinput
 
 name=libinput-32
-version=1.11.1
+version=1.11.2
 release=1
 source=(https://www.freedesktop.org/software/${name%-*}/${name%-*}-$version.tar.xz)
 
