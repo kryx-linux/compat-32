@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTbxlXeyTp5nlZBFcmY0B6Km9FJo0E7jNGep7DIuAxjgerQsdelxPKX+7NS+8hLzYch+5n6LiqLPLqqw6kxwkQk=
-SHA256 (Pkgfile) = 5fd45c1ea514b4ffbf4a4bcb2a1f65ecea283b0012c0b5807f99db132770ed15
+RWSwxGo/zH7eXaOJCbhevdqp5IMBn14KIhlcVcaK4KrXUDQR8IfsU4VEKbBst232clN/kylpo1ey5MogUmZ5Tv889tYIWs8H2Ac=
+SHA256 (Pkgfile) = 3f803bf811b32cd15c07065fa043c7972430fbbb647a6e0a031cf31820759468
 SHA256 (.footprint) = d1716130d4fb63605f7d08947010596f01ba793dc9c964f0ef1ac78ea2eaf861
-SHA256 (libXScrnSaver-1.2.2.tar.bz2) = 8ff1efa7341c7f34bcf9b17c89648d6325ddaae22e3904e091794e0b4426ce1d
+SHA256 (libXScrnSaver-1.2.3.tar.bz2) = f917075a1b7b5a38d67a8b0238eaab14acd2557679835b154cf2bca576e89bf8
