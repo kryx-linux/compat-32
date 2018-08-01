@@ -1,0 +1,29 @@
+# Description: Vulkan loader, 32bit
+# URL: https://www.khronos.org/vulkan/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: vulkan-loader
+
+name=vulkan-loader-32
+version=1.1.77.0
+release=1
+source=(https://github.com/KhronosGroup/Vulkan-Loader/archive/sdk-$version/Vulkan-Loader-sdk-$version.tar.gz)
+
+build() {
+	cd Vulkan-Loader-sdk-$version
+
+	export ASFLAGS='--32'
+
+	mkdir build
+	cd build
+
+	cmake .. \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_LIBDIR=lib32 \
+		-DBUILD_WSI_WAYLAND_SUPPORT=OFF
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/include
+}

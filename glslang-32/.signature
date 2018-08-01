@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXRMkQjfWWgaEKctjNpnviRFLcLxFemKN1Ac/iGX5qZOkqoaXUgeBecK/s5uLBIl+3Rk80tCirGx+uF+9h6upRwo=
+SHA256 (Pkgfile) = 3c52afb60a69ba9eb8e3f349854feb66533828539ddf5544d1cd0f39c93e984f
+SHA256 (.footprint) = 94daf0ae9943badc8d79b66cc0836f14d747fc7f150f5557dec4a0c422cbddc1
+SHA256 (glslang-20180721-fa4952c3.tar.bz2) = a39a2ebd2529a33c18bffe0c155a51b8648f925c0cfb2acc6972141bb0eae2dd
