@@ -4,14 +4,18 @@
 
 name=bzip2-32
 version=1.0.6
-release=1
-source=(http://www.bzip.org/$version/bzip2-$version.tar.gz \
-        bzip2.patch)
+release=2
+source=(
+	#http://www.bzip.org/$version/${name%-*}-$version.tar.gz
+	https://fossies.org/linux/misc/${name%-*}-$version.tar.gz
+	bzip2.patch
+	CVE-2016-3189.patch)
 
 build() {
-	cd bzip2-$version
+	cd ${name%-*}-$version
 
-	patch -Np1 -i $SRC/bzip2.patch
+	patch -p1 -i $SRC/bzip2.patch
+	patch -p1 -i $SRC/CVE-2016-3189.patch
 
 	sed -i -e 's,$(PREFIX)/lib,$(PREFIX)/lib32,g' Makefile{,-libbz2_so}
 
@@ -22,5 +26,6 @@ build() {
 
 	make -f Makefile-libbz2_so
 	make -f Makefile-libbz2_so PREFIX=$PKG/usr install
-	rm -rf $PKG/usr/{bin,include,man}
+
+	rm -r $PKG/usr/{bin,include,share}
 }
