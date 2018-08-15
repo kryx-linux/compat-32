@@ -1,10 +1,10 @@
 # Description: Mesa 3D Graphics Library
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: elfutils-32 expat-32 libdrm-32 libvdpau-32 llvm-32 mesa3d xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxvmc-32
+# Depends on: elfutils-32 expat-32 libdrm-32 libglvnd-32 libvdpau-32 llvm-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32 mesa3d
 
 name=mesa3d-32
-version=18.1.3
+version=18.1.6
 release=1
 source=(https://mesa.freedesktop.org/archive/mesa-$version.tar.xz)
 
@@ -38,10 +38,18 @@ build() {
 		--disable-dependency-tracking \
 		--with-platforms=x11,drm \
 		--with-gallium-drivers=r300,r600,svga,swrast,radeonsi,nouveau \
-		--with-vulkan-drivers=intel,radeon
+		--with-vulkan-drivers=intel,radeon \
+		--enable-libglvnd
 
 	make
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/include $PKG/etc
+	# indirect rendering symlink
+	ln -s libGLX_mesa.so.0 $PKG/usr/lib32/libGLX_indirect.so.0
+
+	# remove libGLES* for libglvnd; see thread at
+	# https://lists.freedesktop.org/archives/mesa-maintainers/2017-March/000055.html
+	rm $PKG/usr/lib32/libGLES*
+
+	rm -r $PKG/etc $PKG/usr/{include,share/glvnd}
 }
