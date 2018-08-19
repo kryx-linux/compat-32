@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQO5BLhv/L/aZ/YevFOYYMcYmPRHlO2qkD2WrH4ANL8TFrMoEE+KvUfTwpQ9kvUezNFJ3pZibpHr4wSXopUzwQI=
-SHA256 (Pkgfile) = 2ffc14f3c8f725940753fee3f01244f4e4a22481169086ce394a91d3d0c6f5e3
-SHA256 (.footprint) = 8bc71d1d79f69792a6536cf6bb9ef350c970dbc0e4b6672c79995e550168ed9e
-SHA256 (glib-2.56.1.tar.xz) = 40ef3f44f2c651c7a31aedee44259809b6f03d3d20be44545cd7d177221c0b8d
+RWSwxGo/zH7eXe7OhEg/KlVsfa6RDlZ02TPnhWVqz95X9Amny/UDv76f0U5VHWZSjMjNn6kjDVFiszguUmjx4TAqMs6C3smyYQY=
+SHA256 (Pkgfile) = f55bac291a018f0ac3df5e26c9e356ba7ba88a78177cb91e838d32ae215330d4
+SHA256 (.footprint) = fd1cf934a310f6e78f3c3f0365ec8134a2ea6e41b6dc269096f2a4cc35fbebca
+SHA256 (glib-2.56.2.tar.xz) = d64abd16813501c956c4e123ae79f47f1b58de573df9fdd3b0795f1e2c1aa789

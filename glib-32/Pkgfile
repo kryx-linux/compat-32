@@ -4,7 +4,7 @@
 # Depends on: libffi-32 libpcre-32 python-32 util-linux-32 glib
 
 name=glib-32
-version=2.56.1
+version=2.56.2
 release=1
 source=(https://download.gnome.org/sources/glib/${version:0:4}/${name%-*}-$version.tar.xz)
 
