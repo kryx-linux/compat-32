@@ -4,18 +4,18 @@
 # Depends on: libffi-32 libpcre-32 python-32 util-linux-32 glib
 
 name=glib-32
-version=2.56.2
+version=2.58.0
 release=1
 source=(https://download.gnome.org/sources/glib/${version:0:4}/${name%-*}-$version.tar.xz)
 
 build() {
 	cd ${name%-*}-$version
 
-	aclocal
-	automake
-
-	./configure --prefix=/usr \
+	./autogen.sh
+	./configure \
+		--prefix=/usr \
 		--libdir=/usr/lib32 \
+		--disable-man \
 		--with-pcre=system \
 		--with-runtime-libdir=../../lib32 \
 		--with-gio-module-dir=/lib32/gio/modules
