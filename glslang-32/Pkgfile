@@ -4,15 +4,15 @@
 # Depends on: glslang
 
 name=glslang-32
-version=20180721
-git_commit=fa4952c3
+version=7.8.2853
 release=1
-source=(https://bitbucket.org/predivan/vulkan/downloads/${name%-*}-$version-$git_commit.tar.bz2)
+source=(https://github.com/KhronosGroup/glslang/archive/$version/${name%-*}-$version.tar.gz)
 
 build() {
-	cd ${name%-*}-$version-$git_commit
+	cd ${name%-*}-$version
 
 	/usr/bin/python update_glslang_sources.py
+
 	mkdir build
 	cd build
 
@@ -21,7 +21,6 @@ build() {
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=lib32 \
 		-DBUILD_SHARED_LIBS=ON \
-		-DBUILD_TESTING=OFF \
 		-DENABLE_GLSLANG_BINARIES=OFF
 
 	make
