@@ -4,7 +4,7 @@
 # Depends on: mtdev-32 eudev-32 xorg-libevdev-32 libinput
 
 name=libinput-32
-version=1.11.3
+version=1.12.0
 release=1
 source=(https://www.freedesktop.org/software/${name%-*}/${name%-*}-$version.tar.xz)
 
@@ -24,10 +24,5 @@ build() {
 
 	DESTDIR=$PKG ninja -C build -j ${JOBS:-1} install
 
-	install -d $PKG/etc/udev
-	mv $PKG/lib/udev/hwdb.d $PKG/etc/udev
-
-	chmod -R g-w $PKG
-
-	rm -r $PKG/{etc,lib} $PKG/usr/{bin,include,lib32/libinput,share}
+	rm -r $PKG/lib $PKG/usr/{bin,include,lib32/libinput,share}
 }
