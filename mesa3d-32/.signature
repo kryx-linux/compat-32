@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTiIsR4NRnCwr4Uwo0f089iH4ZNb/+/pdSwBzvmPAf9Hn4NeDN/w+jQ0X7W3AtCnEuDfpj4vcnlhMBevvTSH0Qg=
-SHA256 (Pkgfile) = fc2eaecf19c9cef7e888a3108090dc62f3ac7fceb2d0baeee186c92af1f612f8
+RWSwxGo/zH7eXQkhmVIhqo+KgbaUQxkvt3yXOHbYfhrcSHXwgNvRf6j/xRPYtFtB4imlnGZzyPZ5AymaaQdJtkgGBhuFs5u/XAM=
+SHA256 (Pkgfile) = e2fa4bb909353a85852852e425b28385156bb17be25d5d73b8cb919257eae267
 SHA256 (.footprint) = 316e8fb0779de9dbc9306600157ee2290391e2ebb2a1594e8453fc05202f8c0c
-SHA256 (mesa-18.1.7.tar.xz) = 655e3b32ce3bdddd5e6e8768596e5d4bdef82d0dd37067c324cc4b2daa207306
+SHA256 (mesa-18.1.8.tar.xz) = bd1be67fe9c73b517765264ac28911c84144682d28dbff140e1c2deb2f44c21b
