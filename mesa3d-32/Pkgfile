@@ -1,10 +1,10 @@
 # Description: Mesa 3D Graphics Library
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: elfutils-32 expat-32 libdrm-32 libglvnd-32 libvdpau-32 llvm-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32 mesa3d
+# Depends on: elfutils-32 expat-32 libdrm-32 libglvnd-32 libvdpau-32 llvm-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32 xorg-libxrandr-32 mesa3d
 
 name=mesa3d-32
-version=18.1.8
+version=18.2.1
 release=1
 source=(https://mesa.freedesktop.org/archive/mesa-$version.tar.xz)
 
