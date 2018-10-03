@@ -20,6 +20,7 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/ChooseMSVCCRT.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/CrossCompile.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/DetermineGCCCompatible.cmake
+-rw-r--r--	root/root	usr/lib32/cmake/llvm/FindLibpfm.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/FindOCaml.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/FindSphinx.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/GenerateVersionFromCVS.cmake
@@ -36,9 +37,9 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/LLVMProcessSources.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/TableGen.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/VersionFromVCS.cmake
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-6.0.1.so -> libLLVM-6.0.so
--rwxr-xr-x	root/root	usr/lib32/libLLVM-6.0.so
-lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-6.0.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-7.0.0.so -> libLLVM-7.so
+-rwxr-xr-x	root/root	usr/lib32/libLLVM-7.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-7.so
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUAsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUAsmPrinter.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUCodeGen.a
@@ -46,6 +47,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-6.0.so
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUDisassembler.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUInfo.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUUtils.a
+-rw-r--r--	root/root	usr/lib32/libLLVMAggressiveInstCombine.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAnalysis.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAsmPrinter.a
@@ -110,7 +112,6 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-6.0.so
 -rw-r--r--	root/root	usr/lib32/libLLVMX86Utils.a
 -rw-r--r--	root/root	usr/lib32/libLLVMXRay.a
 -rw-r--r--	root/root	usr/lib32/libLLVMipo.a
-lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.6
-lrwxrwxrwx	root/root	usr/lib32/libLTO.so.6 -> libLTO.so.6.0.1
--rwxr-xr-x	root/root	usr/lib32/libLTO.so.6.0.1
+lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.7
+-rwxr-xr-x	root/root	usr/lib32/libLTO.so.7
 drwxr-xr-x	root/root	usr/share/
