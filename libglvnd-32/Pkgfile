@@ -4,7 +4,7 @@
 # Depends on: libglvnd xorg-libx11-32 xorg-libxext-32
 
 name=libglvnd-32
-version=1.0.0
+version=1.1.0
 release=1
 source=(https://github.com/NVIDIA/${name%-32}/archive/v$version/${name%-32}-$version.tar.gz)
 
