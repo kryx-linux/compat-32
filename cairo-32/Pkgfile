@@ -4,12 +4,17 @@
 # Depends on: cairo fontconfig-32 glib-32 xorg-libpixman-32 xorg-libxext-32 xorg-libxrender-32 xorg-xcb-util-32
 
 name=cairo-32
-version=1.15.12
+version=1.15.14
 release=1
-source=(https://cairographics.org/snapshots/${name%-*}-$version.tar.xz)
+source=(https://cairographics.org/snapshots/${name%-*}-$version.tar.xz
+	cairo-xlib-endianness.patch
+	cairo-get_bitmap_surface-bsc1036789-CVE-2017-7475.diff)
 
 build() {
 	cd ${name%-*}-$version
+
+	patch -p1 -i $SRC/cairo-xlib-endianness.patch
+	patch -p1 -i $SRC/cairo-get_bitmap_surface-bsc1036789-CVE-2017-7475.diff
 
 	./configure --prefix=/usr \
 		--libdir=/usr/lib32 \

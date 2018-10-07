@@ -1,5 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQlAlqCZELnyY12yAwFz/iyIfBzWYCs0wSXMyd8D+jdp2hNtrktePsGAW4xvUGiId8m1Im+0UV9shhHuo9UEEA0=
-SHA256 (Pkgfile) = ea300be13efb04f7cc8de4b0d79b3e65bf10f8fff071e041bbd78622913c98b2
-SHA256 (.footprint) = e6a5f8f6beed07fdd7961c8a631d438b2290c3182a7820a09bf1445e3be44069
-SHA256 (cairo-1.15.12.tar.xz) = 7623081b94548a47ee6839a7312af34e9322997806948b6eec421a8c6d0594c9
+RWSwxGo/zH7eXUlrY+5CqmpGr8XHV91bJmGdFdGjK5Wxg7skZZKsX5U/+PjOpi+OKkcnmfuFj90b3gc3TdzKmwqtxJ4MS5Mbqg0=
+SHA256 (Pkgfile) = fcc3a2bf325ac7871bc4ccafa3f10f115035a9014e84d8061b862807f310b197
+SHA256 (.footprint) = 352459022f9aaba91ad8afc92559d8d09798221d1650193e02e2615ff02ea715
+SHA256 (cairo-1.15.14.tar.xz) = 16566b6c015a761bb0b7595cf879b77f8de85f90b443119083c4c2769b93298d
+SHA256 (cairo-xlib-endianness.patch) = 58d39311edee6d8ddf76deac1d2e3526b4c02d4aa1f35a6ca16ff50c8e65429f
+SHA256 (cairo-get_bitmap_surface-bsc1036789-CVE-2017-7475.diff) = 4c8b8095a41f244ddfbc9b24e2f73a6fd8d697f43903617e0519b95b27b30726
