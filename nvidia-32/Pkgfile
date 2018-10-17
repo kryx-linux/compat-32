@@ -4,30 +4,21 @@
 # Depends on: libglvnd-32
 
 name=nvidia-32
-version=390.87
+version=410.66
 release=1
-source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
+source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run)
 
 build() {
-	sh NVIDIA-Linux-x86-$version.run --extract-only
-	cd NVIDIA-Linux-x86-$version
+	sh NVIDIA-Linux-x86_64-$version.run --extract-only
+	cd NVIDIA-Linux-x86_64-$version/32
 
-	# X driver and GLX extension
-	install -d $PKG/usr/lib32/xorg/modules/{drivers,extensions}
-	install -m 0755 nvidia_drv.so $PKG/usr/lib32/xorg/modules/drivers/
-	install -d -m 0755 $PKG/usr/lib32/nvidia/xorg
-	install -m 0755 libglx.so.$version $PKG/usr/lib32/nvidia/xorg/
-	ln -s libglx.so.$version $PKG/usr/lib32/nvidia/xorg/libglx.so
-	ln -s libglx.so.$version $PKG/usr/lib32/nvidia/xorg/libglx.so.1
+	install -d -m 0755 $PKG/usr/lib32
 
 	# EGL and OpenGL ES libraries and config
 	install -m 0755 libGLESv1_CM_nvidia.so.$version $PKG/usr/lib32/
 	ln -s libGLESv1_CM_nvidia.so.$version $PKG/usr/lib32/libGLESv1_CM_nvidia.so.1
 	install -m 0755 libGLESv2_nvidia.so.$version $PKG/usr/lib32/
 	ln -s libGLESv2_nvidia.so.$version $PKG/usr/lib32/libGLESv2_nvidia.so.2
-
-	# wayland EGL library
-	#install -m 0755 libnvidia-egl-wayland.so.1.0.2 $PKG/usr/lib32/
 
 	# GLVND vendor implementation libraries
 	install -m 0755 libGLX_nvidia.so.$version $PKG/usr/lib32/
@@ -36,11 +27,11 @@ build() {
 	ln -s libEGL_nvidia.so.$verison $PKG/usr/lib32/libEGL_nvidia.so.0
 
 	# driver component libraries
-	install -m 0755 libnvidia-cfg.so.$version $PKG/usr/lib32/
 	install -m 0755 libnvidia-compiler.so.$version $PKG/usr/lib32/
 	install -m 0755 libnvidia-eglcore.so.$version $PKG/usr/lib32/
 	install -m 0755 libnvidia-glcore.so.$version $PKG/usr/lib32/
 	install -m 0755 libnvidia-glsi.so.$version $PKG/usr/lib32/
+	install -m 0755 libnvidia-glvkspirv.so.$version $PKG/usr/lib32/
 
 	# vendor VDPAU library
 	install -D -m 0755 libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so.$version
