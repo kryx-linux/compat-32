@@ -1,6 +1,6 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
-lrwxrwxrwx	root/root	usr/lib32/libEGL_nvidia.so.0 -> libEGL_nvidia.so.
+lrwxrwxrwx	root/root	usr/lib32/libEGL_nvidia.so.0 -> libEGL_nvidia.so.396.54
 -rwxr-xr-x	root/root	usr/lib32/libEGL_nvidia.so.396.54
 lrwxrwxrwx	root/root	usr/lib32/libGLESv1_CM_nvidia.so.1 -> libGLESv1_CM_nvidia.so.396.54
 -rwxr-xr-x	root/root	usr/lib32/libGLESv1_CM_nvidia.so.396.54
