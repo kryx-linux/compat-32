@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXXIGpDDw4bzPRF+sse0jMkV1WVyeo3cOPeUYTPQq3h7bf1hcZoGLVwjQEBlyrZio1mizrG5DNadFUVXRZKAScAk=
-SHA256 (Pkgfile) = b8674823abc78852a8c37eb92f88a5a7695b1586da39ed05ff43e4085aa4ac04
-SHA256 (.footprint) = 68c983d927a7866431aed279a50e8e267c3b114d4ceefddd8380fba8ff63ce55
-SHA256 (Vulkan-Loader-sdk-1.1.82.0.tar.gz) = 86cd3e93d99cbfbb8550e7f2137cacfdaf9aa6611b814e054b2156b4b4775b0c
+RWSwxGo/zH7eXSKBY+XQAejjQGHXPdeCLzZQt1wws5B507J9wfN1ixpuAxnnLlAwbIh5E4DJjVEkywKb1Ga0n8Iqv8mOBAmsmQA=
+SHA256 (Pkgfile) = 452732883563e92bd1c2380550d898323b10c468f7a7b737a8fd07cf9ff0696b
+SHA256 (.footprint) = 87aee31df4066dc74d233a27e991973617c6c355f3db98934f882b5e8f38a0dc
+SHA256 (Vulkan-Loader-sdk-1.1.85.0.tar.gz) = d6980078a4d11269184c4a291af28532475d1eef9a6c784c469c0346ad1fa511
