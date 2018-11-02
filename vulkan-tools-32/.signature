@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQmIhgxBGa/DIaR4q1Ua3nhDs+hPbpmGFOfOBvMju0R7R9E2n00YR3dRmvsInrP9vblhgpLXpbDZFb5PIDwSyw8=
-SHA256 (Pkgfile) = bcc332e36096e447a88c309fd68416b198415416cf755678ba539b0ed5f1e7e4
+RWSwxGo/zH7eXSVUoII8l+F8kkbQcqEoAVeP0l3y8haBaMZE9fzNN5mxqzY0HZ7EZt965HOxph4qAatCGfTPOU4KACYnqr6ePgA=
+SHA256 (Pkgfile) = 3ea21353af45d2ce517527c70c52a03162e3dbef7fb52223988f4f6eee1177fe
 SHA256 (.footprint) = 678123fdf6bb7f746ac0235c43764c5c9ebe180d3f2ec3739bf2c0ee0915d9aa
-SHA256 (Vulkan-Tools-sdk-1.1.82.0.tar.gz) = 22e5e5dfd47535e1664458ee59706abcaace96575d1a3d7fa9ae779a9e83b89c
+SHA256 (Vulkan-Tools-sdk-1.1.85.0.tar.gz) = b526bc394a5ca1a8ae7dd2ae357c5034f41cc476aa52a95a8b2f019853bf4664
