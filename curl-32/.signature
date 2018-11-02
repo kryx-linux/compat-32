@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTcvxORhtFvThB0hHLTNqWvr4F+jiQ5KapvAzsl7t1cag+9qUJQcuOMTLxvr/vU9b71z+XAKgCnXnjdhtXkorAM=
-SHA256 (Pkgfile) = deb8669c723308d06eb98588bfedbfe7d2f3d52217ec203f16a989ea2ff0ebe5
+RWSwxGo/zH7eXRT8GPoxPJgX9dDqC3AakR1Y9IEhBGJetpLqgGXvRcPYaVEyPWAVV5+B4Oc1F+LOMre4tu9KneF+0hZGAIXXkQI=
+SHA256 (Pkgfile) = 2a156a18eafe92abf5e46f23b9060f131c4a0a22edc2132251abecbec019f898
 SHA256 (.footprint) = 4c65049c40bc744f5d6bf6fddd45c9c4f536cdbde44c6b536a68d45d6ec7bc40
-SHA256 (curl-7.61.1.tar.xz) = 3d5913d6a39bd22e68e34dff697fd6e4c3c81563f580c76fca2009315cd81891
+SHA256 (curl-7.62.0.tar.xz) = dab5643a5fe775ae92570b9f3df6b0ef4bc2a827a959361fb130c73b721275c1
