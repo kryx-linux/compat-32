@@ -4,7 +4,7 @@
 # Depends on: readline-32 sqlite3
 
 name=sqlite3-32
-version=3.25.2
+version=3.25.3
 release=1
 _version=$(printf "%i%.2i%.2i%.2i" ${version//./ })
 
@@ -13,7 +13,6 @@ source=(https://www.sqlite.org/2018/sqlite-autoconf-${_version}.tar.gz)
 build() {
     cd sqlite-autoconf-${_version}
 
-    CONFIG_SHELL=/bin/bash \
     CFLAGS="-DSQLITE_SECURE_DELETE=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 \
             -DSQLITE_ENABLE_UNLOCK_NOTIFY=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1 \
             -DSQLITE_ENABLE_FTS3=1 $CFLAGS" \
