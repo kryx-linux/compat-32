@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXbVlwoPUFrFjGKu7d+TC2+U7oPTE+rJwv5Ilq89y48DVjWt8EqjmmPi4wJmZ1mwrGehJpb08jyfaeOWNUAu5QAg=
+SHA256 (Pkgfile) = 9b0df4acd2deda828daf8c8902cd43e96688b07f0fea415a82591f44ab2bf821
+SHA256 (.footprint) = b902ed25699f33d43b706b703895ab037a84f6fd88757e9c70abbac431f41b72
+SHA256 (libpcap-1.9.0.tar.gz) = 2edb88808e5913fdaa8e9c1fcaf272e19b2485338742b5074b9fe44d68f37019
