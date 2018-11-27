@@ -6,7 +6,7 @@
 name=cairo-32
 version=1.16.0
 release=1
-source=(https://cairographics.org/snapshots/${name%-*}-$version.tar.xz
+source=(https://cairographics.org/releases/${name%-*}-$version.tar.xz
 	cairo-xlib-endianness.patch
 	cairo-get_bitmap_surface-bsc1036789-CVE-2017-7475.diff)
 
