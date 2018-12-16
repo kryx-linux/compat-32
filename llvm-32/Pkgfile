@@ -5,13 +5,16 @@
 
 name=llvm-32
 version=7.0.0
-release=1
+release=2
 source=(https://llvm.org/releases/$version/llvm-$version.src.tar.xz)
 
 build() {
+	export CC=gcc
+	export CXX=g++
+
 	cd llvm-$version.src
 
-	install -d build $SRC/keep
+	mkdir -p build $SRC/keep
 	cd build
 
 	cmake .. -G Ninja \
@@ -23,6 +26,7 @@ build() {
 		-DLLVM_ENABLE_FFI=1 \
 		-DLLVM_TARGETS_TO_BUILD='X86;AMDGPU;BPF' \
 		-DLLVM_BUILD_LLVM_DYLIB=1 \
+		-DLLVM_LINK_LLVM_DYLIB=1 \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DLLVM_LIBDIR_SUFFIX=32 \
