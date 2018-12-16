@@ -1,10 +1,10 @@
 # Description: Vulkan tools
 # URL: https://www.khronos.org/vulkan/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: glslang-32 vulkan-loader-32 xorg-libxcb-32
+# Depends on: glslang-32 vulkan-loader-32 xorg-libxext-32
 
 name=vulkan-tools-32
-version=1.1.85.0
+version=1.1.92.0
 release=1
 source=(https://github.com/KhronosGroup/Vulkan-Tools/archive/sdk-$version/Vulkan-Tools-sdk-$version.tar.gz)
 
