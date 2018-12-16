@@ -4,7 +4,7 @@
 # Depends on: elfutils-32 expat-32 libdrm-32 libglvnd-32 libvdpau-32 llvm-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32 xorg-libxrandr-32 mesa3d
 
 name=mesa3d-32
-version=18.2.6
+version=18.3.1
 release=1
 source=(https://mesa.freedesktop.org/archive/mesa-$version.tar.xz)
 
@@ -16,10 +16,9 @@ build() {
 		sed -i -e 's|llvm-config|llvm-config-32|g' $f
 	done
 
-	export LDFLAGS="$LDFLAGS -lLLVM"
-
 	autoreconf --force --install --symlink
 
+	CONFIG_SHELL=/bin/bash \
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
@@ -51,5 +50,5 @@ build() {
 	# https://lists.freedesktop.org/archives/mesa-maintainers/2017-March/000055.html
 	rm $PKG/usr/lib32/libGLES*
 
-	rm -r $PKG/etc $PKG/usr/{include,share/glvnd}
+	rm -r $PKG/usr/{include,share/{drirc.d,glvnd}}
 }
