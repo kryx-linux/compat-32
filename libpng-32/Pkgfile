@@ -4,7 +4,7 @@
 # Depends on:  zlib-32 libpng
 
 name=libpng-32
-version=1.6.34
+version=1.6.36
 _base=${version:0:3}
 _base=${_base/./}
 release=1
