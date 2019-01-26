@@ -1,0 +1,22 @@
+# Description: Direct3D 12 to Vulkan translation library By WineHQ.
+# URL: https://github.com/d3d12/vkd3d
+# Maintainer: Danny Rawlins, crux at romster dot me
+# Depends on: vkd3d vulkan-loader-32
+
+name=vkd3d-32
+version=1.1
+release=1
+source=(https://dl.winehq.org/vkd3d/source/${name%-*}-$version.tar.xz)
+
+build() {
+	cd ${name%-*}-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/include
+}
