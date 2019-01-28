@@ -4,18 +4,17 @@
 # Depends on: libjpeg-turbo
 
 name=libjpeg-turbo-32
-version=1.5.3
+version=2.0.1
 release=1
-source=(https://downloads.sourceforge.net/libjpeg-turbo/libjpeg-turbo-$version.tar.gz)
+source=(https://downloads.sourceforge.net/${name%-*}/${name%-*}-$version.tar.gz)
 
 build() {
-	cd libjpeg-turbo-$version
+	cd ${name%-*}-$version
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--with-jpeg8 \
-		--host=i686-pc-linux-gnu
+	cmake -G"Unix Makefiles" \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=/usr/lib32 \
+		-DWITH_JPEG8=ON
 
 	make
 	make DESTDIR=$PKG install
