@@ -4,12 +4,15 @@
 # Depends on: python-32 talloc
 
 name=talloc-32
-version=2.1.14
+version=2.1.15
 release=1
 source=(https://samba.org/ftp/${name%-*}/${name%-*}-$version.tar.gz)
 
 build() {
 	cd ${name%-*}-$version
+
+	sed '/^WAF_BINARY/s|../.||' -i Makefile
+	export PYTHON=python2
 
 	./configure \
 		--prefix=/usr \
