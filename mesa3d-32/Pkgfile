@@ -4,7 +4,7 @@
 # Depends on: elfutils-32 expat-32 libdrm-32 libglvnd-32 libvdpau-32 llvm-32 xorg-libxdamage-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32 xorg-libxrandr-32 mesa3d
 
 name=mesa3d-32
-version=18.3.2
+version=18.3.3
 release=1
 source=(https://mesa.freedesktop.org/archive/mesa-$version.tar.xz)
 
