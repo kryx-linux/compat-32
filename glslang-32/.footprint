@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	usr/lib32/
 -rw-r--r--	root/root	usr/lib32/libOSDependent.a
 -rwxr-xr-x	root/root	usr/lib32/libSPIRV-Tools-link.so
 -rwxr-xr-x	root/root	usr/lib32/libSPIRV-Tools-opt.so
+-rwxr-xr-x	root/root	usr/lib32/libSPIRV-Tools-reduce.so
 -rwxr-xr-x	root/root	usr/lib32/libSPIRV-Tools-shared.so
 -rwxr-xr-x	root/root	usr/lib32/libSPIRV-Tools.so
 -rwxr-xr-x	root/root	usr/lib32/libSPIRV.so
