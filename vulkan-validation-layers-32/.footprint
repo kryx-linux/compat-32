@@ -1,8 +1,8 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
 -rwxr-xr-x	root/root	usr/lib32/libVkLayer_core_validation.so
--rwxr-xr-x	root/root	usr/lib32/libVkLayer_object_tracker.so
--rwxr-xr-x	root/root	usr/lib32/libVkLayer_parameter_validation.so
--rwxr-xr-x	root/root	usr/lib32/libVkLayer_threading.so
+-rwxr-xr-x	root/root	usr/lib32/libVkLayer_object_lifetimes.so
+-rwxr-xr-x	root/root	usr/lib32/libVkLayer_stateless_validation.so
+-rwxr-xr-x	root/root	usr/lib32/libVkLayer_thread_safety.so
 -rwxr-xr-x	root/root	usr/lib32/libVkLayer_unique_objects.so
 -rw-r--r--	root/root	usr/lib32/libVkLayer_utils.a
