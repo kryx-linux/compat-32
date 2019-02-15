@@ -4,8 +4,8 @@
 # Depends on: libffi-32 python-32 llvm
 
 name=llvm-32
-version=7.0.0
-release=2
+version=7.0.1
+release=1
 source=(https://llvm.org/releases/$version/llvm-$version.src.tar.xz)
 
 build() {
