@@ -1,12 +1,12 @@
 # Description: Video Decode and Presentation API for Unix provides a complete solution for decoding, post-processing, compositing, and displaying compressed or uncompressed video streams.
-# URL: http://cgit.freedesktop.org/~aplattner/libvdpau
+# URL: http://cgit.freedesktop.org/vdpau/libvdpau
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libvdpau xorg-libxext-32
 
 name=libvdpau-32
-version=1.1.1
+version=1.2
 release=1
-source=(http://people.freedesktop.org/~aplattner/vdpau/libvdpau-$version.tar.gz)
+source=(https://gitlab.freedesktop.org/vdpau/$name/uploads/14b620084c027d546fa0b3f083b800c6/libvdpau-$version.tar.bz2)
 
 build() {
 	cd libvdpau-$version
