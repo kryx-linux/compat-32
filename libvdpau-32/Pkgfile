@@ -6,10 +6,10 @@
 name=libvdpau-32
 version=1.2
 release=1
-source=(https://gitlab.freedesktop.org/vdpau/$name/uploads/14b620084c027d546fa0b3f083b800c6/libvdpau-$version.tar.bz2)
+source=(https://gitlab.freedesktop.org/vdpau/${name%-*}/uploads/14b620084c027d546fa0b3f083b800c6/${name%-*}-$version.tar.bz2)
 
 build() {
-	cd libvdpau-$version
+	cd ${name%-*}-$version
 
 	./configure \
 		--prefix=/usr \
