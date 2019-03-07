@@ -4,7 +4,7 @@
 # Depends on: glslang-32 vulkan-loader-32 xorg-libxext-32
 
 name=vulkan-tools-32
-version=1.1.97.0
+version=1.1.101.0
 release=1
 source=(https://github.com/KhronosGroup/Vulkan-Tools/archive/sdk-$version/Vulkan-Tools-sdk-$version.tar.gz)
 
