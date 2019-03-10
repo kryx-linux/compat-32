@@ -5,7 +5,7 @@
 # Optional:    libtirpc-32
 
 name=python-32
-version=2.7.15
+version=2.7.16
 release=1
 source=(https://www.python.org/ftp/python/$version/Python-$version.tar.xz)
 

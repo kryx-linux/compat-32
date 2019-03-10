@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXRMxtQCwvFy0sZf1lEXdZ+A2KXcE/vY+QwbL1HipGyHA0mQBt4P5gFaF4Cq189QVnR0NWx8znnOOOTQpOan9NgY=
-SHA256 (Pkgfile) = d10f208d1cae5b374c519e494a9a508ddccb93d5a20396af2818d42bc9b39119
-SHA256 (.footprint) = 6a957fc9e732c9e71c16dfa6d9bc29490be0488fdba190cd8fddcb7635baca5a
-SHA256 (Python-2.7.15.tar.xz) = 22d9b1ac5b26135ad2b8c2901a9413537e08749a753356ee913c84dbd2df5574
+RWSwxGo/zH7eXTejQlTV4qaJ5DkhxatqL91yHZySen8bzHAa64AXby6ARSp82rGYmxhJYG2d2+ENYYy0h/xLW7yBNsaR+3D5wAw=
+SHA256 (Pkgfile) = c4efcb32b1c26fb2e385ec4bf5efa62301f6940fc3446daf4ee0a801b2da2455
+SHA256 (.footprint) = 24aeaa59db750654bf5dd7a64784ad8f543ba826204efc34687c7b947f2ab1cf
+SHA256 (Python-2.7.16.tar.xz) = f222ef602647eecb6853681156d32de4450a2c39f4de93bd5b20235f2e660ed7
