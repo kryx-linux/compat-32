@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTo1Jl2nmbgBDR5WnMclIboH71m4DTTIx6G/CF9N/2rvdMUUj4yJeoQ9ACuv+EN8+2TqRGyu1x8toPU0WIGA0ww=
-SHA256 (Pkgfile) = 83a545a15cd9ca1f57413fcff9004b2e2096a2d880e876913c7aadc872ffdfc3
-SHA256 (.footprint) = 919f67356c58df58f7598483968b0ecf1367c39713e4cb25e8a30db726d2ee66
-SHA256 (gnutls-3.6.6.tar.xz) = bb9acab8af2ac430edf45faaaa4ed2c51f86e57cb57689be6701aceef4732ca7
+RWSwxGo/zH7eXY2Cd2KZEZCQYzy1sFhhYj02R+LvAnz+fcP7IAmaDvahKxblzWevhJ8U4Xp5d7MmBWKD8rrHA5De1OMK3ZjZlQ4=
+SHA256 (Pkgfile) = beb1c9d67eb91edc5b73bf5f9cf460804041273691608106cee57215976a023a
+SHA256 (.footprint) = 3f7e840d1d56ed61a0f72fa76d5551fa2a66b6dc86a5e147c8f99da51a236c03
+SHA256 (gnutls-3.6.7.tar.xz) = 5b3409ad5aaf239808730d1ee12fdcd148c0be00262c7edf157af655a8a188e2
