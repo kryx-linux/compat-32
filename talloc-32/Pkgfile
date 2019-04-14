@@ -6,7 +6,7 @@
 name=talloc-32
 version=2.1.16
 release=1
-source=(https://samba.org/ftp/${name%-*}/${name%-*}-$version.tar.gz)
+source=(https://www.samba.org/ftp/${name%-*}/${name%-*}-$version.tar.gz)
 
 build() {
 	cd ${name%-*}-$version

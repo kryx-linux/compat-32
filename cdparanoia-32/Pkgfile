@@ -6,7 +6,7 @@
 name=cdparanoia-32
 version=10.2
 release=2
-source=(http://downloads.xiph.org/releases/cdparanoia/cdparanoia-III-$version.src.tgz
+source=(https://downloads.xiph.org/releases/cdparanoia/cdparanoia-III-$version.src.tgz
 	cdparanoia-$version-gcc43.patch
 	cdparanoia-$version-ldflags.patch)
 

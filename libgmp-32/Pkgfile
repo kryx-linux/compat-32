@@ -1,11 +1,11 @@
 # Description: Free library for arbitrary precision arithmetic
-# URL: http://gmplib.org/
+# URL: https://gmplib.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=libgmp-32
 version=6.1.2
 release=1
-source=(http://gmplib.org/download/gmp/gmp-$version.tar.xz)
+source=(https://gmplib.org/download/gmp/gmp-$version.tar.xz)
 
 build() {
 	cd gmp-$version
