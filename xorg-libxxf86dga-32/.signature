@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQ+2fwXltaAn8YUG/oOtqJEtsUrxlB98r4MW0SCeSzO/prAqkpp7udt2ZLPgrxOyswqieWpvdBApjkZUdmSsfw0=
-SHA256 (Pkgfile) = 18a1e00c67d76370d817f38c3ef2f62cebb4f5a7a39edec607d5a52f798d78b7
-SHA256 (.footprint) = a62e9cb45df6fbd521dd39a9a291beba8eafb767c57841d7ed718e22b3afde22
-SHA256 (libXxf86dga-1.1.4.tar.bz2) = 8eecd4b6c1df9a3704c04733c2f4fa93ef469b55028af5510b25818e2456c77e
+RWSwxGo/zH7eXVNfqUSeLoTp0E4Aw0L5fwNgfDvlkTDAVnq89SxlTxLJT8zqLvkiFcD3Nuld9VJsx5LNd9T20YxAMJ74+uY7YAs=
+SHA256 (Pkgfile) = 951559ee09b6a353d04049615a9fc1237b8afe8c3e2e6a01692f32d9af879e12
+SHA256 (.footprint) = 983cb94c93972234352a00b7b28d3fa898ba16cf86718b1aec2cd576bbe5a470
+SHA256 (libXxf86dga-1.1.5.tar.bz2) = 2b98bc5f506c6140d4eddd3990842d30f5dae733b64f198a504f07461bdb7203

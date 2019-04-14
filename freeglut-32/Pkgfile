@@ -6,7 +6,7 @@
 name=freeglut-32
 version=3.0.0
 release=1
-source=(https://download.sourceforge.net/freeglut/freeglut-$version.tar.gz)
+source=(https://downloads.sourceforge.net/project/freeglut/freeglut/$version/freeglut-$version.tar.gz)
 
 build() {
 	cd freeglut-$version

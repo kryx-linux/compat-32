@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXYfVUUBPooJqbbgpnYCMnBMulV9SwRzTNQOriXrVJxvAjZTj6AqdK1KruQ0pesSR2J+b7StA+B89h83TzNsvwgU=
-SHA256 (Pkgfile) = c2aac83be72b7334162f386aa0e9746ae567bc89a6a7fee40ac7c2a9caf29391
+RWSwxGo/zH7eXYOqK/0XvSbxbOZyePiFEIMNM5pffVejQTuoFrNS6HyQ/7adojeUsxI0LOrl9NTx+1fPKgWJM5GN92RoVusk3gM=
+SHA256 (Pkgfile) = 04463753d98601c2dc398b8e255314f7a1cda872e6cfa9a61aa451e759fe1f04
 SHA256 (.footprint) = ce0d5bf993b206c7d3e972299f279b6c46a1c478d4a08d9f70792a09f5a55565
 SHA256 (libmng-2.0.3.tar.gz) = cf112a1fb02f5b1c0fce5cab11ea8243852c139e669c44014125874b14b7dfaa

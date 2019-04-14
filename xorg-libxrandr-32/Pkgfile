@@ -4,7 +4,7 @@
 # Depends on: xorg-libxext-32 xorg-libxrandr xorg-libxrender-32
 
 name=xorg-libxrandr-32
-version=1.5.1
+version=1.5.2
 release=1
 source=(https://www.x.org/releases/individual/lib/libXrandr-$version.tar.bz2)
 
@@ -16,5 +16,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{include,share/man,share}
+	rm -r $PKG/usr/{include,share/man}
 }
