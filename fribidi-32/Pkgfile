@@ -1,12 +1,12 @@
 # Description: Unicode Bidirectional (BiDi) Algorithm.
 # URL: https://github.com/fribidi/fribidi/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: fribidi
+# Depends on: fribidi glib-32
 
 name=fribidi-32
-version=0.19.7
+version=1.0.5
 release=1
-source=(https://github.com/${name%-*}/${name%-*}/releases/download/$version/${name%-*}-$version.tar.bz2)
+source=(https://github.com/${name%-*}/${name%-*}/releases/download/v$version/${name%-*}-$version.tar.bz2)
 
 build() {
 	cd ${name%-*}-$version
