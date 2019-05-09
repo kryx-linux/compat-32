@@ -1,16 +1,18 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
+-rw-r--r--	root/root	usr/lib32/libHLSL.a
 -rwxr-xr-x	root/root	usr/lib32/libHLSL.so
+lrwxrwxrwx	root/root	usr/lib32/libHLSL.so.0 -> libHLSL.so
 -rw-r--r--	root/root	usr/lib32/libOGLCompiler.a
 -rw-r--r--	root/root	usr/lib32/libOSDependent.a
--rwxr-xr-x	root/root	usr/lib32/libSPIRV-Tools-link.so
--rwxr-xr-x	root/root	usr/lib32/libSPIRV-Tools-opt.so
--rwxr-xr-x	root/root	usr/lib32/libSPIRV-Tools-reduce.so
--rwxr-xr-x	root/root	usr/lib32/libSPIRV-Tools-shared.so
--rwxr-xr-x	root/root	usr/lib32/libSPIRV-Tools.so
+-rw-r--r--	root/root	usr/lib32/libSPIRV.a
 -rwxr-xr-x	root/root	usr/lib32/libSPIRV.so
+lrwxrwxrwx	root/root	usr/lib32/libSPIRV.so.0 -> libSPIRV.so
+-rw-r--r--	root/root	usr/lib32/libSPVRemapper.a
 -rwxr-xr-x	root/root	usr/lib32/libSPVRemapper.so
+lrwxrwxrwx	root/root	usr/lib32/libSPVRemapper.so.0 -> libSPVRemapper.so
+-rwxr-xr-x	root/root	usr/lib32/libglslang-default-resource-limits.so
+lrwxrwxrwx	root/root	usr/lib32/libglslang-default-resource-limits.so.0 -> libglslang-default-resource-limits.so
+-rw-r--r--	root/root	usr/lib32/libglslang.a
 -rwxr-xr-x	root/root	usr/lib32/libglslang.so
-drwxr-xr-x	root/root	usr/lib32/pkgconfig/
--rw-r--r--	root/root	usr/lib32/pkgconfig/SPIRV-Tools-shared.pc
--rw-r--r--	root/root	usr/lib32/pkgconfig/SPIRV-Tools.pc
+lrwxrwxrwx	root/root	usr/lib32/libglslang.so.0 -> libglslang.so
