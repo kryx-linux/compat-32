@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXYF5v4B1AXT25h2CqRkNyakUBm8ljIaRCUoXtxcNOfpjJCBPOVLNq9sSJmuoPc5nBZVrhBL0hDZdMFioqUmnsAM=
+SHA256 (Pkgfile) = 0bfe031e8c71bc8d93748fa01348cae19ff59b1e4d3eb67a8394b206997c265f
+SHA256 (.footprint) = 5335daba4866a69ee6fc03c2ea5a90709debd1989b1e3b57f7581eea9926da9f
+SHA256 (brotli-v1.0.7.tar.gz) = 4c61bfb0faca87219ea587326c467b95acb25555b53d1a421ffa3c8a9296ee2c

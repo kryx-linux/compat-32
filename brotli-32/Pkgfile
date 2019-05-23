@@ -1,0 +1,25 @@
+# Description: Brotli compression library
+# URL: https://github.com/google/brotli
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: brotli
+
+name=brotli-32
+version=1.0.7
+release=1
+source=(https://github.com/google/${name%-*}/archive/v$version/${name%-*}-v$version.tar.gz)
+
+build() {
+	cd ${name%-*}-$version
+
+	mkdir build
+	cd build
+
+	cmake .. \
+		-DCMAKE_INSTALL_PREFIX="/usr" \
+		-DCMAKE_INSTALL_LIBDIR="/usr/lib32"
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{bin,include}
+}
