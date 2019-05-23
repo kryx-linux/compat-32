@@ -4,7 +4,7 @@
 # Depends on: kmod-32 eudev
 
 name=eudev-32
-version=3.2.7
+version=3.2.8
 release=1
 source=(https://dev.gentoo.org/~blueness/eudev/eudev-$version.tar.gz)
 
