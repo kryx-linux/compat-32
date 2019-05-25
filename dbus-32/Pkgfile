@@ -4,7 +4,7 @@
 # Depends on: expat-32 dbus
 
 name=dbus-32
-version=1.12.8
+version=1.12.14
 release=1
 source=(https://${name%-*}.freedesktop.org/releases/${name%-*}/${name%-*}-$version.tar.gz)
 
