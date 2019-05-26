@@ -6,8 +6,6 @@ drwxr-xr-x	root/root	usr/include/llvm/
 drwxr-xr-x	root/root	usr/include/llvm/Config/
 -rw-r--r--	root/root	usr/include/llvm/Config/llvm-config-32.h
 drwxr-xr-x	root/root	usr/lib32/
--rwxr-xr-x	root/root	usr/lib32/BugpointPasses.so
--rwxr-xr-x	root/root	usr/lib32/LLVMHello.so
 drwxr-xr-x	root/root	usr/lib32/cmake/
 drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/AddLLVM.cmake
@@ -37,9 +35,9 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/LLVMProcessSources.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/TableGen.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/VersionFromVCS.cmake
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-7.0.1.so -> libLLVM-7.so
--rwxr-xr-x	root/root	usr/lib32/libLLVM-7.so
-lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-7.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-8.0.0.so -> libLLVM-8.so
+-rwxr-xr-x	root/root	usr/lib32/libLLVM-8.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-8.so
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUAsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUAsmPrinter.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUCodeGen.a
@@ -82,6 +80,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-7.so
 -rw-r--r--	root/root	usr/lib32/libLLVMLineEditor.a
 -rw-r--r--	root/root	usr/lib32/libLLVMLinker.a
 -rw-r--r--	root/root	usr/lib32/libLLVMMC.a
+-rw-r--r--	root/root	usr/lib32/libLLVMMCA.a
 -rw-r--r--	root/root	usr/lib32/libLLVMMCDisassembler.a
 -rw-r--r--	root/root	usr/lib32/libLLVMMCJIT.a
 -rw-r--r--	root/root	usr/lib32/libLLVMMCParser.a
@@ -89,6 +88,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-7.so
 -rw-r--r--	root/root	usr/lib32/libLLVMObjCARCOpts.a
 -rw-r--r--	root/root	usr/lib32/libLLVMObject.a
 -rw-r--r--	root/root	usr/lib32/libLLVMObjectYAML.a
+-rw-r--r--	root/root	usr/lib32/libLLVMOptRemarks.a
 -rw-r--r--	root/root	usr/lib32/libLLVMOption.a
 -rw-r--r--	root/root	usr/lib32/libLLVMOrcJIT.a
 -rw-r--r--	root/root	usr/lib32/libLLVMPasses.a
@@ -100,6 +100,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-7.so
 -rw-r--r--	root/root	usr/lib32/libLLVMSymbolize.a
 -rw-r--r--	root/root	usr/lib32/libLLVMTableGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMTarget.a
+-rw-r--r--	root/root	usr/lib32/libLLVMTextAPI.a
 -rw-r--r--	root/root	usr/lib32/libLLVMTransformUtils.a
 -rw-r--r--	root/root	usr/lib32/libLLVMVectorize.a
 -rw-r--r--	root/root	usr/lib32/libLLVMWindowsManifest.a
@@ -112,6 +113,8 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-7.so
 -rw-r--r--	root/root	usr/lib32/libLLVMX86Utils.a
 -rw-r--r--	root/root	usr/lib32/libLLVMXRay.a
 -rw-r--r--	root/root	usr/lib32/libLLVMipo.a
-lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.7
--rwxr-xr-x	root/root	usr/lib32/libLTO.so.7
+lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.8
+-rwxr-xr-x	root/root	usr/lib32/libLTO.so.8
+lrwxrwxrwx	root/root	usr/lib32/libOptRemarks.so -> libOptRemarks.so.8
+-rwxr-xr-x	root/root	usr/lib32/libOptRemarks.so.8
 drwxr-xr-x	root/root	usr/share/
