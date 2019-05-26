@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXculTngPgjHyauyNf320ZtXuJWazfnl66ffNaZXRCaBEuRM0c1mTZGDeKuNgiqyKWwgfFGGaZ1a/rX6m85go9g0=
-SHA256 (Pkgfile) = 6c6887646bae33db3660c2f0c976ae56afe60e732cd52a368be3b7e8e2b80737
+RWSwxGo/zH7eXTxeGHnkCCHQuYCdY7HXK8fc+kyrwxl3v0FXU0n5ekpPPlZbNzJumv2+dylmpNk81y5Nrekux2gIwn67AJWwogk=
+SHA256 (Pkgfile) = c113b7a757268bf640eb767908ba5618cbb8c95b4b26e2653106dffd318e57f9
 SHA256 (.footprint) = d5bd715bc3bc2905b31775d88cff69279ea36cbf2f7eb0cd11076fe3bc40cac2
 SHA256 (libevdev-1.5.7.tar.xz) = a1e59e37a2f0d397ffd7e83b73af0e638db83b8dd08902ef0f651a21cc1dd422

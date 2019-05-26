@@ -1,7 +1,7 @@
 # Description: Wrapper library for evdev devices
 # URL: http://xorg.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: python-32 xorg-libevdev
+# Depends on: xorg-libevdev
 
 name=xorg-libevdev-32
 version=1.5.7
