@@ -1,7 +1,7 @@
 # Description: XCB X protocol descriptions
 # URL: http://xcb.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: python-32 xorg-xcb-proto
+# Depends on: xorg-xcb-proto
 
 name=xorg-xcb-proto-32
 version=1.13
