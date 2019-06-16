@@ -35,9 +35,5 @@ build() {
 	# indirect rendering symlink
 	ln -s libGLX_mesa.so.0 $PKG/usr/lib32/libGLX_indirect.so.0
 
-	# remove libGLES* for libglvnd; see thread at
-	# https://lists.freedesktop.org/archives/mesa-maintainers/2017-March/000055.html
-	rm $PKG/usr/lib32/libGLES*
-
 	rm -r $PKG/usr/{include,share/{drirc.d,glvnd}}
 }

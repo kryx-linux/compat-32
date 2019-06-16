@@ -41,8 +41,6 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/egl.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gbm.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gl.pc
--rw-r--r--	root/root	usr/lib32/pkgconfig/glesv1_cm.pc
--rw-r--r--	root/root	usr/lib32/pkgconfig/glesv2.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/osmesa.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xatracker.pc
 drwxr-xr-x	root/root	usr/lib32/vdpau/
