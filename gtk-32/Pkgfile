@@ -11,6 +11,8 @@ source=(http://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.x
 build() {
 	cd gtk+-$version
 
+	export PKG_CONFIG_PATH+=":/usr/share/pkgconfig"
+
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
