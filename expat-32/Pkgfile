@@ -4,7 +4,7 @@
 # Depends on: expat
 
 name=expat-32
-version=2.2.6
+version=2.2.7
 release=1
 source=(https://downloads.sourceforge.net/project/${name%-*}/${name%-*}/$version/${name%-*}-$version.tar.bz2)
 
@@ -18,6 +18,6 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{bin,include,share/man,share/doc}
+	rm -r $PKG/usr/{bin,include,share/doc}
 	rmdir $PKG/usr/share
 }
