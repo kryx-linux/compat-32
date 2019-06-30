@@ -19,7 +19,6 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/renderproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/resourceproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/scrnsaverproto.pc
--rw-r--r--	root/root	usr/lib32/pkgconfig/trapproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/videoproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/windowswmproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcmiscproto.pc
@@ -27,8 +26,6 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xf86bigfontproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xf86dgaproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xf86driproto.pc
--rw-r--r--	root/root	usr/lib32/pkgconfig/xf86miscproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xf86vidmodeproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xineramaproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xproto.pc
--rw-r--r--	root/root	usr/lib32/pkgconfig/xproxymngproto.pc
