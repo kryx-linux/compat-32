@@ -4,14 +4,14 @@
 # Depends on:  cairo-32 harfbuzz
 
 name=harfbuzz-32
-version=2.5.1
+version=2.5.3
 release=1
 source=(https://www.freedesktop.org/software/${name%-*}/release/${name%-*}-$version.tar.xz)
 
 build() {
 	cd ${name%-*}-$version
 
-	sed -i s/"SUBDIRS = api shaping"/"SUBDIRS = shaping"/g test/Makefile.in
+#	sed -i s/"SUBDIRS = api shaping"/"SUBDIRS = shaping"/g test/Makefile.in
 
 	./configure \
 		--prefix=/usr \
@@ -19,7 +19,8 @@ build() {
 		--with-glib \
 		--with-freetype \
 		--with-cairo \
-		--with-icu=no
+		--with-icu=no \
+		--with-graphite2=auto
 
 	make
 	make DESTDIR=$PKG install
