@@ -11,8 +11,6 @@ source=(https://www.freedesktop.org/software/${name%-*}/release/${name%-*}-$vers
 build() {
 	cd ${name%-*}-$version
 
-#	sed -i s/"SUBDIRS = api shaping"/"SUBDIRS = shaping"/g test/Makefile.in
-
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
@@ -20,7 +18,7 @@ build() {
 		--with-freetype \
 		--with-cairo \
 		--with-icu=no \
-		--with-graphite2=auto
+		--without-graphite2
 
 	make
 	make DESTDIR=$PKG install
