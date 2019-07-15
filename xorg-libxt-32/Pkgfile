@@ -4,16 +4,16 @@
 # Depends on: xorg-libsm-32 xorg-libx11-32 xorg-libxt
 
 name=xorg-libxt-32
-version=1.1.5
+version=1.2.0
 release=1
 source=(https://www.x.org/releases/individual/lib/libXt-$version.tar.bz2)
 
 build() {
 	cd libXt-$version
 
-	./configure --prefix=/usr --mandir=/usr/man --libdir=/usr/lib32
+	./configure --prefix=/usr --libdir=/usr/lib32
 
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/{include,man,share}
+	rm -rf $PKG/usr/{include,share}
 }
