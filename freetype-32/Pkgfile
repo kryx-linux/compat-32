@@ -4,9 +4,9 @@
 # Depends on: freetype libpng-32
 
 name=freetype-32
-version=2.10.0
+version=2.10.1
 release=1
-source=(https://download.savannah.gnu.org/releases/${name%-*}/${name%-*}-$version.tar.bz2)
+source=(https://download.savannah.gnu.org/releases/${name%-*}/${name%-*}-$version.tar.xz)
 
 build() {
 	cd ${name%-*}-$version
