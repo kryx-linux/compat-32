@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXVV96PMaiNmueGWh5k6Xi0Dl56hcP8KhzSB2aiupS/QhhYQv6A61uzYx1cgQ38cng8rUjaLLdPyygrVNOFNOHQo=
-SHA256 (Pkgfile) = d142bd50234c8eb4034a1b28fdef15c4ea1b3e2925515a58b6e0c45ec49c56a8
+RWSwxGo/zH7eXbSaOfcfanC5batHRCNH7y5tlz2t6BTsJUU3a3a+LYfuXHkjckeC9W106DGEPF6BEdemUYqLJU7811QjyP6qzAM=
+SHA256 (Pkgfile) = eee9d7399999c993cbd6cb0e9e9f54ab7272fbaed938be35e91d88a97819c7e0
 SHA256 (.footprint) = 8f6749ddfb82f2f40646e553fdfc26bfd253e07c1b00c7ece29835ebcb7543bd
-SHA256 (libpciaccess-0.14.tar.bz2) = 3df543e12afd41fea8eac817e48cbfde5aed8817b81670a4e9e493bb2f5bf2a4
+SHA256 (libpciaccess-0.15.tar.bz2) = a75643bb5cd02f6da8667d437b76492842dd56bc88e3dfb8410f5d535b99f5dc
