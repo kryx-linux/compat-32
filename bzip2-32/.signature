@@ -1,7 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXVat5PUY0HIpcaV60rEgkLFc5LG6qMjUNx7PbpnEjX/nqZtv6qJmykdHjGTwq8x357LaUIcswrJai7k0ydvx8As=
-SHA256 (Pkgfile) = 2e829f9676b38e6cb424a6108b4b94b3802658b7987ae3ad53a00c65648a3f02
-SHA256 (.footprint) = 14e78943cc31fbae38e4ec6c8b3aeaa7afdc2dd29948006833478f1a52707f89
-SHA256 (bzip2-1.0.6.tar.gz) = a2848f34fcd5d6cf47def00461fcb528a0484d8edef8208d6d2e2909dc61d9cd
-SHA256 (bzip2.patch) = b8aa64ff17bc5704cbaf2b7012086575acfa6557c89fafdcc6dcd847fb29b5cf
-SHA256 (CVE-2016-3189.patch) = 5c1cce66d2d1dfa61a627734c1a00bf0441c5ab6be0458676e20787705a14a6b
+RWSwxGo/zH7eXXquFG3j7u6B5yrAlURNNpoN68J37rxuWJdQwbdXtgFqt/HVVOb1Tgbv+DquDNadyIoPVvHrG0pFlFc9A85wzAQ=
+SHA256 (Pkgfile) = c0ed5c49f8dcea522731e3a4f46c4e36971b4829fbccc756ad799063ee0580c7
+SHA256 (.footprint) = ae64a6b0f0690f2699e12f5d0abbfd0b9ad60e9cea31f76641a43e00c749a5e8
+SHA256 (bzip2-1.0.8.tar.gz) = ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269

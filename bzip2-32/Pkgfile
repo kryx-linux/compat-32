@@ -3,29 +3,20 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=bzip2-32
-version=1.0.6
-release=2
-source=(
-	#http://www.bzip.org/$version/${name%-*}-$version.tar.gz
-	https://fossies.org/linux/misc/${name%-*}-$version.tar.gz
-	bzip2.patch
-	CVE-2016-3189.patch)
+version=1.0.8
+release=1
+source=(https://sourceware.org/pub/${name%-*}/${name%-*}-$version.tar.gz)
 
 build() {
 	cd ${name%-*}-$version
 
-	patch -p1 -i $SRC/bzip2.patch
-	patch -p1 -i $SRC/CVE-2016-3189.patch
+	install -d $PKG/usr/lib32
 
-	sed -i -e 's,$(PREFIX)/lib,$(PREFIX)/lib32,g' Makefile{,-libbz2_so}
+	make -f Makefile-libbz2_so CC="gcc $CFLAGS $LDFLAGS"
+	install -m 0644 libbz2.so.$version $PKG/usr/lib32
+	ln -s libbz2.so.$version $PKG/usr/lib32/libbz2.so
+	ln -s libbz2.so.$version $PKG/usr/lib32/libbz2.so.1.0
 
-	make
-	make PREFIX=$PKG/usr install
-
-	sed -i -e '38s,$(CC) ,$(CC) $(CFLAGS) ,' Makefile-libbz2_so
-
-	make -f Makefile-libbz2_so
-	make -f Makefile-libbz2_so PREFIX=$PKG/usr install
-
-	rm -r $PKG/usr/{bin,include,share}
+	make libbz2.a CC="gcc $CFLAGS $LDFLAGS"
+	install -m 0644 libbz2.a $PKG/usr/lib32
 }
