@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXevyV/POKc+Se3CVeubW8olnWrsBFRI0qftwEiNLoisABRdhHyGZVfMOcrfHaXTTEAyGcfl/u5ko6JjQft11KwY=
-SHA256 (Pkgfile) = 7d4fa3aacfaaf9becb8fcd9cdb9eef941fcf413fdd37ba176f4b1a26b6900cb0
+RWSwxGo/zH7eXRnmpmA1YILUhBBPGvEs9whjegNuh5UsCCNQCC8V0o1z3Q6x5k+wNlmgKiwIlUq6G+v1guzLhYpmVlm3bR1mggE=
+SHA256 (Pkgfile) = f5bd17ccb716cb02c1e3102781e89f40c317545b0fb71689f8c645a43365bb6f
 SHA256 (.footprint) = 0295598c62e1271a4579eeae3a0c302ea8698c136b5abfa71e836bdf7c11e0af
-SHA256 (sqlite-autoconf-3280000.tar.gz) = d61b5286f062adfce5125eaf544d495300656908e61fca143517afcc0a89b7c3
+SHA256 (sqlite-autoconf-3290000.tar.gz) = 8e7c1e2950b5b04c5944a981cb31fffbf9d2ddda939d536838ebc854481afd5b
