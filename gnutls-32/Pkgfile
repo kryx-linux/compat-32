@@ -4,7 +4,7 @@
 # Depends on: gnutls libidn-32 nettle-32 p11-kit-32
 
 name=gnutls-32
-version=3.6.7
+version=3.6.9
 release=1
 source=(https://www.gnupg.org/ftp/gcrypt/${name%-*}/v${version%.*}/${name%-*}-$version.tar.xz)
 
