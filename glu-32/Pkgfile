@@ -4,9 +4,9 @@
 # Depends on: mesa3d-32, glu
 
 name=glu-32
-version=9.0.0
+version=9.0.1
 release=1
-source=(ftp://ftp.freedesktop.org/pub/mesa/glu/glu-$version.tar.bz2)
+source=(https://mesa.freedesktop.org/archive/glu/glu-$version.tar.xz)
 
 build() {
 	cd glu-$version
