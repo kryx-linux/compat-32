@@ -1,0 +1,24 @@
+# Description: GObject bindings for libudev
+# URL: https://wiki.gnome.org/Projects/libgudev
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: glib-32 libgudev
+
+name=libgudev-32
+version=232
+release=1
+source=(https://ftp.gnome.org/pub/gnome/sources/${name%-*}/$version/${name%-*}-$version.tar.xz)
+
+build() {
+	cd ${name%-*}-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--disable-umockdev
+
+	sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' -i libtool
+
+	make
+	make install DESTDIR=$PKG
+	rm -r $PKG/usr/include
+}
