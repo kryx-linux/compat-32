@@ -1,0 +1,48 @@
+# Description: The Tcl scripting language.
+# URL: https://www.tcl.tk/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: tcl zlib-32
+
+name=tcl-32
+version=8.6.6
+release=2
+source=(https://downloads.sourceforge.net/tcl/tcl$version-src.tar.gz)
+
+build() {
+	cd ${name%-*}$version
+
+	rm -rf pkgs/sqlite3*
+	cd unix
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--mandir=/usr/share/man \
+		--enable-threads
+
+	make
+	make INSTALL_ROOT=$PKG install install-private-headers
+
+	rm -r $PKG/usr/{bin,include,lib,share}
+	ln -s libtcl${version%.*}.so $PKG/usr/lib32/libtcl.so
+
+	sed \
+		-e "s#$SRC/tcl$version/unix#/usr/lib32#" \
+		-e "s#$SRC/tcl$version#/usr/include#" \
+		-i "$PKG/usr/lib32/tclConfig.sh"
+
+	tdbcver=1.0.4
+	sed \
+		-e "s#$SRC/tcl$version/unix/pkgs/tdbc${tdbcver}#/usr/lib32/tdbc${tdbcver}#" \
+		-e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}/generic#/usr/include#" \
+		-e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}/library#/usr/lib32/tcl${version%.*}#" \
+		-e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}#/usr/include#" \
+		-i "$PKG/usr/lib32/tdbc${tdbcver}/tdbcConfig.sh"
+
+	ictlver=4.0.5
+	sed \
+		-e "s#$SRC/tcl$version/unix/pkgs/itcl${ictlver}#/usr/lib32/${ictlver}#" \
+		-e "s#$SRC/tcl$version/pkgs/itcl${ictlver}/generic#/usr/include#" \
+		-e "s#$SRC/tcl$version/pkgs/itcl${ictlver}#/usr/include#" \
+		-i "$PKG/usr/lib32/itcl${ictlver}/itclConfig.sh"
+}
