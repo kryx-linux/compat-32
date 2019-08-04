@@ -1,0 +1,24 @@
+# Description: Wayland is intended as a simpler replacement for X
+# URL: https://wayland.freedesktop.org/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: libffi-32 libxml2-32 expat-32 wayland
+
+name=wayland-32
+version=1.17.0
+release=1
+source=(https://wayland.freedesktop.org/releases/${name%-*}-$version.tar.xz)
+
+build() {
+	cd ${name%-*}-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--disable-documentation
+
+	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{bin,include,share}
+}
