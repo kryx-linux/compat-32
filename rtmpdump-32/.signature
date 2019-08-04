@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXWb7cDm0Fxpig/VZ9mqbrZi9YESCqDS+HXS8nsm+dCViq8St7vNA2FXOX/sDTxCMOCEfqgvT6DfBKl4EIkVWiwM=
+SHA256 (Pkgfile) = 9b3198dac0675dd06fedbbc8d120aeb5f1d6d7e8aac12642d323d3d1ae27d10e
+SHA256 (.footprint) = 58563fd32eb54ef83e750b418c0957a978ebebd11fb941c3979c30055435c00b
+SHA256 (rtmpdump-2.4-c5f04a58.tar.xz) = 14d2f9096998527b7d2d9462c720f8bc3f7d2166ef611a3a4d5da14b2518bbf6
