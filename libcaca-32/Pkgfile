@@ -1,0 +1,31 @@
+# Description: Color AsCii Art library (32-bit)
+# URL: http://caca.zoy.org/wiki/libcaca
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: ncurses-32 xorg-libx11-32 libcaca
+
+name=libcaca-32
+version=0.99.beta19
+release=1
+source=(http://libcaca.zoy.org/files/${name%-*}/${name%-*}-$version.tar.gz)
+
+build() {
+	cd ${name%-*}-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--libexecdir=/usr/lib32 \
+		--host=i686-unknown-linux-gnu \
+		--enable-shared \
+		--disable-doc \
+		--disable-cxx \
+		--disable-gl \
+		--disable-csharp \
+		--disable-python \
+		--disable-slang
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{bin,include,share}
+}
