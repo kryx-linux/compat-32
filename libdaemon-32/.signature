@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXfhmND9nmekOFANoBFzFfT8hPIQra7K4VNlFcERnYo84Tpw5IuFrMCjdbo//qgbYuWY6PE6FlYBp3gtfohtX/wU=
+SHA256 (Pkgfile) = c7fd8e8af6d49246f4a4e0bcef01f9f3b6aae6cc9dbe798157b851a15b2e3dcf
+SHA256 (.footprint) = 7ac2cfccf0fdccfe6f41bd897cef77c5028ab16203021bddaa878ce5faea93f5
+SHA256 (libdaemon-0.14.tar.gz) = fd23eb5f6f986dcc7e708307355ba3289abe03cc381fc47a80bca4a50aa6b834
