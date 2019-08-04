@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXeaLpmtNo481rwf6NQv/sW5Z6Gg6Mgzk52GCQWMMlAvb3ZMVYwx5kbb/Ok0GxoW/ucYY64lCLBGO0aP0ZWU3FQw=
+SHA256 (Pkgfile) = 3ea4619ffbfb63d71e51de517ab3d338bdd37de4e0c1f87477ebacc4a4bad06b
+SHA256 (.footprint) = f9963e4f39367f61586d3ad1118cd0249fd77f9660b2fbf693ad9a4e5f183f6d
+SHA256 (newt-0.52.21.tar.gz) = 265eb46b55d7eaeb887fca7a1d51fe115658882dfe148164b6c49fccac5abb31
