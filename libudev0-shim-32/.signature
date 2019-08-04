@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXQMnT91c8T5CNVVOJrNtwKAohPtPQOoLrpXOCoc8H/Edz060f11KgqGP68A6lI/3tgxhFPNsILiXQ6rJQ66CQA8=
+SHA256 (Pkgfile) = 91384fb22f5c66d5e62e66ff0b05f9c9c4674d7be0ca8e58dbb1be3c9d39804b
+SHA256 (.footprint) = 9be08fb8ebaf914e849940f4c4f8611635b67421e2b3a9e1ea284f9e44826e96
+SHA256 (libudev0-shim-1.tar.gz) = 24a1072fa437935d6c4e1d9c1ce84f4ad1d7be45026f6ee7b0b3d77ec0f66e3c
