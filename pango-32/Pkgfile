@@ -4,7 +4,7 @@
 # Depends on: fribidi-32 harfbuzz-32 xorg-libsm-32 xorg-libxft-32 pango
 
 name=pango-32
-version=1.44.2
+version=1.44.3
 release=1
 source=(https://download.gnome.org/sources/pango/${version:0:4}/${name%-*}-$version.tar.xz)
 
@@ -16,5 +16,7 @@ build() {
 	DESTDIR=$PKG meson install -C build
 
 	rm -r $PKG/usr/{bin,include}
-	prt-get isinst help2man && rm -r $PKG/usr/share/man ; rmdir $PKG/usr/share
+
+	# help2man
+	rm -rf $PKG/usr/share
 }
