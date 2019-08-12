@@ -5,7 +5,7 @@
 
 name=libnm-32
 version=1.18.0
-release=1
+release=2
 source=(https://ftp.gnome.org/pub/gnome/sources/NetworkManager/${version%.*}/NetworkManager-${version}.tar.xz)
 
 build() {
@@ -64,5 +64,4 @@ build() {
   install -d -m 0755 $PKG/usr/lib32/pkgconfig
   cp -dr --no-preserve='ownership' $SRC/install/usr/lib32/NetworkManager/{libnm,libnm-glib,libnm-glib-vpn,libnm-util}.so* $PKG/usr/lib32/
   cp -dr --no-preserve='ownership' $SRC/install/usr/lib32/NetworkManager/pkgconfig/{libnm,libnm-glib,libnm-glib-vpn,libnm-util}.pc $PKG/usr/lib32/pkgconfig/ 
-  rm $PKG/usr/lib32/*.so
 }
