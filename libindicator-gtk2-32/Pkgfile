@@ -6,7 +6,7 @@
 name=libindicator-gtk2-32
 version=16.10
 release=1
-source=(https://unrealize.co.uk/source/libindicator-$version.tar.gz)
+source=(http://unrealize.co.uk/source/libindicator-$version.tar.gz)
 
 build() {
   cd libindicator-$version

@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXdl3P1R4+cgnAdqPdXIfUGJPIIWPXxXkXVgLOBIm6dPQzrzhybc4+N2eU6qqmwWs2tYHXWZpebJDKfIxuQ4piw4=
-SHA256 (Pkgfile) = 2f20f50fe2104f9239bea010ae3cf721c99a229231e9c4cfd60f67ed4ce2f247
+RWSwxGo/zH7eXS0uUlw+oY3NDzu2XgsUI2VuJsAQ7Vxk+6faaxu2gK8DTVs/LuqK2JhdPRI0bPpQ+iYF/ml+McL4ckXXE8V63Ak=
+SHA256 (Pkgfile) = d6e4f548ffc085e6b35176747e31a0cd77c3402344cbdf291b31d88debf9d699
 SHA256 (.footprint) = 4c240323b3c234ceeee69a6b29384fcf0b561d15798590a3de53c9aa7bbee14d
 SHA256 (libcanberra-0.30.tar.xz) = c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72
 SHA256 (libcanberra-broadway-fix.patch) = 5c07bf6a7199d992e6f797de157bf4368391e597ab7a332da401269a8d8dd12b

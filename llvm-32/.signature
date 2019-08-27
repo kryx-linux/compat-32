@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXcA1guHTDVgHhj+XGyq9sh0ipWoj3rRv2N3z6EP4vVC1R9upotSeOrR5+WzTp9v6t2QaZnWb67WVvQMxzzikKQs=
-SHA256 (Pkgfile) = e15cf91d9fb7c4db0b97d1e8bfaed241458f23eb7af2ce0cc846c27e513e0022
+RWSwxGo/zH7eXVDAWpSGRsc/sWQEiEJAJyxY0RET3D0+7UOzXKWgqqZwMltsu3NE8AoG5TMq9fC+bfnsrYI27aVdHH0I2oQ9bwc=
+SHA256 (Pkgfile) = b94cccc2c20d58c1574750727188e341a26839a6d84b85776736da3b35602b49
 SHA256 (.footprint) = b734988e459bc42ed33e4b2bc83d08fdc2168f6f774aed89a801c158854e3036
 SHA256 (llvm-8.0.0.src.tar.xz) = 8872be1b12c61450cacc82b3d153eab02be2546ef34fa3580ed14137bb26224c

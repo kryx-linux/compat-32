@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXWu5lZFOUtrcNBXH2hmdVszg3P89ghQnIImQCCuxG2P14hW3gdvapguo8ufkKMukuNxjZJXmySyV6THrGQVLNQk=
-SHA256 (Pkgfile) = e6237bba0c03f0a900545e21a9b5516c81fcc52c14daa8670e421b29eb22cab0
+RWSwxGo/zH7eXYd6Tn6xUqxtKBeLnpUKeSH/u8TcJuc3pvcDvUo3ZN01bq5GgCDHmIS210drr7FElx0QEYppW3TzTNKmr78YlQU=
+SHA256 (Pkgfile) = 3190dc7faafbbaef6410d58fe16e8e74494712458b1d764ca2bd227dbf917fdf
 SHA256 (.footprint) = 73887098f566512bcd28f5bf7dcff0ed448818588fb233de88b12cd9790a86e5
 SHA256 (libcaca-0.99.beta19.tar.gz) = 128b467c4ed03264c187405172a4e83049342cc8cc2f655f53a2d0ee9d3772f4

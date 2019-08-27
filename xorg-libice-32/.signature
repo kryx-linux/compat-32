@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXX2eHTZXULLTMLAo+GGFzT5i/nNYNc2LjR2YNA3FdP1JjeuaWgZstliftkqZGhu8Og/IBz31pP0j1RoFKdU8EQw=
-SHA256 (Pkgfile) = 7232a01e3bfa756415977aa52ae42de281336947ccb6cc067936db7e8cc1e221
+RWSwxGo/zH7eXSbioTr6NU9gP+LfFRaXQxjOmeOkpu6RdtANpaf8Z2b58A6iG8+fbBzlbrbgkB3HIPsJLY/HwE9LC0p0YAjtMwc=
+SHA256 (Pkgfile) = 5ce1affa48f0bc325ee2cf0ebf0a3fa727195e91f1d6e80c9935c47b3f2a82a8
 SHA256 (.footprint) = 0adfd19386c0e002db95636272327424b1ce7964347034a4e548aff8403955d7
 SHA256 (libICE-1.0.10.tar.bz2) = 6f86dce12cf4bcaf5c37dddd8b1b64ed2ddf1ef7b218f22b9942595fb747c348

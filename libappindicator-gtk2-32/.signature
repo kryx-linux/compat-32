@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXefj2kI5jKWobL7oQy2ZoWQ0sRK6wiHdYioEd+bu6vAnHXkdguxZ27Lp1dxIJbq5vHuNUXz7suLkhH2J+9D7Vgs=
-SHA256 (Pkgfile) = 4d8f59cbed98b51ee220fba9cc12da2517ab9fa3f7aeb0d8605429df24b364df
+RWSwxGo/zH7eXfhofK8ugWXKL93WYLs7MAIkJ3sWHEoazJc0qKQPjb4Ep9idfpb9XVbeIx4GlJNDaZGQgSsUpKCH00bHfeGqwQw=
+SHA256 (Pkgfile) = cdcc1083ffda95020a71ebcb7afbc0d1b271d9416bd9d0a2063ca5fb0a8ca672
 SHA256 (.footprint) = 89e564312dac82966b11a4756594dd745aa2859baa7acb8d8fa4379146eec610
 SHA256 (libappindicator-16.10.tar.gz) = f33e0e06096fa8f8ca560ffcd84b8eb64830fa7308b30964c77bd5f45d0c497e
 SHA256 (0001-Glib.Timeout-fix.patch) = bc7e3d5db0b9b324dc072f807519547fdc2c96514eb17aa07a71117a787d9b80

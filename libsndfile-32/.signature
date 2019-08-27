@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXY9lrmt21lTD16pDKR/G+ahUF7bC/7h/cLPOm6qgO9zzvHO9MfRveX3yJFnBzD1XiU+SvguWOKH/w7AmXVgAMQo=
-SHA256 (Pkgfile) = 840182a302849c5ce52e8609ad68696410657df7c2e3d4625dd78a5a0a772a4e
+RWSwxGo/zH7eXUZRiYZ9ZHNiIMrKZtXpAngZA8PGNZu3gPkjYpuRFw6azhPNnFIpJCcQfnPvxhTXAvk/DVsoSOnVgLwbGKMQpAg=
+SHA256 (Pkgfile) = 8066788fa878d92d3dd2275afe1d425dde765920038fd162ad7aa3a25455fdb3
 SHA256 (.footprint) = c75bcf48d68e0f95036dd9a429c6d6adb118c9205d21de20eb30d4f65784e8f9
 SHA256 (libsndfile-1.0.28.tar.gz) = 1ff33929f042fa333aed1e8923aa628c3ee9e1eb85512686c55092d1e5a9dfa9
 SHA256 (0001-FLAC-Fix-a-buffer-read-overrun.patch) = 256eda5665ccad5a38030594f83a16ae9b271f8d0dd31f4d3b650bafaf93aef0

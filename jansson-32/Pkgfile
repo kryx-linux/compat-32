@@ -6,7 +6,7 @@
 name=jansson-32
 version=2.12
 release=1
-source=(https://www.digip.org/${name%-*}/releases/${name%-*}-$version.tar.bz2)
+source=(http://www.digip.org/${name%-*}/releases/${name%-*}-$version.tar.bz2)
 
 build() {
 	cd ${name%-*}-$version
