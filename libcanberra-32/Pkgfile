@@ -1,7 +1,7 @@
 # Description: A small and lightweight implementation of the XDG Sound Theme Specification
 # URL: http://0pointer.de/lennart/projects/libcanberra
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: gtk-32 libcanberra xorg-libxdamage-32 libtool-32 alsa-lib-32 libvorbis-32
+# Depends on: alsa-lib-32 gtk-32 libcanberra libtool-32 libvorbis-32 xorg-libxdamage-32
 # Optional: pulseaudio-32
 
 name=libcanberra-32

@@ -1,7 +1,7 @@
 # Description: A collection of utilities to handle ELF objects.
 # URL: https://sourceware.org/elfutils/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: bzip2-32 xz-32 zlib-32 elfutils
+# Depends on: bzip2-32 elfutils xz-32 zlib-32
 
 name=elfutils-32
 version=0.177

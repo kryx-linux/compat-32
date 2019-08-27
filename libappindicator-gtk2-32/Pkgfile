@@ -1,7 +1,7 @@
 # Description: Allow applications to extend a menu via Ayatana indicators in Unity, KDE or Systray
 # URL: https://launchpad.net/libappindicator
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: dbus-glib-32 libdbusmenu-gtk2-32 libindicator-gtk2-32 libappindicator-gtk2
+# Depends on: dbus-glib-32 libappindicator-gtk2 libdbusmenu-gtk2-32 libindicator-gtk2-32
 
 name=libappindicator-gtk2-32
 version=16.10

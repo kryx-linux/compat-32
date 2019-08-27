@@ -1,7 +1,7 @@
 # Description: Vorbis codec library
 # URL:         http://www.xiph.org/ogg/vorbis/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on:  libogg-32 libvorbis
+# Depends on: libogg-32 libvorbis
 
 name=libvorbis-32
 version=1.3.6

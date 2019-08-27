@@ -1,7 +1,7 @@
 # Description: Network configuration tool
 # URL: https://wiki.gnome.org/Projects/NetworkManager/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: dbus-glib-32 nss-32 libndp-32 libnm jansson-32 curl-32 libxslt
+# Depends on: curl-32 dbus-glib-32 jansson-32 libndp-32 libnm nss-32
 
 name=libnm-32
 version=1.18.0

@@ -1,7 +1,7 @@
 # Description: Userspace device management daemon
 # URL: https://wiki.gentoo.org/wiki/Project:Eudev
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: kmod-32 eudev
+# Depends on: eudev kmod-32
 
 name=eudev-32
 version=3.2.8

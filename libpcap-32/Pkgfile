@@ -1,7 +1,7 @@
 # Description: Packet capture library
 # URL:         http://www.tcpdump.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libusb-32 libpcap
+# Depends on: libpcap libusb-32
 
 name=libpcap-32
 version=1.9.0

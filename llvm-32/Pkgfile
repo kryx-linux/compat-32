@@ -1,7 +1,7 @@
 # Description: LLVM
 # URL: http://llvm.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libffi-32 llvm
+# Depends on: libffi-32 libxml2-32 llvm
 
 name=llvm-32
 version=8.0.0

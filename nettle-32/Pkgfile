@@ -1,7 +1,7 @@
 # Description: Low-level cryptographic library
 # URL: http://www.lysator.liu.se/~nisse/nettle/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: nettle libgmp-32
+# Depends on: libgmp-32 nettle
 
 name=nettle-32
 version=3.5.1

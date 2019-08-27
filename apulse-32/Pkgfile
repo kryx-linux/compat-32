@@ -1,7 +1,7 @@
 # Description: PulseAudio emulation for ALSA.
 # URL:         https://github.com/i-rinat/apulse
 # Maintainer:  CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on:  cmake glib-32 alsa-lib-32
+# Depends on: alsa-lib-32 cmake glib-32
 
 name=apulse-32
 version=0.1.12

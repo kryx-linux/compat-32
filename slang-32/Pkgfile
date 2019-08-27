@@ -1,7 +1,7 @@
 # Description: S-Lang programmer's library
 # URL: http://www.jedsoft.org/slang/
 # Maintainer: 
-# Depends on: slang jq-32 libpcre-32 libpng-32
+# Depends on: jq-32 libpcre-32 libpng-32 slang
 
 name=slang-32
 version=2.3.2

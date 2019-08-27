@@ -1,7 +1,7 @@
 # Description: XML library version 2
 # URL: http://xmlsoft.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: zlib-32 xz-32 libxml2
+# Depends on: libxml2 xz-32 zlib-32
 
 name=libxml2-32
 version=2.9.9

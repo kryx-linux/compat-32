@@ -1,7 +1,7 @@
 # Description: SDL version 2, Simple DirectMedia Layer
 # URL: http://www.libsdl.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: alsa-lib-32 mesa3d-32 libsdl2
+# Depends on: alsa-lib-32 libsdl2 mesa3d-32
 
 name=libsdl2-32
 version=2.0.10

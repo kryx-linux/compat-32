@@ -1,7 +1,7 @@
 # Description: A message bus system
 # URL: https://freedesktop.org/wiki/Software/dbus
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: expat-32 dbus
+# Depends on: dbus expat-32
 
 name=dbus-32
 version=1.12.16
