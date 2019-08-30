@@ -4,25 +4,35 @@
 # Depends on: spirv-tools
 
 name=spirv-tools-32
-version=2019.2
+version=2019.4
+commit=aa9e8f538041db3055ea443080e0ccc315fa114f
 release=2
-source=(https://github.com/KhronosGroup/SPIRV-Tools/archive//v$version/SPIRV-Tools-v$version.tar.gz)
+source=(
+	#https://github.com/KhronosGroup/SPIRV-Tools/archive//v$version/SPIRV-Tools-v$version.tar.gz
+	https://codeload.github.com/KhronosGroup/SPIRV-Tools/zip/$commit
+)
 
 build() {
-    cd SPIRV-Tools-$version
+	mv $commit SPIRV-Tools-$commit.zip
+	bsdtar -xf SPIRV-Tools-$commit.zip
+	cd SPIRV-Tools-$commit
+#	cd SPIRV-Tools-$version
 
-    mkdir build
-    cd build
 
-    cmake .. \
-        -DCMAKE_INSTALL_PREFIX=/usr \
-        -DCMAKE_INSTALL_LIBDIR=lib32 \
-        -DCMAKE_BUILD_TYPE=Release \
-        -DSPIRV_WERROR=Off \
-        -DSPIRV-Headers_SOURCE_DIR=/usr
+	mkdir build
+	cd build
 
-    make
-    make DESTDIR=$PKG install
+	cmake .. \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib32 \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DSPIRV_WERROR=OFF \
+		-DSPIRV-Headers_SOURCE_DIR=/usr \
+		-DPYTHON_EXECUTABLE=/usr/bin/python3 \
+		-G Ninja
 
-    rm -r $PKG/usr/{bin,include}
+	ninja
+	DESTDIR=$PKG ninja install
+
+	rm -r $PKG/usr/{bin,include}
 }
