@@ -31,7 +31,7 @@ build() {
 		-DPYTHON_EXECUTABLE=/usr/bin/python3 \
 		-G Ninja
 
-	ninja
+	ninja -j ${JOBS:-1}
 	DESTDIR=$PKG ninja install
 
 	rm -r $PKG/usr/{bin,include}
