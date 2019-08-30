@@ -4,22 +4,27 @@
 # Depends on: glslang spirv-tools-32
 
 name=glslang-32
-version=7.11.3214
+version=7.12.3352
 release=1
-source=(https://github.com/KhronosGroup/glslang/archive/$version/${name%-*}-$version.tar.gz)
+source=(https://github.com/KhronosGroup/glslang/archive/$version/${name%-*}-$version.tar.gz
+	0001-pkg-config-compatibility.patch)
 
 build() {
 	cd ${name%-*}-$version
 
-mkdir -p build-{shared,static}
+	# Patch to build against system spirv-tools
+	patch -p1 -i $SRC/0001-pkg-config-compatibility.patch
+
+	mkdir -p build-{shared,static}
 
     (cd build-shared
     cmake .. \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib32 \
         -DCMAKE_BUILD_TYPE=Release \
+	-GNinja \
         -DBUILD_SHARED_LIBS=ON
-    make
+    ninja
     )
 
     (cd build-static
@@ -27,12 +32,13 @@ mkdir -p build-{shared,static}
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib32 \
         -DCMAKE_BUILD_TYPE=Release \
+	-GNinja \
         -DBUILD_SHARED_LIBS=OFF
-    make
+    ninja
     )
 
-    make -C build-shared DESTDIR=$PKG install
-    make -C build-static DESTDIR=$PKG install
+	DESTDIR=$PKG ninja -C build-shared install
+	DESTDIR=$PKG ninja -C build-static install
 
     cd $PKG/usr/lib32
         for lib in *.so; do
