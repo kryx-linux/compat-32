@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXToXXsExH90ST0/UhaDsix8VS6GcR4aBe/awkviPbwv5evDTQhgWw3dHtoylxRrlnsMbEep3boflzCWAnjEJqQc=
-SHA256 (Pkgfile) = 6cd74ff7882436ae81ddaf27638daf6547638e49bb9cde05d96398c98ffe2ee2
-SHA256 (.footprint) = d1c5004d62b83ba05ac1d8635dc3b79c2a8732bbf97d9a0522762295c4148249
-SHA256 (atk-2.32.0.tar.xz) = cb41feda7fe4ef0daa024471438ea0219592baf7c291347e5a858bb64e4091cc
+RWSwxGo/zH7eXVW6Ui8dls30exDzfAgKye6qG9vG5sRv4ZGDlq/b/QUhWrUPAImiGHHzga3GZV4ZJTOkEG/NCbc9TrGRAdB1tgI=
+SHA256 (Pkgfile) = f6ac6818a5db035631fbe4148029eef0572a1ba0edafede4eb18a648111a4fe4
+SHA256 (.footprint) = 0c0d850de409d82db1b96d332ac33c536a14a85c4ecf587e22095ef6e53e67f3
+SHA256 (atk-2.34.1.tar.xz) = d4f0e3b3d21265fcf2bc371e117da51c42ede1a71f6db1c834e6976bb20997cb
