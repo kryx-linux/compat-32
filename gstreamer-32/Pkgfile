@@ -4,7 +4,7 @@
 # Depends on: glib-32 gstreamer libcap-32
 
 name=gstreamer-32
-version=1.16.0
+version=1.16.1
 release=1
 source=(https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-$version.tar.xz)
 
