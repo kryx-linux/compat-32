@@ -29,4 +29,10 @@ lrwxrwxrwx	root/root	usr/lib32/libOpenGL.so -> libOpenGL.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib32/libOpenGL.so.0 -> libOpenGL.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib32/libOpenGL.so.0.0.0
 drwxr-xr-x	root/root	usr/lib32/pkgconfig/
+-rw-r--r--	root/root	usr/lib32/pkgconfig/egl.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/gl.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/glesv1_cm.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/glesv2.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/glx.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/libglvnd.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/opengl.pc
