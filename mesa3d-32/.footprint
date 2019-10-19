@@ -38,9 +38,7 @@ lrwxrwxrwx	root/root	usr/lib32/libxatracker.so.2 -> libxatracker.so.2.5.0
 -rwxr-xr-x	root/root	usr/lib32/libxatracker.so.2.5.0
 drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/dri.pc
--rw-r--r--	root/root	usr/lib32/pkgconfig/egl.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gbm.pc
--rw-r--r--	root/root	usr/lib32/pkgconfig/gl.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/osmesa.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xatracker.pc
 drwxr-xr-x	root/root	usr/lib32/vdpau/
