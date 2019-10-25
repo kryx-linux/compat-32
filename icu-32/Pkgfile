@@ -6,7 +6,7 @@
 name=icu-32
 version=64.2
 release=1
-source=(http://download.icu-project.org/files/icu4c/$version/icu4c-${version//./_}-src.tgz)
+source=(https://sourceforge.net/projects/icu/files/ICU4C/$version/icu4c-${version//./_}-src.tgz)
 
 build() {
 	cd icu/source
