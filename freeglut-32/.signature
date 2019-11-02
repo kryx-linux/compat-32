@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQu8rtnGTZamSDuKNVoIeZ7HcxMgeY9kDEY0MFc0EaGV9N8cdiPPoA7hoSLHYcpXcU3SiL2koFEyNfnUW4A6JQg=
-SHA256 (Pkgfile) = 760b667924f6a2a7d47c9640280a4e71fcad8e47dca12c07beccff77c94dde79
-SHA256 (.footprint) = b4c42ac0e5eb49f4b9ef9ed7329c7a01d2bb5783a910fc7432ecfa9eaaa5d5bc
-SHA256 (freeglut-3.0.0.tar.gz) = 2a43be8515b01ea82bcfa17d29ae0d40bd128342f0930cd1f375f1ff999f76a2
+RWSwxGo/zH7eXZkEz4vwghDjg0orp6Zy4cz7sBnz1K2r+ciaQEw6leb6RfgHjoCkV3Hpf+8WNmMpu0ADhSTVyJgLv1n/Rr94RwU=
+SHA256 (Pkgfile) = aba22e575861e53f44d4184ee1e04fc87042eefc9978175582998009d5b4a089
+SHA256 (.footprint) = 86a5d0ab594286e1a5375ce12648f711c52f1a4d9807a02c8b4936e1563a4e8b
+SHA256 (freeglut-3.2.1.tar.gz) = d4000e02102acaf259998c870e25214739d1f16f67f99cb35e4f46841399da68

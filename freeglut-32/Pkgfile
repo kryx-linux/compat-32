@@ -4,7 +4,7 @@
 # Depends on: freeglut glu-32 xorg-libxi-32
 
 name=freeglut-32
-version=3.0.0
+version=3.2.1
 release=1
 source=(https://downloads.sourceforge.net/project/freeglut/freeglut/$version/freeglut-$version.tar.gz)
 
@@ -21,6 +21,8 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
+
+	ln -s glut.pc $PKG/usr/lib32/pkgconfig/freeglut.pc
 
 	rm -r $PKG/usr/include
 }
