@@ -4,7 +4,7 @@
 # Depends on: libxml2 xz-32 zlib-32
 
 name=libxml2-32
-version=2.9.9
+version=2.9.10
 release=1
 source=(http://xmlsoft.org/sources/${name%-*}-$version.tar.gz)
 
