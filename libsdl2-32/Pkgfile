@@ -1,15 +1,19 @@
 # Description: SDL version 2, Simple DirectMedia Layer
-# URL: http://www.libsdl.org/
+# URL: https://www.libsdl.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: alsa-lib-32 libsdl2 mesa3d-32
 
 name=libsdl2-32
 version=2.0.10
-release=1
-source=(https://www.libsdl.org/release/SDL2-$version.tar.gz)
+release=2
+source=(https://www.libsdl.org/release/SDL2-$version.tar.gz
+	SDL2-2.0.10-opengl_include_fix-1.patch)
 
-build () {
+build() {
 	cd SDL2-$version
+
+	# https://www.mail-archive.com/blfs-book@lists.linuxfromscratch.org/msg40028.html
+	patch -p1 -i $SRC/SDL2-2.0.10-opengl_include_fix-1.patch
 
 	CONFIG_SHELL=/bin/bash \
 	./configure \
