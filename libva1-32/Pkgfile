@@ -5,7 +5,7 @@
 
 name=libva1-32
 version=1.8.3
-release=1
+release=2
 source=(https://github.com/intel/libva/releases/download/$version/libva-$version.tar.bz2
 	libva1-32.conf)
 
@@ -15,7 +15,9 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32/libva1 \
-		--with-drivers-path='/usr/lib32/libva1/dri'
+		--includedir=/usr/include/libva1 \
+		--with-drivers-path='/usr/lib32/libva1/dri' \
+		--disable-va-messaging
 
 	make
 	make DESTDIR=$PKG install
