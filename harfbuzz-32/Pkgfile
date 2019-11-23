@@ -4,7 +4,7 @@
 # Depends on: cairo-32 harfbuzz
 
 name=harfbuzz-32
-version=2.6.2
+version=2.6.4
 release=1
 source=(https://www.freedesktop.org/software/${name%-*}/release/${name%-*}-$version.tar.xz)
 
