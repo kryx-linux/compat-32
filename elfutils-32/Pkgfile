@@ -4,7 +4,7 @@
 # Depends on: bzip2-32 elfutils xz-32 zlib-32
 
 name=elfutils-32
-version=0.177
+version=0.178
 release=1
 source=(https://sourceware.org/${name%-*}/ftp/$version/${name%-*}-$version.tar.bz2)
 
@@ -15,10 +15,11 @@ build() {
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
 		--program-prefix=eu- \
+		--disable-debuginfod \
 		--disable-nls
 
 	make
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{bin,include}
+	rm -r $PKG/usr/{bin,include,share/man}
 }
