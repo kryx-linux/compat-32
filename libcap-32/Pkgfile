@@ -5,7 +5,7 @@
 
 name=libcap-32
 version=2.29
-release=1
+release=2
 source=(https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/${name%-*}-$version.tar.xz)
 
 build() {
@@ -13,8 +13,8 @@ build() {
 
 	sed -i "/^CFLAGS/s/-O2/$CFLAGS/" Make.Rules 
 
-	make -C libcap
-	make -C libcap RAISE_SETFCAP=no DESTDIR=$PKG prefix=/usr lib=lib32 install
+	make -C libcap GOLANG=no
+	make -C libcap GOLANG=no RAISE_SETFCAP=no DESTDIR=$PKG prefix=/usr lib=lib32 install
 
 	rm -r $PKG/usr/include
 }
