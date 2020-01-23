@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXZMj7t+QxNoVVuNHikzgi4yYA8mcRiDPXq2mNn4alfHV0i3ZFgcALo623JHzAq7QAuOVQulFT53VzxiOeUq/jAg=
-SHA256 (Pkgfile) = bfbe84bfe199927232abd6dad361e0aad4e681b5cce2e2f36d7ad90bd97b93ef
+RWSwxGo/zH7eXQk/vAog73Xjru8yJZcRSjrxYfo0ktAbu3VhrIGlohOcT8jlF7rtzwT8gwyY6QR5DsrvdaUHgObEaWy1lxrF6wM=
+SHA256 (Pkgfile) = 9f36fb1b87cea2179fb2185fe9557b6758afa88d541ba6f4e60e69507c2988dd
 SHA256 (.footprint) = 354a99b42790f3acff956dbf448451edd541a567e44f3c7f97f80c2c0b6080c7
-SHA256 (openssl-1.0.2s.tar.gz) = cabd5c9492825ce5bd23f3c3aeed6a97f8142f606d893df216411f07d1abab96
+SHA256 (openssl-1.0.2u.tar.gz) = ecd0c6ffb493dd06707d38b14bb4d8c2288bb7033735606569d8f90f89669d16
 SHA256 (no-rpath.patch) = 754d6107a306311e15a1db6a1cc031b81691c8b9865e8809ac60ca6f184c957c
 SHA256 (openssl-1.0-versioned-symbols.patch) = 353a84e4c92e36c379ebd9216b8f8fb9c271396583561eb84ac8c825979acaa6
