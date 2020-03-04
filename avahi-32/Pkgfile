@@ -1,23 +1,31 @@
 # Description: A system which facilitates service discovery on a local network via the mDNS/DNS-SD protocol suite
 # URL: http://www.avahi.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: avahi dbus-32 gdbm-32 glib-32 libcap-32 libdaemon-32
+# Depends on: avahi dbus-32 gdbm-32 glib-32 libcap-32 libdaemon-32 libevent-32
 
 name=avahi-32
-version=0.7
+version=0.8
 release=1
-source=(http://avahi.org/download/${name:0:5}-$version.tar.gz)
+source=(https://avahi.org/download/avahi-$version.tar.gz
+	reverse-move-to-run.patch)
 
 build() {
-	cd ${name:0:5}-$version
+	cd avahi-$version
+
+	patch -p1 -i $SRC/reverse-move-to-run.patch
+
+	NOCONFIGURE=1 ./autogen.sh
 
 	./configure --prefix=/usr \
 		--libdir=/usr/lib32 \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
 		--with-distro=none \
 		--disable-gtk \
 		--disable-gtk3 \
 		--disable-qt3 \
 		--disable-qt4 \
+		--disable-qt5 \
 		--disable-python \
 		--disable-pygobject \
 		--disable-python-dbus \
@@ -29,5 +37,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{bin,sbin,etc,include,share}
+	rm -r $PKG/usr/{bin,sbin,include,share} $PKG/{etc,var}
 }

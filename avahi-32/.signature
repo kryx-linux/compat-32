@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXa30oMhtAs/K8U4m+bVKze4KK3fAHr3TbXl2gTGmSfHk9Kx8RXG8lUpK9BtpoE27pmdplnm/5JV/+Q7+s3FAxQM=
-SHA256 (Pkgfile) = d550d9b3cf513782ab663bdab87aff4f9288395c53b0e5b4c68c17b979bd4a35
-SHA256 (.footprint) = d4458b2130566a73cf1b512266fd79b4a7205b6ac3eae28cead3eee8ff755e62
-SHA256 (avahi-0.7.tar.gz) = 57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804
+RWSwxGo/zH7eXRE3eJZ0NvaW1J/tOn3Y6sA17mlx4YgSEjI1P2bGYOlHTMNk5Sj2T+wMsuk5381GQXYJEjSXMFZiIza6ERLNuw0=
+SHA256 (Pkgfile) = 5943f1254a7dfff2fc514d51634e544e8bfed9c669c7db8de4917025e4be48ff
+SHA256 (.footprint) = 72baed23d6e6598de90dec8a3db81f29cb89850df72c2db38afa392e5d9089da
+SHA256 (avahi-0.8.tar.gz) = 060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda
+SHA256 (reverse-move-to-run.patch) = a333bcf15dd3e72ac99b2e883202e7170d2ff27bf61820413235bc9f3c9c2605
