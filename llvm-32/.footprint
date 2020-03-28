@@ -37,9 +37,9 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/TableGen.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/UseLibtool.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/VersionFromVCS.cmake
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-9.0.1.so -> libLLVM-9.so
--rwxr-xr-x	root/root	usr/lib32/libLLVM-9.so
-lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-9.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-10.0.0.so -> libLLVM-10.so
+-rwxr-xr-x	root/root	usr/lib32/libLLVM-10.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-10.so
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUAsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUCodeGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUDesc.a
@@ -59,10 +59,12 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-9.so
 -rw-r--r--	root/root	usr/lib32/libLLVMBitReader.a
 -rw-r--r--	root/root	usr/lib32/libLLVMBitWriter.a
 -rw-r--r--	root/root	usr/lib32/libLLVMBitstreamReader.a
+-rw-r--r--	root/root	usr/lib32/libLLVMCFGuard.a
 -rw-r--r--	root/root	usr/lib32/libLLVMCodeGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMCore.a
 -rw-r--r--	root/root	usr/lib32/libLLVMCoroutines.a
 -rw-r--r--	root/root	usr/lib32/libLLVMCoverage.a
+-rw-r--r--	root/root	usr/lib32/libLLVMDWARFLinker.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDebugInfoCodeView.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDebugInfoDWARF.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDebugInfoGSYM.a
@@ -71,6 +73,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-9.so
 -rw-r--r--	root/root	usr/lib32/libLLVMDemangle.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDlltoolDriver.a
 -rw-r--r--	root/root	usr/lib32/libLLVMExecutionEngine.a
+-rw-r--r--	root/root	usr/lib32/libLLVMFrontendOpenMP.a
 -rw-r--r--	root/root	usr/lib32/libLLVMFuzzMutate.a
 -rw-r--r--	root/root	usr/lib32/libLLVMGlobalISel.a
 -rw-r--r--	root/root	usr/lib32/libLLVMIRReader.a
@@ -92,6 +95,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-9.so
 -rw-r--r--	root/root	usr/lib32/libLLVMObject.a
 -rw-r--r--	root/root	usr/lib32/libLLVMObjectYAML.a
 -rw-r--r--	root/root	usr/lib32/libLLVMOption.a
+-rw-r--r--	root/root	usr/lib32/libLLVMOrcError.a
 -rw-r--r--	root/root	usr/lib32/libLLVMOrcJIT.a
 -rw-r--r--	root/root	usr/lib32/libLLVMPasses.a
 -rw-r--r--	root/root	usr/lib32/libLLVMProfileData.a
@@ -115,8 +119,8 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-9.so
 -rw-r--r--	root/root	usr/lib32/libLLVMX86Utils.a
 -rw-r--r--	root/root	usr/lib32/libLLVMXRay.a
 -rw-r--r--	root/root	usr/lib32/libLLVMipo.a
-lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.9
--rwxr-xr-x	root/root	usr/lib32/libLTO.so.9
-lrwxrwxrwx	root/root	usr/lib32/libRemarks.so -> libRemarks.so.9
--rwxr-xr-x	root/root	usr/lib32/libRemarks.so.9
+lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.10
+-rwxr-xr-x	root/root	usr/lib32/libLTO.so.10
+lrwxrwxrwx	root/root	usr/lib32/libRemarks.so -> libRemarks.so.10
+-rwxr-xr-x	root/root	usr/lib32/libRemarks.so.10
 drwxr-xr-x	root/root	usr/share/
