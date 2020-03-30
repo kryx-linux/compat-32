@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXX8wp6aekn/WyeaHP4auNAdJKa0oT0kT463XdKKflGiEm6GMOco5D/fOXY1vGZhI+VFurjThge3AVoNW8/r0mA0=
+SHA256 (Pkgfile) = da2d43f07f5199e50c0c2a5d3b3f6192b585f52aa9b60ad06ce0661b1188e18f
+SHA256 (.footprint) = 836f2979837b8da1cebcad2d807e7221c2ebb793d5ae367ba58df1674ff077f5
+SHA256 (cyrus-sasl-2.1.27.tar.gz) = 26866b1549b00ffd020f188a43c258017fa1c382b3ddadd8201536f72efb05d5
