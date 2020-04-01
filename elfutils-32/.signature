@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXWv27fuepwQzqEM9w8w5AeVhU7h2tAiiC4WRmX44cZ+XmUUyFkI6e9Km3AQTKqZK1TvL9zRqSQbRq0hI/f6IWAw=
-SHA256 (Pkgfile) = 4a19f905749c35fa282b55c56f19c83943611e9e034d5beca25ff8d32aa2e4ae
-SHA256 (.footprint) = edc99227b33cd6ebea447a6b4f95621ebc24d6a231bca05cefb2b5c593a6a441
-SHA256 (elfutils-0.178.tar.bz2) = 31e7a00e96d4e9c4bda452e1f2cdac4daf8abd24f5e154dee232131899f3a0f2
+RWSwxGo/zH7eXVHaV8j+hQ8/npM/nhMfiMgPTaheqDKWtLBoTp9JCeD+JPXYS9pqt3L3+/9F2miMq/ocb3OSpPbgXXPzdHxshgI=
+SHA256 (Pkgfile) = fa5a89645c9f95fb71f2262a3561cb3c8d7689492e832e6741f7952107fa4d36
+SHA256 (.footprint) = df33123b5af4fed6c85cbb29993a53918260a551213ab77e2cad2637d1265c3c
+SHA256 (elfutils-0.179.tar.bz2) = 25a545566cbacaa37ae6222e58f1c48ea4570f53ba991886e2f5ce96e22a23a2
