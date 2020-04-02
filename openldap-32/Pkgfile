@@ -6,8 +6,8 @@
 name=openldap-32
 version=2.4.49
 release=1
-source=(ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-$version.tgz
-	openldap-config.patch slapd)
+source=(https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-$version.tgz
+	openldap-config.patch)
 
 build() {
 	cd openldap-$version
