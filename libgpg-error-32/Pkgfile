@@ -4,17 +4,12 @@
 # Depends on: libgpg-error
 
 name=libgpg-error-32
-version=1.36
+version=1.37
 release=1
-source=(https://www.gnupg.org/ftp/gcrypt/${name%-*}/${name%-*}-$version.tar.bz2
-	gawk.patch)
+source=(https://www.gnupg.org/ftp/gcrypt/${name%-*}/${name%-*}-$version.tar.bz2)
 
 build() {
 	cd ${name%-*}-$version
-
-	patch -p1 -i $SRC/gawk.patch
-
-	autoreconf
 
 	./configure \
 		--prefix=/usr \
