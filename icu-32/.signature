@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQjQzeafp3PFV3HT7L6OY+WOqaUWzVoWA1B1/Vu7e+/7fvAV0zcfmW89i7SLQueyaHZE3IRfXuLxVfYUwrrTNA4=
-SHA256 (Pkgfile) = 39c85c1040444d66bfef48d06db2085966d31e656b1b1dad8bde3bb673de57b7
-SHA256 (.footprint) = 492d96fefc1f53ae3040deabfcca45b122b557b7ad1476cfa76a7ef90f3ecc16
-SHA256 (icu4c-65_1-src.tgz) = 53e37466b3d6d6d01ead029e3567d873a43a5d1c668ed2278e253b683136d948
-SHA256 (icu-65.1-initialized-buffer-uloc_getKeywordValue.patch) = 2fafe710a69e0e81f38c8a36fcc17fa494ce27af63ea41d23815b36b1ee319c3
+RWSwxGo/zH7eXeiKmKkpvKwJDxJYSysB+XAkzvIsRfqSawTP/6ZqlIpoRebW9JOECxebkDViM9tka60qmArxR/biV079mhCLLAc=
+SHA256 (Pkgfile) = 7b8cd03faf2c65c98df5930a620c3ff6629594c8b8327ed014abf09a2b8e55ac
+SHA256 (.footprint) = b0bf3883530131b0bd5956d5abae3e32a9e18870dac912ad68072a9dde896913
+SHA256 (icu4c-66_1-src.tgz) = 52a3f2209ab95559c1cf0a14f24338001f389615bf00e2585ef3dbc43ecf0a2e
