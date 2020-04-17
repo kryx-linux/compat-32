@@ -6,6 +6,7 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/compositeproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/damageproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/dmxproto.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/dpmsproto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/dri2proto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/dri3proto.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/fixesproto.pc
