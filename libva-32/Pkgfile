@@ -9,15 +9,9 @@ release=1
 source=(https://github.com/intel/libva/releases/download/$version/libva-$version.tar.bz2)
 
 build() {
-	cd libva-$version
-
-	CONFIG_SHELL=/bin/bash \
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32
-
-	make
-	make DESTDIR=$PKG install
+	meson build libva-$version --prefix=/usr --libdir=/usr/lib32
+	ninja -C build -j ${JOBS:-1}
+	DESTDIR=$PKG meson install -C build
 
 	rm -r $PKG/usr/include
 }
