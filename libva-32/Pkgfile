@@ -4,7 +4,7 @@
 # Depends on: libdrm-32 xorg-libxext-32 xorg-libxfixes-32 libva
 
 name=libva-32
-version=2.7.0
+version=2.7.1
 release=1
 source=(https://github.com/intel/libva/releases/download/$version/libva-$version.tar.bz2)
 
