@@ -4,7 +4,7 @@
 # Depends on: glew mesa3d-32 xorg-libxi-32 xorg-libxmu-32
 
 name=glew-32
-version=2.2.0
+version=2.1.0
 release=1
 source=(https://downloads.sourceforge.net/project/glew/glew/$version/glew-$version.tgz)
 
