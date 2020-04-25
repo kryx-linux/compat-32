@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXfw2gKYydiB9+u+8AUoEkkPPlbBOmTShjflJDwDYJC+5m0i5T/DfMXY/bc8AMnfjTj8WSkHGf7YM8jxyym4+7QE=
-SHA256 (Pkgfile) = c02e2968ea0931505c0a0a85911571b695c91b336031aab4752ca6c7d4586439
-SHA256 (.footprint) = 41760667e4b2d9f21736be7ef0019fbd2e91a4fffa5a2b35447a9104138e454a
-SHA256 (pixman-0.38.4.tar.bz2) = 84abb7fa2541af24d9c3b34bf75d6ac60cc94ac4410061bbb295b66a29221550
+RWSwxGo/zH7eXXIXhed3UI7tszPaZ5ZeGifedNyZWTfd/dcT5uei1PXJTEFdrZc3lhNikOLZscsuDTsv6k7jwdrW2us3I+PlNQ8=
+SHA256 (Pkgfile) = bedaecbafced0ceae280f1fd1ad078e01fc599764439aad71bce1ef811efe0ce
+SHA256 (.footprint) = 872a56a9b2d80ce28549d60be69bb36043f0efbd38ac075502d961f67bfb5efe
+SHA256 (pixman-0.40.0.tar.xz) = da8ed9fe2d1c5ef8ce5d1207992db959226bd4e37e3f88acf908fd9a71e2704e
