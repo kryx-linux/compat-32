@@ -1,11 +1,11 @@
 # Description: VDPAU back-end for NVIDIA and VIA chipsets.
 # URL: http://freedesktop.org/wiki/Software/vaapi
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libva1-32 libva-vdpau-driver
+# Depends on: libva-32 libvdpau-32 libva-vdpau-driver
 
 name=libva-vdpau-driver-32
 version=0.7.4
-release=6
+release=7
 source=(https://www.freedesktop.org/software/vaapi/releases/libva-vdpau-driver/libva-vdpau-driver-$version.tar.bz2
 	libva-vdpau-driver-0.7.4-glext-missing-definition.patch
 	libva-vdpau-driver-0.7.4-libvdpau-0.8.patch
@@ -25,7 +25,6 @@ build() {
 	sed -i 's:AM_CONFIG_HEADER:AC_CONFIG_HEADERS:' configure.ac
 	autoreconf -i
 
-	PKG_CONFIG_PATH="/usr/lib32/libva1/pkgconfig" \
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
@@ -33,7 +32,4 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-
-	mv $PKG/usr/lib32/libva1/* $PKG/usr/lib32/
-	rmdir $PKG/usr/lib32/libva1
 }
