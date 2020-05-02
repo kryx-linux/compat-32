@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXVv8EFAkm/NDsRuP5I8UK/XaoTcdc0k3iELfIdwUxB8nLDFWUGD7rzjV2FjFcxMMCSUoTQ+Db9O9aLmwMbQ8swY=
-SHA256 (Pkgfile) = 5e8a701858073d0717e7b9b3d6186051d139dd1e8f6d29b9faff1a3621544870
+RWSwxGo/zH7eXTV8KVXTBjocbREW5rcLMqS+tGmh32IaqKI3s8Fw6Q8Nx4QKBhSFsx8aCdfMRX624w8EmedHCxfvZ4oYIAf8MwU=
+SHA256 (Pkgfile) = 901a18b6e2de0b4a5504f290ba6a0086245ab1cbf5523fff0884bc9ea84c9c1b
 SHA256 (.footprint) = ff78e3e8d17ff0381702ecdbfc3dd895283af42f5254b78fb90ace1749a4337d
-SHA256 (cups-2.3.1-source.tar.gz) = 1bca9d89507e3f68cbc84482fe46ae8d5333af5bc2b9061347b2007182ac77ce
+SHA256 (cups-2.3.3-source.tar.gz) = 261fd948bce8647b6d5cb2a1784f0c24cc52b5c4e827b71d726020bcc502f3ee
