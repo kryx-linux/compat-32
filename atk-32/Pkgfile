@@ -11,6 +11,8 @@ source=(https://download.gnome.org/sources/${name%-*}/${version:0:4}/${name%-*}-
 build() {
 	cd ${name%-*}-$version
 
+	export PKG_CONFIG_PATH='/usr/lib32/pkgconfig:/usr/lib/pkgconfig'
+
 	meson build --prefix=/usr --libdir=/usr/lib32
 	DESTDIR=$PKG ninja -C build -j ${JOBS:-1} install
 
