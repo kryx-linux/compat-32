@@ -18,6 +18,9 @@ build() {
 	cmake --build build
 	DESTDIR=$PKG cmake --build build --target install
 
+	install -d $PKG/etc/revdep.d
+	echo '/usr/lib32/apulse' > $PKG/etc/revdep.d/apulse-32
+
 	mv $PKG/usr/bin/apulse $PKG/usr/bin/apulse-32
 
 	rm -r $PKG/usr/share/man
