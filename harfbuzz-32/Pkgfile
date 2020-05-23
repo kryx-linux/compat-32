@@ -4,7 +4,7 @@
 # Depends on: cairo-32 harfbuzz
 
 name=harfbuzz-32
-version=2.6.5
+version=2.6.6
 release=1
 source=(https://github.com/harfbuzz/harfbuzz/releases/download/$version/harfbuzz-$version.tar.xz)
 
