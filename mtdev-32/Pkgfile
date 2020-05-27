@@ -4,7 +4,7 @@
 # Depends on: mtdev
 
 name=mtdev-32
-version=1.1.5
+version=1.1.6
 release=1
 source=(https://launchpad.net/${name%-*}/trunk/$version/+download/${name%-*}-$version.tar.gz)
 
