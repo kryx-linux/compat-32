@@ -4,8 +4,8 @@
 # Depends on:  openldap openssl-32
 
 name=openldap-32
-version=2.4.49
-release=2
+version=2.4.50
+release=1
 source=(https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-$version.tgz)
 
 build() {
