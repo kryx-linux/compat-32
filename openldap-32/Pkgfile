@@ -1,17 +1,15 @@
 # Description: Lightweight Directory Access Protocol (LDAP) Toolkit
 # URL:         https://www.openldap.org/
 # Maintainer:  CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: cyrus-sasl-32 openldap
+# Depends on:  openldap openssl-32
 
 name=openldap-32
 version=2.4.49
-release=1
-source=(https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-$version.tgz
-	openldap-config.patch)
+release=2
+source=(https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-$version.tgz)
 
 build() {
 	cd openldap-$version
-	patch -p0 -i $SRC/openldap-config.patch
 
 	export CC="gcc -m32"
 	export CXX="g++ -m32"
@@ -20,24 +18,28 @@ build() {
 		--libdir=/usr/lib32 \
 		--sysconfdir=/etc \
 		--libexecdir=/usr/sbin \
-		--localstatedir=/var/openldap \
+		--localstatedir=/var/lib/openldap \
 		--with-threads \
+		--without-cyrus-sasl \
 		--enable-dynamic \
 		--enable-ipv6 \
 		--enable-shared \
 		--enable-crypt \
+		--disable-static \
 		--disable-wrappers \
 		--disable-spasswd \
 		--disable-bdb \
 		--disable-hdb
 
+	# This is need to not get  fatal error: ldap_config.h: No such file or directory
+	cd include
+	make
+	make DESTDIR=$PKG install
+
+	cd ../libraries
 	make depend
 	make
 	make DESTDIR=$PKG install
 
-	ln -sf liblber.so $PKG/usr/lib32/liblber.so.2
-	ln -sf libldap.so $PKG/usr/lib32/libldap.so.2
-	ln -sf libldap_r.so $PKG/usr/lib32/libldap_r.so.2
-
-	rm -r $PKG/{etc,var} $PKG/usr/{include,share,bin,sbin}
+	rm -r $PKG/etc $PKG/usr/include $PKG/usr/lib32/*.la
 }
