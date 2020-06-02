@@ -4,9 +4,9 @@
 # Depends on: lcms2 libtiff-32
 
 name=lcms2-32
-version=2.9
-release=3
-source=(http://downloads.sourceforge.net/project/lcms/lcms/$version/lcms2-$version.tar.gz)
+version=2.10
+release=1
+source=(https://downloads.sourceforge.net/project/lcms/lcms/$version/lcms2-$version.tar.gz)
 
 build() {
 	cd lcms2-$version
