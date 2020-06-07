@@ -4,19 +4,14 @@
 # Depends on: glslang vulkan-loader-32
 
 name=vulkan-tools-32
-version=1.1.126.0
+version=1.2.135.0
 release=1
 source=(https://github.com/KhronosGroup/Vulkan-Tools/archive/sdk-$version/Vulkan-Tools-sdk-$version.tar.gz)
 
 build() {
-	cd Vulkan-Tools-sdk-$version
-
 	export ASFLAGS='--32'
 
-	mkdir build
-	cd build
-
-	cmake .. \
+	cmake -SVulkan-Tools-sdk-$version -Bbuild -GNinja \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=lib32 \
 		-DCMAKE_BUILD_TYPE=Release \
@@ -27,11 +22,10 @@ build() {
 		-DBUILD_WSI_XCB_SUPPORT=True \
 		-DBUILD_WSI_XLIB_SUPPORT=True \
 		-DBUILD_WSI_WAYLAND_SUPPORT=OFF \
-		-DBUILD_ICD=OFF \
-		-GNinja
+		-DBUILD_ICD=OFF
 
-	ninja -j ${JOBS:-1}
-	DESTDIR=$PKG ninja install
+	cmake --build build
+	DESTDIR=$PKG cmake --build build --target install
 
 	for app in $PKG/usr/bin/* ; do
 		mv $app $app-32
