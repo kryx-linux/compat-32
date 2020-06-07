@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXRIduWmV58qoIb4U2/n6XnFLZdNlgVTLWDRekFwmjgGeiAovY5qvCL/uPlaDglyCsxXzwh0kHHsNhfKsUtLCWAE=
-SHA256 (Pkgfile) = 16c32969565ee53dad073f25f804677ad2ba58063ff9d8ba57494b20fc0d79d7
+RWSwxGo/zH7eXbt/xvFErm52e+oP/Fb6gFc2VyVYrahAYOBLfBbu33K3m8q91Vr3hqY5p46rEMEsIpJCHqVFXYngFTXFHzkTRQQ=
+SHA256 (Pkgfile) = 48d09ce944a28363bbd2a1f01826e3bc4908adcd188fa9602c35d67bf92a1863
 SHA256 (.footprint) = 242e30720070a57dd96fadc34548139b480ea807c262e3b5ae6e88851cad8b09
-SHA256 (spirv-tools-3e4abc9ac382b6fc7a88316a700652404b6fb9f7.tar.gz) = c0738c9a8d2f7c91fc264b3bb4095bbab5478972f003b8d2d3f4aa8ac4be3f9a
-SHA256 (fix-cmake-install.patch) = 2ece687f65ae274476b5bda7ad404aadc8cbd34b4528cd636bdbba29d4055733
+SHA256 (spirv-tools-67f4838659f475d618c120e13d1a196d7e00ba4b.tar.gz) = d14511a752b4ac8848eccf1ddeca0c52061e9c6fb111dc6fa88c2a1d8a05bb0c
