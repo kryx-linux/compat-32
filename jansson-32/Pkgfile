@@ -4,7 +4,7 @@
 # Depends on: jansson
 
 name=jansson-32
-version=2.12
+version=2.13.1
 release=1
 source=(http://www.digip.org/${name%-*}/releases/${name%-*}-$version.tar.bz2)
 
