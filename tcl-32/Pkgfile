@@ -4,8 +4,8 @@
 # Depends on: tcl zlib-32
 
 name=tcl-32
-version=8.6.6
-release=2
+version=8.6.10
+release=1
 source=(https://downloads.sourceforge.net/tcl/tcl$version-src.tar.gz)
 
 build() {
@@ -31,7 +31,7 @@ build() {
 		-e "s#$SRC/tcl$version#/usr/include#" \
 		-i "$PKG/usr/lib32/tclConfig.sh"
 
-	tdbcver=1.0.4
+	tdbcver=1.1.1
 	sed \
 		-e "s#$SRC/tcl$version/unix/pkgs/tdbc${tdbcver}#/usr/lib32/tdbc${tdbcver}#" \
 		-e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}/generic#/usr/include#" \
@@ -39,7 +39,7 @@ build() {
 		-e "s#$SRC/tcl$version/pkgs/tdbc${tdbcver}#/usr/include#" \
 		-i "$PKG/usr/lib32/tdbc${tdbcver}/tdbcConfig.sh"
 
-	ictlver=4.0.5
+	ictlver=4.2.0
 	sed \
 		-e "s#$SRC/tcl$version/unix/pkgs/itcl${ictlver}#/usr/lib32/${ictlver}#" \
 		-e "s#$SRC/tcl$version/pkgs/itcl${ictlver}/generic#/usr/include#" \
