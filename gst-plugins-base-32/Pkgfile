@@ -7,10 +7,13 @@
 name=gst-plugins-base-32
 version=1.16.2
 release=1
-source=(https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-$version.tar.xz)
+source=(https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-$version.tar.xz
+	gst-plugins-base-1.16.2-make43.patch)
 
 build() {
 	cd gst-plugins-base-$version
+
+	patch -p1 -i $SRC/gst-plugins-base-1.16.2-make43.patch
 
 	./configure \
 		--prefix=/usr \
