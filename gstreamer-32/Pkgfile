@@ -6,20 +6,27 @@
 name=gstreamer-32
 version=1.16.2
 release=1
-source=(https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-$version.tar.xz)
+source=(https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-$version.tar.xz
+	gstreamer-1.14.5-make43.patch)
 
 build() {
 	cd gstreamer-$version
+
+	patch -p1 -i $SRC/gstreamer-1.14.5-make43.patch
 
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
 		--libexecdir=/usr/lib32 \
+		--build=i686-pc-linux-gnu \
 		--disable-debug \
 		--disable-nls \
 		--disable-dependency-tracking \
 		--disable-valgrind \
-		--disable-examples
+		--disable-examples \
+		--disable-gtk-doc-html \
+		--disable-gtk-doc-pdf \
+		--disable-gtk-doc
 
 	# fight unused direct deps
 	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
