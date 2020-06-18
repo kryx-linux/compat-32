@@ -1,5 +1,5 @@
 # Description: Library giving userland programs access to USB devices
-# URL: http://libusb.info
+# URL: https://libusb.info/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: eudev-32 libusb
 

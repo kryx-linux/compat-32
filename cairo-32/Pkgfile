@@ -1,5 +1,5 @@
 # Description: A 2D graphics library with support for multiple output devices
-# URL: http://www.cairographics.org/
+# URL: https://www.cairographics.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: cairo fontconfig-32 glib-32 xorg-libpixman-32 xorg-libxext-32 xorg-libxrender-32 xorg-xcb-util-32
 

@@ -1,5 +1,5 @@
 # Description: Compression utility using the lzma algorithm, successor of lzma-utils
-# URL:         http://tukaani.org/xz/
+# URL:         https://tukaani.org/xz/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=xz-32

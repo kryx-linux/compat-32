@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXdHcD3MNSyIQSMtVqguxryBPqtqj+mGVVRBniK9CLqbVKUdylZB3bsdjPFUg2lKuEGupJLWolLM3krplU2b/TQM=
-SHA256 (Pkgfile) = 530a1c550a5e760c087973dad3ca653c35c283a4a274d586e2cefc3e7119644b
+RWSwxGo/zH7eXfw7M0szm2fBzJBjbywNlo/rt7wK7g5+Y/mNUuJf4PERu2zGj3kreFe2Lr7g/EadpggsvTCDS35Pt61Z3NX4tAM=
+SHA256 (Pkgfile) = de45b8eb44777f5db27f23eeac80133d07a091009b3250f25c3991a04392e41b
 SHA256 (.footprint) = 5dfaf35f1b9fcedd9207842ef7c55efe83a433fcfe9906de24f7a67b5faaea6a
 SHA256 (libusb-1.0.23.tar.bz2) = db11c06e958a82dac52cf3c65cb4dd2c3f339c8a988665110e0d24d19312ad8d

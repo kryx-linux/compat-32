@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXUkf9uj6Ur4Gz594muN/88He2hWUpQ/oONTmc/LjVCq5OP44UMOXfIropyJTA25uG60TcevVvUY2FQGNIpo5tQ8=
-SHA256 (Pkgfile) = 31b0da8a8975cd2aef84382f0a58dec8adcb0e807b32afb5f3b3bffedfd5f14c
+RWSwxGo/zH7eXW5dNxANj0kai3n88A4jldkOeObhbOmEmIA5kDi1/h8GoT4vp9LADGYNuiW2BJIn0wlk+KdqQMFwL3CaRY1B/wo=
+SHA256 (Pkgfile) = 4a3e6cb2d67b655a1ed08ff09546426aabcff6c0b7fd04491845337256f84277
 SHA256 (.footprint) = c6b28ac040cba3e244417b0e477c037b9a077586edf2509fffd25f91deb9b7a5
 SHA256 (cdparanoia-III-10.2.src.tgz) = 005db45ef4ee017f5c32ec124f913a0546e77014266c6a1c50df902a55fe64df
 SHA256 (cdparanoia-10.2-gcc43.patch) = d055d86056809dee6e861af77d766fb0f17084bb19e44d9d99be8a0c11892a18

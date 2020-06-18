@@ -1,5 +1,5 @@
 # Description: A library for layout and rendering of text
-# URL: http://www.gtk.org/
+# URL: https://www.gtk.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: fribidi-32 harfbuzz-32 pango xorg-libsm-32 xorg-libxft-32
 

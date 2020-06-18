@@ -1,5 +1,5 @@
 # Description: Secure Sockets Layer and Transport Layer Security tools
-# URL: http://www.openssl.org/
+# URL: https://www.openssl.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: openssl1
 
