@@ -1,10 +1,10 @@
 # Description: Little CMS intends to be an small-footprint color management engine
-# URL:         http://www.littlecms.com/
+# URL:         https://www.littlecms.com/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: lcms2 libtiff-32
 
 name=lcms2-32
-version=2.10
+version=2.11
 release=1
 source=(https://downloads.sourceforge.net/project/lcms/lcms/$version/lcms2-$version.tar.gz)
 
