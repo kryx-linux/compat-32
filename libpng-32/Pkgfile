@@ -1,5 +1,5 @@
 # Description: Library of PNG support functions.
-# URL:         https://www.libpng.org
+# URL:         http://www.libpng.org/pub/png/libpng.html
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libpng zlib-32
 
