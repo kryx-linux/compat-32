@@ -1,5 +1,5 @@
 # Description: Transport Independent RPC library.
-# URL: http://nfsv4.bullopensource.org/doc/tirpc_rpcbind.php
+# URL: https://git.linux-nfs.org/?p=steved/libtirpc.git;a=summary
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libtirpc
 
