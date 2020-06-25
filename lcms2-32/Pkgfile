@@ -1,5 +1,5 @@
 # Description: Little CMS intends to be an small-footprint color management engine
-# URL:         https://www.littlecms.com/
+# URL:         http://www.littlecms.com/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: lcms2 libtiff-32
 
@@ -14,7 +14,7 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32
-		
+
 	make
 	make DESTDIR=$PKG install
 
