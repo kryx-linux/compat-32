@@ -1,12 +1,12 @@
 # Description: Commandline option parser
-# URL: http://rpm5.org/files/popt/
+# URL: https://github.com/rpm-software-management/popt
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: popt
 
 name=popt-32
-version=1.16
+version=1.18
 release=1
-source=(http://ftp.rpm.org/mirror/${name%-*}/${name%-*}-$version.tar.gz)
+source=(http://ftp.rpm.org/popt/releases/popt-1.x/popt-$version.tar.gz)
 
 build() {
 	cd ${name%-*}-$version
