@@ -1,23 +1,22 @@
-# Description:	Library of JPEG support functions.
-# URL:		http://www.libjpeg-turbo.org/
+# Description: Library of JPEG support functions.
+# URL: https://www.libjpeg-turbo.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libjpeg-turbo
 
 name=libjpeg-turbo-32
-version=2.0.4
+version=2.0.5
 release=1
 source=(https://downloads.sourceforge.net/project/${name%-*}/$version/${name%-*}-$version.tar.gz)
 
 build() {
-	cd ${name%-*}-$version
-
-	cmake -G"Unix Makefiles" \
+	cmake -S${name%-*}-$version -Bbuild \
+		-G"Unix Makefiles" \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=/usr/lib32 \
 		-DWITH_JPEG8=ON
 
-	make
-	make DESTDIR=$PKG install
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
 
 	rm -r $PKG/usr/{bin,include,share/man,share}
 }
