@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXe4oCwJQWfBKU30jw8KxP9eK2WR94SbhsI6aKIIvLDhhVvzAHbPGjN7xyfxi9eGWAcfOAdd5th6yzFTIKd+JmwE=
-SHA256 (Pkgfile) = df1d8365a46c8f06f18c7cceea22754da007c05891bf2fa31e6fd807fd0a3820
-SHA256 (.footprint) = 5eb3b153993a682d83fa9dcd87ed86afe17fd171e0905236b4e3151926db1f64
-SHA256 (libvorbis-1.3.6.tar.xz) = af00bb5a784e7c9e69f56823de4637c350643deedaf333d0fa86ecdba6fcb415
-SHA256 (CVE-2017-14160.patch) = f93bf45de3a21db0fa9bb9cd25edefb1182bf24d61028a86cbf45fbcd11fbdf5
+RWSwxGo/zH7eXf97H3YT/TelW4WyW/ppSvawMwT+Xdy5bjnqbxx+VTWM9sqRc67TmO3filGZExuHkQDbaYpWlO0S4dnxpNHl0AQ=
+SHA256 (Pkgfile) = 79cf6095ac75f8c1516826e02fb75d99d81080a6aa850b7effa6c51fcae7e20c
+SHA256 (.footprint) = b2d341b1925ccea91518df9915b17e78f817aa053bbf46fa4b214ccffbb73a2e
+SHA256 (libvorbis-1.3.7.tar.xz) = b33cc4934322bcbf6efcbacf49e3ca01aadbea4114ec9589d1b1e9d20f72954b
