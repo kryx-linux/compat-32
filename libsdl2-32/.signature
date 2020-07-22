@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXanTSCmGdetIxuVDAO0M7qvCIPkFyiZjsh2pAMi//G3AgQJK7KDu7xhDRy88D16CR7hMYlr31DOm8TOqoTJp1g8=
-SHA256 (Pkgfile) = b6dc4303e834a9725f59c3c1a29621b1c68d5e5ea0c7febd55d6ecc20ea1de86
+RWSwxGo/zH7eXbJOYxvp1bTCAjjCZW+7/Hz1aXvuYc4+dMNFDgebv3b8L7qn3JVLeCW/XZBvYHxnY5v6lEnDtm6f30nNxovYPA4=
+SHA256 (Pkgfile) = 74d79dd7da40cf1210b9cf21bc6a77c44e267099533dad6fbb8cd8b1c72a6842
 SHA256 (.footprint) = 35767ee5c642682d1e16e70825bf1dd212d2de7c86de3525970a8838d31f4d0e
 SHA256 (SDL2-2.0.12.tar.gz) = 349268f695c02efbc9b9148a70b85e58cefbbf704abd3e91be654db7f1e2c863
 SHA256 (SDL2-2.0.10-opengl_include_fix-1.patch) = 65d088c18457cc7edb2802ccc7ed32a2ee8b3c211f310e326aac3e8cdbe9f79b
