@@ -1,7 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXfJ9TEpTQRD/tAVwXXLsrx4pL2vveIaiJ6iXEs+iBtusxENgUxtsmghL+vfcxlPa5+RmBJmDC5wY/xUvUE/E1Q8=
-SHA256 (Pkgfile) = 3c8d29e2751105930e4766c7738062f67844055b34209e046f3b123aa0562262
-SHA256 (.footprint) = 066f65ea41f70ed863b5d2f86e8a733f81771e66aef91a29d93839fbc40213a6
-SHA256 (libpsl-0.21.0.tar.gz) = 41bd1c75a375b85c337b59783f5deb93dbb443fb0a52d257f403df7bd653ee12
-SHA256 (libpsl-gtk-doc-1.30-fix.patch) = 289663403b4bd511ef7361ad4ac7e5654edfbd83ee80fbd0f35b0977a7c926ca
-SHA256 (libpsl-0.21.0-build-fix.patch) = a50c2c510a6543e79767af75b909bf7abc15e6b057b0253a036da66b27a590f1
+RWSwxGo/zH7eXQ1IXsPS+9RSxUfAfLHxkaHr57phsXEh6BcB1yfkfCfzca1z+o9kiDCLqD+uffbpsKAYk+lAGIizBRJf7+Vw2Q0=
+SHA256 (Pkgfile) = 2711d187f69f2ff9dd2c1256d2d69eec5a5b90d9aeb7a9324f660d766be82126
+SHA256 (.footprint) = 96510a849f61799178309f207ac4568a17fe6a3588f2b6655383e7b6772fe161
+SHA256 (libpsl-0.21.1.tar.lz) = 644375d557bb3b84c485df2dae98ee388fe1e11fb75230004e4b8623b3b833a9
