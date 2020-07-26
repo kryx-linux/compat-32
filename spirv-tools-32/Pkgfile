@@ -4,19 +4,12 @@
 # Depends on: spirv-tools
 
 name=spirv-tools-32
-version=2019.5
-commit=67f4838659f475d618c120e13d1a196d7e00ba4b
-release=3
-source=(
-	#https://github.com/KhronosGroup/SPIRV-Tools/archive//v$version/SPIRV-Tools-v$version.tar.gz
-	https://github.com/KhronosGroup/SPIRV-Tools/archive/$commit.tar.gz#/spirv-tools-$commit.tar.gz
-)
+version=2020.3
+release=1
+source=(https://github.com/KhronosGroup/SPIRV-Tools/archive//v$version/SPIRV-Tools-v$version.tar.gz)
 
 build() {
-#	cd SPIRV-Tools-$commit
-#	cd SPIRV-Tools-$version
-
-	cmake	-SSPIRV-Tools-$commit -Bbuild -GNinja \
+	cmake	-SSPIRV-Tools-$version -Bbuild -GNinja \
 		-DCMAKE_INSTALL_PREFIX='/usr' \
 		-DCMAKE_INSTALL_LIBDIR='lib32' \
 		-DCMAKE_BUILD_TYPE=Release \

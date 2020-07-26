@@ -4,14 +4,14 @@
 # Depends on: vulkan-loader xorg-libxrandr-32
 
 name=vulkan-loader-32
-version=1.2.135.0
+version=1.2.148
 release=1
-source=(https://github.com/KhronosGroup/Vulkan-Loader/archive/sdk-$version/Vulkan-Loader-sdk-$version.tar.gz)
+source=(https://github.com/KhronosGroup/Vulkan-Loader/archive/v$version/Vulkan-Loader-v$version.tar.gz)
 
 build() {
 	export ASFLAGS='--32'
 
-	cmake -SVulkan-Loader-sdk-$version -Bbuild -GNinja \
+	cmake -SVulkan-Loader-$version -Bbuild -GNinja \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=lib32 \
 		-DCMAKE_BUILD_TYPE=Release \

@@ -1,6 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXauBwYMYk/UotchmGgIPj4jWCx3FpSpKw2hyQKtC51m2gzBATrAXLM2PStNdTKz6eVQmZn8j1szCWqpLXESExwE=
-SHA256 (Pkgfile) = 4befdc67df61b908bd758810edb456172d4d2002530596e5801d9cb2c2def5e0
+RWSwxGo/zH7eXfT1vjP8xBeKmCJftEZrb4Z4hEqK8GXhiPinO7t0KmauMyG84DkTWzEdrm8SBtId1gIJQLSucoYyxibNNQ3BzAk=
+SHA256 (Pkgfile) = f41ff3082361019e760cc61b33f26a42c9feac98fbe7fd586b1c275b8e28ace0
 SHA256 (.footprint) = 5c3e1cb61d0d5070cc1d278ec445757e1913b70cdec30985988d48c2f6ded070
-SHA256 (Vulkan-ValidationLayers-sdk-1.2.135.0.tar.gz) = 7a33aa13d9526da4deb945b3ccf5be9cf3c99fb4dfce2caf57640746c1c648d3
+SHA256 (Vulkan-ValidationLayers-v1.2.141.tar.gz) = 3f2ebc5c0d69ead2031893f5c5da9bb4f328a90d30c1665a618a637a48d27ee0
 SHA256 (fix_shared.patch) = 840af33ab26638c8c29da4a7f284eae6aeb40e01d506eef9851d7e6ee4a8bed0
+SHA256 (16d17ebf3762f24b3eb06e04843efb7f7dbf8438.patch) = cb8d8bb4526c57460d7f8cdc3c09c4360fdf1f1bce7f3505d52aab0363af1c8a
