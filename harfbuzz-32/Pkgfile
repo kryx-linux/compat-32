@@ -4,13 +4,15 @@
 # Depends on: cairo-32 harfbuzz
 
 name=harfbuzz-32
-version=2.6.8
+version=2.7.0
 release=1
-source=(https://github.com/harfbuzz/harfbuzz/releases/download/$version/harfbuzz-$version.tar.xz)
+source=(https://github.com/harfbuzz/harfbuzz/archive/$version/${name%-*}-$version.tar.gz)
 
 build() {
 	cd ${name%-*}-$version
 
+	echo "EXTRA_DIST = " > gtk-doc.make
+	autoreconf --force --install
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
@@ -23,5 +25,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{bin,include,share}
+	rm -r $PKG/usr/{bin,include}
 }
