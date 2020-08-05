@@ -5,22 +5,20 @@
 
 name=freeglut-32
 version=3.2.1
-release=1
-source=(https://downloads.sourceforge.net/project/freeglut/freeglut/$version/freeglut-$version.tar.gz)
+release=2
+source=(https://downloads.sourceforge.net/project/freeglut/freeglut/$version/freeglut-$version.tar.gz
+	gcc10.patch)
 
 build() {
-	cd freeglut-$version
+	patch -d freeglut-$version -p1 -i $SRC/gcc10.patch
 
-	install -d build
-	cd build
-
-	cmake .. \
+	cmake -Sfreeglut-$version -Bbuild -GNinja \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=lib32 \
 		-DCMAKE_BUILD_TYPE=Release
 
-	make
-	make DESTDIR=$PKG install
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
 
 	ln -s glut.pc $PKG/usr/lib32/pkgconfig/freeglut.pc
 
