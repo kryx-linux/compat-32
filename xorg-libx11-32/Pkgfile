@@ -4,7 +4,7 @@
 # Depends on: xorg-libx11 xorg-libxcb-32 xorg-xtrans-32
 
 name=xorg-libx11-32
-version=1.6.9
+version=1.6.10
 release=1
 source=(https://www.x.org/releases/individual/lib/libX11-$version.tar.bz2)
 
