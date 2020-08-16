@@ -1,7 +1,7 @@
 # Description: Miscellaneous system utilities
-# URL:         https://userweb.kernel.org/~kzak/util-linux/
-# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: eudev-32 readline-32 zlib-32
+# URL:         https://github.com/karelzak/util-linux
+# Maintainer:  CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on:  eudev-32 readline-32 zlib-32
 
 name=util-linux-32
 version=2.36
