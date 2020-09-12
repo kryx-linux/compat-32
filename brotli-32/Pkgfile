@@ -4,22 +4,17 @@
 # Depends on: brotli
 
 name=brotli-32
-version=1.0.7
+version=1.0.9
 release=1
 source=(https://github.com/google/${name%-*}/archive/v$version/${name%-*}-v$version.tar.gz)
 
 build() {
-	cd ${name%-*}-$version
-
-	mkdir build
-	cd build
-
-	cmake .. \
+	cmake -S${name%-*}-$version -Bbuild -GNinja \
 		-DCMAKE_INSTALL_PREFIX="/usr" \
 		-DCMAKE_INSTALL_LIBDIR="/usr/lib32"
 
-	make
-	make DESTDIR=$PKG install
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
 
 	rm -r $PKG/usr/{bin,include}
 }
