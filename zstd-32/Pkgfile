@@ -1,7 +1,7 @@
 # Description:	Real-time compression with high compression ratios.
-# URL:          https://www.zstd.net/
+# URL:          https://facebook.github.io/zstd/
 # Maintainer:   CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on:	zlib-32 xz-32 zstd 
+# Depends on:	zlib-32 xz-32 zstd
 
 name=zstd-32
 version=1.4.5
