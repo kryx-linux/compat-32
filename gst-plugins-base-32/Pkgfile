@@ -5,27 +5,26 @@
 # Optional: cdparanoia-32
 
 name=gst-plugins-base-32
-version=1.16.2
+version=1.18.0
 release=1
-source=(https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-$version.tar.xz
-	gst-plugins-base-1.16.2-make43.patch)
+source=(https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-$version.tar.xz)
 
 build() {
 	cd gst-plugins-base-$version
 
-	patch -p1 -i $SRC/gst-plugins-base-1.16.2-make43.patch
-
-	./configure \
+	meson build \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
-		--disable-debug \
-		--disable-nls \
-		--disable-dependency-tracking \
-		--disable-valgrind \
-		--disable-examples
+		--libexecdir=/usr/lib32 \
+		-D buildtype=release \
+		-D gtk_doc=disabled \
+		-D nls=disabled \
+		-D introspection=disabled \
+		-D package-name="GStreamer (CRUX Linux)" \
+		-D package-origin="https://crux.nu/"
 
-	make
-	make DESTDIR=$PKG install
+        ninja -C build -j ${JOBS:-1}
+        DESTDIR=$PKG ninja -C build install
 
-	rm -r $PKG/usr/{bin,include,share/man,share/gtk-doc,share}
+	rm -r $PKG/usr/{bin,include,share/man,share}
 }
