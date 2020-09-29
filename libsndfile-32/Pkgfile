@@ -4,27 +4,16 @@
 # Depends on: alsa-lib-32 flac-32 libsndfile libvorbis-32
 
 name=libsndfile-32
-version=1.0.28
+version=1.0.30
 release=1
-source=(http://www.mega-nerd.com/libsndfile/files/libsndfile-$version.tar.gz
-	0001-FLAC-Fix-a-buffer-read-overrun.patch
-	0002-src-flac.c-Fix-a-buffer-read-overflow.patch
-	0010-src-aiff.c-Fix-a-buffer-read-overflow.patch
-	0020-src-common.c-Fix-heap-buffer-overflows-when-writing.patch)
+source=(https://github.com/erikd/libsndfile/releases/download/v$version/libsndfile-$version.tar.bz2)
 
 build() {
 	cd libsndfile-$version
 
-	patch -p1 -i $SRC/0001-FLAC-Fix-a-buffer-read-overrun.patch
-	patch -p1 -i $SRC/0002-src-flac.c-Fix-a-buffer-read-overflow.patch
-	patch -p1 -i $SRC/0010-src-aiff.c-Fix-a-buffer-read-overflow.patch
-	patch -p1 -i $SRC/0020-src-common.c-Fix-heap-buffer-overflows-when-writing.patch
-
 	./configure \
 		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--disable-static \
-		--with-pic
+		--libdir=/usr/lib32
 
 	make
 	make DESTDIR=$PKG install
