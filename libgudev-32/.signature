@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXa1p5+htZS+2lLSQIFVd55ddEiApltQfRpok2T7oOg++e/ECtc/cTgnNpHa1F94wIO1AoLSuC9rTfi6UuaLzrAc=
-SHA256 (Pkgfile) = 5bcd2c461f5c47641e2d5ca4dd288c50dbb5e8f212f9ce27cf3afcc84acf1625
-SHA256 (.footprint) = 5285e8365af3742040d9700176f55915e1cdf3c53ee4277de90dfde8fa5dbec0
-SHA256 (libgudev-233.tar.xz) = 587c4970eb23f4e2deee2cb1fb7838c94a78c578f41ce12cac0a3f4a80dabb03
+RWSwxGo/zH7eXULhYdbfMTuVCdRNxbObvmcAf8RNXVQVEy934G819DtwiDs33m9XjAfIkV/VlFqQ9rTgh5EoSz7sKqgmL0wOJwQ=
+SHA256 (Pkgfile) = a6f65e5107172338b31b8faac9e462514b326e3b374e143a1c99e01740a6dca5
+SHA256 (.footprint) = 9025cad2576069a9eb4a86f86b04b51593a379407a8d62f101a345a1443a8bde
+SHA256 (libgudev-234.tar.xz) = 1baeacacf0db42fa073ad5183d1decce9317857416a2b0f82ce3370d711a2e37
