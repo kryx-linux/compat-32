@@ -1,9 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXUZRiYZ9ZHNiIMrKZtXpAngZA8PGNZu3gPkjYpuRFw6azhPNnFIpJCcQfnPvxhTXAvk/DVsoSOnVgLwbGKMQpAg=
-SHA256 (Pkgfile) = 8066788fa878d92d3dd2275afe1d425dde765920038fd162ad7aa3a25455fdb3
-SHA256 (.footprint) = c75bcf48d68e0f95036dd9a429c6d6adb118c9205d21de20eb30d4f65784e8f9
-SHA256 (libsndfile-1.0.28.tar.gz) = 1ff33929f042fa333aed1e8923aa628c3ee9e1eb85512686c55092d1e5a9dfa9
-SHA256 (0001-FLAC-Fix-a-buffer-read-overrun.patch) = 256eda5665ccad5a38030594f83a16ae9b271f8d0dd31f4d3b650bafaf93aef0
-SHA256 (0002-src-flac.c-Fix-a-buffer-read-overflow.patch) = 9d86583733521602e6b5ca52730bfe0727b9beef513db82552930477bf3c99e2
-SHA256 (0010-src-aiff.c-Fix-a-buffer-read-overflow.patch) = 3635a53dae48f02123872c9c0234ca55b38bc260dc37a5813b7211da85ba73f3
-SHA256 (0020-src-common.c-Fix-heap-buffer-overflows-when-writing.patch) = 7a2a37bcae3f4c48a79b06127964d34fbaf66011a31060680516434848800aad
+RWSwxGo/zH7eXQSVpSit3To6gUkKL7vZXOfYoo+pByqQkeQyeyhkPxqgEnuv4BCQfu8aT0ph0gPEVpogDT/mB99anFK3qSZacAU=
+SHA256 (Pkgfile) = 59a9f7166601821b49439ad75e33ef664fa4d8d3cbd6aee7eb7412eb5b706863
+SHA256 (.footprint) = 8d591d21eefc8b1d5d14cf2df6c5bdd338e137f77840cb2a20370e86e4dbd3e4
+SHA256 (libsndfile-1.0.30.tar.bz2) = ec898634766595438142c76cf3bdd46b77305d4a295dd16b29d024122d7a4b3f

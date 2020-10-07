@@ -4,7 +4,7 @@
 # Depends on: glib-32 libgudev
 
 name=libgudev-32
-version=233
+version=234
 release=1
 source=(https://ftp.gnome.org/pub/gnome/sources/${name%-*}/$version/${name%-*}-$version.tar.xz)
 

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXe5EbeSGjrqB8QvyEOx15eWENEFNZYbOLXlK7QLuF1cr0QRioJsa1PCpd9nOojJFPW7uLT7S36/is6hO/+Gwegk=
+SHA256 (Pkgfile) = 46358121b4fffaaab79bd1a6475dfcb01fe38cb8d9a34e2d07b6612aaa9a6e7e
+SHA256 (.footprint) = 8c29ceaac5ca1ce3dda3f145526c2c73ab8b5e7f7d2b538c20c1ec422076e0f5
+SHA256 (zstd-v1.4.5.tar.gz) = 734d1f565c42f691f8420c8d06783ad818060fc390dee43ae0a89f86d0a4f8c2

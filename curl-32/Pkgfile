@@ -2,11 +2,11 @@
 # Maintainer:  CRUX compat-32 Team, compat-32-ports at crux dot nu
 # URL:         https://curl.haxx.se/
 # Depends on: curl openssl-32 zlib-32
-# Optional: brotli-32
+# Optional: brotli-32 zstd-32
 
 name=curl-32
-version=7.71.1
-release=1
+version=7.72.0
+release=2
 source=(https://curl.haxx.se/download/${name%-*}-$version.tar.xz)
 
 build() {
@@ -14,6 +14,11 @@ build() {
 
 prt-get isinst brotli && ! prt-get isinst brotli-32 && printf "\e[031mbrotli is detected on your system, please run:
 prt-get depinst brotli-32
+before continuing with curl-32.\033[0m\n" &&
+exit 1
+
+prt-get isinst zstd && ! prt-get isinst zstd-32 && printf "\e[031mzstd is detected on your system, please run:
+prt-get depinst zstd-32
 before continuing with curl-32.\033[0m\n" &&
 exit 1
 
