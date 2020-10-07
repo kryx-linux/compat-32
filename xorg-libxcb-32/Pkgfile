@@ -11,6 +11,7 @@ source=(https://www.x.org/releases/individual/xcb/libxcb-$version.tar.xz)
 build() {
 	cd libxcb-$version
 
+	PYTHON=/usr/bin/python3 \
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32
