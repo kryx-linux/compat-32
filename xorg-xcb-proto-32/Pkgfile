@@ -4,9 +4,9 @@
 # Depends on: xorg-xcb-proto
 
 name=xorg-xcb-proto-32
-version=1.14
+version=1.14.1
 release=1
-source=(https://www.x.org/releases/individual/xcb/xcb-proto-$version.tar.xz)
+source=(https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-$version.tar.xz)
 
 build() {
 	cd xcb-proto-$version
