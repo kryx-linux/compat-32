@@ -1,11 +1,11 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
-lrwxrwxrwx	root/root	usr/lib32/liblber-2.4.so.2 -> liblber-2.4.so.2.11.1
--rw-r--r--	root/root	usr/lib32/liblber-2.4.so.2.11.1
-lrwxrwxrwx	root/root	usr/lib32/liblber.so -> liblber-2.4.so.2.11.1
-lrwxrwxrwx	root/root	usr/lib32/libldap-2.4.so.2 -> libldap-2.4.so.2.11.1
--rw-r--r--	root/root	usr/lib32/libldap-2.4.so.2.11.1
-lrwxrwxrwx	root/root	usr/lib32/libldap.so -> libldap-2.4.so.2.11.1
-lrwxrwxrwx	root/root	usr/lib32/libldap_r-2.4.so.2 -> libldap_r-2.4.so.2.11.1
--rw-r--r--	root/root	usr/lib32/libldap_r-2.4.so.2.11.1
-lrwxrwxrwx	root/root	usr/lib32/libldap_r.so -> libldap_r-2.4.so.2.11.1
+lrwxrwxrwx	root/root	usr/lib32/liblber-2.4.so.2 -> liblber-2.4.so.2.11.2
+-rw-r--r--	root/root	usr/lib32/liblber-2.4.so.2.11.2
+lrwxrwxrwx	root/root	usr/lib32/liblber.so -> liblber-2.4.so.2.11.2
+lrwxrwxrwx	root/root	usr/lib32/libldap-2.4.so.2 -> libldap-2.4.so.2.11.2
+-rw-r--r--	root/root	usr/lib32/libldap-2.4.so.2.11.2
+lrwxrwxrwx	root/root	usr/lib32/libldap.so -> libldap-2.4.so.2.11.2
+lrwxrwxrwx	root/root	usr/lib32/libldap_r-2.4.so.2 -> libldap_r-2.4.so.2.11.2
+-rw-r--r--	root/root	usr/lib32/libldap_r-2.4.so.2.11.2
+lrwxrwxrwx	root/root	usr/lib32/libldap_r.so -> libldap_r-2.4.so.2.11.2
