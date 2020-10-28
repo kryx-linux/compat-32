@@ -6,7 +6,7 @@
 name=libsndfile-32
 version=1.0.30
 release=1
-source=(https://github.com/erikd/libsndfile/releases/download/v$version/libsndfile-$version.tar.bz2)
+source=(https://github.com/libsndfile/libsndfile/releases/download/v$version/libsndfile-$version.tar.bz2)
 
 build() {
 	cd libsndfile-$version
