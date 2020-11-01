@@ -2,16 +2,17 @@
 # URL: https://www.khronos.org/vulkan/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: vulkan-loader xorg-libxrandr-32
+# Optional: wayland-32
 
 name=vulkan-loader-32
-version=1.2.148
+version=1.2.154.0
 release=1
-source=(https://github.com/KhronosGroup/Vulkan-Loader/archive/v$version/Vulkan-Loader-v$version.tar.gz)
+source=(https://github.com/KhronosGroup/Vulkan-Loader/archive/sdk-$version/Vulkan-Loader-sdk-$version.tar.gz)
 
 build() {
 	export ASFLAGS='--32'
 
-	cmake -SVulkan-Loader-$version -Bbuild -GNinja \
+	cmake -SVulkan-Loader-sdk-$version -Bbuild -GNinja \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=lib32 \
 		-DCMAKE_BUILD_TYPE=Release \
@@ -20,7 +21,7 @@ build() {
 		-DBUILD_LOADER=True \
 		-DBUILD_WSI_XCB_SUPPORT=True \
 		-DBUILD_WSI_XLIB_SUPPORT=True \
-		-DBUILD_WSI_WAYLAND_SUPPORT=OFF
+		-DBUILD_WSI_WAYLAND_SUPPORT="$(prt-get isinst wayland-32 &> /dev/null && echo ON || echo OFF)" \
 
 	cmake --build build
 	DESTDIR=$PKG cmake --build build --target install
