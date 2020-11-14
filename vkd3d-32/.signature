@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXf8gTH9ffX9jvvLY/C1aDLe+M36HBKatn8NclJ39ba7+76Bp+kDNYIIKM0sphm5awl4rB7XSLr5xsyfkSXSl0gQ=
-SHA256 (Pkgfile) = e1139bc8cab8f44f417861c34fc6fad8723ccb362030d292ddbe121f7acc7362
-SHA256 (.footprint) = 8c628551c06c4ff245a14859b593bea6c6dfe31244d26318df7966aaa73ffc17
-SHA256 (vkd3d-1.1.tar.xz) = 495adc61cc80c65d54b2f5b52092ea05d3797cc2c17a610f0fc98457d2f56ab6
-SHA256 (vulkan-headers.patch) = d79ddf19adbe598693916a5e74d22a53aaa560937d5c099b0c6c96b4eaf90313
+RWSwxGo/zH7eXdFGHBvA9nqbZYzoM//gakCSyMVHqozCzrthAXqwKxztys/aILwNJON8hrhheJel50Bx9QbNkryh9UdZaMKEeQQ=
+SHA256 (Pkgfile) = c4eef1b14e9ffad9d22c8fe4608111e435e688f97d8227a325d967e3ddd25902
+SHA256 (.footprint) = 60ae20f941325f826df78e709cf381289f61f7247f50e9233592d58b510dd4a3
+SHA256 (vkd3d-1.2.tar.xz) = b04b030fcbf0f2dacc933c76c74b449bffef1fc1a18d50254ef1ad3e380df96b

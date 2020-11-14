@@ -4,7 +4,7 @@
 # Depends on: bzip2-32 elfutils xz-32 zlib-32
 
 name=elfutils-32
-version=0.181
+version=0.182
 release=1
 source=(https://sourceware.org/${name%-*}/ftp/$version/${name%-*}-$version.tar.bz2)
 
