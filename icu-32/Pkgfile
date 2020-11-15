@@ -1,10 +1,10 @@
 # Description: Widely used set of C/C++ libraries providing Unicode and Globalization support.
-# URL: http://www.icu-project.org/
+# URL: http://site.icu-project.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: icu
 
 name=icu-32
-version=67.1
+version=68.1
 release=1
 source=(https://github.com/unicode-org/icu/releases/download/release-${version//./-}/icu4c-${version/./_}-src.tgz)
 
