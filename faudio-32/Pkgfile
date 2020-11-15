@@ -4,16 +4,16 @@
 # Depends on: libsdl2-32 faudio
 
 name=faudio-32
-version=20.10
+version=20.11
 release=1
 source=(https://github.com/FNA-XNA/FAudio/archive/$version/$name-$version.tar.gz)
 
 build() {
-	cmake -SFAudio-$version -Bbuild -GNinja \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_INSTALL_LIBDIR=lib32
-#		-DFFMPEG=ON
+	cmake -S FAudio-$version -B build -G Ninja \
+		-D CMAKE_INSTALL_PREFIX=/usr \
+		-D CMAKE_INSTALL_LIBDIR=lib32 \
+		-D CMAKE_BUILD_TYPE=Release \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"
 
 	cmake --build build
 	DESTDIR=$PKG cmake --build build --target install
