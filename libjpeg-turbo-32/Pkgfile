@@ -4,16 +4,20 @@
 # Depends on: libjpeg-turbo
 
 name=libjpeg-turbo-32
-version=2.0.5
+version=2.0.6
 release=1
 source=(https://downloads.sourceforge.net/project/${name%-*}/$version/${name%-*}-$version.tar.gz)
 
 build() {
-	cmake -S${name%-*}-$version -Bbuild \
-		-G"Unix Makefiles" \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_INSTALL_LIBDIR=/usr/lib32 \
-		-DWITH_JPEG8=ON
+	[[ -e '/usr/bin/ninja' ]] && PKGMK_LIBJPEG_TURBO_32+=' -G Ninja'
+	cmake -S ${name%-*}-$version -B build ${PKGMK_LIBJPEG_TURBO_32} \
+		-G "Unix Makefiles" \
+		-D CMAKE_INSTALL_PREFIX=/usr \
+		-D CMAKE_INSTALL_LIBDIR=/usr/lib32 \
+		-D CMAKE_BUILD_TYPE=Release \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+		-D WITH_JPEG8=ON
 
 	cmake --build build
 	DESTDIR=$PKG cmake --install build

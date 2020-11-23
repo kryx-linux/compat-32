@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXd/yyrbwjDgcHMrUggEE+uaQeTOW/TQ6zeBVHC7x/cgAwTPjWjSS7rmKijjnrJFGbsSz7V5uXFO7/N0fArEqmg0=
-SHA256 (Pkgfile) = 979c41251f4e3194a44f8e0957179d5f06df5eb4f3464d74c35407d750333e2f
-SHA256 (.footprint) = 9bc8f09024fcdf976f01d87afd805966f0b0351da2cbf8817e72db7d60aaa42e
-SHA256 (gmp-6.2.0.tar.xz) = 258e6cd51b3fbdfc185c716d55f82c08aff57df0c6fbd143cf6ed561267a1526
+RWSwxGo/zH7eXT8rWkNnW49SYC1Uu9YMSAUE6NKp+yCQXhr2zEwVGupe4m/NypR1nAPr8NiPhrWtX79tk99w2mla6WWcCsyKWAw=
+SHA256 (Pkgfile) = be73c760f9f12b735f84692bf42c996cf5bee369b78a5b47d5e1590bebdacb94
+SHA256 (.footprint) = 2d62f1d13b54bc816df9d17cdc8e2a33d4908f69481cd0f7e66944ff3b6d19f2
+SHA256 (gmp-6.2.1.tar.xz) = fd4829912cddd12f84181c3451cc752be224643e87fac497b69edddadc49b4f2
