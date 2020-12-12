@@ -4,8 +4,8 @@
 # Depends on: curl-32 dbus-glib-32 jansson-32 libndp-32 libnm nss-32
 
 name=libnm-32
-version=1.18.0
-release=2
+version=1.18.10
+release=1
 source=(https://ftp.gnome.org/pub/gnome/sources/NetworkManager/${version%.*}/NetworkManager-${version}.tar.xz)
 
 build() {
