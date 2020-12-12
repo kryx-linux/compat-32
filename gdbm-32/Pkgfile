@@ -9,6 +9,7 @@ source=(https://ftpmirror.gnu.org/gnu/${name%-*}/${name%-*}-$version.tar.gz)
 
 build() {
 	export CC="${CC:-gcc} ${CFLAGS}"
+	export CFLAGS="$CFLAGS -fcommon"
 
 	cd ${name%-*}-$version
     
