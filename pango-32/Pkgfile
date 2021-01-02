@@ -19,4 +19,7 @@ build() {
 	DESTDIR=$PKG meson install -C build
 
 	rm -r $PKG/usr/{bin,include}
+
+	# help2man no option in meson options to disable
+	rm -rf $PKG/usr/share/man
 }
