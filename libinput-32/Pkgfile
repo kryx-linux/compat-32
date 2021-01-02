@@ -4,7 +4,7 @@
 # Depends on: eudev-32 libinput mtdev-32 xorg-libevdev-32
 
 name=libinput-32
-version=1.16.3
+version=1.16.4
 release=1
 source=(https://www.freedesktop.org/software/${name%-*}/${name%-*}-$version.tar.xz)
 
@@ -18,7 +18,8 @@ build() {
 		-D documentation=false \
 		-D tests=false \
 		-D libwacom=false \
-		-D udev-dir=/lib/udev
+		-D udev-dir=/lib/udev \
+		-D zshcompletiondir=no
 
 	meson compile -C build -j ${JOBS:-1}
 	DESTDIR=$PKG meson install -C build
