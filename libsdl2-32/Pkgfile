@@ -4,18 +4,13 @@
 # Depends on: alsa-lib-32 libsdl2 mesa-32
 
 name=libsdl2-32
-version=2.0.12
+version=2.0.14
 release=1
-source=(https://www.libsdl.org/release/SDL2-$version.tar.gz
-	SDL2-2.0.10-opengl_include_fix-1.patch)
+source=(https://www.libsdl.org/release/SDL2-$version.tar.gz)
 
 build() {
 	cd SDL2-$version
 
-	# https://www.mail-archive.com/blfs-book@lists.linuxfromscratch.org/msg40028.html
-	patch -p1 -i $SRC/SDL2-2.0.10-opengl_include_fix-1.patch
-
-	CONFIG_SHELL=/bin/bash \
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32
