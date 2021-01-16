@@ -5,7 +5,7 @@
 # Optional: cdparanoia-32
 
 name=gst-plugins-base-32
-version=1.18.2
+version=1.18.3
 release=1
 source=(https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-$version.tar.xz)
 
