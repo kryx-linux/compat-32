@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXZSJcKBTMQTwXpHTPlsNGHsC560OyLCtPlwK07YFJxUgRjKMGVQkiOjVZkRKyP6hXTwPvnv1n0KYVXN8FNM7bwQ=
-SHA256 (Pkgfile) = 19d82c74825febac717b27fd790554a563118a946791c484a605d5aa8bb0852e
-SHA256 (.footprint) = 13b4d48c87905c4e776d8baaa85d7725cd20c468fcb0a7c15b3c2778badf9f8a
-SHA256 (nettle-3.6.tar.gz) = d24c0d0f2abffbc8f4f34dcf114b0f131ec3774895f3555922fe2f40f3d5e3f1
+RWSwxGo/zH7eXe+DERwS8ovjehAVP5kdtk1Ol1gzaQAPwaxNbBRF8evgcbXg3TovAXAzxNCEe3LPznQPPcO/M8uuJCMnkd/8Ygw=
+SHA256 (Pkgfile) = df429c0c3146deec374fa22b797b38706425049178fd1be959fbfed5af691c21
+SHA256 (.footprint) = 199e46df0392ad2d8ae8870998e4ccd9b6915b222fdac561b291c1bc4c00913d
+SHA256 (nettle-3.7.tar.gz) = f001f64eb444bf13dd91bceccbc20acbc60c4311d6e2b20878452eb9a9cec75a
