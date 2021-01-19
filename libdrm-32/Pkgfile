@@ -4,14 +4,14 @@
 # Depends on: libdrm xorg-libpciaccess-32
 
 name=libdrm-32
-version=2.4.103
+version=2.4.104
 release=1
 source=(https://dri.freedesktop.org/${name%-*}/${name%-*}-$version.tar.xz)
 
 build() {
 	meson setup build ${name%-*}-$version \
 		--prefix=/usr \
-		--libdir=/usr/lib32 \
+		--libdir=lib32 \
 		--buildtype=plain \
 		-D man-pages=false \
 		-D valgrind=false \
