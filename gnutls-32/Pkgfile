@@ -1,7 +1,7 @@
 # Description: A library that provides a secure layer over a reliable transport layer
 # URL: https://gnutls.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: gnutls libidn-32 nettle-32 p11-kit-32
+# Depends on: gnutls libidn2-32 nettle-32 p11-kit-32
 
 name=gnutls-32
 version=3.6.15
