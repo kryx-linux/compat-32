@@ -4,28 +4,25 @@
 # Depends on: cairo fontconfig-32 glib-32 xorg-libpixman-32 xorg-libxext-32 xorg-libxrender-32 xorg-xcb-util-32
 
 name=cairo-32
-version=1.16.0
+version=1.17.4
 release=1
-source=(https://cairographics.org/releases/${name%-*}-$version.tar.xz
-	cairo-xlib-endianness.patch
-	cairo-get_bitmap_surface-bsc1036789-CVE-2017-7475.diff)
+source=(https://cairographics.org/snapshots/${name%-*}-$version.tar.xz
+	xlib-xcb.diff fix-library-versioning.diff)
 
 build() {
-	cd ${name%-*}-$version
+	patch -p1 -d ${name%-*}-$version -i $SRC/fix-library-versioning.diff
+	patch -p1 -d ${name%-*}-$version -i $SRC/xlib-xcb.diff
 
-	patch -p1 -i $SRC/cairo-xlib-endianness.patch
-	patch -p1 -i $SRC/cairo-get_bitmap_surface-bsc1036789-CVE-2017-7475.diff
+	meson setup build ${name%-*}-$version \
+		--prefix=/usr \
+		--libdir=lib32 \
+		--buildtype=plain \
+		-D spectre=disabled \
+		-D tee=enabled \
+		-D tests=disabled
 
-	./configure --prefix=/usr \
-		--libdir=/usr/lib32 \
-		--enable-xcb=yes \
-		--enable-ps \
-		--enable-pdf \
-		--disable-gtk-doc \
-		--enable-tee=yes
+	meson compile -C build
+	DESTDIR=$PKG meson install -C build
 
-	make
-	make DESTDIR=$PKG install
-
-	rm -r $PKG/usr/{bin,include,share}
+	rm -r $PKG/usr/{bin,include}
 }
