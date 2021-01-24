@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXf88hELr0pxcnAvdCt+SJQgPw9kcpIuFVVkaHqoHgCqoQ5AYf76MjlBkdj7oWph00WOSNUjH8eyrCl/6BDKQxAI=
-SHA256 (Pkgfile) = 355298e47e1f50e602449b2c9545c152afee9554affba55a157df02be9a451b9
-SHA256 (.footprint) = ade2cd401c80d85f7b72064d36708ae37ee2565985e872afc7ab1d0c4010b4ce
-SHA256 (openldap-2.4.56.tgz) = 25520e0363c93f3bcb89802a4aa3db33046206039436e0c7c9262db5a61115e0
+RWSwxGo/zH7eXYSmFYgFTt1rRcg7MQgWinpHRy8AMPco+NZLdmLkiMph2TOtse1RD4m746a5Yeim+50OzNDeucegZUUUB8F7xQo=
+SHA256 (Pkgfile) = 771acba4bbd2c3338931623f8d024a4c365e4eeb5fb03f302edd344b5754b5c8
+SHA256 (.footprint) = 2634dab86f3aaca29f43b0c3c328ef9b74a596cc1ebd4add1e511d5d4b0f4572
+SHA256 (openldap-2.4.57.tgz) = c7ba47e1e6ecb5b436f3d43281df57abeffa99262141aec822628bc220f6b45a
