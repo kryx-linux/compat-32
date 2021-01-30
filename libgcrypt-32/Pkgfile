@@ -4,19 +4,24 @@
 # Depends on: libgcrypt libgpg-error-32
 
 name=libgcrypt-32
-version=1.9.0
+version=1.9.1
 release=1
 source=(https://www.gnupg.org/ftp/gcrypt/${name%-*}/${name%-*}-$version.tar.bz2)
 
 build() {
 	cd ${name%-*}-$version
 
+	# Use 32-bit assembler
+	sed 's:i586\*-\*-\*:x86_64-*-*:' -i mpi/config.links
+	sed 's:x86_64-\*-\*:ignore:;s:i?86-\*-\*:x86_64-*-*:' -i configure.ac
+
+	autoreconf -fi
+
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
 		--disable-padlock-support \
-		--enable-static=yes \
-		--disable-asm
+		--enable-static=yes
 
 	make
 	make DESTDIR=$PKG install
