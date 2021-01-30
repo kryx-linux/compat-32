@@ -1,10 +1,10 @@
 # Description: X11 toolkit intrinsics library
-# URL: http://xorg.freedesktop.org
+# URL: https://xorg.freedesktop.org/wiki/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-libsm-32 xorg-libx11-32 xorg-libxt
 
 name=xorg-libxt-32
-version=1.2.0
+version=1.2.1
 release=1
 source=(https://www.x.org/releases/individual/lib/libXt-$version.tar.bz2)
 
@@ -15,5 +15,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/{include,share}
+
+	rm -r $PKG/usr/{include,share}
 }
