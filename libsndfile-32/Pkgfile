@@ -4,9 +4,9 @@
 # Depends on: alsa-lib-32 flac-32 libsndfile libvorbis-32
 
 name=libsndfile-32
-version=1.0.30
+version=1.0.31
 release=1
-source=(https://github.com/libsndfile/libsndfile/releases/download/v$version/libsndfile-$version.tar.bz2)
+source=(https://github.com/libsndfile/libsndfile/releases/download/$version/libsndfile-$version.tar.bz2)
 
 build() {
 	cd libsndfile-$version
