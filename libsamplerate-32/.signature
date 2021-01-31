@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXeOJVhT4ttMVn3mjCsQCU8ovlu957JS0sPchtVvDQPbfwAWna0eoNdv6xWoZ7zo3dP3L4g6L1jyvPU0RY6wIDAE=
+SHA256 (Pkgfile) = 916c797ec9adf3a52492e738c23a9a6f908668778df43445e032609e36b23680
+SHA256 (.footprint) = 6f416d8a53f8f24b5ac42889a8c9eddc1481cc0efabadbff70d21ca137dec800
+SHA256 (libsamplerate-0.2.1.tar.bz2) = f6323b5e234753579d70a0af27796dde4ebeddf58aae4be598e39b3cee00c90a

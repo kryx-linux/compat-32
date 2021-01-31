@@ -1,0 +1,23 @@
+# Description: Sound sample rate conversion library.
+# URL: https://libsndfile.github.io/libsamplerate/
+# Maintainer: Danny Rawlins, crux at romster dot me
+# Depends on: libsndfile-32
+
+name=libsamplerate-32
+version=0.2.1
+release=1
+source=(https://github.com/libsndfile/libsamplerate/releases/download/$version/libsamplerate-$version.tar.bz2)
+
+build() {
+	cd libsamplerate-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/doc $PKG/usr/include
+	rmdir $PKG/usr/share
+}
