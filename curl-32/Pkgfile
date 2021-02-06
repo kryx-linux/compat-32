@@ -1,13 +1,13 @@
 # Description: A tool for transfering files with URL syntax
 # Maintainer:  CRUX compat-32 Team, compat-32-ports at crux dot nu
-# URL:         https://curl.haxx.se/
+# URL:         https://curl.se/
 # Depends on: curl openssl-32 zstd-32
 # Optional: brotli-32
 
 name=curl-32
-version=7.74.0
+version=7.75.0
 release=1
-source=(https://curl.haxx.se/download/${name%-*}-$version.tar.xz)
+source=(https://curl.se/download/${name%-*}-$version.tar.xz)
 
 build() {
     cd ${name%-*}-$version
