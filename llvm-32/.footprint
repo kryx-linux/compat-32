@@ -40,7 +40,7 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/TensorFlowCompile.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/UseLibtool.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/VersionFromVCS.cmake
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-11.0.1.so -> libLLVM-11.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-11.1.0.so -> libLLVM-11.so
 -rwxr-xr-x	root/root	usr/lib32/libLLVM-11.so
 lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-11.so
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUAsmParser.a
