@@ -1,18 +1,20 @@
 # Description: A system which facilitates service discovery on a local network via the mDNS/DNS-SD protocol suite
-# URL: http://www.avahi.org/
+# URL: https://www.avahi.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: avahi dbus-32 gdbm-32 glib-32 libcap-32 libdaemon-32 libevent-32
 
 name=avahi-32
 version=0.8
-release=1
-source=(https://avahi.org/download/avahi-$version.tar.gz
+release=3
+source=(https://github.com/lathiat/avahi/releases/download/v$version/avahi-$version.tar.gz
+	avahi-0.8-ipv6_race_condition_fix-1.patch
 	reverse-move-to-run.patch)
 
 build() {
 	cd avahi-$version
 
 	patch -p1 -i $SRC/reverse-move-to-run.patch
+	patch -p1 -i $SRC/avahi-0.8-ipv6_race_condition_fix-1.patch
 
 	NOCONFIGURE=1 ./autogen.sh
 
