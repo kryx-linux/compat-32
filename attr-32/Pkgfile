@@ -3,7 +3,7 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=attr-32
-version=2.5.0
+version=2.5.1
 release=1
 source=(http://download-mirror.savannah.gnu.org/releases/${name%-*}/${name%-*}-$version.tar.gz)
 
