@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXeaLXCr/lULyQwsoTSaDj41Zke8PQc1zibBk6M8ZPfoCu5P9siVr3TUa6AVKIunt/8Ma6Si6GTQcHIFKgDoOdAA=
-SHA256 (Pkgfile) = b6ea35859b2f7208a376631d458bd526419b5dfdab7ce42af9351d69a769fa92
+RWSwxGo/zH7eXdsce4f8/x6OIs1KZovlPciLygCMmb1qt7PwkHmxvyeEMDZgOcS1XuI/iy47OAQNEn+T9Kv1CM8tJqcO+C74BgM=
+SHA256 (Pkgfile) = 7048cb2b1141fa0e5952dd790aa61a6445e7f5043a2223ff59b4e39e14a37b1e
 SHA256 (.footprint) = f34e187b232cf3455f234fceface88dedc8d7fee1b901bb211e329223fa63f72
-SHA256 (nss-3.62.tar.gz) = 86d6df7cece25b8d4efa53e4c19af903c484eb79871163f37b5232bb406a5478
+SHA256 (nss-3.63.tar.gz) = 182d2fef629102ae9423aabf2c192242b565cf5098e82c5a26cf70c5e4ea2221
 SHA256 (nss-config.in) = 08dbc1202186308e86125b5c5e7e2d0e1bd1bd5ed65eab011b9af210f656aff5
 SHA256 (nss.pc.in) = 135fbde6866e422b7a436e18d5b8e0defbb67dde6b8e1dc9e84de14b5c645626
