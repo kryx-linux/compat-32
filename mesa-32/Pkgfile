@@ -4,7 +4,7 @@
 # Depends on: elfutils-32 expat-32 libdrm-32 libglvnd-32 libvdpau-32 llvm-32 mesa xorg-libxdamage-32 xorg-libxrandr-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32
 
 name=mesa-32
-version=20.3.5
+version=21.0.2
 release=1
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
 	x86-linux-gnu)
@@ -21,7 +21,7 @@ build() {
 		-D gbm=enabled \
 		-D gles1=enabled \
 		-D gles2=enabled \
-		-D osmesa=gallium \
+		-D osmesa=true \
 		-D gallium-xa=enabled \
 		-D gallium-vdpau=enabled \
 		-D platforms=x11 \
