@@ -11,7 +11,7 @@ source=(https://github.com/KhronosGroup/Vulkan-Loader/archive/v$version/Vulkan-L
 
 build() {
 	prt-get isinst ninja && PKGMK_VULKAN_LOADER+=' -G Ninja'
-	prt-get isinst wayland || PKGMK_VULKAN_LOADER+=' -D BUILD_WSI_WAYLAND_SUPPORT=OFF'
+	prt-get isinst wayland-32 || PKGMK_VULKAN_LOADER+=' -D BUILD_WSI_WAYLAND_SUPPORT=OFF'
 
 	export ASFLAGS='--32'
 
