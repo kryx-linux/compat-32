@@ -1,10 +1,10 @@
-# Description: NVIDIA Linux Display Driver (long lived branch)
+# Description: NVIDIA Linux Display Driver (production branch)
 # URL: http://www.nvidia.com/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libglvnd-32
 
 name=nvidia-32
-version=460.67
+version=460.73.01
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run)
 
