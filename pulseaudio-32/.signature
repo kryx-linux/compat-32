@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXQNKxwKSSj5kkQ+dwtBiEb0csPtOOO95xgKCBoW6tFFc1IguNcj5fFS1hk2IBiYfWWJOusS1t+ZictgWncYiSwA=
+SHA256 (Pkgfile) = 21b753f7be1336496a605cc79d812c496f2d5641262a27924018aa566ccc0d4a
+SHA256 (.footprint) = 7b83fd22a4b4f1ef84501b9acb8bd09b27e3b175f862f15a48f11f284d406c2f
+SHA256 (pulseaudio-14.2.tar.xz) = 75d3f7742c1ae449049a4c88900e454b8b350ecaa8c544f3488a2562a9ff66f1
