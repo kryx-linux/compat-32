@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQB3bOYBUvrXtqV27lH4B4mn6tQXB4cKpjMOBPAHTg8AdbyI9KapA9aDIKo/itHGJJI06RerMgHV7bkNG7w/Kwg=
-SHA256 (Pkgfile) = 6f8d9a2071ac0d76b75630f5d599973be510bfc7cde2c40502faf7347592cd53
+RWSwxGo/zH7eXbu2EgG96Iodl+Hpo63BRxYvcasEQQOIXHvGsSsg4VdD0T+0S4xK8iUaisYR37gbLVMxnZjIjNPv/9vdbmE6WAs=
+SHA256 (Pkgfile) = d247cfdefff223ef60ec6d69cab5d94258827b9097dca0b9db8fd041c6615813
 SHA256 (.footprint) = c14dda2fb33acb3812a5699bf847fe68bf6166e5f349dee44d2d85ce35936412
-SHA256 (libglvnd-1.3.2.tar.gz) = 6f41ace909302e6a063fd9dc04760b391a25a670ba5f4b6edf9e30f21410b673
+SHA256 (libglvnd-1.3.3.tar.gz) = 4e59c06820c97125e19e96c4b70e71d72999ff740bb92306b830bb5338b8adea
