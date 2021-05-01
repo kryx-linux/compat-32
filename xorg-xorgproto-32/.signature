@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXeaRu/XcgM2fp43YpKIqrfJOT+x4h2Ptqj4WRUBfqHG1bICGSTx2tx0uIP3Sh2LyqvkYrvOoadly9eEoCLVwEwY=
-SHA256 (Pkgfile) = 19bcc769ae5f01fa4f2fe025185d85f9d49894f4a20db89086d3338b3838aea1
+RWSwxGo/zH7eXTGDKFw5VUG9pi2X2g9x1ylemCHEhyvgF5Ye4SRA3i2uHsPd7feoKl2tulu7fxZr5ZfaEG/4dlxQNsAUFulTMAI=
+SHA256 (Pkgfile) = ca810d918aec1a7b63966dbe5b857a33fbfe6a3b3c6fe5847c68d121b4d7e37d
 SHA256 (.footprint) = fd608492cb98e83e3d2c8e98aac5421bded64a6f1991c014a95c29c9767468e3
-SHA256 (xorgproto-2021.3.tar.bz2) = 4c732b14fc7c7db64306374d9e8386d6172edbb93f587614df1938b9d9b9d737
+SHA256 (xorgproto-2021.4.tar.bz2) = 0f5157030162844b398e7ce69b8bb967c2edb8064b0a9c9bb5517eb621459fbf
