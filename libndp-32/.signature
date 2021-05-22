@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTFJO5oHSjWScqIDvrNX9vEoXjWnzueHXZ9ir6o6zg5Vdf75wql61sNzr8aTCFq9HIgrOpLJw7DqiUXH8yAXjA0=
-SHA256 (Pkgfile) = ad95ac12972983ad755d4cc4266e1b7f67e7649162bc99d3f3f0f04257f186e8
-SHA256 (.footprint) = 546afd2ef717af9bc0c7151f47f6ab332d15cc8323224aa9a44142a745dbfffe
-SHA256 (libndp-1.7.tar.gz) = 2c480afbffb02792dbae3c13bbfb71d89f735562f2795cca0640ed3428b491b6
+RWSwxGo/zH7eXd8XJUNwRu5V/2CYFXf76l5yo4q5RB/5Ow5usgmJrrvVQQsaxZmH+jNwRbJpxlSKFL4TsOJ0/msrfM7nWu5AtQ8=
+SHA256 (Pkgfile) = e853396a0f8c9b4d5fa39c0ae247a894a9de9743fda31563cce573987761ecbf
+SHA256 (.footprint) = df9fbc1f670e0f443f527f8bb66f516ec581e05374836eb44fa88fe2555d18de
+SHA256 (libndp-1.8.tar.gz) = 88ffb66ee2eb527f146f5c02f5ccbc38ba97d2b0d57eb46bfba488821ab0c02b
