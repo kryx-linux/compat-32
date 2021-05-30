@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXcdXZ2B+K2D3LvvMsu8J/HXEzm42xrJwWAJrnoopHYCTPzj2sKHxnD70XC1Je6/pv2TV2Z4FC7vRnLUtB5KehQs=
+SHA256 (Pkgfile) = 62d98c6e4e53359ea0879c6656524865adefc166b9bc3adcb6047919ee196300
+SHA256 (.footprint) = 0ba4f3ed23fb2d2e422fedad39aff03e0f5134f52b48a9cb8ad97b277cfeae55
+SHA256 (speexdsp-1.2.0.tar.gz) = 682042fc6f9bee6294ec453f470dadc26c6ff29b9c9e9ad2ffc1f4312fd64771
