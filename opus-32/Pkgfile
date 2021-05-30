@@ -1,0 +1,29 @@
+# Description: Codec designed for interactive speech and audio transmission over the Internet.
+# URL: https://www.opus-codec.org/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: opus
+
+name=opus-32
+version=1.3.1
+release=1
+source=(https://archive.mozilla.org/pub/opus/opus-$version.tar.gz)
+
+build() {
+	cd opus-$version
+
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--enable-custom-modes \
+		--enable-intrinsics \
+		--enable-rtcd \
+		--enable-ambisonics \
+		--disable-doc \
+		--disable-nls
+
+	make
+	make DESTDIR=$PKG install
+
+	find $PKG -name '*.la' -delete
+	rm -r $PKG/usr/{share,include}
+}
