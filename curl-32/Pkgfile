@@ -5,7 +5,7 @@
 # Optional: brotli-32
 
 name=curl-32
-version=7.77.0
+version=7.78.0
 release=1
 source=(https://curl.se/download/${name%-*}-$version.tar.xz)
 
@@ -18,10 +18,10 @@ before continuing with curl-32.\033[0m\n" &&
 exit 1
 
     ./configure --prefix=/usr \
-		--libdir=/usr/lib32 \
+                --libdir=/usr/lib32 \
                 --enable-ipv6 \
                 --without-libidn2 \
-		--with-openssl \
+                --with-openssl \
                 --without-cyassl \
                 --enable-threaded-resolver \
                 --with-ca-bundle=/etc/ssl/cert.pem
