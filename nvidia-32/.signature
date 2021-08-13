@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXbZSi/bcxeGR/F1Auom4BnRpmQbkczhrsYCX6/D40XNwGIaWhP6NbV4XoBl7Eg54jE+AkN6CgVJka6hJ9xEg+A8=
-SHA256 (Pkgfile) = 5db182a7e616e59dbf65f1f3a8aa4edda28df543be7b82845f4b9c9018fb0789
-SHA256 (.footprint) = 9b4fa27021b52c43929237e3c88beb7f3df1729de33ea3bcdc35add80bc90872
-SHA256 (NVIDIA-Linux-x86_64-460.84.run) = a10d2171d6b2c55f63791f58264f9e92829ee4b2779b9b1d011274e63b46b960
+RWSwxGo/zH7eXc9WvQOtQcRkdK7f4jWb+XiGabSsOdHcFh+1DXO8ae5dv/0bmhH5/e5+bx4uApvkwyWVhcdux4gItaol/fIbUwU=
+SHA256 (Pkgfile) = 1fbd254793e1ef77d09679c13bc53647f71a90b577b688c5bd34f1a09651b6cc
+SHA256 (.footprint) = 739517daea13d57f9aaa4d54f18c280d0544c9e060307c4fa028eec837d94c61
+SHA256 (NVIDIA-Linux-x86_64-470.63.01.run) = 6f1a44cc4a2ce27dce749ccd1e403c1db0f4791e2d22c05ec966842101d3ed14
