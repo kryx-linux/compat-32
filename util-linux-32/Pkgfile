@@ -29,5 +29,6 @@ build() {
 		$PKG/usr/{bin,sbin,include} \
 		$PKG//usr/share/{bash-completion,doc}
 
+	rm -rf $PKG/usr/share/man
 	rmdir $PKG/usr/share
 }
