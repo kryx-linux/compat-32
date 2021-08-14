@@ -1,0 +1,41 @@
+# Description: Server and user space API to deal with multimedia pipelines
+# URL: https://pipewire.org
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: alsa-utils-32 dbus-32 fdk-aac-32 ffmpeg-32 glib-32 lame-32 libva-32 libvpx-32 libwebp-32 x264-32 x265-32
+# Optional: alsa-ucm-conf-32 bluez-32 gst-plugins-base-32 jack-32 libldac-32 libopenaptx-32 pulseaudio-32 rtkit-32 v4l2-32 vulkan-loader-32
+
+name=pipewire-32
+version=0.3.33
+release=1
+source=(https://github.com/PipeWire/pipewire/archive/$version/pipewire-$version.tar.gz)
+
+build() {
+  prt-get isinst jack-32 || PKGMK_PW+=' -Dpipewire-jack=disabled -Djack=disabled'
+  prt-get isinst vulkan-loader-32 || PKGMK_PW+=' -Dpipewire-vulkan=disabled -Dvulkan=disabled'
+  prt-get isinst bluez-32 || PKGMK_PW+=' -Dbluez5=disabled'
+  prt-get isinst v4l-utils-32 || PKGMK_PW+=' -Dv4l2=disabled'
+  prt-get isinst gstreamer-32 && prt-get isinst gst-plugins-base-32 || PKGMK_PW+=' -Dgstreamer=disabled'
+  [[ -e '/usr/lib32/libpulse-mainloop-glib.so' ]] || PKGMK_PW+=' -Dpipewire-pulseaudio=disabled'
+
+  meson setup pipewire-$version build $PKGMK_PW \
+    -D prefix=/usr \
+    --libdir=lib32 \
+    --buildtype=plain \
+    -D docs=disabled \
+    -D tests=disabled
+  # will remove executable pipewire-media-session
+  #  -D examples=false \
+
+  meson compile -C build
+  DESTDIR=$PKG meson install -C build
+
+  # enable alsa by default
+  install -Dm644 /dev/null $PKG/usr/share/pipewire/media-session.d/with-alsa
+  mkdir -p $PKG/etc/alsa/conf.d
+  ln -st $PKG/etc/alsa/conf.d /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf
+  ln -st $PKG/etc/alsa/conf.d /usr/share/alsa/alsa.conf.d/50-pipewire.conf
+
+  # remove leftovers
+  rm -r $PKG/usr/{bin,include,share}
+  rm -r $PKG/{etc,lib}
+}
