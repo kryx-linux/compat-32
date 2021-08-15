@@ -10,10 +10,8 @@ release=1
 source=(http://freedesktop.org/software/pulseaudio/releases/pulseaudio-$version.tar.xz)
 
 build() {
-  prt-get isinst bluez-32 || PKGMK_PULSEAUDIO+=' -D bluez5=false'
-  prt-get isinst gstreamer-32 && prt-get isinst gst-plugins-base-32 || PKGMK_PULSEAUDIO+=' -D gstreamer=disabled'
-
-  sed -i -e '/doxygen/d' pulseaudio-$version/meson.build
+  prt-get isinst bluez-32 || PKGMK_PULSEAUDIO+=' -D bluez5=disabled'
+  prt-get isinst gstreamer-32 gst-plugins-base-32 || PKGMK_PULSEAUDIO+=' -D gstreamer=disabled'
 
   meson setup pulseaudio-$version build $PKGMK_PULSEAUDIO \
     --prefix=/usr \
@@ -27,6 +25,7 @@ build() {
     -D adrian-aec=false \
     -D bashcompletiondir=no \
     -D zshcompletiondir=no \
+    -D doxygen=false \
     -D man=false
 
   meson compile -C build
