@@ -5,7 +5,7 @@
 # Optional: alsa-ucm-conf-32 bluez-32 gst-plugins-base-32 jack-32 libldac-32 libopenaptx-32 pulseaudio-32 rtkit-32 v4l2-32 vulkan-loader-32
 
 name=pipewire-32
-version=0.3.33
+version=0.3.34
 release=1
 source=(https://github.com/PipeWire/pipewire/archive/$version/pipewire-$version.tar.gz)
 
