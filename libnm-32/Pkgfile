@@ -1,67 +1,53 @@
 # Description: Network configuration tool
 # URL: https://wiki.gnome.org/Projects/NetworkManager/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: curl-32 dbus-glib-32 jansson-32 libndp-32 libnm nss-32
+# Depends on: curl-32 dbus-glib-32 jansson-32 libndp-32 libpsl-32 networkmanager nss-32
 
 name=libnm-32
-version=1.18.10
+version=1.32.10
 release=1
-source=(https://ftp.gnome.org/pub/gnome/sources/NetworkManager/${version%.*}/NetworkManager-${version}.tar.xz)
+source=(https://download.gnome.org/sources/NetworkManager/${version::4}/NetworkManager-$version.tar.xz)
 
 build() {
-  cd NetworkManager-$version
-
-  sed '/initrd/d' -i src/meson.build
-
-  mkdir build
-  cd build
-
-  CXXFLAGS+="-O2 -fPIC" \
-  meson --prefix /usr \
-    --sysconfdir /etc \
-    --localstatedir /var \
-    --libdir /usr/lib32/NetworkManager \
-    --libexecdir /usr/lib32/networkmanager \
-    -Ddbus_conf_dir=/usr/share/dbus-1/system.d \
-    -Dudev_dir=/lib/udev \
-    -Ddhcpcd=/sbin/dhcpcd \
-    -Dresolvconf=true \
-    -Dconfig_dns_rc_manager_default=resolvconf \
-    -Dcrypto=nss \
-    -Dintrospection=false \
-    -Dsession_tracking_consolekit=false \
-    -Dwifi=false \
-    -Dwext=false \
-    -Dpolkit=false \
-    -Dmodify_system=true \
-    -Dlibnm_glib=true \
-    -Difupdown=false \
-    -Dnmtui=false \
-    -Dnmcli=false \
-    -Dsession_tracking=no \
-    -Db_lto=false \
-    -Dlibaudit=no \
-    -Dlibpsl=false \
-    -Dppp=false \
-    -Dofono=false \
-    -Dselinux=false \
-    -Dmodem_manager=false \
-    -Dsystemdsystemunitdir=false \
-    -Dsystemd_journal=false \
-    -Dqt=false \
-    -Ddocs=false \
-    -Dtests=no \
-    -Djson_validation=true \
-    -Dovs=false \
-    -Dmore_logging=false \
-    -Dmore_asserts=0 \
-    -Dlibpsl=false \
-    ..
-  ninja
-  mkdir $SRC/install
-  DESTDIR=$SRC/install/ ninja install
-
-  install -d -m 0755 $PKG/usr/lib32/pkgconfig
-  cp -dr --no-preserve='ownership' $SRC/install/usr/lib32/NetworkManager/{libnm,libnm-glib,libnm-glib-vpn,libnm-util}.so* $PKG/usr/lib32/
-  cp -dr --no-preserve='ownership' $SRC/install/usr/lib32/NetworkManager/pkgconfig/{libnm,libnm-glib,libnm-glib-vpn,libnm-util}.pc $PKG/usr/lib32/pkgconfig/ 
+	meson setup NetworkManager-$version build $PKGMK_NM \
+		--prefix /usr \
+		--libdir /usr/lib32 \
+		--sysconfdir /etc \
+		--localstatedir /var \
+		--libexecdir /usr/lib/networkmanager \
+		--buildtype=plain \
+		--wrap-mode nodownload \
+		-D b_lto=true \
+		-D b_pie=true \
+		-D crypto=nss \
+		-D dbus_conf_dir=/usr/share/dbus-1/system.d \
+		-D udev_dir=/lib/udev \
+		-D introspection=false \
+		-D session_tracking=no \
+		-D libaudit=no \
+		-D bluez5_dun=false \
+		-D concheck=false \
+		-D ebpf=false \
+		-D iwd=false \
+		-D modem_manager=false \
+		-D nm_cloud_setup=false \
+		-D nmcli=false \
+		-D nmtui=false \
+		-D ovs=false \
+		-D ppp=false \
+		-D teamdctl=false \
+		-D tests=no \
+		-D more_asserts=no \
+		-D more_logging=false \
+		-D qt=false \
+		-D systemdsystemunitdir=no \
+		-D systemd_journal=false \
+		-D selinux=false \
+		-D suspend_resume=consolekit \
+		-D polkit=false
+	meson compile -C build
+	mkdir $SRC/install
+	DESTDIR=$PKG meson install -C build
+	rm -r $PKG/usr/{bin,include,lib,sbin,share}
+	rm -r $PKG/{etc,lib,var}
 }
