@@ -4,21 +4,22 @@
 # Depends on: xorg-xorgproto
 
 name=xorg-xorgproto-32
-version=2021.4
+version=2021.5
 release=1
 source=(https://xorg.freedesktop.org/archive/individual/proto/xorgproto-$version.tar.bz2)
 
 build() {
-	cd xorgproto-$version
-
-	./configure \
+	meson setup xorgproto-$version build \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
-		--datarootdir=/usr/lib32 \
-		--host=i686-pc-linux-gnu
+		--datadir=/usr/lib32 \
+		--buildtype=plain \
+		--wrap-mode nodownload \
+		-D b_lto=true \
+		-D b_pie=true \
+		-D legacy=false
+	meson compile -C build
+	DESTDIR=$PKG meson install -C build
 
-	make
-	make DESTDIR=$PKG install
-
-	rm -r $PKG/usr/include $PKG/usr/lib32/doc 
+	rm -r $PKG/usr/include $PKG/usr/lib32/doc $PKG/usr/lib32/pkgconfig/applewmproto.pc
 }
