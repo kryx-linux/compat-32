@@ -7,7 +7,8 @@
 name=gst-plugins-base-32
 version=1.18.5
 release=1
-source=(https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-$version.tar.xz)
+source=(https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-$version.tar.xz
+	qt5-option.patch)
 
 build() {
 	# decide accordingly to what mesa builds with
@@ -19,6 +20,9 @@ build() {
 		PKGMK_GST_PLATFORM+=',glx' \
 		PKGMK_GST_GLAPI+=',opengl' \
 		PKGMK_GST_WINDOW+=',x11'
+
+	patch -Np1 -d gst-plugins-base-$version -i $SRC/qt5-option.patch
+	export PKG_CONFIG_PATH='/usr/lib32/pkgconfig:/usr/share/pkgconfig'
 
 	meson setup build gst-plugins-base-$version \
 		--prefix=/usr \
@@ -33,6 +37,8 @@ build() {
 		-D gl_winsys=${PKGMK_GST_WINDOW#,} \
 		-D nls=disabled \
 		-D introspection=disabled \
+		-D examples=disabled \
+		-D qt5=disabled \
 		-D package-name="GStreamer (CRUX Linux)" \
 		-D package-origin="https://crux.nu/"
 
