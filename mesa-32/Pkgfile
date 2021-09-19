@@ -2,6 +2,7 @@
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: elfutils-32 expat-32 libdrm-32 libglvnd-32 libvdpau-32 llvm-32 mesa xorg-libxdamage-32 xorg-libxrandr-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32 zstd-32
+# Optional: glslang-32 wayland-32 wayland-protocols
 
 name=mesa-32
 version=21.2.1
@@ -10,24 +11,32 @@ source=(https://archive.mesa3d.org/mesa-$version.tar.xz
 	x86-linux-gnu)
 
 build() {
-	meson setup build mesa-$version \
+	prt-get isinst wayland-32 wayland-protocols && PKGMK_MESA_PLATFORMS+=',wayland'
+	prt-get isinst glslang-32 && PKGMK_MESA_PLATFORMS+=' -D vulkan-overlay-layer=true -D vulkan-device-select-layer=true'
+
+	meson setup mesa-$version build $PKGMK_MESA3D \
 		--cross-file=$SRC/x86-linux-gnu \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
 		--sysconfdir=/etc \
 		--buildtype=plain \
+		--wrap-mode nodownload \
+		-D b_lto=true \
+		-D b_pie=true \
 		-D llvm=enabled \
 		-D shared-llvm=enabled \
 		-D gbm=enabled \
-		-D gles1=enabled \
+		-D gles1=disabled \
 		-D gles2=enabled \
 		-D osmesa=true \
+		-D platforms=x11$PKGMK_MESA_PLATFORMS \
 		-D gallium-xa=enabled \
 		-D gallium-vdpau=enabled \
-		-D platforms=x11 \
 		-D gallium-drivers=r300,r600,svga,swrast,radeonsi,nouveau,iris,virgl \
 		-D vulkan-drivers=amd,intel \
-		-D glvnd=true
+		-D glvnd=true \
+		-D dri3=enabled \
+		-D egl=enabled
 
 	meson compile -C build -j ${JOBS:-1}
 	DESTDIR=$PKG meson install -C build
