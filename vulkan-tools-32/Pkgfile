@@ -5,9 +5,9 @@
 # Optional: wayland-32
 
 name=vulkan-tools-32
-version=1.2.182
+version=1.2.189.1
 release=1
-source=(https://github.com/KhronosGroup/Vulkan-Tools/archive/v$version/Vulkan-Tools-$version.tar.gz)
+source=(https://github.com/KhronosGroup/Vulkan-Tools/archive/sdk-$version/Vulkan-Tools-$version.tar.gz)
 
 build() {
 	prt-get isinst ninja && PKGMK_VULKAN_TOOLS+=' -G Ninja'
@@ -15,7 +15,7 @@ build() {
 
 	export ASFLAGS='--32'
 
-	cmake -S Vulkan-Tools-$version -B build $PKGMK_VULKAN_TOOLS \
+	cmake -S Vulkan-Tools-sdk-$version -B build $PKGMK_VULKAN_TOOLS \
 		-D CMAKE_INSTALL_PREFIX=/usr \
 		-D CMAKE_INSTALL_LIBDIR=lib32 \
 		-D CMAKE_BUILD_TYPE=Release \
