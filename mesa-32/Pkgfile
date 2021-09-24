@@ -5,7 +5,7 @@
 # Optional: glslang wayland-32 wayland-protocols
 
 name=mesa-32
-version=21.2.1
+version=21.2.2
 release=1
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
 	x86-linux-gnu)
