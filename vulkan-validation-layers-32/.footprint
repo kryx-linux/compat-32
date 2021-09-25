@@ -1,4 +1,4 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
 -rwxr-xr-x	root/root	usr/lib32/libVkLayer_khronos_validation.so
--rw-r--r--	root/root	usr/lib32/libVkLayer_utils.a
+-rwxr-xr-x	root/root	usr/lib32/libVkLayer_utils.so

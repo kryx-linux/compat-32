@@ -1,7 +1,9 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXUBx56oKqn1bVjQb3lSo5+0NV1vFpyz5b74SQBNEoURxTS/4sfDyVb7xPs/HMOA/KvW1z/3XZQhKLvqyN86snws=
-SHA256 (Pkgfile) = ec75305a4da465866a6224e9ebd2d076bba946da7f36683c0f3d25945c74dd70
-SHA256 (.footprint) = 42978599405114f2de06e260f58c257c766ba543b5c618e7ff6737cdc175760a
+RWSwxGo/zH7eXQx9QO50JHObvU+Kva/xfGwbBPwLM0Tt8pcq1kIFhkv+ImDHdSaaYo6jKx3pInoxs1z7StE/SM64vsIPufDFIQc=
+SHA256 (Pkgfile) = 8c1c270be0eda9df9cbb0a5f1d4affaf3dc5522d5bd1ec73a03d41cd6cab4eb3
+SHA256 (.footprint) = 5c3e1cb61d0d5070cc1d278ec445757e1913b70cdec30985988d48c2f6ded070
 SHA256 (Vulkan-ValidationLayers-1.2.189.1.tar.gz) = d169ae71ae3ba12159df355b58f86f5635062c695d1deac9b97d5653561d517d
 SHA256 (SPIRV-Headers-449bc986ba6f4c5e10e32828783f9daef2a77644.tar.gz) = a8156db21c4c9d956b80b4620c6fede30d44c4f3a897434c341da8991c986288
 SHA256 (robin-hood-hashing-3.11.3.tar.gz) = dcf2b7fa9ef9dd0c67102d94c28e8df3effbe1845e0ed1f31f4772ca5e857fc4
+SHA256 (add-missing-export.patch) = 6ce7222099403dea8425b1dd305b9ebc43e747c32aca2a24cfc7f67ddd34cebf
+SHA256 (fix_shared.patch) = 840af33ab26638c8c29da4a7f284eae6aeb40e01d506eef9851d7e6ee4a8bed0
