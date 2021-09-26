@@ -8,11 +8,14 @@ name=mesa-32
 version=21.2.2
 release=1
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
-	x86-linux-gnu)
+	x86-linux-gnu
+	gallium-llvm13.patch)
 
 build() {
 	prt-get isinst wayland-32 wayland-protocols && PKGMK_MESA_PLATFORMS+=',wayland'
 	prt-get isinst glslang && PKGMK_MESA_PLATFORMS+=' -D vulkan-overlay-layer=true -D vulkan-device-select-layer=true'
+
+	patch -d mesa-$version -p1 -i $SRC/gallium-llvm13.patch
 
 	meson setup mesa-$version build $PKGMK_MESA3D \
 		--cross-file=$SRC/x86-linux-gnu \
