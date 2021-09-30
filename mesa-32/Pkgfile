@@ -5,13 +5,14 @@
 # Optional: glslang wayland-32 wayland-protocols
 
 name=mesa-32
-version=21.2.2
+version=21.2.3
 release=1
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
 	x86-linux-gnu
 	gallium-llvm13.patch)
 
 build() {
+	export PKG_CONFIG_LIBDIR='/usr/lib32/pkgconfig:/usr/share/pkgconfig'
 	prt-get isinst wayland-32 wayland-protocols && PKGMK_MESA_PLATFORMS+=',wayland'
 	prt-get isinst glslang && PKGMK_MESA_PLATFORMS+=' -D vulkan-overlay-layer=true -D vulkan-device-select-layer=true'
 
