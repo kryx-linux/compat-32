@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXczh2IWAOLzghoikXFBlCuZfTkavUa62Qi7SYG/RE7+v8o4osWcyxZX4A6To/IupN6AaSdymipbscsOXwRpI4Ac=
-SHA256 (Pkgfile) = 12a6a3e394e1ace79c8ddbd05ac1872cd69ba518774004e5285102b9fd4aa26a
-SHA256 (.footprint) = c98a3907f507a845e643406c3ca522cdeb573972c819b99f1882437818a88b46
-SHA256 (fribidi-1.0.10.tar.xz) = 7f1c687c7831499bcacae5e8675945a39bacbad16ecaa945e9454a32df653c01
+RWSwxGo/zH7eXbCjZDSICffnYvpvexmE08PmiZD7TfQAydjwNswJmGVCFU0Bcl5cD8kn8BJ359OKY4z6aVIQ44hDMHM/aBMtuwQ=
+SHA256 (Pkgfile) = 53a7e23744476ad6ac2e64dbcd8c5087e27c6c4fdce407752d89a081c5bc64ad
+SHA256 (.footprint) = f11cdb347ea2609b70cbb00b4909c65bca424d6a73cc8efd12d538c5e96ef08b
+SHA256 (fribidi-1.0.11.tar.xz) = 30f93e9c63ee627d1a2cedcf59ac34d45bf30240982f99e44c6e015466b4e73d
