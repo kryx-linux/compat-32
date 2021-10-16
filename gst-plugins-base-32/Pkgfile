@@ -12,7 +12,7 @@ source=(https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-
 
 build() {
 	# decide accordingly to what mesa builds with
-	prt-get isinst wayland-protocols && \
+	[ -e /usr/lib32/pkgconfig/egl.pc ] || prt-get isinst wayland-protocols && \
 		PKGMK_GST_PLATFORM+='egl' \
 		PKGMK_GST_GLAPI+='gles2' \
 		PKGMK_GST_WINDOW+='egl'
