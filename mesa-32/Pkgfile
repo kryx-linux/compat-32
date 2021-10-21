@@ -27,7 +27,6 @@ build() {
 		--buildtype=plain \
 		--wrap-mode nodownload \
 		-D b_lto=true \
-		-D b_pie=true \
 		-D dri3=enabled \
 		-D egl=enabled \
 		-D llvm=enabled \
@@ -51,5 +50,5 @@ build() {
 	# indirect rendering symlink
 	ln -s libGLX_mesa.so.0 $PKG/usr/lib32/libGLX_indirect.so.0
 
-	rm -r $PKG/usr/{bin,include,share/{drirc.d,glvnd,vulkan/{explicit_layer.d,implicit_layer.d}}}
+	rm -r $PKG/usr/{bin,include,share/{drirc.d,glvnd,vulkan/{explicit_layer.d,implicit_layer.d}}} || true
 }
