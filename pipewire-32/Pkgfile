@@ -1,24 +1,23 @@
 # Description: Low-latency audio/video router and processor - 32-bit client library
 # URL: https://pipewire.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: alsa-lib-32 dbus-32 xorg-libxcb-32 pipewire
-# Optional: jack-32 pulseaudio-32 vulkan-loader-32 avahi-32 libsdl2-32 libsndfile-32
+# Depends on: alsa-lib-32 dbus-32 pipewire xorg-libxcb-32
+# Optional: avahi-32 jack-32 libsdl2-32 libsndfile-32 pulseaudio-32 vulkan-loader-32
 
 name=pipewire-32
-version=0.3.38
+version=0.3.39
 release=1
 source=(https://github.com/PipeWire/pipewire/archive/$version/pipewire-$version.tar.gz)
 
 build() {
 	prt-get isinst alsa-lib-32 && PKGMK_PW+=' -D alsa=enabled -D pipewire-alsa=enabled'
+	prt-get isinst avahi-32 && PKGMK_PW+=' -D avahi=enabled'
 	prt-get isinst dbus-32 && PKGMK_PW+=' -D dbus=enabled'
 	prt-get isinst jack-32 && PKGMK_PW+=' -D jack=enabled -D pipewire-jack=enabled'
-	prt-get isinst pulseaudio-32 && PKGMK_PW+=' -D libpulse=enabled'
-	prt-get isinst vulkan-loader-32 && PKGMK_PW+=' -D vulkan=enabled'
-	prt-get isinst avahi-32 && PKGMK_PW+=' -D avahi=enabled'
 	prt-get isinst libsdl2-32 && PKGMK_PW+=' -D libsdl2=enabled'
 	prt-get isinst libsndfile-32 && PKGMK_PW+=' -D libsndfile=enabled'
-	[[ -e '/usr/lib32/libpulse-mainloop-glib.so' ]] && PKGMK_PW+=' -D pipewire-pulseaudio=enabled'
+	prt-get isinst pulseaudio-32 && PKGMK_PW+=' -D libpulse=enabled'
+	prt-get isinst vulkan-loader-32 && PKGMK_PW+=' -D vulkan=enabled'
 
 	meson setup pipewire-$version build $PKGMK_PW \
 		-D prefix=/usr \
