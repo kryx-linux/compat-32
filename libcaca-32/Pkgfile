@@ -1,12 +1,12 @@
 # Description: Color AsCii Art library (32-bit)
 # URL: http://caca.zoy.org/wiki/libcaca
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libcaca ncurses-32 xorg-libx11-32
+# Depends on: imlib2-32 libcaca ncurses-32 xorg-libx11-32
 
 name=libcaca-32
-version=0.99.beta19
+version=0.99.beta20
 release=1
-source=(http://libcaca.zoy.org/files/${name%-*}/${name%-*}-$version.tar.gz)
+source=(https://github.com/cacalabs/libcaca/releases/download/v$version/libcaca-$version.tar.bz2)
 
 build() {
 	cd ${name%-*}-$version
