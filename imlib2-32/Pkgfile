@@ -1,0 +1,23 @@
+# Description: A fast image manipulation library
+# URL: https://sourceforge.net/projects/enlightenment/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: bzip2-32 freetype-32 imlib2 libtiff-32 xorg-libsm-32 xorg-libxext-32 zstd-32
+
+name=imlib2-32
+version=1.7.4
+release=1
+source=(https://download.sourceforge.net/enlightenment/imlib2-$version.tar.bz2)
+
+build() {
+	cd imlib2-$version
+
+	./configure --prefix=/usr \
+		--libdir=/usr/lib32 \
+		--x-libraries=/usr/lib32 \
+		--enable-mmx \
+		--disable-amd64
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{bin,include,share}
+}
