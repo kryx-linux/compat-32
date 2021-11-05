@@ -1,10 +1,11 @@
 # Description: An OpenType text shaping engine
-# URL:         https://www.freedesktop.org/wiki/Software/HarfBuzz
+# URL: https://www.freedesktop.org/wiki/Software/HarfBuzz
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: cairo-32 harfbuzz
+# Optional: icu-32
 
 name=harfbuzz-32
-version=3.0.0
+version=3.1.0
 release=1
 source=(https://github.com/harfbuzz/harfbuzz/archive/$version/${name%-*}-$version.tar.gz)
 
@@ -15,7 +16,7 @@ build() {
 		-D benchmark=disabled \
 		-D docs=disabled \
 		-D graphite=disabled \
-		-D icu=disabled \
+		-D icu=$(prt-get isinst icu-32 >/dev/null && echo enabled || echo disabled) \
 		-D introspection=disabled
 
 	meson compile -C build -j ${JOBS:-1}
