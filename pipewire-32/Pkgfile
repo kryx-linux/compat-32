@@ -14,8 +14,8 @@ build() {
 	prt-get isinst avahi-32 && PKGMK_PW+=' -D avahi=enabled'
 	prt-get isinst dbus-32 && PKGMK_PW+=' -D dbus=enabled'
 	prt-get isinst jack-32 && PKGMK_PW+=' -D jack=enabled -D pipewire-jack=enabled'
-	prt-get isinst libsdl2-32 && PKGMK_PW+=' -D libsdl2=enabled'
-	prt-get isinst libsndfile-32 && PKGMK_PW+=' -D libsndfile=enabled'
+	prt-get isinst libsdl2-32 && PKGMK_PW+=' -D sdl2=enabled'
+	prt-get isinst libsndfile-32 && PKGMK_PW+=' -D sndfile=enabled'
 	prt-get isinst pulseaudio-32 && PKGMK_PW+=' -D libpulse=enabled'
 	prt-get isinst vulkan-loader-32 && PKGMK_PW+=' -D vulkan=enabled'
 
