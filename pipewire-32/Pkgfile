@@ -13,7 +13,9 @@ build() {
 	prt-get isinst alsa-lib-32 && PKGMK_PW+=' -D alsa=enabled -D pipewire-alsa=enabled'
 	prt-get isinst avahi-32 && PKGMK_PW+=' -D avahi=enabled'
 	prt-get isinst dbus-32 && PKGMK_PW+=' -D dbus=enabled'
-	prt-get isinst jack-32 && PKGMK_PW+=' -D jack=enabled -D pipewire-jack=enabled'
+	## there is no jack-32 port, turn it off if jack is installed to prevent build errors
+	#prt-get isinst jack-32 && PKGMK_PW+=' -D jack=enabled'
+	prt-get isinst jack && PKGMK_PW+=' -D jack=disabled'
 	prt-get isinst libsdl2-32 && PKGMK_PW+=' -D sdl2=enabled'
 	prt-get isinst libsndfile-32 && PKGMK_PW+=' -D sndfile=enabled'
 	prt-get isinst pulseaudio-32 && PKGMK_PW+=' -D libpulse=enabled'
