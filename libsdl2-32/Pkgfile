@@ -2,21 +2,43 @@
 # URL: https://www.libsdl.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: alsa-lib-32 libsdl2 mesa-32
+# Optional: ninja pipewire-32 pulseaudio-32 wayland-protocols-32
 
 name=libsdl2-32
 version=2.0.16
-release=1
+release=2
 source=(https://www.libsdl.org/release/SDL2-$version.tar.gz)
 
 build() {
-	cd SDL2-$version
+	prt-get isinst alsa-lib-32 && PKGMK_SDL2+=' -D ALSA=ON'
+	prt-get isinst ninja && PKGMK_SDL2+=' -G Ninja'
+	prt-get isinst jack && PKGMK_SDL2+=' -D JACK_SHARED=OFF'
+	#prt-get isinst jack-32 && PKGMK_SDL2+=' -D JACK_SHARED=ON'
+	prt-get isinst pipewire-32 && PKGMK_SDL2+=' -D PIPEWIRE_SHARED=ON'
+	prt-get isinst pulseaudio-32 && PKGMK_SDL2+=' -D PULSEAUDIO_SHARED=ON'
+	prt-get isinst wayland-protocols-32 && PKGMK_SDL2+=' -D VIDEO_WAYLAND=ON'
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32
+	sed -i -e 's|lib/cmake|lib32/cmake|' \
+		-e '/pkg_search_module.*ibus-1.0/d' SDL2-$version/CMakeLists.txt
 
-	make
-	make DESTDIR=$PKG install
+	prt-get isinst ccache  && PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+
+	## Target "SDL2" links to item " -m32" which has leading or trailing
+	## whitespace.  This is now an error according to policy CMP0004.
+	LDFLAGS='-m32'
+
+	cmake -S SDL2-$version -B build $PKGMK_SDL2 \
+		-D CMAKE_INSTALL_PREFIX=/usr \
+		-D CMAKE_INSTALL_LIBDIR=lib \
+		-D LIB_SUFFIX=32 \
+		-D CMAKE_BUILD_TYPE=Release \
+		-D CLOCK_GETTIME=ON \
+		-D RPATH=OFF \
+		-D SDL_STATIC=OFF \
+		-D SDL_DLOPEN=ON \
+		-Wno-dev
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
 
 	rm -r $PKG/usr/{bin,include,share}
 }
