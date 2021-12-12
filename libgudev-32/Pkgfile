@@ -12,8 +12,7 @@ build() {
 	meson build ${name%-*}-$version \
 		--prefix=/usr \
 		--libdir=lib32 \
-		--buildtype=plain \
-		-D umockdev=disabled
+		--buildtype=plain
 
 	ninja -C build -j ${JOBS:-1}
 	DESTDIR=$PKG ninja -C build install
