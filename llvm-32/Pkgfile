@@ -5,7 +5,7 @@
 
 name=llvm-32
 version=13.0.0
-release=1
+release=2
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz)
 
 build() {
@@ -17,7 +17,8 @@ build() {
 		-D CMAKE_BUILD_TYPE=Release \
 		-D CMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
 		-D CMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
-		-D LLVM_TARGETS_TO_BUILD='X86;AMDGPU;BPF;NVPTX' \
+		-D LLVM_TARGETS_TO_BUILD='X86;AMDGPU;BPF;NVPTX;WebAssembly' \
+		-D LLVM_BINUTILS_INCDIR=/usr/include \
 		-D LLVM_BUILD_LLVM_DYLIB=ON \
 		-D LLVM_LINK_LLVM_DYLIB=ON \
 		-D LLVM_PARALLEL_COMPILE_JOBS="${JOBS:-1}" \
@@ -28,7 +29,10 @@ build() {
 		-D LLVM_ENABLE_RTTI=ON \
 		-D LLVM_ENABLE_OCAMLDOC=OFF \
 		-D LLVM_INSTALL_UTILS=ON \
+		-D LLVM_ENABLE_LIBCXX=OFF \
+		-D LLVM_ENABLE_LLD="$(prt-get isinst lld >/dev/null && echo ON || echo OFF)" \
 		-D LLVM_DEFAULT_TARGET_TRIPLE="i686-pc-linux-gnu" \
+		-D LLVM_OPTIMIZED_TABLEGEN=ON \
 		-Wno-dev
 
 	cmake --build build

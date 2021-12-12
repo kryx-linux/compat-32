@@ -6,6 +6,7 @@ drwxr-xr-x	root/root	usr/include/llvm/
 drwxr-xr-x	root/root	usr/include/llvm/Config/
 -rw-r--r--	root/root	usr/include/llvm/Config/llvm-config-32.h
 drwxr-xr-x	root/root	usr/lib32/
+-rwxr-xr-x	root/root	usr/lib32/LLVMgold.so
 drwxr-xr-x	root/root	usr/lib32/cmake/
 drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/AddLLVM.cmake
@@ -130,6 +131,12 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-13.so
 -rw-r--r--	root/root	usr/lib32/libLLVMTextAPI.a
 -rw-r--r--	root/root	usr/lib32/libLLVMTransformUtils.a
 -rw-r--r--	root/root	usr/lib32/libLLVMVectorize.a
+-rw-r--r--	root/root	usr/lib32/libLLVMWebAssemblyAsmParser.a
+-rw-r--r--	root/root	usr/lib32/libLLVMWebAssemblyCodeGen.a
+-rw-r--r--	root/root	usr/lib32/libLLVMWebAssemblyDesc.a
+-rw-r--r--	root/root	usr/lib32/libLLVMWebAssemblyDisassembler.a
+-rw-r--r--	root/root	usr/lib32/libLLVMWebAssemblyInfo.a
+-rw-r--r--	root/root	usr/lib32/libLLVMWebAssemblyUtils.a
 -rw-r--r--	root/root	usr/lib32/libLLVMWindowsManifest.a
 -rw-r--r--	root/root	usr/lib32/libLLVMX86AsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMX86CodeGen.a
