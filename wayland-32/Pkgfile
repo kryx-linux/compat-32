@@ -4,21 +4,20 @@
 # Depends on: expat-32 libffi-32 libxml2-32 wayland
 
 name=wayland-32
-version=1.19.0
+version=1.20.0
 release=1
 source=(https://wayland.freedesktop.org/releases/${name%-*}-$version.tar.xz)
 
 build() {
-	cd ${name%-*}-$version
-
-	./configure \
+	meson setup ${name%-*}-$version build \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
-		--disable-documentation
-
-	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-	make
-	make DESTDIR=$PKG install
-
+		--buildtype=plain \
+		--wrap-mode nodownload \
+		-D b_lto=true \
+		-D b_pie=true \
+		-D documentation=false
+	meson compile -C build
+	DESTDIR=$PKG meson install -C build
 	rm -r $PKG/usr/{bin,include,share}
 }
