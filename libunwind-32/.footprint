@@ -14,6 +14,11 @@ lrwxrwxrwx	root/root	usr/lib32/libunwind-generic.so -> libunwind-x86.so
 lrwxrwxrwx	root/root	usr/lib32/libunwind-ptrace.so -> libunwind-ptrace.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib32/libunwind-ptrace.so.0 -> libunwind-ptrace.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib32/libunwind-ptrace.so.0.0.0
+-rw-r--r--	root/root	usr/lib32/libunwind-setjmp.a
+-rwxr-xr-x	root/root	usr/lib32/libunwind-setjmp.la
+lrwxrwxrwx	root/root	usr/lib32/libunwind-setjmp.so -> libunwind-setjmp.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib32/libunwind-setjmp.so.0 -> libunwind-setjmp.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib32/libunwind-setjmp.so.0.0.0
 -rw-r--r--	root/root	usr/lib32/libunwind-x86.a
 -rwxr-xr-x	root/root	usr/lib32/libunwind-x86.la
 lrwxrwxrwx	root/root	usr/lib32/libunwind-x86.so -> libunwind-x86.so.8.0.1
@@ -28,4 +33,5 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/libunwind-coredump.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/libunwind-generic.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/libunwind-ptrace.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/libunwind-setjmp.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/libunwind.pc
