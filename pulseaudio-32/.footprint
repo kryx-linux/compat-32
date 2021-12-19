@@ -20,7 +20,6 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 drwxr-xr-x	root/root	usr/lib32/pulse-15.0/
 drwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/libalsa-util.so
--rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/libavahi-wrap.so
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/libcli.so
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/liboss-util.so
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/libprotocol-cli.so
@@ -68,7 +67,6 @@ drwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-pipe-sink.so
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-pipe-source.so
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-position-event-sounds.so
--rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-raop-discover.so
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-raop-sink.so
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-remap-sink.so
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-remap-source.so
@@ -94,12 +92,6 @@ drwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-virtual-sink.so
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-virtual-source.so
 -rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-volume-restore.so
--rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-x11-bell.so
--rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-x11-cork-request.so
--rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-x11-publish.so
--rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-x11-xsmp.so
--rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-zeroconf-discover.so
--rwxr-xr-x	root/root	usr/lib32/pulse-15.0/modules/module-zeroconf-publish.so
 drwxr-xr-x	root/root	usr/lib32/pulseaudio/
 -rwxr-xr-x	root/root	usr/lib32/pulseaudio/libpulsecommon-15.0.so
 -rwxr-xr-x	root/root	usr/lib32/pulseaudio/libpulsecore-15.0.so
