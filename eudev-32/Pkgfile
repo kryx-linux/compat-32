@@ -1,12 +1,12 @@
 # Description: Userspace device management daemon
-# URL: https://wiki.gentoo.org/wiki/Project:Eudev
+# URL: https://github.com/eudev-project/eudev
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: eudev kmod-32
 
 name=eudev-32
 version=3.2.11
 release=1
-source=(https://dev.gentoo.org/~blueness/eudev/eudev-$version.tar.gz)
+source=(https://github.com/eudev-project/eudev/releases/download/v$version/eudev-$version.tar.gz)
 
 build() {
     cd eudev-$version
