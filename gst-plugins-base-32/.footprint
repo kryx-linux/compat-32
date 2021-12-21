@@ -19,7 +19,6 @@ drwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/include/gst/gl/
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstlibvisual.so
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstogg.so
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstopengl.so
--rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstopus.so
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstoverlaycomposition.so
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstpango.so
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstpbtypes.so
@@ -79,6 +78,7 @@ drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-audio-1.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-fft-1.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-gl-1.0.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-gl-egl-1.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-gl-prototypes-1.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-gl-x11-1.0.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gstreamer-pbutils-1.0.pc
