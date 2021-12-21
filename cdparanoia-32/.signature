@@ -1,7 +1,12 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXW5dNxANj0kai3n88A4jldkOeObhbOmEmIA5kDi1/h8GoT4vp9LADGYNuiW2BJIn0wlk+KdqQMFwL3CaRY1B/wo=
-SHA256 (Pkgfile) = 4a3e6cb2d67b655a1ed08ff09546426aabcff6c0b7fd04491845337256f84277
-SHA256 (.footprint) = c6b28ac040cba3e244417b0e477c037b9a077586edf2509fffd25f91deb9b7a5
+RWSwxGo/zH7eXVidHZmZiRgZLYvkZcdeUTUVVZgZFLlnxi63SRX4m/Chh08rFYAkUnPDJB9nhPEgomA7hJwJ7l+dBnMUq4cimgg=
+SHA256 (Pkgfile) = 1004fd79b809ea4b2e8894246f0bee435039d318e20bba3fc5dbda9eeb38703b
+SHA256 (.footprint) = ec2dacfb229d2e3580d3dc27f399aa41e47962d7cca61c17ba41ef502c1c3102
 SHA256 (cdparanoia-III-10.2.src.tgz) = 005db45ef4ee017f5c32ec124f913a0546e77014266c6a1c50df902a55fe64df
-SHA256 (cdparanoia-10.2-gcc43.patch) = d055d86056809dee6e861af77d766fb0f17084bb19e44d9d99be8a0c11892a18
-SHA256 (cdparanoia-10.2-ldflags.patch) = 11db67bf65f4cb1e6bb33e5166ef081ac0e57bed9703149135a5c83a55481f9f
+SHA256 (cdparanoia-10.2-463009.patch) = bb7d0256b57b2ae630bfb9f78be7bda6e1abaed809f0238112b850fb9ca3e7ef
+SHA256 (cdparanoia-10.2-endian.patch) = da764568a0466cd856c8e4dac09be2be4e7a2104125db4b60de873217a0dece8
+SHA256 (cdparanoia-10.2-install.patch) = 807c72330ebde3fc0c26a10ed7236870f49ae11df75dd8bd2be9c593e774806a
+SHA256 (cdparanoia-10.2-format-security.patch) = a6f80215c801190dfcade6751d12235a1878ab6b5762260086e7f0ce1296bef4
+SHA256 (cdparanoia-use-proper-gnu-config-files.patch) = dc4b2540552f53a563c1f2ba6e279c70049fdd13e066d87e126370e54148e30d
+SHA256 (cdparanoia-10.2-ldflags.patch) = 9b352a93ebedc7c523c76213756f98139ea3912162ee719ab0c5cc6648f94fe2
+SHA256 (cdparanoia-10.2-add-pkgconfig.patch) = f8e09fd0a05723ae8f16ab186394d807d5ec61dfcdcf815accd7aae755182dee
