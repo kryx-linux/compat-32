@@ -2,8 +2,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
 -rw-r--r--	root/root	usr/lib32/libgpg-error.a
 -rwxr-xr-x	root/root	usr/lib32/libgpg-error.la
--rwxr-xr-x	root/root	usr/lib32/libgpg-error.so.0.32.1
-lrwxrwxrwx	root/root	usr/lib32/libgpg-error.so.0 -> libgpg-error.so.0.32.1
-lrwxrwxrwx	root/root	usr/lib32/libgpg-error.so -> libgpg-error.so.0.32.1
+lrwxrwxrwx	root/root	usr/lib32/libgpg-error.so -> libgpg-error.so.0.32.2
+lrwxrwxrwx	root/root	usr/lib32/libgpg-error.so.0 -> libgpg-error.so.0.32.2
+-rwxr-xr-x	root/root	usr/lib32/libgpg-error.so.0.32.2
 drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/gpg-error.pc
