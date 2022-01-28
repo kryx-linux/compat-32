@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTwxERrvyOvj7lajTI6Hw5dGMyPGw0hfC8tiyEGW4FkSi7oyl6ZOAAGnD97fjyixdV7yn3HRXsqw21TUkT2hIgU=
-SHA256 (Pkgfile) = 570f9721b1eab1c5fcd701974b59819c8f46e49fc3b43542e9da7155d8ab279f
-SHA256 (.footprint) = 22c4842d31160214c2bbeaa94a24792908160c79f289bd37d041eb0286e49c4a
-SHA256 (libwebp-1.2.1.tar.gz) = 808b98d2f5b84e9b27fdef6c5372dac769c3bda4502febbfa5031bd3c4d7d018
+RWSwxGo/zH7eXXP6s7pwCzxl2964jeY6GN8uxqpur7OOiCXEyAAf/WQ/ywOXZgX3W/ig0/qqzGAoEvT+9HRJVUjFMyXrFXqx8gs=
+SHA256 (Pkgfile) = f29da0d7b62624e7854e2afa9fa1bf125d0c9945087f49609f48d841ab9d0891
+SHA256 (.footprint) = 72a6ff7f9e0c3798832e2adc7e128eed3487534c943ba47ac00a6b73f4be4564
+SHA256 (libwebp-1.2.2.tar.gz) = 7656532f837af5f4cec3ff6bafe552c044dc39bf453587bd5b77450802f4aee6
