@@ -4,13 +4,11 @@
 # Depends on: freeglut glu-32 xorg-libxi-32
 
 name=freeglut-32
-version=3.2.1
-release=2
-source=(https://downloads.sourceforge.net/project/freeglut/freeglut/$version/freeglut-$version.tar.gz
-	gcc10.patch)
+version=3.2.2
+release=1
+source=(https://downloads.sourceforge.net/project/freeglut/freeglut/$version/freeglut-$version.tar.gz)
 
 build() {
-	patch -d freeglut-$version -p1 -i $SRC/gcc10.patch
 
 	cmake -Sfreeglut-$version -Bbuild -GNinja \
 		-DCMAKE_INSTALL_PREFIX=/usr \
