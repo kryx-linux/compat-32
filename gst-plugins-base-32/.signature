@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXcqZGjlfZd9HDaIuDwMgyxGr83aStFBRd4iblm5pK0B87cNj6FJq6OTkodraQ9HLc+9q+cWzmrrRB+rXbIVEwA4=
-SHA256 (Pkgfile) = cc8de49af8501115fd8d1e4c572c67c0d5ca7e1dbbb2abdaebd209d243b4b68e
-SHA256 (.footprint) = 76559c4d11b7369b14a9aedef31ed3b5ed276fd581908fa7c1561f219158aaea
-SHA256 (gst-plugins-base-1.18.5.tar.xz) = 960b7af4585700db0fdd5b843554e11e2564fed9e061f591fae88a7be6446fa3
-SHA256 (qt5-option.patch) = 39a60664a64b4566b5fc961a1c16752f8771bfdabba93e988fd9d3d2e5de56e0
+RWSwxGo/zH7eXcDmFoC2emEF97OZSq4kQ+aq8AtysIXjVcMjvpU7ExbBUIiTshkga2fSK5PQxWWZepHU8S+MlM68Oqn3m4DfBwM=
+SHA256 (Pkgfile) = dacc0832ea963e55806bff390866417cea7aac21a1e5ecf6854b7ddd45216e26
+SHA256 (.footprint) = 1af26878dac740ccbac6026d2865e22c36a2a9b612bce529b7ce40d1a3bfdf30
+SHA256 (gst-plugins-base-1.20.0.tar.xz) = 4cb66fccf730b1037e6533862c2128990912a6db4e5bbd14e0ef914450eb4c7c

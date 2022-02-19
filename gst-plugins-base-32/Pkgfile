@@ -5,10 +5,9 @@
 # Optional: cdparanoia-32
 
 name=gst-plugins-base-32
-version=1.18.5
+version=1.20.0
 release=1
-source=(https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-$version.tar.xz
-	qt5-option.patch)
+source=(https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-$version.tar.xz)
 
 build() {
 	# decide accordingly to what mesa builds with
@@ -21,7 +20,6 @@ build() {
 		PKGMK_GST_GLAPI+=',opengl' \
 		PKGMK_GST_WINDOW+=',x11'
 
-	patch -Np1 -d gst-plugins-base-$version -i $SRC/qt5-option.patch
 	export PKG_CONFIG_PATH='/usr/lib32/pkgconfig:/usr/share/pkgconfig'
 
 	meson setup build gst-plugins-base-$version \
