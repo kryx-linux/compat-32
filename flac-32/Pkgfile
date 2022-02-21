@@ -4,7 +4,7 @@
 # Depends on: libogg-32
 
 name=flac-32
-version=1.3.3
+version=1.3.4
 release=1
 source=(https://downloads.xiph.org/releases/flac/flac-$version.tar.xz)
 
@@ -19,7 +19,7 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	
+
 	rm -r $PKG/usr/{bin,include,share/{aclocal,doc,man}}
 	rmdir $PKG/usr/share
 }
