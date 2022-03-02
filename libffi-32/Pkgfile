@@ -4,9 +4,9 @@
 # Depends on: libffi
 
 name=libffi-32
-version=3.3
+version=3.4.2
 release=1
-source=(https://sourceware.org/pub/${name%-*}/${name%-*}-$version.tar.gz)
+source=(https://github.com/libffi/libffi/releases/download/v$version/libffi-$version.tar.gz)
 
 build() {
 	cd ${name%-*}-$version
