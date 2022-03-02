@@ -16,9 +16,9 @@ build() {
 		--libdir=/usr/lib32 \
 		--disable-nls \
 		--disable-asciidoc \
-		--disable-{login,su,sulogin,nologin,runuser} \
+		--disable-{login,su,sulogin,nologin,runuser,raw} \
 		--disable-chfn-chsh \
-		--enable-{write,raw,kill} \
+		--enable-{write,kill} \
 		--without-python
 
 	make
