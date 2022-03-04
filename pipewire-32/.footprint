@@ -4,19 +4,19 @@ drwxr-xr-x	root/root	usr/lib32/alsa-lib/
 -rwxr-xr-x	root/root	usr/lib32/alsa-lib/libasound_module_ctl_pipewire.so
 -rwxr-xr-x	root/root	usr/lib32/alsa-lib/libasound_module_pcm_pipewire.so
 lrwxrwxrwx	root/root	usr/lib32/libpipewire-0.3.so -> libpipewire-0.3.so.0
-lrwxrwxrwx	root/root	usr/lib32/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.347.0
--rwxr-xr-x	root/root	usr/lib32/libpipewire-0.3.so.0.347.0
+lrwxrwxrwx	root/root	usr/lib32/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.348.0
+-rwxr-xr-x	root/root	usr/lib32/libpipewire-0.3.so.0.348.0
 drwxr-xr-x	root/root	usr/lib32/pipewire-0.3/
 drwxr-xr-x	root/root	usr/lib32/pipewire-0.3/jack/
 lrwxrwxrwx	root/root	usr/lib32/pipewire-0.3/jack/libjack.so -> libjack.so.0
-lrwxrwxrwx	root/root	usr/lib32/pipewire-0.3/jack/libjack.so.0 -> libjack.so.0.347.0
--rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/jack/libjack.so.0.347.0
+lrwxrwxrwx	root/root	usr/lib32/pipewire-0.3/jack/libjack.so.0 -> libjack.so.0.348.0
+-rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/jack/libjack.so.0.348.0
 lrwxrwxrwx	root/root	usr/lib32/pipewire-0.3/jack/libjacknet.so -> libjacknet.so.0
-lrwxrwxrwx	root/root	usr/lib32/pipewire-0.3/jack/libjacknet.so.0 -> libjacknet.so.0.347.0
--rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/jack/libjacknet.so.0.347.0
+lrwxrwxrwx	root/root	usr/lib32/pipewire-0.3/jack/libjacknet.so.0 -> libjacknet.so.0.348.0
+-rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/jack/libjacknet.so.0.348.0
 lrwxrwxrwx	root/root	usr/lib32/pipewire-0.3/jack/libjackserver.so -> libjackserver.so.0
-lrwxrwxrwx	root/root	usr/lib32/pipewire-0.3/jack/libjackserver.so.0 -> libjackserver.so.0.347.0
--rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/jack/libjackserver.so.0.347.0
+lrwxrwxrwx	root/root	usr/lib32/pipewire-0.3/jack/libjackserver.so.0 -> libjackserver.so.0.348.0
+-rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/jack/libjackserver.so.0.348.0
 -rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/libpipewire-module-access.so
 -rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/libpipewire-module-adapter.so
 -rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/libpipewire-module-client-device.so
