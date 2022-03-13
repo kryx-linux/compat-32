@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQBBo9PFFYNNdnE7HoBJOm3yQwxuQOWdT+KEn7H8g5tTFK1NohI+cu42g63MB+i0+cKarVaKr1vlX3w/OL2gCQ8=
-SHA256 (Pkgfile) = 45656ab51c8fd572c4d639bc9bfe35257d4e3ea4d6523207607d45826bdb33ce
-SHA256 (.footprint) = 2e3fc6036033dd10828ef777fdebf6c43de4a6778bdddf4d75a8c9682588b8ba
-SHA256 (dbus-1.12.22.tar.gz) = 8d25785c798ec4f892e6f9d177fb0ceeb8b29867b119798f9d5228561d3ad474
+RWSwxGo/zH7eXbCIa3u4Wzl3Qvg+OF3gYH1hTHMe1mMfoFb+K7oobLHKu8mZPI4P9W3IRD5vUmz4+r5XrGRlV7WjsJR/ysmwOQY=
+SHA256 (Pkgfile) = 75c1aa01de07b07b638e2991283b5e484f2fb74450336d9fb82338e38bdd455e
+SHA256 (.footprint) = db07afcc0141fab1dc3788203d1d040a971175dac58920d67daecef40678fa1a
+SHA256 (dbus-1.14.0.tar.xz) = ccd7cce37596e0a19558fd6648d1272ab43f011d80c8635aea8fd0bad58aebd4
