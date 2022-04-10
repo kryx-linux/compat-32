@@ -1,7 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXf9QLUtPIc2hnYv+NI3w+JU3MLGyyUdMe+l5cx/rlwVf0Odgj+uhPZ0oStda36DeKM7ce6xciY6I3rpKJU7Lfwk=
-SHA256 (Pkgfile) = 752ca883f3db5ab50f1abd7e7d7b5122bb2ee7b48e2053e247c47e1f1e0483cb
-SHA256 (.footprint) = 0041541eafb98048ad71581b908628e22362bfb0dc1a18f4fb18ac9c0729cdfa
-SHA256 (cairo-1.17.4.tar.xz) = 74b24c1ed436bbe87499179a3b27c43f4143b8676d8ad237a6fa787401959705
-SHA256 (xlib-xcb.diff) = 70cd3783381bf73ea7fccd5c2db43956b10865a9c54d5edd251dbcdb9b595a43
-SHA256 (fix-library-versioning.diff) = ba678534bbfb2ae8d2397b015f77d30719efee7bb7992dbd2c8e5f2fa5fd8efc
+RWSwxGo/zH7eXQJNDF4eVM42QBPTo/d5yW4/QYaP7tQ+HyF6bH4hnYJZiT0srRpsS4zkYXGUOUtQ2sXI+CZf+qis//TIRs+zIAM=
+SHA256 (Pkgfile) = 80db93988eee187b1219a814012a84bcaf43fef9806dcff265128ba32deed313
+SHA256 (.footprint) = 8eb5a581c18bc94e08f1a27059f3b4581d5c200ec363fb7180076783cca73130
+SHA256 (cairo-1.17.6.tar.bz2) = 90496d135c9ef7612c98f8ee358390cdec0825534573778a896ea021155599d2
+SHA256 (fix-cairo-sphinx.patch) = 775b9ef5d265e8f20860268dca6e520a411402a6c38cb6dc95fa405f119b5d54

@@ -4,14 +4,13 @@
 # Depends on: cairo fontconfig-32 glib-32 xorg-libpixman-32 xorg-libxext-32 xorg-libxrender-32 xorg-xcb-util-32
 
 name=cairo-32
-version=1.17.4
+version=1.17.6
 release=1
-source=(https://cairographics.org/snapshots/${name%-*}-$version.tar.xz
-	xlib-xcb.diff fix-library-versioning.diff)
+source=(https://gitlab.freedesktop.org/cairo/cairo/-/archive/$version/cairo-$version.tar.bz2
+	fix-cairo-sphinx.patch)
 
 build() {
-	patch -p1 -d ${name%-*}-$version -i $SRC/fix-library-versioning.diff
-	patch -p1 -d ${name%-*}-$version -i $SRC/xlib-xcb.diff
+	patch -d cairo-$version -p1 -i $SRC/fix-cairo-sphinx.patch
 
 	meson setup build ${name%-*}-$version \
 		--prefix=/usr \
