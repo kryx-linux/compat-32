@@ -4,9 +4,9 @@
 # Depends on: glib-32 graphene
 
 name=graphene-32
-version=1.10.6
+version=1.10.8
 release=1
-source=(https://github.com/ebassi/graphene/releases/download/$version/graphene-$version.tar.xz)
+source=(https://github.com/ebassi/graphene/archive/$version/graphene-$version.tar.gz)
 
 build() {
 	meson setup build graphene-$version \

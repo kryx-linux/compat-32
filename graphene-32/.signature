@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXYqcDccH/75NoUiKYZhDVozWKzWVe5zrjgZoGIIB2ZYFhmeoUm9E9rwssrfnTImRq7+BcGY4VIxPvXwiDfrP/A8=
-SHA256 (Pkgfile) = cea32b5f4defa77944fe247a5df8742df9c376a11d056f72b27600edcf076edf
-SHA256 (.footprint) = 1504ef7488b92957606dcf2b1aec52a7559badc8f1860e59751cb134e4d0a241
-SHA256 (graphene-1.10.6.tar.xz) = 80ae57723e4608e6875626a88aaa6f56dd25df75024bd16e9d77e718c3560b25
+RWSwxGo/zH7eXZgjvYRhidfnfuPY+yq6SmmZDtKMDeKHI8ID12QfMCHYYviGu7EThdfvBcYrGAWAgsjK/cfI/mT3JEppWpi0wg0=
+SHA256 (Pkgfile) = bccab6cdbf2c2e492ae139337e2ab6ac946249a8571322c37a487ca4f7106eaa
+SHA256 (.footprint) = a61af5cfcd0f01933a885395ffbd4aa706d6e7dc1eb07178f97cb846b0dfd722
+SHA256 (graphene-1.10.8.tar.gz) = 922dc109d2dc5dc56617a29bd716c79dd84db31721a8493a13a5f79109a4a4ed
