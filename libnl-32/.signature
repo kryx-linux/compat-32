@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXfcE9rhp5DYQBTPYvIHc3VYuLmjwpDtHsu/7kLbHqBZi7OcY2+ltcEUNvhqhLVVOW8ip3xhrDupHjVGAqJcCZQI=
-SHA256 (Pkgfile) = 9a44f032b263a0bce5a229221bae6eb690ca096101bd8f936c81fede99456108
+RWSwxGo/zH7eXTWBRvOQLvydmEqRAI9Kz9wsIc+3qZ4AsAQ3h3XTgpU/sKIJczpNVrUPn7x58EF/uedMR4hEjrJI/4qsgX1RjQ4=
+SHA256 (Pkgfile) = 0c8c8a0db9a43809083fb40784dfe62f3ea1ae02fbddb68ec02e5a41938182f1
 SHA256 (.footprint) = c182b687ed8c7f3626a5ddde74d672eddb9666f5c83e33f85744a3f6c3e560ea
-SHA256 (libnl-3.5.0.tar.gz) = 352133ec9545da76f77e70ccb48c9d7e5324d67f6474744647a7ed382b5e05fa
+SHA256 (libnl-3.6.0.tar.gz) = 532155fd011e5a805bd67121b87a01c757e2bb24112ac17e69cb86013b970009
