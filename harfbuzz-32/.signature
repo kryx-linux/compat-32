@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXR+XnRGJOeGY53+zVGcB1JKTyxBQBllwAtSy+y8IcbU/T0cp2teg8gAXGIDU2FNLrYCC8o9iJMZbWQ7s9Dt8RAs=
-SHA256 (Pkgfile) = b581b0105c6854da547f579f939cffff61aa90d5aa94b2f030f9713da3104da8
-SHA256 (.footprint) = acdc4ee398aa2d5fc903d606b4ddac35b31dbe65eca569f42cdd1be1a994cfb5
-SHA256 (harfbuzz-4.2.0.tar.xz) = f2200f177768bdc21445aa09703326f3bbe8114ac083d081fe1a79d305c7ae73
+RWSwxGo/zH7eXd5sVwF1ITDYVvQbny5sPmDaMfhFHavmGAcRMmb2QxYdRlafonzMEU/xJA2j0gsZuRiSyPUcuV6eJeOLFfREpwI=
+SHA256 (Pkgfile) = 2c92830982b60859dc246e1de5ed60e798be9dce9c122133c292616d591cb612
+SHA256 (.footprint) = 71f05e9cdb8489906db7c33ea09b03ba3ee05cccb597d5ad3b6fd67231dbb59b
+SHA256 (harfbuzz-4.3.0.tar.xz) = a49628f4c4c8e6d8df95ef44935a93446cf2e46366915b0e3ca30df21fffb530
