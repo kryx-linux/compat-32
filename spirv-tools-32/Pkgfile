@@ -4,14 +4,11 @@
 # Depends on: spirv-tools
 
 name=spirv-tools-32
-version=2022.1
-_spirv_headers=b42ba6d92faf6b4938e6f22ddd186dbdacc98d78
+version=2022.2
 release=1
-source=(https://github.com/KhronosGroup/SPIRV-Tools/archive/v$version/SPIRV-Tools-v$version.tar.gz
-	https://github.com/KhronosGroup/SPIRV-Headers/archive/$_spirv_headers/SPIRV-Headers-$_spirv_headers.tar.gz)
+source=(https://github.com/KhronosGroup/SPIRV-Tools/archive/v$version/SPIRV-Tools-v$version.tar.gz)
 
 build() {
-	mv SPIRV-Headers-$_spirv_headers SPIRV-Headers
 	prt-get isinst ninja && PKGMK_SPIRV_TOOLS+=' -G Ninja'
 
 	PKGMK_SPIRV_TOOLS+=" \
@@ -22,7 +19,6 @@ build() {
 -D SPIRV_WERROR=OFF \
 -D SPIRV-Headers_SOURCE_DIR=/usr \
 -D PYTHON_EXECUTABLE=/usr/bin/python3 \
--D SPIRV-Headers_SOURCE_DIR="${SRC}"/SPIRV-Headers \
 -Wno-dev"
 
 	cmake -B build-static $PKGMK_SPIRV_TOOLS \
