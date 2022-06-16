@@ -1,10 +1,10 @@
 # Description: Lightweight Directory Access Protocol (LDAP) Toolkit
-# URL:         https://www.openldap.org/
-# Maintainer:  CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on:  openldap openssl-32
+# URL: https://www.openldap.org/
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: openldap openssl-32
 
 name=openldap-32
-version=2.6.1
+version=2.6.2
 release=1
 source=(https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-$version.tgz)
 
