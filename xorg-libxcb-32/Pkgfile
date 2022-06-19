@@ -1,7 +1,7 @@
 # Description: X11 client-side library
 # URL: https://xcb.freedesktop.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libinput-32 libpthread-stubs-32 libxslt-32 xorg-libxau-32 xorg-libxcb xorg-libxdmcp-32 xorg-xcb-proto-32
+# Depends on: libinput-32 libpthread-stubs-32 libxslt-32 xorg-libxau-32 xorg-libxcb xorg-libxdmcp-32 xorg-xcb-proto
 
 name=xorg-libxcb-32
 version=1.15
@@ -11,6 +11,7 @@ source=(https://www.x.org/releases/individual/xcb/libxcb-$version.tar.xz)
 build() {
 	cd libxcb-$version
 
+	export PKG_CONFIG_LIBDIR='/usr/lib32/pkgconfig:/usr/share/pkgconfig'
 	PYTHON=/usr/bin/python3 \
 	./configure \
 		--prefix=/usr \
