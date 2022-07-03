@@ -4,7 +4,7 @@
 # Depends on: expat-32 libffi-32 libxml2-32 wayland
 
 name=wayland-32
-version=1.20.0
+version=1.21.0
 release=1
 source=(https://wayland.freedesktop.org/releases/${name%-*}-$version.tar.xz)
 
