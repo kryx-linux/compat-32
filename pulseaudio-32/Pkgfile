@@ -5,7 +5,7 @@
 # Optional: avahi-32 bluez-32 fftw-32 glib-32 sbc-32 gst-plugins-base-32 xorg-libice xorg-libsm-32 xorg-libxtst-32
 
 name=pulseaudio-32
-version=16.0
+version=16.1
 release=1
 source=(http://freedesktop.org/software/pulseaudio/releases/pulseaudio-$version.tar.xz)
 
