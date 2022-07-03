@@ -1,10 +1,10 @@
 # Description: Kernel module utilities and library
-# URL:         https://git.kernel.org/?p=utils/kernel/kmod/kmod.git
+# URL: https://git.kernel.org/?p=utils/kernel/kmod/kmod.git
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Sepends on: kmod
 
 name=kmod-32
-version=29
+version=30
 release=1
 source=(https://www.kernel.org/pub/linux/utils/kernel/${name%-*}/${name%-*}-$version.tar.xz)
 
