@@ -4,7 +4,7 @@
 # Depends on: alsa-lib-32 mpg123
 
 name=mpg123-32
-version=1.30.0
+version=1.30.2
 release=1
 source=(https://www.mpg123.de/download/${name%-*}-$version.tar.bz2)
 
