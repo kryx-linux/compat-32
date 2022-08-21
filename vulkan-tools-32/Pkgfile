@@ -12,6 +12,7 @@ source=(https://github.com/KhronosGroup/Vulkan-Tools/archive/sdk-$version/Vulkan
 build() {
 	prt-get isinst ninja && PKGMK_VULKAN_TOOLS+=' -G Ninja'
 	prt-get isinst wayland-32 || PKGMK_VULKAN_TOOLS+=' -D BUILD_WSI_WAYLAND_SUPPORT=OFF'
+	prt-get isinst wayland-32 && export PKG_CONFIG_LIBDIR=/usr/lib32/pkgconfig:/usr/share/pkgconfig
 
 	export ASFLAGS='--32'
 
