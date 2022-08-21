@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXYq7MuGSPRLPjMMODovMkR+7nax1Z3HICrp65anfsppmnFfkkqfCjpzdl9Y3GWpft1wIqpQbGd1cGdXYnhc/Ugo=
-SHA256 (Pkgfile) = ef43ed73727cbd2c9876901f7694451c6054dce8603cb60be522e605976cf761
+RWSwxGo/zH7eXa6PNTSYkEoNu0Bsr8e1ZDMuzSMwIFf+aTXNUvrX/DcEcOvD3fxVteil0+hLdd3PiqDf7Jg2Ecj50vUgwvidAQg=
+SHA256 (Pkgfile) = a769cb8d14c275dc23669ceb7b89d8747d3ca3590091a2cb34a9717502e3c241
 SHA256 (.footprint) = e53cde3e68770a90b588acd523c06d02cedc1fd2f30fe15dd1ef2b559952a606
-SHA256 (nspr-4.34.tar.gz) = beef011cd15d8f40794984d17014366513cec5719bf1a78f5e8a3e3a1cebf99c
+SHA256 (nspr-4.34.1.tar.gz) = c5b8354c48b632b8f4c1970628146c0e0c0ca8f32c7315d7d5736c002e03774f
 SHA256 (nspr.pc.in) = 57a655d034221760ce10278d2050bbe040b1db55be3db6e3a30f04a570877b71
