@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXXxbQYz2I208aHhWns4+ovL2iqdfxRLspMJTQdr1FLWSClJe/g2hWn7/krfn9LEcJtLd51j7bsQa16TRHSeUogU=
-SHA256 (Pkgfile) = c63f4eb3df6de29e0988c8d065063e6ca6a01a1c7ea176a1923cd271ba05e556
-SHA256 (.footprint) = e9145d935f5f50796c72c704a1c850282b244fc69d5b471fa74a97b83c18d10a
-SHA256 (libxslt-1.1.35.tar.xz) = 8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
+RWSwxGo/zH7eXdCPsBo1GbW19QnKCt3YQZsewCBqhCtG/P1iMZtdyGgwdSfzoOX8eEq8WZ4ulE7xRbIjQaQR3cORjd9W4U1VLAY=
+SHA256 (Pkgfile) = 11c7e2c54e58ae6f0a4b869daab90bc53f83825780ce53ddb03c99ad855937e1
+SHA256 (.footprint) = 36f1d8bd4165aa6b45b708fc0973f5345cb95fe3d56789765a72dca654d1a002
+SHA256 (libxslt-1.1.36.tar.xz) = 12848f0a4408f65b530d3962cd9ff670b6ae796191cfeff37522b5772de8dc8e
