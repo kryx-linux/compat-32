@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXbsIxx/OGL5EWiIuOY4sy2uGh4+Gf+2a10r7cBw41utVNE3mSd5EAqM5oyiF/rk93XFR8fNoSbX6wvakdrLqEgA=
-SHA256 (Pkgfile) = 530bca2651b955b411456b51b5cac7ecc7c34f7066af05d1926f88545cf14c9a
+RWSwxGo/zH7eXRPTw4ukrtsnWieDTb1/Qnxw8fypQsWanlMmMVjc7f0ypmm5LydvCBsmjPApiIiUG9t0xx7cjD2DOYuySiuPIg0=
+SHA256 (Pkgfile) = eacb433d86fb9c4796c1045f3dcbeea3cae149d60815686047103c284949ae33
 SHA256 (.footprint) = f67bf75c5b732eddee176becf12b5507fdb214edc96367650c3a185aa59686d4
-SHA256 (libXau-1.0.9.tar.bz2) = ccf8cbf0dbf676faa2ea0a6d64bcc3b6746064722b606c8c52917ed00dcb73ec
+SHA256 (libXau-1.0.10.tar.xz) = 8be6f292334d2f87e5b919c001e149a9fdc27005d6b3e053862ac6ebbf1a0c0a
