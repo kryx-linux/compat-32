@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXXabLWSwQyBMp+LAgxwDmngtFcnmhUdjHGnh8Zv0zXJ/K2qXfQyLiB+ekw5ziuonKT3ANm8UijCb9kuMEW587w0=
-SHA256 (Pkgfile) = c254903f6e08dde589f74d8344d8d63b0aaa07c4bb5ad74d9399b35af37f81cb
-SHA256 (.footprint) = 4621de3bca48f568b90a9115715a53f7ecdaec42a82042bdb70b9bfe94b6fb9c
-SHA256 (NetworkManager-1.38.4.tar.xz) = 841f64d41776aadd92b151f47e50f62be8a0611a9056fe6bf81881024e6a96c5
+RWSwxGo/zH7eXb5uc4rz/PiIEv0xK85WxM3HHTvNiVTA3r5vCFhBcHeZABfJ6V0wHBwfq7GnvJQ+86YASlahaYF4S1XjjC9wOwA=
+SHA256 (Pkgfile) = 4d210e8ef2690be042428ca6d2f7d2e31923d82678b3d7f8b15da1c8a5a85c3c
+SHA256 (.footprint) = 9d85fb5d26feea666eb452caa5152a4fe12bcfdf9ad733beff136746ed4f88db
+SHA256 (NetworkManager-1.40.0.tar.xz) = aee7e057bc2cca5dab84e41f15f1da8b795eb290747b04cbeee822bad9e9fc03
