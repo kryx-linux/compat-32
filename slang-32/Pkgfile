@@ -5,8 +5,8 @@
 # Optional: oniguruma
 
 name=slang-32
-version=2.3.2
-release=2
+version=2.3.3
+release=1
 source=(https://www.jedsoft.org/releases/${name%-*}/${name%-*}-$version.tar.bz2)
 
 build() {
