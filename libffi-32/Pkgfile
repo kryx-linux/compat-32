@@ -1,5 +1,5 @@
 # Description: Portable Foreign Function Interface Library
-# URL:         http://sourceware.org/libffi/
+# URL: https://sourceware.org/libffi/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libffi
 
