@@ -20,6 +20,9 @@ lrwxrwxrwx	root/root	usr/lib32/libGLX_mesa.so.0 -> libGLX_mesa.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib32/libOSMesa.so -> libOSMesa.so.8
 lrwxrwxrwx	root/root	usr/lib32/libOSMesa.so.8 -> libOSMesa.so.8.0.0
 -rwxr-xr-x	root/root	usr/lib32/libOSMesa.so.8.0.0
+-rwxr-xr-x	root/root	usr/lib32/libVkLayer_INTEL_nullhw.so
+-rwxr-xr-x	root/root	usr/lib32/libVkLayer_MESA_device_select.so
+-rwxr-xr-x	root/root	usr/lib32/libVkLayer_MESA_overlay.so
 lrwxrwxrwx	root/root	usr/lib32/libXvMCnouveau.so -> libXvMCnouveau.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib32/libXvMCnouveau.so.1 -> libXvMCnouveau.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib32/libXvMCnouveau.so.1.0 -> libXvMCnouveau.so.1.0.0
