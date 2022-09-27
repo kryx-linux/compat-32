@@ -1,26 +1,28 @@
-# Description: LLVM
+# Description: LLVM compiler backend
 # URL: https://llvm.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libffi-32 libxml2-32 llvm ncurses-32
 
 name=llvm-32
-version=14.0.6
+version=15.0.1
 release=1
-source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz)
+source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz
+	https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/cmake-$version.src.tar.xz)
 
 build() {
 	mkdir -p $SRC/keep
 
-	prt-get isinst ccache && PKGMK_LLVM+=' -D LLVM_CCACHE_BUILD=ON'
+	#prt-get isinst ccache && PKGMK_LLVM+=' -D LLVM_CCACHE_BUILD=ON'
+
+	cp -r $SRC/cmake-$version.src/Modules/* llvm-$version.src/cmake/modules/.
 
 	cmake -S llvm-$version.src -B build -G Ninja $PKGMK_LLVM \
 		-D CMAKE_INSTALL_PREFIX=/usr \
 		-D LLVM_LIBDIR_SUFFIX=32 \
 		-D CMAKE_BUILD_TYPE=Release \
-		-D CMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
-		-D CMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+		-D CMAKE_C_FLAGS_RELEASE="-O2 -march=x86-64 -pipe -m32" \
+		-D CMAKE_CXX_FLAGS_RELEASE="-O2 -march=x86-64 -pipe -m32" \
 		-D LLVM_TARGET_ARCH=i686 \
-		-D LLVM_TARGETS_TO_BUILD='X86;AMDGPU;BPF;NVPTX;WebAssembly' \
 		-D LLVM_BINUTILS_INCDIR=/usr/include \
 		-D LLVM_BUILD_LLVM_DYLIB=ON \
 		-D LLVM_LINK_LLVM_DYLIB=ON \
