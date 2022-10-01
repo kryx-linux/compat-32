@@ -5,7 +5,7 @@
 # Optional: brotli-32
 
 name=curl-32
-version=7.84.0
+version=7.85.0
 release=1
 source=(https://curl.se/download/${name%-*}-$version.tar.xz)
 
@@ -22,7 +22,6 @@ build() {
     --enable-ipv6 \
     --without-libidn2 \
     --with-openssl \
-    --without-cyassl \
     --enable-threaded-resolver \
     --with-ca-bundle=/etc/ssl/cert.pem
   make
