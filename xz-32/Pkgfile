@@ -1,11 +1,11 @@
 # Description: Compression utility using the lzma algorithm, successor of lzma-utils
-# URL:         https://tukaani.org/xz/
+# URL: https://tukaani.org/xz/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=xz-32
-version=5.2.6
+version=5.2.7
 release=1
-source=(https://tukaani.org/xz/xz-$version.tar.bz2)
+source=(https://tukaani.org/xz/xz-$version.tar.xz)
 
 build() {
 	cd xz-$version
