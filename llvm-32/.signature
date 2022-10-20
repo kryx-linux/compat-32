@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXZlSXJATBuPovrRzD0L+8zSjCrmN5trTS65Gu/a1jzuWGUA2g3N+eqCpVZk2wwxqxkCMq+Iuis0vJCs4nYa1NwA=
-SHA256 (Pkgfile) = 2d7822948e092347f7a54f328f561013c8e619539b3b69a26d1c4d52dea29076
-SHA256 (.footprint) = 3b7cc8eea8e83f2d60ca622726a3cb74c0fc8684d1c9d5e5ea12ba914e3cd520
-SHA256 (llvm-15.0.2.src.tar.xz) = 8e1443141bac55c1ba9d4b481006ab696787eb42cb6c6d872e02e77db473797c
-SHA256 (cmake-15.0.2.src.tar.xz) = c47c4d54bb311298abe97e7d8e8185eaa8d71feb6d85e5e38356a70679e5c61e
+RWSwxGo/zH7eXTdWwiDZE+rKxshY1lqZEwD8xDQZ0SnqGrHrFk2yhboBVO5hpB6mMiGqmP2YbLghlIJyfiEqSwI8isGrk0CnHw0=
+SHA256 (Pkgfile) = 70031428efc205b8f2211c07867d63fb62048f3bac2d5abe6bc7f5a0bfa959fb
+SHA256 (.footprint) = 8396956f9fd626ada80173669540c18b4d774187a5146cb16c43e2f4e8e5c325
+SHA256 (llvm-15.0.3.src.tar.xz) = c39aec729662416dcbf0bfe53a9786b34e7d93d02908a0779a2f6d83ad0a4a27
+SHA256 (cmake-15.0.3.src.tar.xz) = 21cf3f52c53dc8b8972122ae35a5c18de09c7df693b48b5cd8553c3e3fed090d

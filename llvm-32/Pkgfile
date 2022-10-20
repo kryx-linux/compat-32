@@ -1,10 +1,10 @@
 # Description: LLVM compiler backend
 # URL: https://llvm.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libffi-32 libxml2-32 llvm ncurses-32
+# Depends on: libffi-32 libxml2-32 llvm ncurses-32 zstd-32
 
 name=llvm-32
-version=15.0.2
+version=15.0.3
 release=1
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz
 	https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/cmake-$version.src.tar.xz)
