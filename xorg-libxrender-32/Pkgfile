@@ -4,9 +4,9 @@
 # Depends on: xorg-libx11-32 xorg-libxrender
 
 name=xorg-libxrender-32
-version=0.9.10
+version=0.9.11
 release=1
-source=(https://www.x.org/releases/individual/lib/libXrender-$version.tar.bz2)
+source=(https://www.x.org/releases/individual/lib/libXrender-$version.tar.xz)
 
 build() {
 	cd libXrender-$version
