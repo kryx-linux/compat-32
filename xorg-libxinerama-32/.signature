@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTlbEawCMrV+xdljsU+MASaoq+tnHe6Ayc84S/jBZLUA60PIc03rUs9DlkfTiO1znEttZOxclz1czEZxp2UTNQs=
-SHA256 (Pkgfile) = 1acf76731e560bd28fa52f7c183f003ea4e73a78413861aa4c60548ce4d87d50
+RWSwxGo/zH7eXT5Oek/c6DAEuX4LSkIjjCfBZzfJmdPWFyfDD1QuYzWcHG7IdOYzWFD49SKTLkZiVMQF06pH9vTCXHSMsoOE5gM=
+SHA256 (Pkgfile) = 60b0c143dfb69783f78ef8ef7f66c7c4f5918b7da1fb3667abfc1a217369e724
 SHA256 (.footprint) = 9bba7eaf1340fc5be76e101edd42ed81848767914f85d546b89688ba46936fb3
-SHA256 (libXinerama-1.1.4.tar.bz2) = 0008dbd7ecf717e1e507eed1856ab0d9cf946d03201b85d5dcf61489bb02d720
+SHA256 (libXinerama-1.1.5.tar.xz) = 5094d1f0fcc1828cb1696d0d39d9e866ae32520c54d01f618f1a3c1e30c2085c
