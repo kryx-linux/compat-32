@@ -5,8 +5,8 @@
 # Optional: libva libvdpau-32 wayland-protocols
 
 name=mesa-32
-version=22.2.2
-release=2
+version=22.2.3
+release=1
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
 	x86-linux-gnu x86-linux-gnu-ccache)
 
