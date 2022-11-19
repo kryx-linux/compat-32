@@ -4,7 +4,7 @@
 # Depends on: fribidi-32 harfbuzz-32 pango xorg-libsm-32 xorg-libxft-32
 
 name=pango-32
-version=1.50.11
+version=1.50.12
 release=1
 source=(https://download.gnome.org/sources/pango/${version:0:4}/${name%-*}-$version.tar.xz)
 
