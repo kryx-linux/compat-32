@@ -3,9 +3,6 @@ drwxr-xr-x	root/root	usr/lib32/
 drwxr-xr-x	root/root	usr/lib32/at-spi2/
 -rwxr-xr-x	root/root	usr/lib32/at-spi2/at-spi-bus-launcher
 -rwxr-xr-x	root/root	usr/lib32/at-spi2/at-spi2-registryd
-drwxr-xr-x	root/root	usr/lib32/girepository-1.0/
--rw-r--r--	root/root	usr/lib32/girepository-1.0/Atk-1.0.typelib
--rw-r--r--	root/root	usr/lib32/girepository-1.0/Atspi-2.0.typelib
 drwxr-xr-x	root/root	usr/lib32/gnome-settings-daemon-3.0/
 drwxr-xr-x	root/root	usr/lib32/gnome-settings-daemon-3.0/gtk-modules/
 -rw-r--r--	root/root	usr/lib32/gnome-settings-daemon-3.0/gtk-modules/at-spi2-atk.desktop
