@@ -1,10 +1,10 @@
 # Description: Low-level data structure handling, portability wrappers, and interfaces for runtime functionality
 # URL: https://www.gtk.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: elfutils-32 glib libffi-32 libpcre-32 util-linux-32
+# Depends on: elfutils-32 glib libffi-32 libpcre-32 libpcre2-32 util-linux-32
 
 name=glib-32
-version=2.74.1
+version=2.74.2
 release=1
 source=(https://download.gnome.org/sources/glib/${version:0:4}/${name%-*}-$version.tar.xz
 	multilib.patch)
@@ -16,7 +16,8 @@ build() {
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
 		--libexecdir=/usr/lib32/glib \
-		--buildtype=plain
+		--buildtype=plain \
+		--wrap-mode nodownload
 
 	meson compile -C build -j ${JOBS:-1}
 	DESTDIR=$PKG meson install -C build
