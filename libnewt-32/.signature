@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXc1mFG1evqCV/GwUbksfQ8rB88KPXYLKg6BWyLblQ5V6ILuwE01ZVygdhQOeRgQfrk6ZIv0Ss7aQHrvmDq4MxQo=
-SHA256 (Pkgfile) = 22813483eefd6254229d6602c841a4bf8ce9cbc9f271fcd40db787c16ea86c9d
-SHA256 (.footprint) = 05ea53b93f08696d55b22e3c91ee7a7be94bfe94455cca268271060f316b3532
-SHA256 (newt-0.52.22.tar.gz) = a15efa37e86610b68a942b19a138b44ccb501c234e4c82dab2f5a9b19f7c9e79
+RWSwxGo/zH7eXbm+ZZBqYwbpx3gH0vmQhvEF2Pt2jj3GuyAhNmb/R+0XqotF0yx9c2XyebUyJCGX2a9jZRHOj8DIEvr3y2pZMwI=
+SHA256 (Pkgfile) = f4016e1726aa2eee2de540fa2fa0c07de15530ef7cffefe9871e0b58237123c4
+SHA256 (.footprint) = 41190a5b50fd3d1cee78da16df7038f17cf4cc72a60c29ca15ade17602b2bad8
+SHA256 (newt-0.52.23.tar.gz) = caa372907b14ececfe298f0d512a62f41d33b290610244a58aed07bbc5ada12a
