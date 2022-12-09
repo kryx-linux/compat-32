@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXdyEOb9f0iiONsm81XZxXjvjJbOadPS8qy9hbXXprVYGVeBny4xoHd1LcDANteMouEfEdQFHVyhad0X4pZa9QgI=
-SHA256 (Pkgfile) = 2ad35a547f9484e71629f8f324fd260fc0dcd56e13bbc2401d4b946823e8ec04
-SHA256 (.footprint) = 79171c8d6e8ec6245c2fedcab1387895b8d039199024ddaca6efae78ac25da1a
-SHA256 (pcre2-10.40.tar.gz) = ded42661cab30ada2e72ebff9e725e745b4b16ce831993635136f2ef86177724
+RWSwxGo/zH7eXePVaLp5BAlUIrfqvbTotaq5dCyhif072IslYFd8fl27x5dsxU6PijtWc2ktyIQClJ3zW7imSH4+BARWrAyrbgg=
+SHA256 (Pkgfile) = 1d5f7e42f79a716339715f40fdd671cf635bd2c313e8fa4b844c8c1abc57c824
+SHA256 (.footprint) = 082b1516cf347104a3401ff828b25ab646c2649c146c9bfbdb08f3e5a352c993
+SHA256 (pcre2-10.41.tar.gz) = d188f77c239efb0ca192ba7bed109cd307fb205f4b2ad8343c4f69c9079e0371
