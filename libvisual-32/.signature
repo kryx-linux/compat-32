@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXcLGVDsXuZw3nGi1C4ptHQDJt55EcRWkWOJPelchxCD6n4nLt0k0ZxTv1rV2884M2a/WKfk73m2SnKF2CDqBxAc=
-SHA256 (Pkgfile) = 4298820f727792894edf077ed825a92eed4c4dc419630bb06a1698f8cbfab835
+RWSwxGo/zH7eXf/v1e2FX2eoLhWZ0YsC5XJBcQmfgJYrtH4OB5PxRSkbMFXJAwgLvTMhfqdt/PmIIggJR9gVPoZOXT5KlkFqWQM=
+SHA256 (Pkgfile) = 9ae456256b32d12c27512c8fe05d40ae0ce26e0a917340f010fb06984ecb83b3
 SHA256 (.footprint) = 4b292c2fe70759c82d0e205a27bb06556b1ddadfab9273229e246d61f61bd040
-SHA256 (libvisual-0.4.0.tar.bz2) = 78f38d3ce857edde5482aa4415b504bbcd4d4a688fd4de09ec2131ad08174279
+SHA256 (libvisual-0.4.1.tar.bz2) = e4707c81df53d6e6aaefaa8c0140b578b1733e0eda7b7921c88bc4fe82af414d

@@ -1,15 +1,19 @@
 # Description: An abstraction library that comes between applications and audio visualisation plugins.
-# URL: http://sourceforge.net/apps/mediawiki/libvisual/
+# URL: http://libvisual.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libvisual
+# Depends on: libsdl-32 libvisual
 
 name=libvisual-32
-version=0.4.0
+version=0.4.1
 release=1
-source=(http://downloads.sourceforge.net/project/libvisual/libvisual/libvisual-$version/libvisual-$version.tar.bz2)
+source=(https://github.com/Libvisual/libvisual/releases/download/libvisual-$version/libvisual-$version.tar.bz2)
 
 build() {
 	cd libvisual-$version
+
+	export PKG_CONFIG_PATH='/usr/lib32/pkgconfig'
+	sed -i 's/sdl-config/sdl-config-32/g' configure.ac
+	autoreconf -vfi
 
 	./configure \
 		--prefix=/usr \
