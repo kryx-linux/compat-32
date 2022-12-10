@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXdu0MbeOUgPVwn1OrDz7RdNUohaqUHnzHdFob2M2037oUQdueZpF5HYnaqedxvEaalD9bueEfQCcTjitsDCbsQk=
-SHA256 (Pkgfile) = 8b88386a223220bab9c58f9f2df0910f2e33e5cffe98bda9b942f9c2f992d223
+RWSwxGo/zH7eXexxqa6LZZnGe8acDdwR+AKR1cOHI6E+T6OP6Vh5K4gRwMGh6orHWrzbHGVxisnJ7H/U2Y0PXdwr3yi5UyLSWwg=
+SHA256 (Pkgfile) = 4182b0320b2daf93455836d5288c6a1d93d978f7243a3f44a6b7aa18891b281c
 SHA256 (.footprint) = cd726cda838c9b0faf8aaf978db9aebf060de74ab6a3806dd074cc8aaf5125bc
-SHA256 (libxkbfile-1.1.1.tar.xz) = 8623dc26e7aac3c5ad8a25e57b566f4324f5619e5db38457f0804ee4ed953443
+SHA256 (libxkbfile-1.1.2.tar.xz) = b8a3784fac420b201718047cfb6c2d5ee7e8b9481564c2667b4215f6616644b1
