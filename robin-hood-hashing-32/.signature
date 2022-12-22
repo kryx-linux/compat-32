@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXeNNy23c5veGKmZIn5XgN+XWSwYb+zaEBoKryvislip/jRAqEzd88OotW8g3z982eX+zdL8Lvrp9bUsT6hschgU=
+SHA256 (Pkgfile) = 6a8fabb8a672ddf0d6607b9f8762043ef574e42235fc286425ba2ec88ef53400
+SHA256 (.footprint) = bd7d7d74bb56acd8221f7e6058856c5cb1c07e017c60a5f808dc2423451f0305
+SHA256 (robin-hood-hashing-3.11.5.tar.gz) = 3693e44dda569e9a8b87ce8263f7477b23af448a3c3600c8ab9004fe79c20ad0
