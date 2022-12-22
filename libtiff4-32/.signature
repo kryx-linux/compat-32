@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXT3SPyiIY9VaopyE1MJLKyh0GYYKIYzLJBa9ccBD2EbvWb+kgKtC6kbg6aGPs2qJkLjXTxqvJ5xlSqCJrfgnnAU=
+SHA256 (Pkgfile) = f3680bcb871aaf2e47246fc667f981d5d779127976ad4595b95c28f45fc4cbd9
+SHA256 (.footprint) = ced0b4e4c10da7f55272b8ef48b8c4fbea688f93630d607afd46d9cb2d3c0a35
+SHA256 (tiff-3.9.7.tar.gz) = f5d64dd4ce61c55f5e9f6dc3920fbe5a41e02c2e607da7117a35eb5c320cef6a
+SHA256 (libtiff4-soname.patch) = e6246631f6d943715b612b4ddd2279c946ff90c9e8d755fa639e8051a6eb3488
