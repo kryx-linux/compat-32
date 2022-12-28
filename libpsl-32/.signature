@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQ1IXsPS+9RSxUfAfLHxkaHr57phsXEh6BcB1yfkfCfzca1z+o9kiDCLqD+uffbpsKAYk+lAGIizBRJf7+Vw2Q0=
-SHA256 (Pkgfile) = 2711d187f69f2ff9dd2c1256d2d69eec5a5b90d9aeb7a9324f660d766be82126
-SHA256 (.footprint) = 96510a849f61799178309f207ac4568a17fe6a3588f2b6655383e7b6772fe161
-SHA256 (libpsl-0.21.1.tar.lz) = 644375d557bb3b84c485df2dae98ee388fe1e11fb75230004e4b8623b3b833a9
+RWSwxGo/zH7eXd8ssNpciPQ9zp+qwxz0pPgX08Kv64Ids9m3b9MOvbkmrghY3anGSN8rN1s6tz8SEl0DWv7/MyJilnh10evFYgk=
+SHA256 (Pkgfile) = bb9d53cbb13eff45e90c8b37597b7a525be3a2bcf6b045a49432cb269092848b
+SHA256 (.footprint) = bc4d234db604745e113c69221efbb28eb095280a377956bd2d6f1f6df31c76d6
+SHA256 (libpsl-0.21.2.tar.lz) = aa3d706c452786d1345e094dae201cd36d81f03cf81d636d5cfc10d365907f17

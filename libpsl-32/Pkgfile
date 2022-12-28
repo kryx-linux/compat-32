@@ -4,14 +4,14 @@
 # Depends on: libpsl libunistring-32 libidn2-32
 
 name=libpsl-32
-version=0.21.1
+version=0.21.2
 release=1
 source=(https://github.com/rockdaboot/${name%-*}/releases/download/$version/${name%-*}-$version.tar.lz)
 
 build() {
 	meson setup build ${name%-*}-$version --prefix=/usr --libdir=/usr/lib32 \
 		-D runtime=libidn2 \
-		-D builtin=libidn2 \
+		-D builtin=true \
 		-D psl_file=/usr/share/publicsuffix/effective_tld_names.dat \
 		-D psl_testfile=/usr/share/publicsuffix/test_psl.txt
 
