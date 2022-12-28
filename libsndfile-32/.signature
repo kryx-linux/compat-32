@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXWcLpFZeOBw2DdbQ0l2pNPibf4rjjS42HZ3REzGdw/zpoe3DRnn1+iymOe8IRgQbyQ68tOV/baO+QXQj32o4owI=
-SHA256 (Pkgfile) = 88008f22a6ace2b194f30345fd9c2494c1726b342236dab6b00362ca76364466
-SHA256 (.footprint) = beb71b6f00a2fb3d9cae0784ecd0452854a951b926104cdd95b2876820529a52
-SHA256 (libsndfile-1.1.0.tar.xz) = 0f98e101c0f7c850a71225fb5feaf33b106227b3d331333ddc9bacee190bcf41
+RWSwxGo/zH7eXaY03/EEdiHfotFo3fnciwBCKQMFeQmIeyITDrhsmxpfiKJ195rcY3GWry10kfAY8x3VJGysJ9a0I5DAMHUnOQ0=
+SHA256 (Pkgfile) = 15ac30609c1e5b4da16d59459c9b642aa71d0320e96343e9b0ff9eeef14dfbeb
+SHA256 (.footprint) = 12c04acf3c0e2e68b588f457558043f725b152227e155bc23bfc05ca9f8c80cc
+SHA256 (libsndfile-1.2.0.tar.xz) = 0e30e7072f83dc84863e2e55f299175c7e04a5902ae79cfb99d4249ee8f6d60a
