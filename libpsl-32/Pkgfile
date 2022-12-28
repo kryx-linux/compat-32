@@ -18,5 +18,5 @@ build() {
 	ninja -j ${JOBS-1} -C build
 	DESTDIR=$PKG meson install -C build
 
-	rm -r $PKG/usr/include
+	rm -rf $PKG/usr/{bin,include,share}
 }
