@@ -4,11 +4,12 @@
 # Depends on: libdrm-32 libglvnd-32 libva xorg-libxfixes-32
 
 name=libva-32
-version=2.16.0
+version=2.17.0
 release=1
 source=(https://github.com/intel/libva/archive/$version/libva-$version.tar.gz)
 
 build() {
+	CFLAGS+=" -DENABLE_VA_MESSAGING" \
 	meson setup build libva-$version \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
