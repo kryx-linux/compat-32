@@ -5,7 +5,7 @@
 # Optional: libva libvdpau-32 wayland-protocols
 
 name=mesa-32
-version=22.3.1
+version=22.3.2
 release=1
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
 	x86-linux-gnu x86-linux-gnu-ccache)
@@ -27,7 +27,7 @@ build() {
 		--sysconfdir=/etc \
 		--buildtype=plain \
 		--wrap-mode nodownload \
-		-D b_lto=true \
+		-D b_lto=false \
 		-D dri3=enabled \
 		-D egl=enabled \
 		-D llvm=enabled \
