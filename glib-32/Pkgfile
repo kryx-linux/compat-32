@@ -4,15 +4,13 @@
 # Depends on: elfutils-32 glib libffi-32 libpcre-32 libpcre2-32 util-linux-32
 
 name=glib-32
-version=2.74.4
+version=2.74.5
 release=1
 source=(https://download.gnome.org/sources/glib/${version:0:4}/${name%-*}-$version.tar.xz
-	multilib.patch
-	missing-include.patch)
+	multilib.patch)
 
 build() {
 	patch -d ${name%-*}-$version -p1 -i $SRC/multilib.patch
-	patch -d ${name%-*}-$version -p1 -i $SRC/missing-include.patch
 
 	meson setup build ${name%-*}-$version \
 		--prefix=/usr \
