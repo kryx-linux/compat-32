@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXSfo2//TIq7Lw/nZKvddyMtk/7M3sLkwfjIQylRq7JQkfw74bzAKmOTwFKfcQ1fjaT8UVrustpB16G7mlrplIw0=
-SHA256 (Pkgfile) = d52b69582327125d4bc245bc97dba843523a8ae17e1e91b8cfdb098a75153370
-SHA256 (.footprint) = 2e3ded2fb72c97543fb6c9e0bf70aee52497e7ed5a7cb2fa3ff64ce3777f227b
-SHA256 (openal-soft-1.22.2.tar.gz) = 3e58f3d4458f5ee850039b1a6b4dac2343b3a5985a6a2e7ae2d143369c5b8135
+RWSwxGo/zH7eXbVrqcC3Zqy8vW0Pqs+X28AvFiDAuI4obFamcoRJmtAOUQ/Q//ycBi2jv78baryi84lfJwZ4WflAevzYYmpikA4=
+SHA256 (Pkgfile) = b6eb431f9d7824d70d1af4a1b7e7f1838c54db632f05283ac66b40b5dd70b6c7
+SHA256 (.footprint) = 516433350b0227da5ad59c617304a9e22df376823d4d7668d9d9ec615cea7b6d
+SHA256 (openal-soft-1.23.0.tar.gz) = af2abf9cb539c9d66296a83ba63a75eb5868658d0f0b28b27c556f45e70c5231
