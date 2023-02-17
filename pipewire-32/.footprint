@@ -1,7 +1,3 @@
-drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/security/
-drwxr-xr-x	root/root	etc/security/limits.d/
--rw-r--r--	root/root	etc/security/limits.d/25-pw-rlimits.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
 drwxr-xr-x	root/root	usr/lib32/alsa-lib/

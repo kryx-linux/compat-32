@@ -36,6 +36,7 @@ build() {
 	DESTDIR=$PKG meson install -C build
 
 	# remove leftovers
+	rm -r $PKG/etc
 	rm -r $PKG/usr/{bin,include,share/locale,share/pipewire}
 
 	prt-get isinst alsa-lib-32 && \
