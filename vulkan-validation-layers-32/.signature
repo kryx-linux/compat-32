@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXbdRYFQBvVTIAAa4GJRTIsxB7f3Fgd7EuwNg++77Eq/iiRMBBePLIc5Rdx8JfKYLbN3k3Fx21LgddS3swjdOpgc=
-SHA256 (Pkgfile) = ccb821df83b9237e211fa0612818d4248c02a2f43b753ea840037cb3a1e466fa
+RWSwxGo/zH7eXbl9EhT9EPKDSeLNc6246OR41LhoS7PW9OSBT7Qug+rkd1DmRJZ2AwiVo8d26DYQk6y1pD4wuovgLC7idHxayA0=
+SHA256 (Pkgfile) = a7ed264e6292810ef5f39025814f5ce0a2e4b36ecc70c74f46420c5b8c2c41be
 SHA256 (.footprint) = 5c3e1cb61d0d5070cc1d278ec445757e1913b70cdec30985988d48c2f6ded070
-SHA256 (Vulkan-ValidationLayers-1.3.236.0.tar.gz) = 68f2cf70b1960f85e931ef56935e6ceda1beeb214f8fa319e6b95128b02b485a
-SHA256 (fix_shared.patch) = 840af33ab26638c8c29da4a7f284eae6aeb40e01d506eef9851d7e6ee4a8bed0
+SHA256 (Vulkan-ValidationLayers-1.3.239.0.tar.gz) = 7aa7fb46e25e5ef0144d29c92122b631dc7c7c6804a6339f195b368ad53328e4
+SHA256 (vulkan-layers-1.3.239-Build-shared-libs.patch) = c2dc16b469150e66d11543385108a20a7f65fd16ef34f9245800b2927dccf274
