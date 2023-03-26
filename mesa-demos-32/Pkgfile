@@ -4,9 +4,9 @@
 # Depends on: glew-32 glu-32 libglvnd-32
 
 name=mesa-demos-32
-version=8.5.0
+version=9.0.0
 release=1
-source=(https://archive.mesa3d.org/demos/$version/${name%-*}-$version.tar.bz2)
+source=(https://archive.mesa3d.org/demos/${name%-*}-$version.tar.xz)
 
 build() {
 	meson setup ${name%-*}-$version build \
