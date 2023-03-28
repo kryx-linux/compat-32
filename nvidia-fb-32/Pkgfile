@@ -4,7 +4,7 @@
 # Depends on: libglvnd-32
 
 name=nvidia-fb-32
-version=520.56.06
+version=530.41.03
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run)
 
@@ -27,11 +27,11 @@ build() {
 	ln -s libEGL_nvidia.so.$version $PKG/usr/lib32/libEGL_nvidia.so.0
 
 	# driver component libraries
-	install -m 0755 libnvidia-compiler.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-eglcore.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-glcore.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-glsi.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-glvkspirv.so.$version $PKG/usr/lib32/
+	for C in allocator compiler {e,}glcore gl{si,vkspirv}; do
+		install -m 0755 libnvidia-${C}.so.$version $PKG/usr/lib32/
+		ln -s libnvidia-${C}.so.$version $PKG/usr/lib32/libnvidia-${C}.so.1
+		ln -s libnvidia-${C}.so.$version $PKG/usr/lib32/libnvidia-${C}.so
+	done
 
 	# vendor VDPAU library
 	install -D -m 0755 libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so.$version
@@ -65,9 +65,11 @@ build() {
 	install -m 0755 libnvidia-ml.so.$version $PKG/usr/lib32/
 
 	# encoding/decoding libraries
-	install -m 0755 libnvcuvid.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-encode.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-fbc.so.$version $PKG/usr/lib32/
+	for C in nvcuvid nvidia-{encode,fbc}; do
+		install -m 0755 lib${C}.so.$version $PKG/usr/lib32/
+		ln -s lib${C}.so.$version $PKG/usr/lib32/lib${C}.so.1
+		ln -s lib${C}.so.$version $PKG/usr/lib32/lib${C}.so
+	done
 
 	# optical flow library
 	install -m 0755 libnvidia-opticalflow.so.$version $PKG/usr/lib32/
