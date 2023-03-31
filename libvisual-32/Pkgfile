@@ -1,10 +1,10 @@
 # Description: An abstraction library that comes between applications and audio visualisation plugins.
 # URL: http://libvisual.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libsdl-32 libvisual
+# Depends on: autoconf-archive libsdl-32 libvisual
 
 name=libvisual-32
-version=0.4.1
+version=0.4.2
 release=1
 source=(https://github.com/Libvisual/libvisual/releases/download/libvisual-$version/libvisual-$version.tar.bz2)
 
@@ -18,7 +18,9 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
-		--enable-extra-optimization
+		--enable-extra-optimization \
+		--disable-examples \
+		--disable-nls
 
 	make
 	make DESTDIR=$PKG install
