@@ -9,6 +9,8 @@ release=1
 source=(https://download.gnome.org/sources/glib/${version:0:4}/${name%-*}-$version.tar.xz)
 
 build() {
+	CFLAGS+=' -Wno-error=missing-include-dirs'
+
 	meson setup build ${name%-*}-$version \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
