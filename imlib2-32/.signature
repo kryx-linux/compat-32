@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXd6D2HrkYoeCISqcbazEweYmOFeimWErzbHpEQiqiLzOqSAaP+3KPLNPieJjWJA+wKh5k9mQcFhK3vQl8inHLwc=
-SHA256 (Pkgfile) = a8d11da843ef8403062cfaf869afdb01c4783d5bc3504c5e6572a291bae2be4e
-SHA256 (.footprint) = a8cf5570e4d593da50d158abe049a8ad5f100434171971dd84aca7416f2b7a89
-SHA256 (imlib2-1.11.0.tar.xz) = 6121196a05a82cc49d104d066ef1bd1e68b4b6394064d244985d0d6aa5fd8170
+RWSwxGo/zH7eXWkd2kDv8sjBkKCUVyBK2Xzlcj/qSVB7K+rgYDxBNTUJJpH5nKhUpdAVOraStuUteYbkP1EhLzrh1cnAs+XrSQY=
+SHA256 (Pkgfile) = eed7f5d2e14eee299c3cddd9a20212dd3f247e02091df50b16aaa1cbf32dfae8
+SHA256 (.footprint) = b39cfe596b6050b98405642042b1b5bbc0368347a5a8fbc1dfcff7dcc0a7f92e
+SHA256 (imlib2-1.11.1.tar.xz) = f712b6bb9dcad46d8b8f4ad52610dcbbaebb4cc80b5fd12f93124d3a380fa6bf
