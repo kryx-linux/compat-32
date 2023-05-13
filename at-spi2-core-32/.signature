@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXeKLKOz71fEN6olViTsiYnNHxCve2YdreUapz+OuVJFC0OuLmwHM7Bu4YZ3W7dWlNLVxNgnPwPDkdtze4V41BAc=
-SHA256 (Pkgfile) = be1427222903ec704af3a582880a62bef6c14cef4928fd7e8a75a30458542a8e
-SHA256 (.footprint) = ba46f941bc3af62b0d95c2c4887b5572a896302c834053eb9143b47cc48d99ed
-SHA256 (at-spi2-core-2.48.0.tar.xz) = 905a5b6f1790b68ee803bffa9f5fab4ceb591fb4fae0b2f8c612c54f1d4e8a30
+RWSwxGo/zH7eXbnnv11AjE9cUEtZZnbhYOxHum7P9T9qWH0qlj8y9NAPdzz3/hSm2+P2J8ZSBeCwOcxam5JjsmB6+axfMrL/EQQ=
+SHA256 (Pkgfile) = 60c71b64b2bfe054c18124e35e9bcd9e9c837aaabcd3b48a998a44f054ea2f48
+SHA256 (.footprint) = d1e5fd22994757f7e4beeee027e0968034f565789ad0a36c63c892cdebb4c7cf
+SHA256 (at-spi2-core-2.48.2.tar.xz) = 86ebcb55f678381d7ed7825736add42dfccb70ad3b981dfd65d72e58f87828ee
