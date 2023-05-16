@@ -4,7 +4,7 @@
 # Depends on: eudev kmod-32
 
 name=eudev-32
-version=3.2.11
+version=3.2.12
 release=1
 source=(https://github.com/eudev-project/eudev/releases/download/v$version/eudev-$version.tar.gz)
 
