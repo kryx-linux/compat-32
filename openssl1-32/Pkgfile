@@ -6,7 +6,7 @@
 name=openssl1-32
 version=1.0.2u
 release=1
-source=(http://www.openssl.org/source/openssl-$version.tar.gz
+source=(https://www.openssl.org/source/openssl-$version.tar.gz
 	no-rpath.patch openssl-1.0-versioned-symbols.patch)
 
 build() {
