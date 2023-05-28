@@ -5,11 +5,13 @@
 
 name=rtmpdump-32
 version=2.4
-release=1
-source=(https://crux.ster.zone/downloads/rtmpdump/rtmpdump-$version-c5f04a58.tar.xz)
+_commit=f1b83c10d8beb43fcc70a6e88cf4325499f25857
+release=4
+source=(http://git.ffmpeg.org/gitweb/$name.git/snapshot/$_commit.tar.gz)
+renames=(rtmpdump-$version-${_commit:0:8}-$release.tar.gz)
 
 build() {
-  cd rtmpdump
+  cd rtmpdump-*
   sed \
     -e 's/^CRYPTO=OPENSSL/#CRYPTO=OPENSSL/' \
     -e 's/#CRYPTO=GNUTLS/CRYPTO=GNUTLS/' \
