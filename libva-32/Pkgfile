@@ -1,5 +1,5 @@
 # Description: Video Acceleration API to enable hardware accelerated video decode/encode.
-# URL: https://01.org/linuxmedia/vaapi
+# URL: https://github.com/intel/libva
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libdrm-32 libglvnd-32 libva xorg-libxfixes-32
 
