@@ -1,5 +1,5 @@
 # Description: The OpenGL Extension Wrangler Library.
-# URL: http://glew.sourceforge.net/
+# URL: https://glew.sourceforge.net/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: glew mesa-32 xorg-libxi-32 xorg-libxmu-32
 
