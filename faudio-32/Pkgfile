@@ -1,10 +1,10 @@
 # Description: XAudio2 reimplementation
 # URL: https://github.com/FNA-XNA/FAudio/
-# Maintainer: Danny Rawlins, crux at romster dot me
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libsdl2-32 faudio
 
 name=faudio-32
-version=23.05
+version=23.06
 release=1
 source=(https://github.com/FNA-XNA/FAudio/archive/$version/$name-$version.tar.gz)
 
