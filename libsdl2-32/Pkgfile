@@ -2,7 +2,7 @@
 # URL: https://www.libsdl.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: alsa-lib-32 libsdl2 mesa-32
-# Optional: alsa-lib ibus-32 jack ninja pipewire pulseaudio wayland-protocols
+# Optional: alsa-lib ibus-32 jack libxkbcommon-32 ninja pipewire pulseaudio wayland-protocols
 
 name=libsdl2-32
 version=2.26.5
@@ -16,7 +16,7 @@ build() {
 	prt-get isinst jack-32 && PKGMK_SDL2+=' -D SDL_JACK_SHARED=ON'
 	prt-get isinst pipewire-32 && PKGMK_SDL2+=' -D SDL_PIPEWIRE_SHARED=ON'
 	prt-get isinst pulseaudio-32 && PKGMK_SDL2+=' -D SDL_PULSEAUDIO_SHARED=ON'
-	prt-get isinst wayland-protocols-32 && PKGMK_SDL2+=' -D SDL_WAYLAND_SHARED=ON'
+	prt-get isinst libxkbcommon-32 wayland-protocols && PKGMK_SDL2+=' -D SDL_WAYLAND_SHARED=ON'
 
 	[ -e '/usr/bin/ccache' ] && PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
 
