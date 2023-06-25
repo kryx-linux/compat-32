@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXXP3VNMke+R/Ug+RJftfRvs3CIeNhoNXQJevVxxRYocLGPAor/3X1fyRYnSIN3HEZBFcIeWVx5VsSghpIG4cvAs=
-SHA256 (Pkgfile) = 9beb43103a6ff2829f29a7aa1bc36ba0d109d8de04c209aa53e63609ec6ae8ef
-SHA256 (.footprint) = 816c51afdba2b22ca48a7604afb1bc09c317be6b901e355b9f94cfcc39778189
-SHA256 (gstreamer-1.22.3.tar.xz) = 9ffeab95053f9f6995eb3b3da225e88f21c129cd60da002d3f795db70d6d5974
+RWSwxGo/zH7eXa5ChOHw82w/BgeIGnpqh1tjlP984sSmovhDhMaIF+OudP6xqyFp8KfjKooOX/0ii9rWodi4CyyPWBsQRIDKCAs=
+SHA256 (Pkgfile) = a2cb35709156d4a209903c426ab25cecd8b22a4ec998ac4c25c28cba66a6f6c5
+SHA256 (.footprint) = 10ae9d45744dcdba897dd9884b75552de4c56793b34cc340d8764c07c1092c1c
+SHA256 (gstreamer-1.22.4.tar.xz) = 11cb0498bc16b93d8b99d22f75f829b8d0abfd8254840b2120618db5532dc655
