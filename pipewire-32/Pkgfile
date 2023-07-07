@@ -5,10 +5,9 @@
 # Optional: avahi-32 jack-32 libsdl2-32 libsndfile-32 pulseaudio-32 vulkan-loader-32 xorg-libxcb-32
 
 name=pipewire-32
-version=0.3.72
+version=0.3.73
 release=1
-source=(https://github.com/PipeWire/pipewire/archive/$version/pipewire-$version.tar.gz
-  1650.patch)
+source=(https://github.com/PipeWire/pipewire/archive/$version/pipewire-$version.tar.gz)
 
 build() {
 	prt-get isinst alsa-lib-32 && PKGMK_PW+=' -D alsa=enabled -D pipewire-alsa=enabled'
@@ -18,8 +17,6 @@ build() {
 	prt-get isinst libsndfile-32 && PKGMK_PW+=' -D sndfile=enabled'
 	prt-get isinst pulseaudio-32 && PKGMK_PW+=' -D libpulse=enabled'
 	prt-get isinst vulkan-loader-32 && PKGMK_PW+=' -D vulkan=enabled'
-
-  patch -Np1 -d pipewire-$version -i $SRC/1650.patch
 
 	meson setup pipewire-$version build $PKGMK_PW \
 		-D prefix=/usr \
