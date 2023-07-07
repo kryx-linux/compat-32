@@ -4,14 +4,12 @@
 # Depends on: libjpeg-turbo
 
 name=libjpeg-turbo-32
-version=2.1.5.1
+version=3.0.0
 release=1
-source=(https://downloads.sourceforge.net/project/${name%-*}/$version/${name%-*}-$version.tar.gz)
+source=(https://downloads.sourceforge.net/project/libjpeg-turbo/$version/libjpeg-turbo-$version.tar.gz)
 
 build() {
-	prt-get isinst ninja && PKGMK_LIBJPEG_TURBO_32+=' -G Ninja'
-	cmake -S ${name%-*}-$version -B build ${PKGMK_LIBJPEG_TURBO_32} \
-		-G "Unix Makefiles" \
+	cmake -S ${name%-*}-$version -B build -G Ninja \
 		-D CMAKE_INSTALL_PREFIX=/usr \
 		-D CMAKE_INSTALL_LIBDIR=/usr/lib32 \
 		-D CMAKE_BUILD_TYPE=Release \

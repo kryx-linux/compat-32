@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTFaUMtO8DB5xesPWDUAlYAUmxBHq1UR2igxOIqurD7+V4ie1LfZK2MbzfdcmlN1UiQJWrpzGawXWZydVFhZxgc=
-SHA256 (Pkgfile) = c68ed1dfce4937d83ecfc04972ec68ac87de475d458124b53ecc8a7d199a9cb9
-SHA256 (.footprint) = 5dd41d9aea72792d1f5e85f41b3904b7032a9519236f7e561744d2440dedcb14
-SHA256 (libjpeg-turbo-2.1.5.1.tar.gz) = 2fdc3feb6e9deb17adec9bafa3321419aa19f8f4e5dea7bf8486844ca22207bf
+RWSwxGo/zH7eXWiVDivbFBAYGUZWzPCfnbsbfyMwRegisD3iw0cCS31HtR44Y5oQEt6QEivWZmrEt6lYY4A7tuVi//zEBd3JOQ0=
+SHA256 (Pkgfile) = 6bc5cab44259927411e0841147e76d63c0af718ef1dd232490aa1b4d4322c9f7
+SHA256 (.footprint) = 1db8893d6556562f39098391562070da2ef413a5dca5fc821c39378635ae5b83
+SHA256 (libjpeg-turbo-3.0.0.tar.gz) = c77c65fcce3d33417b2e90432e7a0eb05f59a7fff884022a9d931775d583bfaa
