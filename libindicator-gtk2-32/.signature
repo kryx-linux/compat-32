@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQCPBZOrU8rUB5xbGxcuSkQk6qL4uB5vzblny5ZlHVlcErXssE83KgPkHwtG52EnFUZZyuNGQ63dVajLCueiSgg=
-SHA256 (Pkgfile) = 9838fb129b0e3d9444213bd6afad49823d280bc7781ada83c6ae495cd27179e8
+RWSwxGo/zH7eXfhlxiO+dy60MKdU0+kv7r1hOy0VGw3q/phFVC5EUQ03NnQvhqUAP4dm1JTGQVzw3syzymwbjGdIgPNcVBhJqwc=
+SHA256 (Pkgfile) = de75fc70972cfc292bceb036ec446713a26c2840fbb443a317f83160cca2cde1
 SHA256 (.footprint) = 02d500ef3011fd38ae3de60d25c4cbbe49681a0081c0ab21363fc42c57effdcd
-SHA256 (libindicator-16.10.tar.gz) = 03bb0f6aa4c0eeefd53f040f641e42bdccb8f7b791685bbdefd2cee50d95ca51
+SHA256 (libindicator_16.10.0+18.04.20180321.1.orig.tar.gz) = 0029ac3aa8d5a339de252f66209b40c12e5bfa9072221b9b32d07844273f62fd
