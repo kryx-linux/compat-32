@@ -1,6 +1,8 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXVH1msgOj6KUjB6G0cHQr7vttfpIt2oFc24jtl6o0zLVTIDRU0UVw3avGMnNMRwsDc2P/kSdpGmjGnLoGZiQeQs=
-SHA256 (Pkgfile) = 42d3d7cdece610507bd24ef77c0cc34791a55eadf31db6b0830ab179afde1809
-SHA256 (.footprint) = e07a60f85539724566166f2f51bb0a7a25fa3ca71c1e45155bc8592f19f17ab3
-SHA256 (libdbusmenu_18.10.20180917~bzr490+repack1.orig.tar.xz) = f670bc86ea5ae1488b2405f371ceb870ce353127578f9b0aed2862cbbc42053b
+RWSwxGo/zH7eXVIrjb2gzvgS2AUHmapuQ9iiUPWq6+P3ggitaPDWsZMpPuiH5xmEpN6rXMWotuUuqDsdJwGVya73kC+4CHY+iQo=
+SHA256 (Pkgfile) = 666236ab15fd9e47cbeb504fcae5478c803198c80e72271ec3a9f4d17642feea
+SHA256 (.footprint) = 98b89cd7d4212567a76a3dab3b477aa84b48e68cbf1cc8e9d8fc2d880b3560b5
+SHA256 (libdbusmenu_18.10.20180917~bzr492+repack1.orig.tar.xz) = 41298b926573419f21864205317461750b833c596af6ab0bd206e13336f8cee3
 SHA256 (0001_no-deprecated-gnome-common-macros.patch) = a65626ad3dd26a81037332d881736587929c7f8935cd34d2fc3e7f4a988d5a72
+SHA256 (0003_port-tools-dbusmenu-bench-to-py3.patch) = 5596fa1d311e80e780af9d2453e1b81f2b9604bb9894333c51a1361f41778919
+SHA256 (0004_prevent-test-json-from-failing.patch) = 42f61f6b2a9c3e355a21f3fc8f9583963704e8c299b0f12c07499e41ce99c992
