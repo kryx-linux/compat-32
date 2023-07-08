@@ -4,22 +4,16 @@
 # Depends on: libappindicator-gtk2-32 libappindicator-sharp
 
 name=libappindicator-sharp-32
-version=16.10
+version=12.10
 release=1
-source=(http://unrealize.co.uk/source/libappindicator-16.10.tar.gz
+source=(http://archive.ubuntu.com/ubuntu/pool/universe/liba/libappindicator/libappindicator_12.10.1+20.10.20200706.1.orig.tar.gz
   0001-Glib.Timeout-fix.patch
   0002-Fix-mono-nunit-pkgconfig-name.patch
   0003-Fix-Mono-assemblies-directory.patch
   badfunction.patch
-  conditional-py-bindings.patch
-  disable-mono.patch
-  gtk3.patch
-  improved-plasma-support.patch
-  vala-inherit.patch)
+  improved-plasma-support.patch)
 
 build() {
-  cd libappindicator-$version
-
   # The next 3 patches shamelessly pinched from Arch
   patch -p1 -i $SRC/0001-Glib.Timeout-fix.patch
   patch -p1 -i $SRC/0002-Fix-mono-nunit-pkgconfig-name.patch
@@ -28,15 +22,12 @@ build() {
   # This one is also from Arch(ish), but had to be recreated best it could
   patch -p1 -i $SRC/improved-plasma-support.patch
 
-  # Patch pinched from Gentoo
-  patch -p1 -i $SRC/conditional-py-bindings.patch
-
   # Removed a function which had no declaration
   patch -p1 -i $SRC/badfunction.patch
 
   sed -i -e 's/ -Werror//' src/Makefile.am
-  export PKG_CONFIG_LIBDIR='/usr/lib32/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig'
   export CSC='/usr/bin/mcs'
+  export PKG_CONFIG_LIBDIR='/usr/lib32/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig'
   NOCONFIGURE=1 ./autogen.sh
 
   CXXFLAGS="$CXXFLAGS -std=c++11" \
@@ -53,6 +44,4 @@ build() {
   make
   make DESTDIR=$PKG -C bindings/mono -j1 install
   mv $PKG/usr/lib/mono $PKG/usr/lib32/mono
-
-#  rm -r $PKG/usr/{lib,include,share}
 }
