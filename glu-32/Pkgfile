@@ -9,10 +9,16 @@ release=1
 source=(https://mesa.freedesktop.org/archive/glu/glu-$version.tar.xz)
 
 build() {
-	cd glu-$version
-	./configure --prefix=/usr \
-		--libdir=/usr/lib32
-	make
-	make DESTDIR=$PKG install
+	meson build glu-$version \
+		--prefix /usr \
+		--libdir lib \
+		--wrap-mode nodownload \
+		-D b_lto=true \
+		-D b_pie=true \
+		-D default_library=shared
+
+	meson compile -C build
+	DESTDIR=$PKG meson install -C build
+
 	rm -rf $PKG/usr/include
 }
