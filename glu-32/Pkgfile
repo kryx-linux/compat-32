@@ -11,7 +11,7 @@ source=(https://mesa.freedesktop.org/archive/glu/glu-$version.tar.xz)
 build() {
 	meson build glu-$version \
 		--prefix /usr \
-		--libdir lib \
+		--libdir lib32 \
 		--wrap-mode nodownload \
 		-D b_lto=true \
 		-D b_pie=true \
