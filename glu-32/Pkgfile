@@ -4,7 +4,7 @@
 # Depends on: glu mesa-32
 
 name=glu-32
-version=9.0.2
+version=9.0.3
 release=1
 source=(https://mesa.freedesktop.org/archive/glu/glu-$version.tar.xz)
 
