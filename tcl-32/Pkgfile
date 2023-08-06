@@ -1,6 +1,6 @@
 # Description: The Tcl scripting language.
 # URL: https://www.tcl.tk/
-# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Maintainer: unmaintained
 # Depends on: tcl zlib-32
 
 name=tcl-32
