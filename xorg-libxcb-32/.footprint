@@ -10,6 +10,11 @@ lrwxrwxrwx	root/root	usr/lib32/libxcb-composite.so.0 -> libxcb-composite.so.0.0.
 lrwxrwxrwx	root/root	usr/lib32/libxcb-damage.so -> libxcb-damage.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib32/libxcb-damage.so.0 -> libxcb-damage.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib32/libxcb-damage.so.0.0.0
+-rw-r--r--	root/root	usr/lib32/libxcb-dbe.a
+-rwxr-xr-x	root/root	usr/lib32/libxcb-dbe.la
+lrwxrwxrwx	root/root	usr/lib32/libxcb-dbe.so -> libxcb-dbe.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib32/libxcb-dbe.so.0 -> libxcb-dbe.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib32/libxcb-dbe.so.0.0.0
 -rw-r--r--	root/root	usr/lib32/libxcb-dpms.a
 -rwxr-xr-x	root/root	usr/lib32/libxcb-dpms.la
 lrwxrwxrwx	root/root	usr/lib32/libxcb-dpms.so -> libxcb-dpms.so.0.0.0
@@ -123,6 +128,7 @@ lrwxrwxrwx	root/root	usr/lib32/libxcb.so.1 -> libxcb.so.1.1.0
 drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-composite.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-damage.pc
+-rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-dbe.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-dpms.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-dri2.pc
 -rw-r--r--	root/root	usr/lib32/pkgconfig/xcb-dri3.pc
