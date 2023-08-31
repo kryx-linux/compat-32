@@ -4,7 +4,7 @@
 # Depends on: libnl
 
 name=libnl-32
-version=3.7.0
+version=3.8.0
 release=1
 source=(https://github.com/thom311/libnl/releases/download/libnl${version//./_}/${name%-*}-$version.tar.gz)
 
