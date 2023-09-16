@@ -1,6 +1,6 @@
-# Description: Codec designed for interactive speech and audio transmission over the Internet.
+# Description: a totally open, royalty-free, highly versatile audio codec
 # URL: https://www.opus-codec.org/
-# Maintainer: Danny Rawlins, crux at romster dot me
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: opus
 
 name=opus-32
