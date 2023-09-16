@@ -1,6 +1,6 @@
-# Description: A thin layer of graphic data types.
+# Description: A thin layer of graphic data types
 # URL: https://ebassi.github.io/graphene/
-# Maintainer: Danny Rawlins, crux at romster dot me
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: glib-32 graphene
 
 name=graphene-32
@@ -13,6 +13,8 @@ build() {
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
 		--buildtype=plain \
+		-D b_lto=true \
+		-D b_pie=true \
 		-D introspection=disabled \
 		-D installed_tests=false
 
