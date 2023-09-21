@@ -5,14 +5,16 @@
 # Optional: dbus-32 gnutls-32
 
 name=cups-32
-version=2.4.6
+version=2.4.7
 release=1
 source=(https://github.com/OpenPrinting/cups/releases/download/v$version/${name%-*}-$version-source.tar.gz)
 
 build() {
 	cd ${name%-*}-$version
 
-	prt-get isinst gnutls-32 || PKGMK_CUPS+=' --without-tls'
+	PKGMK_CUPS=' --with-tls=openssl'
+	prt-get isinst gnutls-32 && PKGMK_CUPS=' --with-tls=gnutls'
+
 
 	CC=cc CXX=c++ \
 	./configure \
