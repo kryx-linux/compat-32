@@ -4,7 +4,7 @@
 # Depends on: spirv-tools-32 vulkan-loader-32 xorg-xcb-util-keysyms-32 vkd3d
 
 name=vkd3d-32
-version=1.8
+version=1.9
 release=1
 source=(https://dl.winehq.org/vkd3d/source/${name%-*}-$version.tar.xz)
 
@@ -19,6 +19,7 @@ build() {
 	make
 	make DESTDIR=$PKG install
 	mv $PKG/usr/bin/vkd3d-compiler{,-32}
+	mv $PKG/usr/bin/vkd3d-dxbc{,-32}
 
 	rm -r $PKG/usr/include
 }
