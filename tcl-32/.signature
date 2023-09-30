@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXYqqQjkLVxD1JrjTLbSsbD+RaGbTkbj2lokVdAAK9YM2YIrgbCQ9Hp4L6B15aX/nnf+XTOGETf5U4tDfbigeIwc=
-SHA256 (Pkgfile) = 2b0a9d88c69e608dcdcfb90e2309f2f54097ab1f7fbb7108f21e3eda1a258277
-SHA256 (.footprint) = f23475028d154d9c361a4164e69c4decf8c46420ac097300acdba3451bac7522
-SHA256 (tcl8.6.13-src.tar.gz) = 43a1fae7412f61ff11de2cfd05d28cfc3a73762f354a417c62370a54e2caf066
