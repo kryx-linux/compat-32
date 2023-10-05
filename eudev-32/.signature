@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXU6+xYSBjYWwZeWuKbg1cnmycxIwELXPy52xnocqw/UzTaKcsa1v1iN7kLPTx6k8Evp5vQ/26e6Ie7L+6i20gwY=
-SHA256 (Pkgfile) = dbdd379a8411650de3b78569cca8149c88b392571f5987104f39fc73fb32fa42
+RWSwxGo/zH7eXYrpVKisw11NmAtNIHrFJe2ushkQyyfBUYCcdkekRED3UktOXU6RcQqpx/uvZuZpiO8D9XTBDRKl0pB9QTVxEAc=
+SHA256 (Pkgfile) = fd1af29ae21d91b20556671f3b77e1d5eb330d9403ea99ba8ad252e49b1a1eab
 SHA256 (.footprint) = 0441d880458916404fe99e70ccea4bfee33658be8c1f50471bbe55ecd4f85efd
-SHA256 (eudev-3.2.12.tar.gz) = ccdd64ec3c381d3c3ed0e99d2e70d1f62988c7763de89ca7bdffafa5eacb9ad8
+SHA256 (eudev-3.2.14.tar.gz) = 8da4319102f24abbf7fff5ce9c416af848df163b29590e666d334cc1927f006f
