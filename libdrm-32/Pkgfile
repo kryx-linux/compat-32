@@ -5,7 +5,7 @@
 
 name=libdrm-32
 version=2.4.117
-release=1
+release=2
 source=(https://dri.freedesktop.org/${name%-*}/${name%-*}-$version.tar.xz)
 
 build() {
@@ -13,6 +13,7 @@ build() {
 		--prefix=/usr \
 		--libdir=lib32 \
 		--buildtype=plain \
+		-D intel=enabled \
 		-D man-pages=disabled \
 		-D valgrind=disabled \
 		-D cairo-tests=disabled
