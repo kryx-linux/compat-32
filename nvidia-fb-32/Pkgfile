@@ -4,7 +4,7 @@
 # Depends on: libglvnd-32
 
 name=nvidia-fb-32
-version=530.41.03
+version=545.29.02
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run)
 
@@ -27,7 +27,7 @@ build() {
 	ln -s libEGL_nvidia.so.$version $PKG/usr/lib32/libEGL_nvidia.so.0
 
 	# driver component libraries
-	for C in allocator compiler {e,}glcore gl{si,vkspirv}; do
+	for C in allocator {e,}glcore gl{si,vkspirv} gpucomp; do
 		install -m 0755 libnvidia-${C}.so.$version $PKG/usr/lib32/
 		ln -s libnvidia-${C}.so.$version $PKG/usr/lib32/libnvidia-${C}.so.1
 		ln -s libnvidia-${C}.so.$version $PKG/usr/lib32/libnvidia-${C}.so
