@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXW4ZL67tHA5gvUkomK73Jzn7IAkhuNbNbbwqvI8GE8yz/G3RqFNawdcxTtD5iD1kR4IsuM6lbKi+PaNHhvvCAQI=
-SHA256 (Pkgfile) = 0412ee5368f1d70214d88c5f6c92dc2b1435bd6ac48cdc4ef9b1c78582af39d8
-SHA256 (.footprint) = 0d45a5dc32d783f88af261ea8c390d41aaa7871f41c64dd2e8145957d29ce142
-SHA256 (llvm-17.0.4.src.tar.xz) = 4f5907fb547947d10df35230a0fc73cf2f81aa12e09fc8de96c023425412c9f6
-SHA256 (cmake-17.0.4.src.tar.xz) = 1a5cbe4a1fcda56ecdd80f42c3437060a28c97ec31de1748f6ba6aa84948fb0f
-SHA256 (third-party-17.0.4.src.tar.xz) = 49358a7da2f49149a3028bf3aa6389052d4ebc15c548699cf19694141fdea847
+RWSwxGo/zH7eXc9XXBJZEvfiV/RxWZn/WYxbv6xoyylSB9qmwdvb9Ia9LbgUCeLu6mTDwNgsEaz0zbMC8qvALpY9LP4C8u2IegA=
+SHA256 (Pkgfile) = e5f6ce3deaff4401f0022eeb558bf31e895ad3059442db39a41541bd821b7840
+SHA256 (.footprint) = 51fae90c8e84f132787ab168bf692aeb1642af8f3f891a08ce402dca9c719358
+SHA256 (llvm-17.0.5.src.tar.xz) = 569526fd017478eee51518a79c064442c0499269c6a6de586e409d91282afd04
+SHA256 (cmake-17.0.5.src.tar.xz) = 734ea7767ebda642d22c878024c9fb14ae0521d048bdba54e463bb73260adaef
+SHA256 (third-party-17.0.5.src.tar.xz) = fe2f67bda7b1c28ff3930a91481cf64b6059aacf7b683c29b95424d32a258890
