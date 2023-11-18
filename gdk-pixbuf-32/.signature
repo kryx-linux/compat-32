@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXb6Fn36ZlNXV4V+k7p+lg9+E6YFIRWmrw+e+GsVLtDNO+Op/2Grdz7E7y+4xsrozJIs4SqfEYwj5yf/vzKDD6gM=
-SHA256 (Pkgfile) = 580289dc16b1c95b8ffaf5f23361be09885ce0f7ccc56470df06dff1de1e4eee
+RWSwxGo/zH7eXY+hgLcbwdZnoJJZv8JQQjxFs0mCzT2uz9ZaMVuWcHZPzXlO/+kdc2/rKMAYVcREJM374elzVOywMQtzEfFurgI=
+SHA256 (Pkgfile) = bd77d9726f3b092334a5c70a1203bbc8c1ed1115cadb510971ad77d950eb0058
 SHA256 (.footprint) = fb09129e0db2c86d52b136e8fe3326aeb9cce5d40c50c86101bbeb1725f83710
 SHA256 (gdk-pixbuf-2.42.10.tar.xz) = ee9b6c75d13ba096907a2e3c6b27b61bcd17f5c7ebeab5a5b439d2f2e39fe44b
