@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXYXiTYErUDFeW1CKTw/avxDawoUM2baHeZSzlPh3qI6Hd47kgrN/1YSl1hQpmez+WngBzrZqglHA7nSIwiUqQgg=
-SHA256 (Pkgfile) = 1f8f7779a6f0bc647a3455ccab86b76fe2b7b8efb6b44c239a44d6849304cb67
-SHA256 (.footprint) = ff711075a2adcda6bffe5f4db1e7b34a7102afe5902b66a02b8aa3f8898cf6cd
-SHA256 (icu4c-73_2-src.tgz) = 818a80712ed3caacd9b652305e01afc7fa167e6f2e94996da44b90c2ab604ce1
+RWSwxGo/zH7eXV0hshlnV3BoGRhIlX+pMvA0cnyDOsdsCXL0QdCnx9t/ss2KHk6h9oQyZDke23BARjEk5bN4KKFe5amFBnsGLAs=
+SHA256 (Pkgfile) = f9109974e648c4df524e522657d0ab5ca9ff906a81900884c3b88b4697482614
+SHA256 (.footprint) = 19b7fbfeb04238f289da9609a9b460fc2551b340ae0434ca2073a8633cce9a7c
+SHA256 (icu4c-74_1-src.tgz) = 86ce8e60681972e60e4dcb2490c697463fcec60dd400a5f9bffba26d0b52b8d0
