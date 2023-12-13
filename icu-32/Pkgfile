@@ -4,12 +4,14 @@
 # Depends on: icu
 
 name=icu-32
-version=74.1
+version=74.2
 release=1
 source=(https://github.com/unicode-org/icu/releases/download/release-${version//./-}/icu4c-${version/./_}-src.tgz)
 
 build() {
 	cd icu/source
+
+	touch ../LICENSE
 
 	# icu tries to use clang by default, only do so if installed
 	prt-get isinst clang lld && LDFLAGS+=' -fuse-ld=lld -flto=thin'
