@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXcOXnhCcKGYZnl644e4Z+WutV2yK76G6BUQVPzD7hidVZo9+pOtfS6me5dB9EoyYTK0ISU/izHvyRnQ52eo7dAw=
-SHA256 (Pkgfile) = c87bcadf9b4559acea48fa7e68867b23fd100bc04198bb2b7edb85b01c9c02b4
-SHA256 (.footprint) = 428c233979faee9e66701038dc27d782c9c8d52fadee8afd61ea29db885921f0
-SHA256 (libunwind-1.7.2.tar.gz) = c76c4f340071ede486af6342d50e17747f7b0db1c05077c8f7c677c09b324f73
+RWSwxGo/zH7eXfJpWwKdZrlqvgsCl+EYcB2kYutylULZpXuTRnRcu+iT2mV6L9RnH4IAYS/SiJdIeWOx2Np2zgY3n54mEWa4aAQ=
+SHA256 (Pkgfile) = 69294f30d32d7895073901a129ab4bbe0cdccc2d1f98cc5ac623e72ad23fb3cf
+SHA256 (.footprint) = 1cbd34a3ca89b5b9c999e974f1db5a095685b5003e2660e923c32c0ad8e6b434
+SHA256 (libunwind-1.8.0.tar.gz) = b6b3df40a0970c8f2865fb39aa2af7b5d6f12ad6c5774e266ccca4d6b8b72268
