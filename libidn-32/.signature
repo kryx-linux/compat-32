@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXUU9ZN6V2HOMighJj1oX4/qEiJ44PYKAsHM+Vt0MQN2KZCmlpA2OX1Z4ZXp13siIi9W3o/aZeUtwoQ9iPU5y9A0=
-SHA256 (Pkgfile) = ddc6eccf19300555dc548f27664ec256ed349ae7d06a58e8392b3d457ec4fcb2
-SHA256 (.footprint) = 14a78ec3e911bcaf9151baf3926ce2895a8121893a699ad85775c4c1975c480a
-SHA256 (libidn-1.41.tar.gz) = 884d706364b81abdd17bee9686d8ff2ae7431c5a14651047c68adf8b31fd8945
+RWSwxGo/zH7eXQbPGLca1y618ayGcVP8ANy43eNupO3sgwDLr9swZLXA2K3yi04AxSVvM4Uy3N4ghxShc3wu6SYjJtIPgAaEgAI=
+SHA256 (Pkgfile) = 3db850ddef5c8bbfd7eeac7ead43b3c1222c5b8c50b8e5672d5ae3d48766d69a
+SHA256 (.footprint) = 7cf2a7a9053005ac15a342c8061913eb9fc606e24c2ffaed0a4bd142e6999135
+SHA256 (libidn-1.42.tar.gz) = d6c199dcd806e4fe279360cb4b08349a0d39560ed548ffd1ccadda8cdecb4723
