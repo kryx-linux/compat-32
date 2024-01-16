@@ -1,10 +1,10 @@
 # Description: Public Suffix List library.
 # URL: https://github.com/rockdaboot/libpsl
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libpsl libunistring-32 libidn2-32
+# Depends on: libidn2-32 libpsl
 
 name=libpsl-32
-version=0.21.2
+version=0.21.5
 release=1
 source=(https://github.com/rockdaboot/${name%-*}/releases/download/$version/${name%-*}-$version.tar.lz)
 
