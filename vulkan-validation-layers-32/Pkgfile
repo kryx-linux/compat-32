@@ -6,7 +6,7 @@
 
 name=vulkan-validation-layers-32
 _name=Vulkan-ValidationLayers
-version=1.3.268.0
+version=1.3.275.0
 _version=vulkan-sdk-$version
 release=1
 source=(https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/$_version/$_name-$version.tar.gz)
@@ -21,9 +21,8 @@ build() {
 		-D CMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
 		-D SPIRV_HEADERS_INSTALL_DIR=/usr \
 		-D VULKAN_HEADERS_INSTALL_DIR=/usr \
-		-D BUILD_TESTS=OFF \
-		-D BUILD_LAYER_SUPPORT_FILES=ON \
 		-D USE_ROBIN_HOOD_HASHING=ON \
+		-D BUILD_TESTS=OFF \
 		-Wno-dev
 
 	cmake --build build
