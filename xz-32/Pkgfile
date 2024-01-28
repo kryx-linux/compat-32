@@ -3,9 +3,9 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=xz-32
-version=5.4.5
+version=5.4.6
 release=1
-source=(https://tukaani.org/xz/xz-$version.tar.xz)
+source=(https://github.com/tukaani-project/xz/releases/download/v$version/xz-$version.tar.xz)
 
 build() {
 	cd xz-$version
