@@ -1,10 +1,10 @@
-# Description: Library of PNG support functions.
-# URL:         http://www.libpng.org/pub/png/libpng.html
+# Description: Library of PNG support functions
+# URL: http://www.libpng.org/pub/png/libpng.html
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libpng zlib-32
 
 name=libpng-32
-version=1.6.40
+version=1.6.41
 _base=${version:0:3}
 _base=${_base/./}
 release=1
