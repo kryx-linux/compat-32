@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXbeZgA+sS8ljvf53GVSyJINm8DnIHScdQN0ml4XWc7B5zSn28OkY0ogPzxLSHdq6m6UizRpGxMqeM16AF4Ww2Ac=
-SHA256 (Pkgfile) = 863a8202ba792cdeee72369fb06a5da8b145a81f4f86b4fcd801d61681ba3a8e
+RWSwxGo/zH7eXahdA8Vlzfxc7zMoh0wmTkGQltcfKYxcHuas1LxUqYOV2DpKmdZpnhBM34NscDQVZArN/3la9XQ8l26bAYqk+gc=
+SHA256 (Pkgfile) = d527a91b412a27271f54897e0fa3a97d52f7a915760a5e769b7b711936665b2a
 SHA256 (.footprint) = a0c91639acd477d6f3b5625531ab57d32c80e7bad958dacccd1238689156602a
-SHA256 (openssl-3.2.0.tar.gz) = 14c826f07c7e433706fb5c69fa9e25dab95684844b4c962a2cf1bf183eb4690e
+SHA256 (openssl-3.2.1.tar.gz) = 83c7329fe52c850677d75e5d0b0ca245309b97e8ecbcfdc1dfdc4ab9fac35b39
