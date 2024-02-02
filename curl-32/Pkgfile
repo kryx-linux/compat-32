@@ -5,7 +5,7 @@
 # Optional: brotli-32
 
 name=curl-32
-version=8.5.0
+version=8.6.0
 release=1
 source=(https://curl.se/download/${name%-*}-$version.tar.xz)
 
@@ -23,6 +23,7 @@ build() {
     --without-libidn2 \
     --with-openssl \
     --enable-threaded-resolver \
+    --without-libpsl \
     --with-ca-bundle=/etc/ssl/cert.pem
   make
   make DESTDIR=$PKG install
