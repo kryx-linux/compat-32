@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXU+e5rNa5mvvG56HvYZJEuFSQPkverdVMeBRgHsinQPfTvGk+m6dmzMdgF5PxYbbBy8HzxVSZOijLdEaTticLws=
-SHA256 (Pkgfile) = 9a3ec4c77cf9f5ee8fd8de3354f04b8c35c745f6601e50d0aa2dd818696bb276
+RWSwxGo/zH7eXX/xsM6YC3CiwB8wqH8H0rD7HYaJWUn58CKYY6Ee9pZt9bxwL572+a3ObCDcibzkDe1QPwQpGrudbiVQ1sGgcQ8=
+SHA256 (Pkgfile) = 4b3e5b7d80c094bfa430ca3921747539657a77ba1e3135c15dbf9f2ffcbbf140
 SHA256 (.footprint) = c93d9e18fbf514e682c42d7ebdc3c935d52eacb5b87ad99765d7b23a223578b9
-SHA256 (alsa-lib-1.2.10.tar.bz2) = c86a45a846331b1b0aa6e6be100be2a7aef92efd405cf6bac7eef8174baa920e
+SHA256 (alsa-lib-1.2.11.tar.bz2) = 9f3f2f69b995f9ad37359072fbc69a3a88bfba081fc83e9be30e14662795bb4d
