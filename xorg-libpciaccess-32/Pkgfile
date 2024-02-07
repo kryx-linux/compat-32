@@ -1,19 +1,27 @@
 # Description: Generic PCI access library
 # URL: http://xorg.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: xorg-libpciaccess
+# Depends on: xorg-libpciaccess zlib-32
+# Optional: hwdata
 
 name=xorg-libpciaccess-32
-version=0.17
-release=1
+version=0.18
+release=2
 source=(https://www.x.org/releases/individual/lib/libpciaccess-$version.tar.xz)
 
 build() {
-	cd libpciaccess-$version
+	prt-get isinst hwdata && PKGMK_LIBPCIA+=' -D pci-ids=hwdata'
 
-	./configure --prefix=/usr --libdir=/usr/lib32
+	meson setup libpciaccess-$version build $PKGMK_LIBPCIA \
+		--prefix=/usr \
+		--libdir=/usr/lib32 \
+		--buildtype=plain \
+		--wrap-mode nodownload \
+		-D b_lto=false \
+		-D b_pie=true \
+		-D zlib=enabled
+	meson compile -C build
+	DESTDIR=$PKG meson install -C build
 
-	make
-	make DESTDIR=$PKG install
 	rm -rf $PKG/usr/include
 }
