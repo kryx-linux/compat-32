@@ -22,4 +22,5 @@ build() {
   make DESTDIR=$PKG install
 
   find $PKG/usr/include -type f ! -name libunwind-x86.h -delete
+  rm -r $PKG/usr/libexec
 }
