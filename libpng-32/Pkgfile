@@ -4,17 +4,14 @@
 # Depends on: libpng zlib-32
 
 name=libpng-32
-version=1.6.42
+version=1.6.43
 _base=${version:0:3}
 _base=${_base/./}
 release=1
-source=(https://downloads.sourceforge.net/project/${name%-*}/${name%-*}$_base/$version/${name%-*}-$version.tar.xz
-	libpng-apng.patch)
+source=(https://downloads.sourceforge.net/project/${name%-*}/${name%-*}$_base/$version/${name%-*}-$version.tar.xz)
 
 build() {
 	cd ${name%-*}-$version
-
-	patch -p1 -i $SRC/libpng-apng.patch
 
 	./configure \
 		--prefix=/usr \
