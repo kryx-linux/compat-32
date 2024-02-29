@@ -4,16 +4,25 @@
 # Depends on: orc
 
 name=orc-32
-version=0.4.37
+version=0.4.38
 release=1
 source=(https://gstreamer.freedesktop.org/src/orc/orc-$version.tar.xz)
 
 build() {
-	cd orc-$version
+  meson setup orc-$version build \
+    --prefix=/usr \
+    --libdir=/usr/lib32 \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_lto=true \
+    -D b_pie=true \
+    -D benchmarks=disabled \
+    -D examples=disabled \
+    -D gtk_doc=disabled \
+    -D tests=disabled
 
-	meson build --prefix=/usr --libdir=/usr/lib32 -D gtk_doc=disabled
-	ninja -C build -j ${JOBS:-1}
-	DESTDIR=$PKG ninja -C build install
+  meson compile -C build -j ${JOBS:-1}
+  DESTDIR=$PKG meson install -C build
 
-	rm -r $PKG/usr/{bin,include,share}
+  rm -r $PKG/usr/{bin,include}
 }
