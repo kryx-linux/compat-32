@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXYFd/2sm2EbpDVspknn7nn5HZtH82n4W+s0xztC7P9xcfNrmcVn/ruXrWFjIzkyvw1CtejA5co3cfM23rKjsjQY=
-SHA256 (Pkgfile) = 40b8bca47f41bfb7fa342f68bef6206f6a7023b1c02c5584945758c9aa0f47ef
-SHA256 (.footprint) = 95360d75105982a23119f0bd51736175759672c9b4fd6533c71d900d9bb2b2fd
-SHA256 (pango-1.50.14.tar.xz) = 1d67f205bfc318c27a29cfdfb6828568df566795df0cb51d2189cde7f2d581e8
+RWSwxGo/zH7eXaWHyqoG2/LRdUl9kKQ4926f34QdmPNH7ijSYBAv9SMYtLsiM1okPARIAGmMGaxdHu6E9qKpLU8pGV/plLWKjg0=
+SHA256 (Pkgfile) = df83ae4c610c22c794f57c4c2a0e51b14eaabda3d5fe50f09d10056ccba52cbc
+SHA256 (.footprint) = dbb507a23ddf1e65f9f4d420c826b81c35948ca7e8cd82bc090ef3d0a62c88dc
+SHA256 (pango-1.52.0.tar.xz) = 1ec8518879c3f43224499f08e8ecbbdf4a5d302ed6cd3853b4fa949f82b89a9b
