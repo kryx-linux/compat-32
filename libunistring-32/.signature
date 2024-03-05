@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXdnyUIr8zjpIjx+7nADdw3z60cNMBOgs2JzLr+xfKMw8bDB+Om/H+Qw29n33GOCuM05LeqIV8t5aXTDKIPouGQA=
-SHA256 (Pkgfile) = 8a9d2987bc0de18fd9a0c2d1920aa98bcbde99f5952fc94a21d7ffa6f1affbaf
-SHA256 (.footprint) = 7103c51ca14da4e87eb0112d788ddb97e1650ac0e40f50ed17f6450bc3091773
-SHA256 (libunistring-1.1.tar.xz) = 827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98
+RWSwxGo/zH7eXRbW72d9rxuOGPJLZlyCEPTxQ148kH/+FO595u6iENgPsFKu6RZF6ukxirsqayn5NSHyAo71Euay+Sbt9fOqwA8=
+SHA256 (Pkgfile) = 471c883c9bfd9f51c5dbebc8cbff1d93dde767fa4cd81e4ed430430ea47d9edc
+SHA256 (.footprint) = 622954b9f382c8fe326c3f36658535b4b79ac0da0a54492483c8c24c6b64c4f1
+SHA256 (libunistring-1.2.tar.xz) = 632bd65ed74a881ca8a0309a1001c428bd1cbd5cd7ddbf8cedcd2e65f4dcdc44
