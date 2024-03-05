@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXXDaLgWbQSCXMJ3wpNZYqBtUd5/Mz9yZs0A85ulgW08cumJ7NZ1QH2hO0rPe7Ghe+od8NqOPPY3wrTrQ1jxqNgQ=
-SHA256 (Pkgfile) = 7e95c911cc0ad0d5dea36dfcb100861649e79169a8081bb1f15e341438f9c270
+RWSwxGo/zH7eXchfI88vD2VVn5t21+usuMWaJbk2t3jKryjShH5i2mJuFz8M7Y+IwJnnSxg1Jskq2WxKP8E1ngZrEVQ4T8iP9Qk=
+SHA256 (Pkgfile) = 566a04d53eb1cc4fcd2e0196668d239593ad9b583e0c41fc2e5d4f2c0f959091
 SHA256 (.footprint) = 2973c5c6c546683f07b9afb9018036113432ddb363a063b995eac10beb8437ef
-SHA256 (libXdmcp-1.1.4.tar.xz) = 2dce5cc317f8f0b484ec347d87d81d552cdbebb178bd13c5d8193b6b7cd6ad00
+SHA256 (libXdmcp-1.1.5.tar.xz) = d8a5222828c3adab70adf69a5583f1d32eb5ece04304f7f8392b6a353aa2228c
