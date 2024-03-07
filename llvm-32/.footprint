@@ -15,7 +15,6 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/CheckAtomic.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/CheckCompilerVersion.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/CheckProblematicConfigurations.cmake
--rw-r--r--	root/root	usr/lib32/cmake/llvm/ChooseMSVCCRT.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/CoverageReport.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/CrossCompile.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/DetermineGCCCompatible.cmake
@@ -44,15 +43,14 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/LLVMExternalProjectUtils.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/LLVMInstallSymlink.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/LLVMProcessSources.cmake
--rw-r--r--	root/root	usr/lib32/cmake/llvm/SetTargetTriple.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/TableGen.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/TensorFlowCompile.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/UseLibtool.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/VersionFromVCS.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/llvm-driver-template.cpp.in
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-17.0.6.so -> libLLVM-17.so
--rwxr-xr-x	root/root	usr/lib32/libLLVM-17.so
-lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-17.so
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-18rc.so -> libLLVM.so.18.1rc
+lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.18.1rc
+-rwxr-xr-x	root/root	usr/lib32/libLLVM.so.18.1rc
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64AsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64CodeGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64Desc.a
@@ -98,6 +96,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-17.so
 -rw-r--r--	root/root	usr/lib32/libLLVMCoroutines.a
 -rw-r--r--	root/root	usr/lib32/libLLVMCoverage.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDWARFLinker.a
+-rw-r--r--	root/root	usr/lib32/libLLVMDWARFLinkerClassic.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDWARFLinkerParallel.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDWP.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDebugInfoBTF.a
@@ -119,7 +118,9 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-17.so
 -rw-r--r--	root/root	usr/lib32/libLLVMExegesisX86.a
 -rw-r--r--	root/root	usr/lib32/libLLVMExtensions.a
 -rw-r--r--	root/root	usr/lib32/libLLVMFileCheck.a
+-rw-r--r--	root/root	usr/lib32/libLLVMFrontendDriver.a
 -rw-r--r--	root/root	usr/lib32/libLLVMFrontendHLSL.a
+-rw-r--r--	root/root	usr/lib32/libLLVMFrontendOffloading.a
 -rw-r--r--	root/root	usr/lib32/libLLVMFrontendOpenACC.a
 -rw-r--r--	root/root	usr/lib32/libLLVMFrontendOpenMP.a
 -rw-r--r--	root/root	usr/lib32/libLLVMFuzzMutate.a
@@ -130,6 +131,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-17.so
 -rw-r--r--	root/root	usr/lib32/libLLVMHexagonDesc.a
 -rw-r--r--	root/root	usr/lib32/libLLVMHexagonDisassembler.a
 -rw-r--r--	root/root	usr/lib32/libLLVMHexagonInfo.a
+-rw-r--r--	root/root	usr/lib32/libLLVMHipStdPar.a
 -rw-r--r--	root/root	usr/lib32/libLLVMIRPrinter.a
 -rw-r--r--	root/root	usr/lib32/libLLVMIRReader.a
 -rw-r--r--	root/root	usr/lib32/libLLVMInstCombine.a
@@ -175,6 +177,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-17.so
 -rw-r--r--	root/root	usr/lib32/libLLVMObject.a
 -rw-r--r--	root/root	usr/lib32/libLLVMObjectYAML.a
 -rw-r--r--	root/root	usr/lib32/libLLVMOption.a
+-rw-r--r--	root/root	usr/lib32/libLLVMOrcDebugging.a
 -rw-r--r--	root/root	usr/lib32/libLLVMOrcJIT.a
 -rw-r--r--	root/root	usr/lib32/libLLVMOrcShared.a
 -rw-r--r--	root/root	usr/lib32/libLLVMOrcTargetProcess.a
@@ -213,6 +216,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-17.so
 -rw-r--r--	root/root	usr/lib32/libLLVMTarget.a
 -rw-r--r--	root/root	usr/lib32/libLLVMTargetParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMTextAPI.a
+-rw-r--r--	root/root	usr/lib32/libLLVMTextAPIBinaryReader.a
 -rw-r--r--	root/root	usr/lib32/libLLVMTransformUtils.a
 -rw-r--r--	root/root	usr/lib32/libLLVMVEAsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMVECodeGen.a
@@ -240,8 +244,8 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM-17.so
 -rw-r--r--	root/root	usr/lib32/libLLVMXCoreInfo.a
 -rw-r--r--	root/root	usr/lib32/libLLVMXRay.a
 -rw-r--r--	root/root	usr/lib32/libLLVMipo.a
-lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.17
--rwxr-xr-x	root/root	usr/lib32/libLTO.so.17
-lrwxrwxrwx	root/root	usr/lib32/libRemarks.so -> libRemarks.so.17
--rwxr-xr-x	root/root	usr/lib32/libRemarks.so.17
+lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.18.1rc
+-rwxr-xr-x	root/root	usr/lib32/libLTO.so.18.1rc
+lrwxrwxrwx	root/root	usr/lib32/libRemarks.so -> libRemarks.so.18.1rc
+-rwxr-xr-x	root/root	usr/lib32/libRemarks.so.18.1rc
 drwxr-xr-x	root/root	usr/share/
