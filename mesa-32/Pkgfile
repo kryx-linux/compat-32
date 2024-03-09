@@ -6,7 +6,7 @@
 
 name=mesa-32
 version=24.0.2
-release=2
+release=3
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
 	x86-linux-gnu x86-linux-gnu-ccache)
 
