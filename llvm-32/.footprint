@@ -48,9 +48,9 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/UseLibtool.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/VersionFromVCS.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/llvm-driver-template.cpp.in
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-18rc.so -> libLLVM.so.18.1rc
-lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.18.1rc
--rwxr-xr-x	root/root	usr/lib32/libLLVM.so.18.1rc
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-18.so -> libLLVM.so.18.1
+lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.18.1
+-rwxr-xr-x	root/root	usr/lib32/libLLVM.so.18.1
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64AsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64CodeGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64Desc.a
@@ -244,8 +244,8 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.18.1rc
 -rw-r--r--	root/root	usr/lib32/libLLVMXCoreInfo.a
 -rw-r--r--	root/root	usr/lib32/libLLVMXRay.a
 -rw-r--r--	root/root	usr/lib32/libLLVMipo.a
-lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.18.1rc
--rwxr-xr-x	root/root	usr/lib32/libLTO.so.18.1rc
-lrwxrwxrwx	root/root	usr/lib32/libRemarks.so -> libRemarks.so.18.1rc
--rwxr-xr-x	root/root	usr/lib32/libRemarks.so.18.1rc
+lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.18.1
+-rwxr-xr-x	root/root	usr/lib32/libLTO.so.18.1
+lrwxrwxrwx	root/root	usr/lib32/libRemarks.so -> libRemarks.so.18.1
+-rwxr-xr-x	root/root	usr/lib32/libRemarks.so.18.1
 drwxr-xr-x	root/root	usr/share/
