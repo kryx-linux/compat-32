@@ -4,7 +4,7 @@
 # Depends on: libinput-32 libpthread-stubs-32 libxslt-32 xorg-libxau-32 xorg-libxcb xorg-libxdmcp-32
 
 name=xorg-libxcb-32
-version=1.16
+version=1.16.1
 release=1
 source=(https://xorg.freedesktop.org/archive/individual/lib/libxcb-$version.tar.xz)
 
