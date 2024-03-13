@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXaOMdY6+pDJfOaG9nFuMiz13BGMPrHl5koln6ki3shSC+5FxPnQ7DaBF65p1UQM1MdwYf5O7kYojWJ0zRIGWfgs=
-SHA256 (Pkgfile) = 1c2a9019e2c65f70c372ae1b9afdd65133dbd838236b57569d5057a35eb2281d
-SHA256 (.footprint) = eb7024d46a74c000174fba9eb7bb509baff70c18327e566f2500ee5b6a1027b4
-SHA256 (libva-2.20.0.tar.gz) = 117f8d658a5fc9ea406ca80a3eb4ae1d70b15a54807c9ed77199c812bed73b60
+RWSwxGo/zH7eXQNneAq0e8P+Ei8wbBG+6/ZjOltC39K7vtCl/XgnkMkH/z6Jn+92JUgBYZwxUw+wXeESVNxZACgYmDy87Z+ANQY=
+SHA256 (Pkgfile) = db001c0adf626daf9f76c912223e610a5c63a773371a8a49b29cef8645b92a87
+SHA256 (.footprint) = 139973d6aca14f124c4b7bcbe326e5de301a95b404f68e57b35b1a7e4569dbb7
+SHA256 (libva-2.21.0.tar.gz) = f7c3fffef3f04eb146e036dad2587d852bfb70e4926d014bf437244915ef7425
