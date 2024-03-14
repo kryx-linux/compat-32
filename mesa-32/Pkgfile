@@ -5,8 +5,8 @@
 # Optional: glslang libva-32 libvdpau-32 wayland-protocols
 
 name=mesa-32
-version=24.0.2
-release=3
+version=24.0.3
+release=1
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
 	x86-linux-gnu x86-linux-gnu-ccache)
 
