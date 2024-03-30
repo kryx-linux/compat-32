@@ -3,16 +3,19 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=xz-32
-version=5.6.1
+version=5.4.6
 release=1
-source=(https://github.com/tukaani-project/xz/releases/download/v$version/xz-$version.tar.xz)
+source=(https://crux.nu/files/distfiles/xz-5.4.6.tar.gz)
 
 build() {
 	cd xz-$version
 
+	autoreconf -vfi
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
+		--enable-threads \
+		--enable-werror \
 		--disable-nls
 
 	make
