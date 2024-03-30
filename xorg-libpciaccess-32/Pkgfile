@@ -1,12 +1,12 @@
 # Description: Generic PCI access library
-# URL: http://xorg.freedesktop.org
+# URL: https://xorg.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-libpciaccess zlib-32
 # Optional: hwdata
 
 name=xorg-libpciaccess-32
-version=0.18
-release=2
+version=0.18.1
+release=1
 source=(https://www.x.org/releases/individual/lib/libpciaccess-$version.tar.xz)
 
 build() {
