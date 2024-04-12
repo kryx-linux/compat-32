@@ -1,5 +1,9 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
+drwxr-xr-x	root/root	usr/lib32/cmake/
+drwxr-xr-x	root/root	usr/lib32/cmake/OpenSSL/
+-rw-r--r--	root/root	usr/lib32/cmake/OpenSSL/OpenSSLConfig.cmake
+-rw-r--r--	root/root	usr/lib32/cmake/OpenSSL/OpenSSLConfigVersion.cmake
 drwxr-xr-x	root/root	usr/lib32/engines-3/
 -rwxr-xr-x	root/root	usr/lib32/engines-3/afalg.so
 -rwxr-xr-x	root/root	usr/lib32/engines-3/capi.so
