@@ -1,10 +1,10 @@
 # Description: xorg lib libXmu
-# URL: http://xorg.freedesktop.org
+# URL: https://xorg.freedesktop.org
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: xorg-libxext-32 xorg-libxmu xorg-libxt-32
 
 name=xorg-libxmu-32
-version=1.2.0
+version=1.2.1
 release=1
 source=(https://www.x.org/releases/individual/lib/libXmu-$version.tar.xz)
 
