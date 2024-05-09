@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXbSMZe4M8cCkMYwm8E4GpNyLbRK63URoyZ3acC/C3yEWNT2gZ4rVmewQnw2biogT4oh8empYOhy617uWsXIK5g0=
-SHA256 (Pkgfile) = 143a322efd246c4f7a41734714827bbd3fbb8f0a1a91ff340bc4d3ac969552d5
-SHA256 (.footprint) = b64ef9df9c7010cb060ac425cadbf7c953f8b1c80dd33970f35950559f7562eb
-SHA256 (util-linux-2.40.tar.gz) = f7ff8573289313e38ee3378cbc2938f34444a8cb546e1236e46151834be69784
-SHA256 (syscalls.patch) = 6ae6fbcbf892f50d4ab2e7c63a117750db21e495ab4ae20a447894bef7d5e0ad
+RWSwxGo/zH7eXU21Rpr+TFk3kIqlVEnVRND8TQFnM4NKiLzQceWvrBBIwFNY+qI+JDCi8kPHzpMWpjZGhvu9fIgcaM9Vlu2qYwY=
+SHA256 (Pkgfile) = 075e97d5202e901aabc66bb9572e14e711c50876a4b3c8358c52f42e5c69c458
+SHA256 (.footprint) = ca75f161a257263ad97cb39d5141f6a4b3cd05eebac5b15cb0e8c2c6c4367051
+SHA256 (util-linux-2.40.1.tar.xz) = 59e676aa53ccb44b6c39f0ffe01a8fa274891c91bef1474752fad92461def24f

@@ -4,14 +4,11 @@
 # Depends on: bzip2-32 eudev-32 sqlite3-32 xz-32 zlib-32
 
 name=util-linux-32
-version=2.40
+version=2.40.1
 release=1
-source=(https://github.com/util-linux/util-linux/archive/v$version/util-linux-$version.tar.gz
-	syscalls.patch)
+source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
 
 build() {
-	patch -Np1 -d util-linux-$version -i $SRC/syscalls.patch
-
 	meson setup util-linux-$version build \
 		--prefix=/usr \
 		--bindir=/usr/bin \
@@ -25,9 +22,10 @@ build() {
 		-D b_pie=true \
 		-D build-libblkid=enabled \
 		-D build-libuuid=enabled \
-		-D build-libmount=enabled \
+		-D build-libmount=disabled \
 		-D build-libsmartcols=enabled \
 		-D build-libfdisk=enabled \
+		-D build-python=disabled \
 		-D nls=disabled
 	meson compile -C build -j ${JOBS:-1}
 	DESTDIR=$PKG meson install -C build
