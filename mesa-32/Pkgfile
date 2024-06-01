@@ -2,7 +2,7 @@
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: elfutils-32 expat-32 libdrm-32 libglvnd-32 llvm-32 mesa xorg-libxdamage-32 xorg-libxrandr-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32
-# Optional: glslang libva-32 libvdpau-32 wayland-protocols
+# Optional: glslang libclc libva-32 libvdpau-32 vulkan-loader-32 wayland-protocols
 
 name=mesa-32
 version=24.0.8
@@ -15,6 +15,7 @@ build() {
 
 	prt-get isinst ccache && local _cross_file='x86-linux-gnu-ccache' || local _cross_file='x86-linux-gnu'
 	prt-get isinst glslang && PKGMK_MESA+=' -D vulkan-drivers=auto -D vulkan-layers=device-select,intel-nullhw,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
+	prt-get isinst libclc && PKGMK_MESA_GALLIUM+='iris,'
 	prt-get isinst libva-32 && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
 	prt-get isinst libvdpau-32 && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
 	prt-get isinst vulkan-loader-32 && PKGMK_MESA_GALLIUM+='zink,'
@@ -42,7 +43,7 @@ build() {
 		-D glx=dri \
 		-D osmesa=true \
 		-D gallium-xa=enabled \
-		-D gallium-drivers=${PKGMK_MESA_GALLIUM}crocus,iris,nouveau,r300,r600,radeonsi,svga,swrast,virgl,i915 \
+		-D gallium-drivers=${PKGMK_MESA_GALLIUM}crocus,nouveau,r300,r600,radeonsi,svga,swrast,virgl,i915 \
 		-D platforms=${PKGMK_MESA_PLATFORMS#,} \
 		-D shared-glapi=enabled \
 		-D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
