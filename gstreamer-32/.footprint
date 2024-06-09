@@ -2,9 +2,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
 drwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/gst-completion-helper
--rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/gst-hotdoc-plugins-scanner
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/gst-plugin-scanner
--rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/gst-plugins-doc-cache-generator
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstcoreelements.so
 -rwxr-xr-x	root/root	usr/lib32/gstreamer-1.0/libgstcoretracers.so
 lrwxrwxrwx	root/root	usr/lib32/libgstbase-1.0.so -> libgstbase-1.0.so.0
