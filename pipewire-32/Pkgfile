@@ -5,7 +5,7 @@
 # Optional: avahi-32 jack-32 libsdl2-32 libsndfile-32 pulseaudio-32 vulkan-loader-32 xorg-libxcb-32
 
 name=pipewire-32
-version=1.0.7
+version=1.2.0
 release=1
 source=(https://github.com/PipeWire/pipewire/archive/$version/pipewire-$version.tar.gz)
 
@@ -43,7 +43,7 @@ build() {
 
 	prt-get isinst alsa-lib-32 && \
 		rm -r $PKG/usr/share/{alsa,alsa-card-profile} && \
-		rm $PKG/lib/udev/rules.d/90-pipewire-alsa.rules
+		rm $PKG/usr/lib/udev/rules.d/90-pipewire-alsa.rules
 
 	find $PKG -type d -empty -delete
 }
