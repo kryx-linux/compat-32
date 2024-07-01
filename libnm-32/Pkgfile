@@ -4,11 +4,14 @@
 # Depends on: curl-32 dbus-glib-32 jansson-32 libndp-32 libpsl-32 networkmanager nss-32
 
 name=libnm-32
-version=1.46.0
+version=1.48.2
 release=1
-source=(https://download.gnome.org/sources/NetworkManager/${version::4}/NetworkManager-$version.tar.xz)
+source=(https://download.gnome.org/sources/NetworkManager/${version::4}/NetworkManager-$version.tar.xz
+	1966.patch)
 
 build() {
+	patch -Np1 -d $SRC/NetworkManager-$version -i $SRC/1966.patch
+
 	meson setup NetworkManager-$version build $PKGMK_NM \
 		--prefix /usr \
 		--libdir /usr/lib32 \
