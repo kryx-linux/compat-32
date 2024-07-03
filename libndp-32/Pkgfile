@@ -4,7 +4,7 @@
 # Depends on: libndp
 
 name=libndp-32
-version=1.8
+version=1.9
 release=1
 source=(http://libndp.org/files/${name%-*}-$version.tar.gz)
 
