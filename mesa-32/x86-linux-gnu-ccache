@@ -1,10 +1,11 @@
 [binaries]
 c = '/usr/lib/ccache/gcc'
 cpp = '/usr/lib/ccache/g++'
-ar = '/usr/bin/gcc-ar'
-strip = '/usr/bin/strip'
+rust = ['rustc', '--target', 'i686-unknown-linux-gnu']
 pkgconfig = '/usr/bin/pkg-config'
+cups-config = '/usr/bin/cups-config'
 llvm-config = '/usr/bin/llvm-config-32'
+strip = '/usr/bin/strip'
 
 [properties]
 c_args = ['-m32']
