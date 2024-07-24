@@ -4,13 +4,13 @@
 # Depends on: libgudev-32 libudev0-shim
 
 name=libudev0-shim-32
-version=1
+version=2
 release=1
 source=(https://github.com/archlinux/libudev0-shim/archive/v$version/${name%-*}-$version.tar.gz)
 
 build() {
 	cd ${name%-*}-$version
 	make
-	install -D -m 0755 libudev.so.0.0.9999 -t $PKG/usr/lib32
-	ln -s libudev.so.0.0.9999 $PKG/usr/lib32/libudev.so.0
+	install -Dm 755 libudev.so.0.13.9999 -t $PKG/usr/lib
+	ln -s libudev.so.0.13.9999 $PKG/usr/lib/libudev.so.0
 }

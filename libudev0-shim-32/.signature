@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXWoGZ1Sx/lsAdAYTN9y0HUUWVZCkczYyRZHt5jX91naTijQ2KDkFGO0RuaXH5c8tvlWWnFFmXS9t/KVccuVpSg0=
-SHA256 (Pkgfile) = baf37570ba0c3e0b51ca2293f6dce7987ca0c4d25f92b5bfa760a133b8ffd7d1
-SHA256 (.footprint) = 9be08fb8ebaf914e849940f4c4f8611635b67421e2b3a9e1ea284f9e44826e96
-SHA256 (libudev0-shim-1.tar.gz) = 24a1072fa437935d6c4e1d9c1ce84f4ad1d7be45026f6ee7b0b3d77ec0f66e3c
+RWSwxGo/zH7eXVw76rMyEFXIAUnXXvI31Ckeya2hVMp2HIc2LPQA4Je2gP04FfJ4J9fONpsF5vSZqnD0HR6QV4Qrf+1biw/sfwI=
+SHA256 (Pkgfile) = 0c2b862976d30e666b1908386eea042ddc07fab9957e4f85761e80c0faf4510f
+SHA256 (.footprint) = de00c17ac4a3b62351d813028b83bf7a9cbc2326fdd959de2ae59e048f824998
+SHA256 (libudev0-shim-2.tar.gz) = c55e5bcb82f02578c059c825946eca634d81e49fb22b2a0c1d791dc57e04b9c7
