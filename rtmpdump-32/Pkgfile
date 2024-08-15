@@ -4,11 +4,10 @@
 # Depends on: gnutls-32 rtmpdump zlib-32
 
 name=rtmpdump-32
-version=2.4
-_commit=f1b83c10d8beb43fcc70a6e88cf4325499f25857
+version=2.6
+_commit=6f6bb1353fc84f4cc37138baa99f586750028a01
 release=4
-source=(http://git.ffmpeg.org/gitweb/$name.git/snapshot/$_commit.tar.gz)
-renames=(rtmpdump-$version-${_commit:0:8}-$release.tar.gz)
+source=(https://crux.nu/files/distfiles/rtmpdump-2.6.tar.gz)
 
 build() {
   cd rtmpdump-*
