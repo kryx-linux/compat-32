@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXXjNyS8gYH56yA9x1vX9AhLh8EeKBrfKF5c2kw33vPcp3k1ZuRyof4OW5hB0ujNUnsiZpPJhqpChmIkSd9TPSgs=
-SHA256 (Pkgfile) = f486e067f0e6507ca133f788fdec1ddd8ed3a7fcdd824bc26fa1f123f223377f
-SHA256 (.footprint) = 27604aad45aa1a0cc3e51128810c0ceeb9acd73516defdbde39a5d0d20c00821
-SHA256 (wayland-1.23.0.tar.xz) = 05b3e1574d3e67626b5974f862f36b5b427c7ceeb965cb36a4e6c2d342e45ab2
+RWSwxGo/zH7eXeBfaCLnaADbHvA97238C0PgB/tJoNqzHWmy0oVPQ5o8XwkPe674ammrTieGHhOGN6dEQIcOBOr6AcBCwsw5vAo=
+SHA256 (Pkgfile) = f2c7236cf42cc3673bac71f3408560ede5cd8747d6ecdd53dda70267b86d174d
+SHA256 (.footprint) = 99bd84b2cdeb7fdae38e611e7c2f99f2961f5da7124e3565f993a8e900b4a8e2
+SHA256 (wayland-1.23.1.tar.xz) = 864fb2a8399e2d0ec39d56e9d9b753c093775beadc6022ce81f441929a81e5ed
