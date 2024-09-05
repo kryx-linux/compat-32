@@ -4,9 +4,9 @@
 # Depends on: zlib-32
 
 name=openssl-32
-version=3.3.1
+version=3.3.2
 release=1
-source=(https://www.openssl.org/source/openssl-$version.tar.gz)
+source=(https://github.com/openssl/openssl/releases/download/openssl-$version/openssl-$version.tar.gz)
 
 build() {
 	cd openssl-$version
