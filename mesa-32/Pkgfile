@@ -41,7 +41,6 @@ build() {
 
 	patch -Np1 -d mesa-$version -i $SRC/30710.patch
 
-	BINDGEN_EXTRA_CLANG_ARGS="-m32" \
 	meson setup mesa-$version build $PKGMK_MESA \
 		--cross-file=$SRC/$_cross_file \
 		--prefix=/usr \
