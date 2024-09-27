@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXUTlAkseOPjG0xNLDloj1vHIfYS+IO2Stknx7JHS5fiyQV0Ua00m1xgBMQ5FPMBCUEOLuZ2EnMw5Vxbt1R4JswI=
-SHA256 (Pkgfile) = b31bc8c1ad00f672d9a021d7aa8bfe9963f5358e01a090409cfe17c34d723219
+RWSwxGo/zH7eXfs8mGLNCoN8rqpgvhUeVRslzYfueBjmsWUSqNEs12uLJd/UFtyQUjYVYFrekJNuOqBjdANimGZ4YGqGkA9+GwE=
+SHA256 (Pkgfile) = 6cce64443d9a1e98e81a49c0ed3274edb2f37aaf7269ad943380c1bb0aca2064
 SHA256 (.footprint) = 9e3165f3e2f125963b584befb8b1f479ef6c092d8c80aa3393a4c449f1cd7784
-SHA256 (libtool-2.4.7.tar.xz) = 4f7f217f057ce655ff22559ad221a0fd8ef84ad1fc5fcb6990cecc333aa1635d
+SHA256 (libtool-2.5.3.tar.xz) = 898011232cc59b6b3bbbe321b60aba9db1ac11578ab61ed0df0299458146ae2e
