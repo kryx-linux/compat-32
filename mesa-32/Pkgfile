@@ -33,7 +33,7 @@ build() {
 		VULKAN_DRIVERS=""
 		VULKAN_LAYERS=""
 	fi
-	prt-get isinst wayland-protocols && PKGMK_MESA_PLATFORMS+='wayland'
+	prt-get isinst wayland-32 && PKGMK_MESA_PLATFORMS+='wayland'
 	## for future references
 	#prt-get isinst xorg-libxdamage-32 xorg-libxrandr-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32 && PKGMK_MESA_PLATFORMS+=',x11'
 	PKGMK_MESA_PLATFORMS+=',x11'
