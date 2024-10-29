@@ -1,7 +1,7 @@
 # Description: Mesa 3D demos
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: glew-32 glu-32 libglvnd-32
+# Depends on: glew-32 glu-32
 
 name=mesa-demos-32
 version=9.0.0
