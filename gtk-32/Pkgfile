@@ -5,23 +5,50 @@
 
 name=gtk-32
 version=2.24.33
-release=1
-source=(https://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.xz)
+release=2
+source=(https://download.gnome.org/sources/gtk+/${version%.*}/gtk+-$version.tar.xz
+    icon-padding.patch
+    tooltip-positioning.patch
+    window-dragging.patch
+    gtk2-c99.patch
+    gtk2-c89.patch
+    gtk2-c89-2.patch
+    gtk2-c89-3.patch
+    gtk2-c89-4.patch
+    gtk2-c89-5.patch
+    gtk2-c89-6.patch)
 
 build() {
-	cd gtk+-$version
+    cd gtk+-$version
 
-	export PKG_CONFIG_PATH+=":/usr/share/pkgconfig"
+    export PKG_CONFIG_PATH+=":/usr/share/pkgconfig"
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--disable-cups
+    patch -Np1 -i $SRC/icon-padding.patch
+    patch -Np1 -i $SRC/tooltip-positioning.patch
+    patch -Np1 -i $SRC/window-dragging.patch
+    patch -Np1 -i $SRC/gtk2-c99.patch
+    patch -Np1 -i $SRC/gtk2-c89.patch
+    patch -Np1 -i $SRC/gtk2-c89-2.patch
+    patch -Np1 -i $SRC/gtk2-c89-3.patch
+    patch -Np1 -i $SRC/gtk2-c89-4.patch
+    patch -Np1 -i $SRC/gtk2-c89-5.patch
+    patch -Np1 -i $SRC/gtk2-c89-6.patch
 
-	make
-	make DESTDIR=$PKG install
 
-	mv $PKG/usr/bin/gtk-query-immodules-2.0 $PKG/usr/bin/gtk-query-immodules-2.0-32
-	rm $PKG/usr/bin/{gtk-builder-convert,gtk-demo,gtk-update-icon-cache}
-	rm -r $PKG/usr/etc $PKG/usr/{include,share}
+    CFLAGS+=' -Wno-deprecated-declarations -Wno-unused-but-set-variable' \
+    CXXFLAGS+=' -Wno-deprecated-declarations -Wno-unused-but-set-variable' \
+    ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --disable-cups \
+        --with-xinput=yes
+
+    sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+    make
+    make DESTDIR=$PKG install
+
+    mv $PKG/usr/bin/gtk-query-immodules-2.0 $PKG/usr/bin/gtk-query-immodules-2.0-32
+    rm $PKG/usr/bin/{gtk-builder-convert,gtk-demo,gtk-update-icon-cache}
+    rm -r $PKG/usr/etc $PKG/usr/{include,share}
 }
