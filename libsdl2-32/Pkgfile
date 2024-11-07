@@ -5,7 +5,7 @@
 # Optional: alsa-lib-32 ibus-32 jack libxkbcommon-32 ninja pipewire pulseaudio wayland-protocols
 
 name=libsdl2-32
-version=2.30.8
+version=2.30.9
 release=1
 source=(https://www.libsdl.org/release/SDL2-$version.tar.gz)
 
@@ -17,7 +17,7 @@ build() {
 	prt-get isinst pulseaudio-32 && PKGMK_SDL2+=' -D SDL_PULSEAUDIO_SHARED=ON'
 	prt-get isinst libxkbcommon-32 wayland-protocols && PKGMK_SDL2+=' -D SDL_WAYLAND_SHARED=ON'
 
-	[ -e '/usr/bin/ccache' ] && PATH="$(echo ${PATH} | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+	[[ -z $CCACHE_PREFIX ]] || unset CCACHE_PREFIX
 
 	cmake -S SDL2-$version -B build -G Ninja $PKGMK_SDL2 \
 		-D CMAKE_INSTALL_PREFIX=/usr \
