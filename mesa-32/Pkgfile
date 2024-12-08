@@ -6,8 +6,11 @@
 
 name=mesa-32
 version=24.3.1
-release=1
+release=2
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
+	0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
+	0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
+	0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch
 	x86-linux-gnu x86-linux-gnu-ccache)
 
 build() {
@@ -37,6 +40,12 @@ build() {
 	## for future references
 	#prt-get isinst xorg-libxdamage-32 xorg-libxrandr-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32 && PKGMK_MESA_PLATFORMS+=',x11'
 	PKGMK_MESA_PLATFORMS+=',x11'
+
+	printf '%s' "$version-$release" > mesa-$version/VERSION
+
+	patch -Np1 -d mesa-$version -i $SRC/0001-dri-don-t-fetch-X11-modifiers-if-we-don-t-support-th.patch
+	patch -Np1 -d mesa-$version -i $SRC/0002-egl-wayland-only-supply-LINEAR-modifier-when-support.patch
+	patch -Np1 -d mesa-$version -i $SRC/0003-egl-wayland-fallback-to-implicit-modifiers-if-advert.patch
 
 	meson setup mesa-$version build $PKGMK_MESA \
 		--cross-file=$SRC/$_cross_file \
