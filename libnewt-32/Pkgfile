@@ -22,7 +22,8 @@ build() {
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
 		--without-python \
-		--disable-nls
+		--disable-nls \
+		--without-tcl
 
 	make
 	make DESTDIR=$PKG install
