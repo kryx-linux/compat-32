@@ -11,6 +11,7 @@ source=(https://ftp.gnu.org/gnu/nettle/nettle-$version.tar.gz)
 build() {
 	cd nettle-$version
 
+	export nettle_cv_prog_valgrind=no
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \
