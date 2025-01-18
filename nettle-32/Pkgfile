@@ -4,13 +4,14 @@
 # Depends on: libgmp-32 nettle
 
 name=nettle-32
-version=3.10
+version=3.10.1
 release=1
 source=(https://ftp.gnu.org/gnu/nettle/nettle-$version.tar.gz)
 
 build() {
 	cd nettle-$version
 
+	export nettle_cv_prog_valgrind=no
 	./configure \
 		--prefix=/usr \
 		--libdir=/usr/lib32 \

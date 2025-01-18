@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTJ24mR8OJqPbfjsVytOzPydfVXYeAz/EQZWX30BV6o36fxU7XNwrsKQzoyZZSZ9BP+terOCzbfvIrClcjx2MQ0=
-SHA256 (Pkgfile) = 06d96e42daa19beb3af2ccdee86975ebcb2caa05f08f389710732d80fc2d5fe7
+RWSwxGo/zH7eXQ79jOBpvVTNEQGxV6ANvu7afww+8n4l8GQkmgDWlLfd7gTT883qU9VNqHUjiMwU+t1r5V0M+kVFP5XXns/ZmQQ=
+SHA256 (Pkgfile) = c20e2fe98cc95292b9f959a1d24e673d474771b002d0cae7771d2bdc96946314
 SHA256 (.footprint) = 48f09bcfeaae4ac1ebcdfa991f8678b927a3ba456011da06839da86443d99aae
-SHA256 (libxshmfence-1.3.2.tar.xz) = 870df257bc40b126d91b5a8f1da6ca8a524555268c50b59c0acd1a27f361606f
+SHA256 (libxshmfence-1.3.3.tar.xz) = d4a4df096aba96fea02c029ee3a44e11a47eb7f7213c1a729be83e85ec3fde10
