@@ -4,8 +4,8 @@ drwxr-xr-x	root/root	usr/lib32/alsa-lib/
 -rwxr-xr-x	root/root	usr/lib32/alsa-lib/libasound_module_ctl_pipewire.so
 -rwxr-xr-x	root/root	usr/lib32/alsa-lib/libasound_module_pcm_pipewire.so
 lrwxrwxrwx	root/root	usr/lib32/libpipewire-0.3.so -> libpipewire-0.3.so.0
-lrwxrwxrwx	root/root	usr/lib32/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1207.0
--rwxr-xr-x	root/root	usr/lib32/libpipewire-0.3.so.0.1207.0
+lrwxrwxrwx	root/root	usr/lib32/libpipewire-0.3.so.0 -> libpipewire-0.3.so.0.1400.0
+-rwxr-xr-x	root/root	usr/lib32/libpipewire-0.3.so.0.1400.0
 drwxr-xr-x	root/root	usr/lib32/pipewire-0.3/
 -rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/libpipewire-module-access.so
 -rwxr-xr-x	root/root	usr/lib32/pipewire-0.3/libpipewire-module-adapter.so
@@ -57,6 +57,11 @@ drwxr-xr-x	root/root	usr/lib32/spa-0.2/audiotestsrc/
 -rwxr-xr-x	root/root	usr/lib32/spa-0.2/audiotestsrc/libspa-audiotestsrc.so
 drwxr-xr-x	root/root	usr/lib32/spa-0.2/control/
 -rwxr-xr-x	root/root	usr/lib32/spa-0.2/control/libspa-control.so
+drwxr-xr-x	root/root	usr/lib32/spa-0.2/filter-graph/
+-rwxr-xr-x	root/root	usr/lib32/spa-0.2/filter-graph/libspa-filter-graph-plugin-builtin.so
+-rwxr-xr-x	root/root	usr/lib32/spa-0.2/filter-graph/libspa-filter-graph-plugin-ladspa.so
+-rwxr-xr-x	root/root	usr/lib32/spa-0.2/filter-graph/libspa-filter-graph.so
+-rwxr-xr-x	root/root	usr/lib32/spa-0.2/libspa.so
 drwxr-xr-x	root/root	usr/lib32/spa-0.2/support/
 -rwxr-xr-x	root/root	usr/lib32/spa-0.2/support/libspa-dbus.so
 -rwxr-xr-x	root/root	usr/lib32/spa-0.2/support/libspa-support.so
