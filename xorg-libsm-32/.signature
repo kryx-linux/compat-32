@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXS/Jz0Bs8ChtnYFHUa/11EH0h9wZ/B+m1WOQaOCpaJKUjoqykKVU9qWT/kxfMyReLs3XSKXE0C4dI2dbBElo7AY=
-SHA256 (Pkgfile) = 6066cccd8eacfc7353418624ac08afd6cd21950b4f73c4ddfb9dea636c626e7d
+RWSwxGo/zH7eXbR5iUxgbWd94QNm2MysWYjEBOUAXh2xpUdj29dYAtw57exYPxHayU4Q8Sn+QTO1dbfv+etJ24xG86oQY+9BeQ4=
+SHA256 (Pkgfile) = 618dca31f2f9315713b491925ed625158b80a6599043633b4fef8fba92a57166
 SHA256 (.footprint) = 5ab952c70d1f9b93932b245d48478f3fc057387fc1e33f2ac938bac9b9bdd184
-SHA256 (libSM-1.2.5.tar.xz) = 2af9e12da5ef670dc3a7bce1895c9c0f1bfb0cb9e64e8db40fcc33f883bd20bc
+SHA256 (libSM-1.2.6.tar.xz) = be7c0abdb15cbfd29ac62573c1c82e877f9d4047ad15321e7ea97d1e43d835be
