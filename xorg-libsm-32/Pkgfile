@@ -4,7 +4,7 @@
 # Depends on: util-linux-32 xorg-libice-32 xorg-libsm
 
 name=xorg-libsm-32
-version=1.2.5
+version=1.2.6
 release=1
 source=(https://www.x.org/releases/individual/lib/libSM-$version.tar.xz)
 
