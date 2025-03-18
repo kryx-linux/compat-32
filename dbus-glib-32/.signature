@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXcVuhAcdkDXthSVgj1BNwVxsI3DNQPOc/zlzsyLspmSbWmUKWWxk45GxserB5Nvy9qu34GUGbqSZKITKDZ5bZA8=
-SHA256 (Pkgfile) = cde24bdddb74b1590f34af867f083e21e46eae1c6a993963564098aac5f7e3ae
-SHA256 (.footprint) = 0189fcd5a060d938378dcee6aa783881d03c0aff73af9bfb235c622f50c82edb
-SHA256 (dbus-glib-0.112.tar.gz) = 7d550dccdfcd286e33895501829ed971eeb65c614e73aadb4a08aeef719b143a
+RWSwxGo/zH7eXbwZe7b60+LyGf8yanSvgWb5QXFd5EDiJ5C3diSjQz4gdtad7A75r4BsCIFQMdq1KL1WejAcS6Pze/xH44Co5Qs=
+SHA256 (Pkgfile) = 1d5db1c42455fb192c06512533c1676e70d12492772996eb1a4ff8f5000cb3b7
+SHA256 (.footprint) = c3a4dcbced4a2be04106f4f69a1c7a3408b404eca635d1f957aa5a3c81074dd3
+SHA256 (dbus-glib-0.114.tar.gz) = c09c5c085b2a0e391b8ee7d783a1d63fe444e96717cc1814d61b5e8fc2827a7c
