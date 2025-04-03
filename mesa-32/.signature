@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXdafKmYYtLGo9zRncmNmr+loR76MyxjG0yarPusVzLnt0EZ+LS3Cfg8wJ/bwaI+jdb0mLAqFod7c7GzThmvTegg=
-SHA256 (Pkgfile) = f64cfce1b16fd333c121c779d7359b36e656a36c4d8cdf074375e50ff22ced59
-SHA256 (.footprint) = 7099944ff1b33e0ab658d2d5141f2b58c5a168028c89ed3ecb58f7fe6273a860
-SHA256 (mesa-25.0.2.tar.xz) = adf904d083b308df95898600ffed435f4b5c600d95fb6ec6d4c45638627fdc97
+RWSwxGo/zH7eXY3iGFG97y+k3IRx3aH/uQp8VFNZXu8AK0WMOfNWiE1q6Jafx+s0JB72ux88D3krjZ1PH7Fd6MlNI0G8vRcREwY=
+SHA256 (Pkgfile) = fdafc56fbe425d85af15676bde98846f2ab3de5d1b8fec283b9782f3816dfcf3
+SHA256 (.footprint) = b60c78d7e664e7f6ddd46fb8975d49a7f67a603a5d60d4b322125d9643bb8326
+SHA256 (mesa-25.0.3.tar.xz) = 5ff426ed6ce0588fd96d18975bdff451ae2ab2fe98b5d1528842ee71ec66711b
 SHA256 (x86-linux-gnu) = eb378917565b88d9b73fe01d5a55241955e3f5f437da6fe59349b48ea1d4ebc9
 SHA256 (x86-linux-gnu-ccache) = c35b9505a9b4500b50a4425d90a393304bd532621e9233e056a7f3d98f622125
