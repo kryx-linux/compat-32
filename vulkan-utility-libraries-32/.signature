@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXd/94nVjqcqz4vni0mPhd5mWg7cJtT01pwVEZC5jbKlRf/xFe0l4Dc88r60ATJC2Gi7Fq/wfkbl2SYsnxaNd9Q4=
-SHA256 (Pkgfile) = f655a9810d93e8a7b2317c594ae9c483f1bd1735f8ce459677d30c87803ebe40
+RWSwxGo/zH7eXX18gJQd6Rve/EBLSSPuXrTELxEWnEfxz840AgjgL4R3O3k9hCX+zYNaGYFm+/wuFgCfDlRRXXiBrTuMRBP1fQo=
+SHA256 (Pkgfile) = 0197930b5d7c7ca27a0daa165f88e78666986e86c33796e62dfe6ca834de0bbf
 SHA256 (.footprint) = cb3e1aea0fb5b768f0083c05e76fd4ecd594d8eea4e951281cafcbe52bab3eb6
-SHA256 (vulkan-utility-libraries-1.4.309.0.tar.gz) = 94161704ffb0917d768f88ff57ee4a64ff69c84fc38323db50b55946564316a4
+SHA256 (vulkan-utility-libraries-1.4.313.0.tar.gz) = ccde022cf33466259a583370d4de6660ef8df97e90aaae13d420173b3255d591
