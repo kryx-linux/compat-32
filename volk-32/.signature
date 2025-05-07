@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXfwsq/5VjrqlNzzTs6prLYLwaeQZxnKvjN7GiH+4/hqKLdyHkIerZuH7F98KuuBb4MM68SaZXKuRRAY2w1HLOAk=
-SHA256 (Pkgfile) = 8227d85e8c15c445fc1727d1ed1f2ca24a5861b2fabd0894347361c28d5ef542
+RWSwxGo/zH7eXeXVF4jUkn8hz7rXfAmuIQ0FGk36HK1VsCGe/CWXs20BvNwPcCwas9nMjHIPQofsT+BG1zhD1iBUW9/76wqwHA0=
+SHA256 (Pkgfile) = 2fe0a17cdcd084835d49b4a35db84a97df452b152a4c05668a0d5a78435b57c7
 SHA256 (.footprint) = a6ebf7fe189ff89384bc229830ca21ebf457dfccea2239f82089dd3aea9fad40
-SHA256 (volk-1.4.309.0.tar.gz) = 1724924d8e3dccf0c508887edb79d56d9dd11b0738eab5a44e2fa95b8a9ebe1c
+SHA256 (volk-1.4.313.0.tar.gz) = d86bcf1aff499f41a3e445b55df5e393a5ce49b1bda689eb7335b0a0a54a3c0b
