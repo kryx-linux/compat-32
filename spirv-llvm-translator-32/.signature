@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXflZWqX5Gwn8MkSrMvag+uVe0MWdXleuys/frILvmg7Wznkartd16pOtdCTHRUxwo/UmBwSkWfdd+facN9S35gk=
-SHA256 (Pkgfile) = ce158f787c7f5d1b9b06d723c2a323da031180ed0b1adc8f2dfb277ad0176d53
+RWSwxGo/zH7eXTrDXO04i6WVu51BAHW3q5ClWZ/kwHeKn7lshMc/7Rk8Bp8ClY+DDaNrxF/BAXirJ+Mm1gCP/gfNs1CwWYehrQo=
+SHA256 (Pkgfile) = 4f6b66b6722d1b984195bacb2370cb8a8138e95b5a962d07dbeef7afdcbb5099
 SHA256 (.footprint) = 443469f101db243475f988da3d7a09640035c4cd792636a39ff044c3b6641d70
-SHA256 (spirv-llvm-translator-19.1.7.tar.gz) = b53f74299ee44e4052a004196dc2bd1bb587f430028a668631fea06ed2b2253c
+SHA256 (spirv-llvm-translator-20.1.2.tar.gz) = d1b4a55dc457edbd9cc50d23583d4bedda9479176efcd34b3e20166bc7a4a562
