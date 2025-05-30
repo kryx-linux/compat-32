@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXW7lEDioMWcwo+6B8iwk6uwwz7LEvqJpZSJHcLixAvrGzSLAqhjB6jN8beHjQqEOf7ZUH/1q9VLICA0GHZbTUw0=
-SHA256 (Pkgfile) = b7d44aca84e7011386e21a877b75bb761953ff9010a3afbf6527918dee332d3d
-SHA256 (.footprint) = 3f33a07e78e0c67b3bf3b5e5a60411011a164c67bbb9d5da7bb205c358bc38d3
-SHA256 (gstreamer-1.26.1.tar.xz) = 30a4c4a5e48345583eb596aa265d0f53c0feb93011d93a6aaa70dd6e3c519dc4
+RWSwxGo/zH7eXRrA4hoVVws3mkuotXH+eOHr9YsjtrLJuZuxrO3sVDdJuNvwm1PoaE9SOfsrE67KVEA9RFgE6Cwvu9IKbK+gXQQ=
+SHA256 (Pkgfile) = 56cefc678451563e3bd7863489b8dfc6d4ff22c04e9d0682db5b55734926c28e
+SHA256 (.footprint) = e3e02f6ccd66439a68f9945c2c57552c6f60507156adad00e7d69f163f6dfd79
+SHA256 (gstreamer-1.26.2.tar.xz) = f75334a3dff497c240844304a60015145792ecc3b6b213ac19841ccbd6fdf0ad
 SHA256 (x86-linux-gnu) = eb870b51e688107a7ed07e22838898859ec5b7a9d5b78ae34782c741aed2fac1
 SHA256 (x86-linux-gnu-ccache) = c8ba224aca7ab1082678b2844b38c56aecee74c5891803f6e960703c88fcd8e3
