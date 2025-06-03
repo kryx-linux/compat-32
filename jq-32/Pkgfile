@@ -4,14 +4,12 @@
 # Depends on: jq
 
 name=jq-32
-version=1.7.1
+version=1.8.0
 release=1
 source=(https://github.com/stedolan/jq/releases/download/jq-$version/jq-$version.tar.gz)
 
 build() {
 	cd jq-$version
-
-	autoreconf -i modules/oniguruma
 
 	./configure \
 		--prefix=/usr \

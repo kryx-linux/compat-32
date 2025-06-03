@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXQvnaBRWXMrOk4arbbHiKzxITrXD792ZL/v6rEdcgpjsgXax8MMdzaV+YTsVCzyOIghE4whv1Tydak1T0Ec1cwU=
-SHA256 (Pkgfile) = fa947f40389c19f304c9d5cd6d14dc0d48f63ed1144d1dce43a0d461dbd9f19d
-SHA256 (.footprint) = c742ab3213c08ce8bf66d5a45fd1fb0660c8eb3fce9957a32615c20737fba015
-SHA256 (jq-1.7.1.tar.gz) = 478c9ca129fd2e3443fe27314b455e211e0d8c60bc8ff7df703873deeee580c2
+RWSwxGo/zH7eXSSjgOpE/On40Q+UQZ6bwaftyfplDkw79e+EcxYCMNnuWESkCz6yjw0qdkscweRuyPWwfvvg+8KowlaSm0QdzQ0=
+SHA256 (Pkgfile) = 00c32e46439c9027c8c44bc04e156630d6c6af1e4429c427c9e0c844de33cbe7
+SHA256 (.footprint) = 4d4750fee1a237355c7effd7e67ab10c982890cd17931d1ff85fb1ceaa5f9006
+SHA256 (jq-1.8.0.tar.gz) = 91811577f91d9a6195ff50c2bffec9b72c8429dc05ec3ea022fd95c06d2b319c
