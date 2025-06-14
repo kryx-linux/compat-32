@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXWzzEX9AHqB33Sjk18U6ZVdx//b0lLL1AWOqoX06qgcAdwy0WNCHtgFwKyHRnpoJ9A7wJW2jV5OycabCPdb55gI=
-SHA256 (Pkgfile) = 3d422d8da02c761f3065bc9ef2935211b5a472f3d147a1d879b85808a4651e5b
+RWSwxGo/zH7eXefg2G3T2Y9X234KiqS5tIn3lQqh2n/EKuDTXcncix+iZs8XsFfVGJneYi0J8epQM8kHg8ZudhPd8yI3RCu+/g8=
+SHA256 (Pkgfile) = cd3af9a61ed57b1254523ad6fb949316c173159284ae33f20f98f838631dcf23
 SHA256 (.footprint) = c8d570fe08a740aea3e567a86b1ee51fb2f7e55069a557f7341b8ef40ce24cae
-SHA256 (libffi-3.5.0.tar.gz) = 8c72678628a5dd8782f08ad421d5a441e42c1c5c1b33e0bc211cbfcf1f3b3978
+SHA256 (libffi-3.5.1.tar.gz) = f99eb68a67c7d54866b7706af245e87ba060d419a062474b456d3bc8d4abdbd1
