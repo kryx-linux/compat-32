@@ -1,9 +1,8 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib32/
--rw-r--r--	root/root	usr/lib32/libfontconfig.a
 lrwxrwxrwx	root/root	usr/lib32/libfontconfig.so -> libfontconfig.so.1
-lrwxrwxrwx	root/root	usr/lib32/libfontconfig.so.1 -> libfontconfig.so.1.15.0
--rwxr-xr-x	root/root	usr/lib32/libfontconfig.so.1.15.0
+lrwxrwxrwx	root/root	usr/lib32/libfontconfig.so.1 -> libfontconfig.so.1.16.0
+-rwxr-xr-x	root/root	usr/lib32/libfontconfig.so.1.16.0
 drwxr-xr-x	root/root	usr/lib32/pkgconfig/
 -rw-r--r--	root/root	usr/lib32/pkgconfig/fontconfig.pc
 drwxr-xr-x	root/root	var/
