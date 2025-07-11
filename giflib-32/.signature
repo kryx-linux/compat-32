@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/compat-32.pub
+RWSwxGo/zH7eXWx8j6C+WHz3apDZFeH4L66skyZYmBTn5qgIHZCKbupofQ+uzgonZwychkw5sMcL2h1KWrgGxQJlI7d7+pZIGgE=
+SHA256 (Pkgfile) = c23f503837b70c851b6d7b44393232892d9dcdbc4362e048906c459a47c28e07
+SHA256 (.footprint) = b03d3553fd3cc3292df363407172d8734d8353a95aead2a3a86a12595f592b51
+SHA256 (giflib-5.2.2.tar.gz) = be7ffbd057cadebe2aa144542fd90c6838c6a083b5e8a9048b8ee3b66b29d5fb
+SHA256 (giflib-5.1.9-make-flags.patch) = 51b03d342d436a359c37b2a21eb7d32f9b0c76d22757b6a5787a56e9937a3a33
