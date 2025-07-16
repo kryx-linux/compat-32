@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXUYWXAIDAIXnexg/kFGeFtzhYIal8OphZ24Fe8nf62BL1YzL2MNKqnc9M51n9qbqGUk6YDHWkEHV12tBpA5shQA=
-SHA256 (Pkgfile) = 5ac778b28a5713d1298b847ab1ec6cb817a57a8d87c790c2a510192d1ec5fb0e
+RWSwxGo/zH7eXYG6phZONrrobZ7jk50ESKKci3DoS3Vg3DQitZS3mbjs/znubK+s/9Pa9VieV41HkOBV85wGlRXCi1WfZANETgo=
+SHA256 (Pkgfile) = 61388e16b4d131d206a63960d6a207a574b045fc83588a5ce751f7043bdcd4de
 SHA256 (.footprint) = 87637197eea1098d4b7b48a2c38eaf7d6a306005fb53696ed5fb268190daf397
 SHA256 (Vulkan-Tools-1.4.321.0.tar.gz) = f897f76b1fae6b85b567ee86d7bc1ba6f5b1a13d3bfa5fe0f07fdb81609f7b75
+SHA256 (wayland.patch) = 9bc7b13bb00181a691592b37e08c3ce0afff41ac1565e502e4d7872b2a02736d
