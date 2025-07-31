@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXb9IBvrI2RTigV6oqBvS0eePlbieK470m/f2PyLl3tNsKpg+DnxpTjJioabsKNEZAm8C13Ok86XhyPJGs/vCqA4=
-SHA256 (Pkgfile) = 71c8a18dc6be8715f4ad0a624ccab5db0c90b7056ab33599ffeee75214490c6e
+RWSwxGo/zH7eXQOccepTOWalu7DlsPfqWCvwPvxZLA88MMAv2bfBaRrvcXR+i3N5s/7Qm3Xbudolznf/YLhh5Z/HKPl61c85hQc=
+SHA256 (Pkgfile) = 2e07a89ba7400b656e79407e97e1f05802c71e437184869d35d71b4d26bf5eaa
 SHA256 (.footprint) = fad60a5243e5252783c0f5856f70d8871a91fe0d0343fae3c66126632b270d08
-SHA256 (mpg123-1.33.0.tar.bz2) = 2290e3aede6f4d163e1a17452165af33caad4b5f0948f99429cfa2d8385faa9d
+SHA256 (mpg123-1.33.1.tar.bz2) = 1181f65eb3c8a0a8eed8b595a811988f53c82b0916b58d3c8cc9c3ced66f0312
