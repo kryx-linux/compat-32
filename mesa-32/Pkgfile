@@ -16,7 +16,7 @@ build() {
     prt-get isinst ccache && local _cross_file='x86-linux-gnu-ccache' || local _cross_file='x86-linux-gnu'
 
     prt-get isinst directx-headers-32 && PKGMK_MESA_GALLIUM+='d3d12,'
-    prt-get isinst clang-32 libclc && PKGMK_MESA+=' -D gallium-opencl=icd' PKGMK_MESA_GALLIUM+='iris,'
+    prt-get isinst clang-32 libclc && PKGMK_MESA_GALLIUM+='iris,'
     prt-get isinst clang-32 libclc rust-bindgen spirv-llvm-translator-32 && PKGMK_MESA+=' -D gallium-rusticl=true'
     prt-get isinst libunwind-32 && PKGMK_MESA+=' -D libunwind=enabled'
     prt-get isinst libva-32 && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
