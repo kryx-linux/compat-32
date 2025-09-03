@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTOQ9sXmYguanidqDWM3XxXvmsuRIKGd/6Wt1Ql8IAcJBzqrRsgzGafcjWc1HUMQ29waGO3nwjRjN/BDvDtH4go=
-SHA256 (Pkgfile) = 5fffabcdb8bfb16a963ba38dd67e265a87d277f3ff016f69514a382690b9a3fe
-SHA256 (.footprint) = 7f5b2f5c7b5c7a810b10720e0e5ec9e180ff4d78b72dac6fc17d52e7d03aef19
-SHA256 (SDL3-3.2.20.tar.gz) = 467600ae090dd28616fa37369faf4e3143198ff1da37729b552137e47f751a67
+RWSwxGo/zH7eXdVNhYoKAueTXlYyDNPGFchaxpaC2bKSxXGOX6PqKnmZhCeZeUBJXgbwoqHc/5jwg5YcxnF1MNO6kHnHi7+Kfgw=
+SHA256 (Pkgfile) = 1129b846f3892ad5ee88bd97a28bf3284fc108bf03bb7d9c458af6fce6a02f81
+SHA256 (.footprint) = 1de67333a3d3ce30e6f6f66857f33ab9b62e355d1566d2d449ed3814cdd6cb44
+SHA256 (SDL3-3.2.22.tar.gz) = f29d00cbcee273c0a54f3f32f86bf5c595e8823a96b1d92a145aac40571ebfcc
