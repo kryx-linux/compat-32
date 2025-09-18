@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXbkzZh7uDWdPkw3O3jLBgx8Gsm2SkieXqGL26y0ZqLuEtAKhPQN9Yk0+axkmlDB4cllSUhyrUQ0I19MzQdadRw8=
-SHA256 (Pkgfile) = 16ba6e366f1f61d96bcbe8eac9ff040a6b51f552462d696dc820faace9b90a06
-SHA256 (.footprint) = acdfbd6267a8fc8d9f798ef1f8493871c37e9d8ea24575e3f7cbdb9f6287f93d
-SHA256 (freetype-2.14.0.tar.xz) = f8dfa8f15ef0576738dfb55b2e6e6b172fd5d09b6f03785a1df03239549f64d2
+RWSwxGo/zH7eXck1ZuJkhGpExYsc56ne66q8IHafVWeiE6AlOaqiADtvTVfLhfYZu2/jB1vazWkUb1F0uaamLa+FFsO/56ZeaAo=
+SHA256 (Pkgfile) = d5fcb2700ec78c1d6cb2e4a928b8a4dbd3cb5767a2ec9c3d1900fe2f9fd65c1d
+SHA256 (.footprint) = 4a89864c18750e8027a30c7128c02baf53c8b6d4f51a0345e0c197feeb39a144
+SHA256 (freetype-2.14.1.tar.xz) = 32427e8c471ac095853212a37aef816c60b42052d4d9e48230bab3bdf2936ccc
