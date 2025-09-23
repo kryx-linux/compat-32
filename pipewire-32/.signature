@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTjcIAhnMdgP1JH2qHoovcV6tmUqMwT+X+GrL5zmDCChNl14krTuaMfMGMfHfia9EQiJpGWmQb84KCT4uy4+WgI=
-SHA256 (Pkgfile) = bab46073455c93872f9324c0ed54d57dc65442b683050bd0901d3a7ed30a129c
+RWSwxGo/zH7eXcfY2CfA9oO7b4tLacJ7gu3QhN/7T/IYN5MU5EUtYLZBng6/Ymi8J99C/QQjdbFnJ/bZxjNeD6FBWnNPAkgyTwA=
+SHA256 (Pkgfile) = 8e425d99678145d672a2ebcafa13393f2c6d448f5a179557a43e84b199a73d73
 SHA256 (.footprint) = d30cc29d5a0c39ce314ad656997d95a2ed0b6cfe67a44a6a7101677979996654
 SHA256 (pipewire-1.4.8.tar.bz2) = 6abd8fe4aaf2f435ee1770fc668acebc2e6b69504600861c794d19b2559ba5db
