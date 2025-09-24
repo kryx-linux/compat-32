@@ -4,19 +4,19 @@
 # Depends on: libjpeg-turbo-32 libtiff zlib-32
 
 name=libtiff-32
-version=4.7.0
+version=4.7.1
 release=1
 source=(http://www.libtiff.org/downloads/tiff-$version.tar.xz)
 
 build() {
-	cd tiff-$version
+    cd tiff-$version
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32
+    ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib32
 
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{bin,include,share/man,share}
+    rm -r $PKG/usr/{bin,include,share/man,share}
 }
