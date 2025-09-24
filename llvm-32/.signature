@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXdZszeHHGvJtntMWH9lWNMwtxnds6SWYWd0gKvMf8rlffO2iOo80I4wyYUboFzqW7HK3d+JxqMUWUBlCeJHkrAs=
-SHA256 (Pkgfile) = 0e0d71a40e58a263a2c3ee2463040f21c66c83b8cdc9fad5e0beb96113945b90
+RWSwxGo/zH7eXbA/ajechMqyKIK6sSFhrGrwG3mOp7m3u7yOakzCGdY7INfMnG1p5IfSECamo6m2WZ32j1a2mE0MGc20v6LPvAQ=
+SHA256 (Pkgfile) = 2b873e55db57cf0516397ad36c5c5de3618a2cb6b1de9ebd00b3abcf399b64ed
 SHA256 (.footprint) = d21a7b5f756ee0af19924270cb0e244879b3895888801e4501a8ba1bac3b434e
-SHA256 (llvm-21.1.1.src.tar.xz) = 23336f9f2290f2317121a5995e298a4616041ba06cbb07cfd1220a21b48775fe
-SHA256 (cmake-21.1.1.src.tar.xz) = 9c0b9064b7d0f2a3004f1d034aadf84d2af4e5dca2135ebf697b0a1eb85ef769
-SHA256 (third-party-21.1.1.src.tar.xz) = e9b7299b0b32aa827231ed35101a3b5ea37dd5a45719225cb2c08ac571791233
+SHA256 (llvm-21.1.2.src.tar.xz) = 07656950a7081e3d8a0b8b6dd07926fad2458996c1c6bbfea1bd2529ed4c2798
+SHA256 (cmake-21.1.2.src.tar.xz) = 9ccbaf5ed6bb9e0bcedd827a433fb8f73878b64556bbc1da1e17d88ec0bde0cc
+SHA256 (third-party-21.1.2.src.tar.xz) = 106f56f6d249bdd7f9c50316dd37b509c06f0c1cff658abe7dfbc08a91a109f2
