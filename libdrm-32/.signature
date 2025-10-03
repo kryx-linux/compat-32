@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXbgGpvdE+0JIrBSqaVezyZTcbEJcf0dtCJf/274mnty5hJZvzeuLsv8SXjdb28cEKktWkQltIWOV3q8BXhMvvQM=
-SHA256 (Pkgfile) = 1c7ac440981bb587c2dee669381a62c945b49f3a54271953e32ab559754e4b4e
-SHA256 (.footprint) = fe9625e0f109ec946097686cf950ab58ed3ff092750940b561c035c0f618ab1f
-SHA256 (libdrm-2.4.125.tar.xz) = d4bae92797a50f81a93524762e0410a49cd84cfa0f997795bc0172ac8fb1d96a
+RWSwxGo/zH7eXcVYkNKvkHBiaLk2juvpDkpK9QvuKwA9de6lmSSmyKTM/qYoMGRcgfEpCT6bRXU+4Zik8uhgtcmPqcHOFLNDJAU=
+SHA256 (Pkgfile) = d09d8924efe08c1d6109a3c3378c08d4a5a083201d70b74dbab0377b530a80c9
+SHA256 (.footprint) = 510b7a3ee7b855871eec9a6a11f8cbf6631926f76ce07e6ec1f5109f5031ed6a
+SHA256 (libdrm-2.4.126.tar.xz) = 6cab16d4d259b6abc9f485233863454114a3c307eca806679aad3edbe967bf42
