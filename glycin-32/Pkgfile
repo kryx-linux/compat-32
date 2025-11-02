@@ -22,7 +22,7 @@ build() {
   PKGMK_GLYCIN_LOADERS='glycin-image-rs'
   prt-get isinst jasper-32 && PKGMK_GLYCIN_LOADERS+=',glycin-jpeg2000'
   prt-get isinst libheif-32 && PKGMK_GLYCIN_LOADERS+=',glycin-heif'
-  prt-get isinst libjxl && PKGMK_GLYCIN_LOADERS+=',glycin-jxl'
+  prt-get isinst libjxl-32 && PKGMK_GLYCIN_LOADERS+=',glycin-jxl'
   prt-get isinst librsvg-32 && PKGMK_GLYCIN_LOADERS+=',glycin-svg'
 
   meson setup glycin-$version build $PKGMK_GLYCIN \
