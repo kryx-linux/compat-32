@@ -9,16 +9,17 @@ release=1
 source=(https://downloads.sourceforge.net/project/freeglut/freeglut/$version/freeglut-$version.tar.gz)
 
 build() {
-
-    cmake -Sfreeglut-$version -Bbuild -GNinja \
-        -DCMAKE_INSTALL_PREFIX=/usr \
-        -DCMAKE_INSTALL_LIBDIR=lib32 \
-        -DCMAKE_BUILD_TYPE=Release
-
+    cmake -S freeglut-$version -B build -G Ninja \
+        -D CMAKE_INSTALL_PREFIX=/usr \
+        -D CMAKE_INSTALL_LIBDIR=lib32 \
+        -D CMAKE_BUILD_TYPE=Release \
+        -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+        -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+        -Wno-dev
     cmake --build build
     DESTDIR=$PKG cmake --install build
 
     ln -s glut.pc $PKG/usr/lib32/pkgconfig/freeglut.pc
 
-    rm -r $PKG/usr/include
+    rm -r $PKG/usr/{include,share}
 }
