@@ -4,21 +4,25 @@
 # Depends on: libpng zlib-32
 
 name=libpng-32
-version=1.6.50
+version=1.6.51
 _base=${version:0:3}
 _base=${_base/./}
 release=1
-source=(https://downloads.sourceforge.net/project/${name%-*}/${name%-*}$_base/$version/${name%-*}-$version.tar.xz)
+source=(https://downloads.sourceforge.net/project/${name%-*}/${name%-*}$_base/$version/${name%-*}-$version.tar.xz
+    libpng-1.6.47-apng.patch.gz)
 
 build() {
-	cd ${name%-*}-$version
+    zcat $SRC/libpng-1.6.47-apng.patch.gz | patch -Np1 -d libpng-$version
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32
+    cmake -S libpng-$version -B build -G Ninja \
+      -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_INSTALL_LIBDIR=lib32 \
+      -D CMAKE_BUILD_TYPE=Release \
+      -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+      -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+      -Wno-dev
+    cmake --build build
+    DESTDIR=$PKG cmake --install build
 
-	make
-	make DESTDIR=$PKG install
-
-	rm -r $PKG/usr/{bin,include,share/man}
+    rm -r $PKG/usr/{bin,include,share/man}
 }
