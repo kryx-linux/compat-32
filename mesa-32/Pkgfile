@@ -2,10 +2,10 @@
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: elfutils-32 expat-32 libdrm-32 libglvnd-32 llvm-32 mesa xorg-libxdamage-32 xorg-libxrandr-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32
-# Optional: clang-32 glslang libclc libva-32 libvdpau-32 spirv-llvm-translator-32 vulkan-loader-32 wayland-protocols
+# Optional: clang-32 glslang libclc libva-32 spirv-llvm-translator-32 vulkan-loader-32 wayland-protocols
 
 name=mesa-32
-version=25.2.7
+version=25.3.1
 release=1
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
     x86-linux-gnu x86-linux-gnu-ccache)
@@ -20,7 +20,6 @@ build() {
     prt-get isinst clang-32 libclc rust-bindgen spirv-llvm-translator-32 && PKGMK_MESA+=' -D gallium-rusticl=true'
     prt-get isinst libunwind-32 && PKGMK_MESA+=' -D libunwind=enabled'
     prt-get isinst libva-32 && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
-    prt-get isinst libvdpau-32 && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
     prt-get isinst lm_sensors-32 && PKGMK_MESA+=' -D lmsensors=enabled'
     if prt-get isinst vulkan-loader-32; then
         prt-get isinst cbindgen rust-bindgen spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='nouveau,'
