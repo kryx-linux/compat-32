@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXU/snBNYyUgau39JlW79XdnY337ixyuwRHbQbk236JTaftkEIfTIR/u7h6WfC/hrxUaT9G3bZcmjYrAvXmaHxAs=
-SHA256 (Pkgfile) = c778ddc16dbc67d780de675e1836f39c3346598871f8b506a706bbd68c14203c
+RWSwxGo/zH7eXQm3GLmNOg4Fkp8Hw/dkchtZXlWrdbXGduZr1POycCMDIV7IOIJ8UaxbEpM/xEZMwxkxfFQdvXuxa7luTaku+Aw=
+SHA256 (Pkgfile) = 75ed52458295589c83bb6eac42af99da1828cd3895227ff58d01ee5ff4183b24
 SHA256 (.footprint) = aecf6f7c576c3361176c2a62e12c80481454b458a1ee46fe98dc1490018565b6
-SHA256 (SPIRV-Tools-v1.4.328.1.tar.gz) = d00dc47df7163c2bacd70f090441e8fad96234f0e3b96c54ee9091a49e627adb
+SHA256 (SPIRV-Tools-v1.4.335.0.tar.gz) = 8b3d5637061b52675e506ffa1100740031e38bdd96b8177978acfd898a705da2
