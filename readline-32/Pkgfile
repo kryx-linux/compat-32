@@ -4,7 +4,7 @@
 # Depends on: ncurses-32
 
 name=readline-32
-version=8.3.1
+version=8.3.3
 release=1
 source=(https://ftp.gnu.org/gnu/${name%-*}/${name%-*}-${version:0:3}.tar.gz
     readline-$version.patch.gz)
