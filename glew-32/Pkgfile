@@ -4,24 +4,38 @@
 # Depends on: glew mesa-32 xorg-libxi-32 xorg-libxmu-32
 
 name=glew-32
-version=2.2.0
+version=2.3.0
 release=1
 source=(https://downloads.sourceforge.net/project/glew/glew/$version/glew-$version.tgz)
 
 build() {
-	cd glew-$version
+  cd glew-$version
 
-	make \
-		CC="${CC:-gcc}" \
-		LD="${CC:-gcc}" \
-		CFLAGS.EXTRA="$CFLAGS -fPIC" \
-		LDFLAGS.EXTRA="$LDFLAGS"
+  sed -i \
+    -e '/INSTALL/s:-s::' \
+    -e '/$(CC) $(CFLAGS) -o/s:$(CFLAGS):$(CFLAGS) $(LDFLAGS):' \
+    -e '/^.PHONY: .*\.pc$/d' \
+    Makefile
+  sed -i -e "s|lib64|lib32|" config/Makefile.linux
+  cp config/Makefile.linux config/Makefile.solaris
 
-	make \
-		LIBDIR="$PKG/usr/lib32" \
-		PKGDIR="$PKG/usr/lib32/pkgconfig" \
-		GLEW_DEST=$PKG/usr \
-		install
+  GLEW_OPTIONS=(
+    CC="${CC:-gcc}" \
+    LD="${CC:-gcc}" \
+    CFLAGS.EXTRA="$CFLAGS -fPIC" \
+    LDFLAGS.EXTRA="$LDFLAGS $(pkgconf --libs x11)" \
+    STRIP=true \
+    M_ARCH="" \
+    POPT="$CFLAGS" \
+    SYSTEM="linux-egl"
+  )
 
-	rm -r $PKG/usr/include
+  make "${GLEW_OPTIONS[@]}" \
+    glew.bin
+  make "${GLEW_OPTIONS[@]}" \
+    GLEW_DEST="$PKG/usr" \
+    LIBDIR="$PKG/usr/lib32" \
+    PKGDIR="$PKG/usr/lib32/pkgconfig" \
+    install.all
+  rm -r $PKG/usr/{bin,include}
 }
