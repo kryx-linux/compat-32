@@ -4,21 +4,21 @@
 # Depends on: bzip2-32 freetype libpng-32
 
 name=freetype-32
-version=2.13.3
+version=2.14.1
 release=1
 source=(https://sourceforge.net/projects/freetype/files/freetype2/$version/freetype-$version.tar.xz)
 
 build() {
-	meson setup ${name%-*}-$version build \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--buildtype=plain \
-		--wrap-mode=nodownload \
-		-D b_lto=true \
-		-D b_pie=true \
-		-D default_library=shared
-	meson compile -C build -j ${JOBS:-1}
-	DESTDIR=$PKG meson install -C build
+    meson setup ${name%-*}-$version build \
+        --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --buildtype=plain \
+        --wrap-mode=nodownload \
+        -D b_lto=true \
+        -D b_pie=true \
+        -D default_library=shared
+    meson compile -C build -j ${JOBS:-1}
+    DESTDIR=$PKG meson install -C build
 
-	rm -r $PKG/usr/{include,share/aclocal}
+    rm -r $PKG/usr/{include,share/aclocal}
 }

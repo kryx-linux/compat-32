@@ -1,0 +1,19 @@
+# Description: Library for Linux Kernel's syscall filtering mechanism
+# URL: https://github.com/seccomp/libseccomp
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+
+name=libseccomp-32
+version=2.6.0
+release=1
+source=(https://github.com/seccomp/libseccomp/archive/v${version}/libseccomp-${version}.tar.gz)
+
+build() {
+    cd libseccomp-$version
+
+    ./autogen.sh
+    ./configure --prefix=/usr \
+        --libdir=/usr/lib32
+    make
+    make DESTDIR=$PKG install
+    rm -r $PKG/usr/{bin,include,share}
+}

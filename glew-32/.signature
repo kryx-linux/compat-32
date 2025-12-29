@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXYNBk9WGTOlzxfWat0OJMIwgXGTrgbxGizlsrtvEcFSj3msxT3PaW51OtAtfnXdgpGQIjuha/fygSl6IZ4KpfgY=
-SHA256 (Pkgfile) = af9fa793ab536a679c4ba80f8d34ff2a6c4dd71c493e2c1d8ef8cf441be6a058
-SHA256 (.footprint) = d7d84054f4dcecdbe9b407a58279a471e3163e1aa90041f0169b999f2c4b48b5
-SHA256 (glew-2.2.0.tgz) = d4fc82893cfb00109578d0a1a2337fb8ca335b3ceccf97b97e5cc7f08e4353e1
+RWSwxGo/zH7eXfhmh7gUYvYOhYQ4iRNocqKKr3ikKQh9koMCAIxZZG3+hRaKDADBBCYqzLL5F3LCnR+PBdHmeoAh5Bn9rHj4gQM=
+SHA256 (Pkgfile) = abef998ac1c1f89a830c20f35104e5d06694b3ce9f8c3e203cd67da72f9eba54
+SHA256 (.footprint) = c17f0f130425a3e55b1b09a193647f69e003d66683ff658b77f4de8fbdae0bf8
+SHA256 (glew-2.3.0.tgz) = b261a06dfc8b970e0a1974488530e58dd2390acf68acb05b45235cd6fb17a086

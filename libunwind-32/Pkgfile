@@ -4,7 +4,7 @@
 # Depends on: libunwind
 
 name=libunwind-32
-version=1.8.2
+version=1.8.3
 release=1
 source=(https://download.savannah.gnu.org/releases/libunwind/libunwind-$version.tar.gz)
 

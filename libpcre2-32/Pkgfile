@@ -4,26 +4,26 @@
 # Depends on: libpcre2
 
 name=libpcre2-32
-version=10.45
+version=10.47
 release=1
 source=(https://github.com/PhilipHazel/pcre2/releases/download/pcre2-$version/pcre2-$version.tar.gz)
 
 build() {
-	cd pcre2-$version
+    cd pcre2-$version
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--enable-jit \
-		--enable-pcre2-16 \
-		--enable-pcre2-32
+    ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --enable-jit \
+        --enable-pcre2-16 \
+        --enable-pcre2-32
 
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR=$PKG install
 
-	install -d $PKG/lib32
-	mv $PKG/usr/lib32/libpcre2-8.so.* $PKG/lib32
-	ln -sf ../../lib32/$(readlink $PKG/usr/lib32/libpcre2-8.so) $PKG/usr/lib32/libpcre2-8.so
+    install -d $PKG/lib32
+    mv $PKG/usr/lib32/libpcre2-8.so.* $PKG/lib32
+    ln -sf ../../lib32/$(readlink $PKG/usr/lib32/libpcre2-8.so) $PKG/usr/lib32/libpcre2-8.so
 
-	rm -r $PKG/usr/{bin,include,share}
+    rm -r $PKG/usr/{bin,include,share}
 }

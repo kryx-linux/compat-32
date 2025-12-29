@@ -1,0 +1,49 @@
+# Description: Sandboxed and extendable image loading
+# URL: https://gitlab.gnome.org/GNOME/glycin
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
+# Depends on: glycin libseccomp-32 fontconfig-32 lcms2-32 llvm-32 glib-32
+# Optional: jasper-32 libheif-32 libjxl-32 librsvg-32
+
+name=glycin-32
+version=2.0.7
+release=1
+source=(https://gitlab.gnome.org/GNOME/glycin/-/archive/$version/glycin-$version.tar.bz2
+  i686
+  cross.patch)
+
+build() {
+  patch -Np1 -d glycin-$version -i $SRC/cross.patch
+
+  prt-get isinst sccache && export RUSTC_WRAPPER=/usr/bin/sccache
+  [[ ! -e $PKGMK_SOURCE_DIR/rust ]] && mkdir -p "$PKGMK_SOURCE_DIR/rust"
+
+  export PKG_CONFIG_ALLOW_CROSS=1
+
+  PKGMK_GLYCIN_LOADERS='glycin-image-rs'
+  prt-get isinst jasper-32 && PKGMK_GLYCIN_LOADERS+=',glycin-jpeg2000'
+  prt-get isinst libheif-32 && PKGMK_GLYCIN_LOADERS+=',glycin-heif'
+  prt-get isinst libjxl-32 && PKGMK_GLYCIN_LOADERS+=',glycin-jxl'
+  prt-get isinst librsvg-32 && PKGMK_GLYCIN_LOADERS+=',glycin-svg'
+
+  meson setup glycin-$version build $PKGMK_GLYCIN \
+    --cross-file=$SRC/i686 \
+    --prefix=/usr \
+    --libdir=lib32 \
+    --libexecdir=lib32/$name \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_lto=true \
+    -D b_pie=true \
+    -D glycin-loaders=true \
+    -D loaders="$PKGMK_GLYCIN_LOADERS" \
+    -D test_skip_install=false \
+    -D tests=false \
+    -D glycin-thumbnailer=false \
+    -D vapi=false \
+    -D libglycin-gtk4=false \
+    -D introspection=false
+  meson compile -C build
+  DESTDIR=$PKG meson install -C build
+#
+  rm -rf $PKG/usr/{include,share}
+}

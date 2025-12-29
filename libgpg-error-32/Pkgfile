@@ -4,21 +4,21 @@
 # Depends on: libgpg-error
 
 name=libgpg-error-32
-version=1.55
+version=1.58
 release=1
 source=(https://www.gnupg.org/ftp/gcrypt/${name%-*}/${name%-*}-$version.tar.bz2)
 
 build() {
-	cd ${name%-*}-$version
+    cd ${name%-*}-$version
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--disable-nls \
-		--enable-static
+    ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --disable-nls \
+        --enable-static
 
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{share,bin,include}
+    rm -r $PKG/usr/{share,bin,include}
 }

@@ -3,24 +3,24 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=xz-32
-version=5.8.1
+version=5.8.2
 release=1
 source=(https://github.com/tukaani-project/xz/releases/download/v$version/xz-$version.tar.gz)
 
 build() {
-	cd xz-$version
+    cd xz-$version
 
-	autoreconf -vfi
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--enable-threads \
-		--enable-werror \
-		--disable-doc \
-		--disable-nls
+    autoreconf -vfi
+    ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --enable-threads \
+        --enable-werror \
+        --disable-doc \
+        --disable-nls
 
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{bin,include,share}
+    rm -r $PKG/usr/{bin,include,share}
 }

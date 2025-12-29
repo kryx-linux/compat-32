@@ -4,28 +4,28 @@
 # Depends on: zlib-32
 
 name=openssl-32
-version=3.5.0
+version=3.5.4
 release=1
 source=(https://github.com/openssl/openssl/releases/download/openssl-$version/openssl-$version.tar.gz)
 
 build() {
-	cd openssl-$version
+    cd openssl-$version
 
-	./Configure --prefix=/usr \
-		--libdir=/usr/lib32 \
-		--openssldir=/etc/ssl \
-		shared \
-		threads \
-		zlib \
-		shared no-ssl3-method linux-elf \
-		disable-tests \
+    ./Configure --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --openssldir=/etc/ssl \
+        shared \
+        threads \
+        zlib \
+        shared no-ssl3-method linux-elf \
+        disable-tests \
 
-	sed -i "s|-O3|$CFLAGS|" Makefile
+    sed -i "s|-O3|$CFLAGS|" Makefile
 
-	make depend
-	make
-	make -j1 DESTDIR=$PKG install_sw
+    make depend
+    make
+    make -j1 DESTDIR=$PKG install_sw
 
-	find $PKG -name "*fips*" -delete
-	rm -r $PKG/usr/{include,bin}
+    find $PKG -name "*fips*" -delete
+    rm -r $PKG/usr/{include,bin}
 }

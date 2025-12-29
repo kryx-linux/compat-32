@@ -4,24 +4,24 @@
 # Depends on: at-spi2-core dbus-32 glib-32 xorg-libxtst-32
 
 name=at-spi2-core-32
-version=2.56.2
+version=2.58.2
 release=1
 source=(https://download.gnome.org/sources/at-spi2-core/${version:0:4}/at-spi2-core-$version.tar.xz)
 
 build() {
-	meson setup build at-spi2-core-$version \
-		--prefix /usr \
-		--sysconfdir=/usr/etc \
-		--libdir=/usr/lib32 \
-		--libexecdir=/usr/lib32/at-spi2 \
-		--buildtype=plain \
-		--wrap-mode nodownload \
-		-D b_lto=true \
-		-D b_pie=true \
-		-D introspection=disabled
+    meson setup build at-spi2-core-$version \
+        --prefix /usr \
+        --sysconfdir=/usr/etc \
+        --libdir=/usr/lib32 \
+        --libexecdir=/usr/lib32/at-spi2 \
+        --buildtype=plain \
+        --wrap-mode nodownload \
+        -D b_lto=true \
+        -D b_pie=true \
+        -D introspection=disabled
 
-	meson compile -C build -j ${JOBS:-1}
-	DESTDIR=$PKG meson install -C build
+    meson compile -C build -j ${JOBS:-1}
+    DESTDIR=$PKG meson install -C build
 
-	rm -r $PKG/usr/{include,etc,share,lib}
+    rm -r $PKG/usr/{include,etc,share,lib}
 }

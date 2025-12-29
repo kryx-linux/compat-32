@@ -4,22 +4,22 @@
 # Depends on: readline-32 sqlite3
 
 name=sqlite3-32
-version=3.50.1
+version=3.51.1
 release=1
 _version=$(printf "%i%.2i%.2i%.2i" ${version//./ })
 
 source=(https://www.sqlite.org/2025/sqlite-autoconf-${_version}.tar.gz)
 
 build() {
-	cd sqlite-autoconf-${_version}
+    cd sqlite-autoconf-${_version}
 
-	CFLAGS="-DSQLITE_SECURE_DELETE=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 \
-		-DSQLITE_ENABLE_UNLOCK_NOTIFY=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1 \
-		-DSQLITE_ENABLE_FTS3=1 $CFLAGS" \
-	./configure --prefix=/usr --libdir=/usr/lib32 --enable-readline
+    CFLAGS="-DSQLITE_SECURE_DELETE=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 \
+        -DSQLITE_ENABLE_UNLOCK_NOTIFY=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1 \
+        -DSQLITE_ENABLE_FTS3=1 $CFLAGS" \
+    ./configure --prefix=/usr --libdir=/usr/lib32 --enable-readline
 
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{bin,include,share/man,share}
+    rm -r $PKG/usr/{bin,include,share/man,share}
 }
