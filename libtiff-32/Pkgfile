@@ -1,12 +1,12 @@
 # Description: Library for manipulation of TIFF (Tag Image File Format) images
-# URL: http://www.libtiff.org/
+# URL: https://libtiff.gitlab.io/libtiff/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libjpeg-turbo-32 libtiff zlib-32
 
 name=libtiff-32
 version=4.7.1
 release=1
-source=(http://www.libtiff.org/downloads/tiff-$version.tar.xz)
+source=(https://download.osgeo.org/libtiff/tiff-$version.tar.xz)
 
 build() {
     cd tiff-$version
