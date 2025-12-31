@@ -4,15 +4,12 @@
 # Depends on: alsa-lib
 
 name=alsa-lib-32
-version=1.2.15
-release=2
-source=(https://www.alsa-project.org/files/pub/lib/alsa-lib-$version.tar.bz2 \
-    488.patch)
+version=1.2.15.1
+release=1
+source=(https://www.alsa-project.org/files/pub/lib/alsa-lib-$version.tar.bz2)
 
 build() {
     cd alsa-lib-$version
-    patch -p1 -i $SRC/488.patch
-    autoreconf -fi
     ./configure --prefix=/usr --libdir=/usr/lib32 --disable-python
     make
     make DESTDIR=$PKG install
