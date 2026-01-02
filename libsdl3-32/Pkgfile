@@ -1,11 +1,11 @@
 # Description: SDL version 3, Simple DirectMedia Layer
 # URL: https://www.libsdl.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
-# Depends on: libsdl2 mesa-32
-# Optional: alsa-lib-32 ibus-32 jack libxkbcommon-32 ninja pipewire pulseaudio wayland-protocols
+# Depends on: libsdl3 mesa-32
+# Optional: alsa-lib-32 ibus-32 jack libxkbcommon-32 pipewire pulseaudio wayland-32 xorg-libxcursor-32 xorg-libxfixes-32 xorg-libxi-32 xorg-libxscrnsaver-32
 
 name=libsdl3-32
-version=3.2.28
+version=3.4.0
 release=1
 source=(https://github.com/libsdl-org/SDL/releases/download/release-$version/SDL3-$version.tar.gz)
 
@@ -15,9 +15,15 @@ build() {
     prt-get isinst jack-32 && PKGMK_SDL3+=' -D SDL_JACK_SHARED=ON'
     prt-get isinst pipewire-32 && PKGMK_SDL3+=' -D SDL_PIPEWIRE_SHARED=ON'
     prt-get isinst pulseaudio-32 && PKGMK_SDL3+=' -D SDL_PULSEAUDIO_SHARED=ON'
-    prt-get isinst libxkbcommon-32 wayland-protocols && PKGMK_SDL3+=' -D SDL_WAYLAND_SHARED=ON'
+    prt-get isinst libxkbcommon-32 wayland-32 && PKGMK_SDL3+=' -D SDL_WAYLAND_SHARED=ON'
+    prt-get isinst xorg-libxcursor-32 || PKGMK_SDL3+=' -D SDL_X11_XCURSOR=OFF'
+    prt-get isinst xorg-libxfixes-32 xorg-libxi-32 || PKGMK_SDL3+=' -D SDL_X11_XFIXES=OFF'
+    prt-get isinst xorg-libxscrnsaver-32 || PKGMK_SDL3+=' -D SDL_X11_XSCRNSAVER=OFF'
 
-    [[ -z $CCACHE_PREFIX ]] || unset CCACHE_PREFIX
+    if command -v ccache >/dev/null 2>&1; then
+        PKGMK_SDL3+=' -D SDL_CCACHE=ON'
+        export PATH=$(echo $PATH | tr ':' '\n' | grep -E '/(s?bin)$' | tr '\n' ':')
+    fi
 
     cmake -S SDL3-$version -B build -G Ninja $PKGMK_SDL3 \
         -D CMAKE_INSTALL_PREFIX=/usr \
@@ -25,7 +31,11 @@ build() {
         -D CMAKE_BUILD_TYPE=Release \
         -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
         -D SDL_CLOCK_GETTIME=ON \
+        -D SDL_X11=ON \
         -D SDL_RPATH=OFF \
+        -D SDL_TESTS=OFF \
+        -D SDL_TEST_LIBRARY=OFF \
+        -D SDL_X11_XTEST=OFF \
         -Wno-dev
     cmake --build build
     DESTDIR=$PKG cmake --install build
