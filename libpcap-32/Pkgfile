@@ -4,21 +4,21 @@
 # Depends on: libpcap libusb-32
 
 name=libpcap-32
-version=1.10.5
+version=1.10.6
 release=1
 source=(https://www.tcpdump.org/release/${name%-*}-$version.tar.gz)
 
 build() {
-	cd ${name%-*}-$version
+    cd ${name%-*}-$version
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--disable-dbus \
-		--without-libnl
+    ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --disable-dbus \
+        --without-libnl
 
-	make
-	make DESTDIR=$PKG install install-shared
+    make
+    make DESTDIR=$PKG install install-shared
 
-	rm -r $PKG/usr/{bin,include,share/man,share}
+    rm -r $PKG/usr/{bin,include,share/man,share}
 }
