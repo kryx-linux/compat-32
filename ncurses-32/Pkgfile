@@ -3,28 +3,34 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=ncurses-32
-version=6.5
+version=6.6
 release=1
 source=(https://invisible-mirror.net/archives/ncurses/ncurses-$version.tar.gz)
 
 build() {
     cd ncurses-$version
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--with-normal \
-		--with-shared \
-		--without-debug \
-		--without-ada \
-		--without-tests \
-		--enable-pc-files \
-		--with-pkg-config-libdir=/usr/lib32/pkgconfig \
-		--without-gpm \
-		--enable-widec
+    ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --with-normal \
+        --with-shared \
+        --without-debug \
+        --without-ada \
+        --without-tests \
+        --enable-pc-files \
+        --with-pkg-config-libdir=/usr/lib32/pkgconfig \
+        --without-gpm \
+        --enable-widec
 
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{bin,include,share}
+    for LIB in tic tinfo; do
+        echo "INPUT(-lncursesw)" > $PKG/usr/lib32/lib${LIB}.so
+        ln -sv libncursesw.so $PKG/usr/lib32/lib${LIB}.so.6
+        ln -sv ncursesw.pc $PKG/usr/lib32/pkgconfig/${LIB}.pc
+    done
+
+    rm -r $PKG/usr/{bin,lib,include,share}
 }
