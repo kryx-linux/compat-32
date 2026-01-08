@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXW3c7vpISzmIOzAYXi4At+0QzIrB5VvM954u4rRA2aAjMPiOF/f6rWciTP8lB513Ur63QopbkRiVK/1WPDGx+Ac=
-SHA256 (Pkgfile) = 95cdf445d2802fd9893864786effa2cc25ed2922ad213e1e7bc6ec49108582e8
-SHA256 (.footprint) = 6c4a4e92710e039a7fe6eb24635aae97ac7f74ce75ad2916e8cf471731244463
-SHA256 (libtasn1-4.20.0.tar.gz) = 92e0e3bd4c02d4aeee76036b2ddd83f0c732ba4cda5cb71d583272b23587a76c
+RWSwxGo/zH7eXe3Zl0g9bU9u40PDdbhYtvAdgQeLKBxGSEekdz2N+g4ietX+/jhzkFdcf8/zaWiU+rKYOBey2Zu7sT58txacDgI=
+SHA256 (Pkgfile) = 7bba594475eca7ed6ff06942e7911cf1bb926736a13adfb3917385c0cba8ff93
+SHA256 (.footprint) = 88a66b85281958c7209edc4177612e04b66f4ad5f60f2d826ab348c74081f3e1
+SHA256 (libtasn1-4.21.0.tar.gz) = 1d8a444a223cc5464240777346e125de51d8e6abf0b8bac742ac84609167dc87
