@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXTk5X5eIva4KcLQlmKkyhHzqN22pLJcmC8eROlDgnmtZnWg7Rrwwbt4UOv2C4sUez53zlAjBagxXP2QD+bBj2AU=
-SHA256 (Pkgfile) = 8bde1d57d364fc23c579daa22dad3503d8debca44397a5fde6847219650d4c04
-SHA256 (.footprint) = e03db4976563e1a41ad0cbd517447c1398551de32fa1901a42f6ab566b39de7a
-SHA256 (lcms2-2.17.tar.gz) = d11af569e42a1baa1650d20ad61d12e41af4fead4aa7964a01f93b08b53ab074
+RWSwxGo/zH7eXa4DcivCkoEdqP6JjXB77uDxFUNSTDYJRV1yD2Jhll0QnTszJ/iNUFqrN1pDH1orjUHBBrRx4wEc+eXgE9kPDQg=
+SHA256 (Pkgfile) = f1c3a1c272810737e710670df58fd738faa1de47db39ac8cfa20f79f48988346
+SHA256 (.footprint) = 4e8e514d78fec2105234601e5aa19b07093036deded232247490ab2a052c416d
+SHA256 (lcms2-2.18.tar.gz) = ee67be3566f459362c1ee094fde2c159d33fa0390aa4ed5f5af676f9e5004347
