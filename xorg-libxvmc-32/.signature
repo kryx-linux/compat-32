@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXYO3fgZwUrSdK4avmyWZgHHZ07dVYy4RJJuE1twBk1N/oqmtoEFP23Avd5eEl+hZRrybHqHKaxMv7KAmaDYU6Qw=
-SHA256 (Pkgfile) = d5154ab04a873413267da3cc2d35f3afcaa487e9d12f19241fff356cd65a1d82
+RWSwxGo/zH7eXS4ZjSMnaRPTZd+bhP8iYtKLvqo4tNJY1Ynvxh0TTS6+gFDbp2ZLtLbAqq2ljuPzv7QTqw32mSp/LXRMq42tlAo=
+SHA256 (Pkgfile) = 88e88db871e9d72fdfae97fdf28452e7ea6646f2193b140b00429abfe8b29925
 SHA256 (.footprint) = 8ead500bc2a3e9e9c2cebe0a7a463077bbef8375458679e869d69bb5ccab16f5
-SHA256 (libXvMC-1.0.14.tar.xz) = e4be9eb6b6bafdbbf81f47f7163047215376e45e2dc786d0ea6181c930725ed9
+SHA256 (libXvMC-1.0.15.tar.xz) = 4f518afde3d7fd435346af7b368d2f73517f3d5f82647c962caf3f7bb8ff7078
