@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXWF4eA9X2On5r5kpQVN0WpqpUp57pUpCKw23SBjwL64zsuqxO18fLhWQF7xGeCfVc0uzNXx9zWKzxioBK/ftjg4=
-SHA256 (Pkgfile) = 78324a04e5b68e008ccd5fc94e231be15ac69424b8c7af99ba1d15e0e84fe441
+RWSwxGo/zH7eXWERxJOSUhemEJXDu7ynDOL69HLDzxYrukvTRKLHZIpLBn+hAV8CvXoM/xzMVwAZAqdPZVDTd1yjXjpAZ+kw4A4=
+SHA256 (Pkgfile) = b8232dbc46eab5d7f45bf506fb82d0982540f234050bce77c43c48e37521cd16
 SHA256 (.footprint) = 90b64e482ee20019efce590a5d735bd10666da83007f72d4b8849053aef461e8
-SHA256 (libXdamage-1.1.6.tar.xz) = 52733c1f5262fca35f64e7d5060c6fcd81a880ba8e1e65c9621cf0727afb5d11
+SHA256 (libXdamage-1.1.7.tar.xz) = 127067f521d3ee467b97bcb145aeba1078e2454d448e8748eb984d5b397bde24
