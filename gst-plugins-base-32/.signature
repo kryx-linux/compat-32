@@ -1,5 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXXudFyPbZ2QlkIstf/B+li05WvWx0q8vslBVhLDXxqq5VBxmg0lgDW/SPotBpwl3aYgDr0WvzJ8hG+AfrTgNvA0=
-SHA256 (Pkgfile) = 97d427515fc4d28071967212726138f688161253da5c92fb577d98e2a6e76251
-SHA256 (.footprint) = 9f1bd74bb8ae62c6de3ce9b76e7a1a3e5e56a261af645d5caf03efa83d7324b3
-SHA256 (gst-plugins-base-1.26.10.tar.xz) = 1c1531dd8f2d480c89c57b08a930545a3375077391789762e40e490cdbbf03fd
+RWSwxGo/zH7eXf8Xr3i5gIun0yYhvYuPf7GxSJmVQE7LafVAeRqOOde8wqL2aiLt6r+Cl0a2H7yRTtBeSAcNVTwwp44CYeBElwU=
+SHA256 (Pkgfile) = f3d212e422eb8dcdce2829db28cfd96ba88f9b512f05bef6e0c05aa2fd5ca2a1
+SHA256 (.footprint) = 4685bd1a279430f049c0c370d6ab0215c6c86b4b4d52feb2c1a5c06273215271
+SHA256 (gst-plugins-base-1.28.0.tar.xz) = eace79d63bd2edeb2048777ea9f432d8b6e7336e656cbc20da450f6235758b31
+SHA256 (x86-linux-gnu) = eb378917565b88d9b73fe01d5a55241955e3f5f437da6fe59349b48ea1d4ebc9
+SHA256 (x86-linux-gnu-ccache) = c35b9505a9b4500b50a4425d90a393304bd532621e9233e056a7f3d98f622125
