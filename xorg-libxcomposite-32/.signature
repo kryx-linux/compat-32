@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXfV4x5HHchkiqw+SAX0IlpIEFI5hZ+AzvNAmf1hs8hKqrKd+KUUjFs/lnB8ut2MeqR47Ca0xVsQJMmGjw1w/wA4=
-SHA256 (Pkgfile) = cf6f37ec308fd40ffe4a96553e8fa286ef554296e815e403050a7347bd9fa7f6
+RWSwxGo/zH7eXYK+KcPBn/Z2kx0pDC4dgNkWSP86Ushnn0MA/lYwETcvFMa9Z+OFcvobypxh7eMVvO1E+W2YbjPc81Fg6Bkr+go=
+SHA256 (Pkgfile) = 441c304ebb3ae4635064584586ab21173cd0bf4486cfcb77f89646fe32b08a16
 SHA256 (.footprint) = 83f0787863cdfdeec5e393100b805316a379eb884282d7940be2348b9641adb0
-SHA256 (libXcomposite-0.4.6.tar.xz) = fe40bcf0ae1a09070eba24088a5eb9810efe57453779ec1e20a55080c6dc2c87
+SHA256 (libXcomposite-0.4.7.tar.xz) = 8bdf310967f484503fa51714cf97bff0723d9b673e0eecbf92b3f97c060c8ccb
