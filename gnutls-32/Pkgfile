@@ -4,7 +4,7 @@
 # Depends on: gnutls libidn2-32 nettle-32 p11-kit-32
 
 name=gnutls-32
-version=3.8.11
+version=3.8.12
 release=1
 source=(https://www.gnupg.org/ftp/gcrypt/${name%-*}/v${version:0:3}/${name%-*}-$version.tar.xz)
 
@@ -18,13 +18,14 @@ build() {
         --with-default-trust-store-pkcs11="pkcs11:" \
         --with-included-unistring \
         --disable-guile \
-        --without-tpm
+        --without-tpm \
+        --disable-doc
 
     sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
     make
     make DESTDIR=$PKG install
 
     rm -r \
-        $PKG/usr/share/{doc,info,locale,man} \
+        $PKG/usr/share/locale \
         $PKG/usr/{bin,include,share}
 }
