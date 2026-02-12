@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXWiiNQDnOz0/I7MCbMzH/3J5OnqrqGeW7aFBykrcJTDtBj6voDl/aQW2AiHehbEbmtkYCdo//AfYV76+rTUFKQI=
-SHA256 (Pkgfile) = bb8aa09928cbb4fda2d99827cb342795cf386591781ebf03f7aa0d62cdb87dae
-SHA256 (.footprint) = b7ef1cac4131126d947649b973722ad6e95beb7aec639530b8f89550070f1c4c
-SHA256 (faudio-26.01.tar.gz) = 6b4cf0e145865ade8951980d5f1c8db5b203d64020ef120817cdc96657d21a6c
+RWSwxGo/zH7eXfrKM1OPBcBF5iIbVIDMYKyXOb+Z1IblgrxZRkaRlLJLIxIScLwm4JGXG3DziyEylXQjFL8G0C3hlCD10aSnHwU=
+SHA256 (Pkgfile) = cc01f95d05d22687641c3793ec6e97fb074905924e2994fe0adfed22be6989e2
+SHA256 (.footprint) = 5a074935f349671f648d81a69ce43c10c81329c801ce2c8d65377c8110a5e40b
+SHA256 (faudio-26.02.tar.gz) = f1fdf0affd5c97080fa98e3f3b4cbafbceb54dafbddfd8d16a06a0e08e1de749
