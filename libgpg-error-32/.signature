@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXa2JBXdh0MUsVO1NrotFi9uI95cf7tLisnYigk6fjWVASX6qtbOvWhpoXvVOE97PoHVdH1SQicchublHOtc0BgA=
-SHA256 (Pkgfile) = b769682dc99f6a3b8e52f9eb6c9668e9c5a56fe81baefa30d82b98c1741d7010
-SHA256 (.footprint) = 4fbe0ce3c1a0eee8202a20f348eda1acfa7e937ccb45d955c535bf7e605719c2
-SHA256 (libgpg-error-1.58.tar.bz2) = f943aea9a830a8bd938e5124b579efaece24a3225ff4c3d27611a80ce1260c27
+RWSwxGo/zH7eXZ+XOxwMxoOG0fcqfRtBNyggGIzy65YnylK1LsZADIQ66LTmArIB/Eyy3GAG5TA275s008K3c+Gw573t5BaBPgo=
+SHA256 (Pkgfile) = e9ec44f52faf0d5d2d12d62350444a2604c3c063117f05e2e418aa98a34e7c8e
+SHA256 (.footprint) = 3ef81b504fec0c24447db4ec9538eb451080cabcb2607b2c4858cf709d3d32f2
+SHA256 (libgpg-error-1.59.tar.bz2) = a19bc5087fd97026d93cb4b45d51638d1a25202a5e1fbc3905799f424cfa6134
