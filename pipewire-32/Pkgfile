@@ -39,7 +39,7 @@ build() {
 
     # remove leftovers
     rm -r $PKG/etc
-    rm -r $PKG/usr/{bin,include,share/locale,share/pipewire}
+    rm -r $PKG/usr/{bin,include,share/locale,share}
 
     find $PKG -type d -empty -delete
 }
