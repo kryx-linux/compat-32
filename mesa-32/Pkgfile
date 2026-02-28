@@ -5,7 +5,7 @@
 # Optional: clang-32 glslang libclc libva-32 spirv-llvm-translator-32 vulkan-loader-32 wayland-protocols
 
 name=mesa-32
-version=25.3.6
+version=26.0.1
 release=1
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
     x86-linux-gnu x86-linux-gnu-ccache)
@@ -16,7 +16,7 @@ build() {
     prt-get isinst ccache && local _cross_file='x86-linux-gnu-ccache' || local _cross_file='x86-linux-gnu'
 
     prt-get isinst directx-headers-32 && PKGMK_MESA_GALLIUM+='d3d12,'
-    prt-get isinst clang-32 libclc && PKGMK_MESA_GALLIUM+='iris,'
+    prt-get isinst clang-32 libclc && PKGMK_MESA_GALLIUM+='crocus,iris,'
     prt-get isinst clang-32 libclc rust-bindgen spirv-llvm-translator-32 && PKGMK_MESA+=' -D gallium-rusticl=true'
     prt-get isinst libunwind-32 && PKGMK_MESA+=' -D libunwind=enabled'
     prt-get isinst libva-32 && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
@@ -54,7 +54,7 @@ build() {
         -D gles1=disabled \
         -D gles2=enabled \
         -D glx=dri \
-        -D gallium-drivers=${PKGMK_MESA_GALLIUM}crocus,nouveau,r300,r600,radeonsi,svga,virgl,i915 \
+        -D gallium-drivers=${PKGMK_MESA_GALLIUM}nouveau,r300,r600,radeonsi,svga,virgl,i915 \
         -D platforms=${PKGMK_MESA_PLATFORMS#,} \
         -D shared-glapi=enabled \
         -D video-codecs=all \
