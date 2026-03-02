@@ -4,7 +4,7 @@
 # Depends on: llvm-32 spirv-tools-32
 
 name=spirv-llvm-translator-32
-version=21.1.4
+version=21.1.5
 release=1
 source=(https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/v$version/spirv-llvm-translator-$version.tar.gz)
 
