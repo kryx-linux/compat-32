@@ -47,15 +47,16 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/UseLibtool.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/VersionFromVCS.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/llvm-driver-template.cpp.in
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-21.so -> libLLVM.so.21.1
-lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.21.1
--rwxr-xr-x	root/root	usr/lib32/libLLVM.so.21.1
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-22.so -> libLLVM.so.22.1
+lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.22.1
+-rwxr-xr-x	root/root	usr/lib32/libLLVM.so.22.1
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64AsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64CodeGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64Desc.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64Disassembler.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64Info.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64Utils.a
+-rw-r--r--	root/root	usr/lib32/libLLVMABI.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUAsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUCodeGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAMDGPUDesc.a
@@ -87,6 +88,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.21.1
 -rw-r--r--	root/root	usr/lib32/libLLVMBitReader.a
 -rw-r--r--	root/root	usr/lib32/libLLVMBitWriter.a
 -rw-r--r--	root/root	usr/lib32/libLLVMBitstreamReader.a
+-rw-r--r--	root/root	usr/lib32/libLLVMCAS.a
 -rw-r--r--	root/root	usr/lib32/libLLVMCFGuard.a
 -rw-r--r--	root/root	usr/lib32/libLLVMCFIVerify.a
 -rw-r--r--	root/root	usr/lib32/libLLVMCGData.a
@@ -95,6 +97,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.21.1
 -rw-r--r--	root/root	usr/lib32/libLLVMCore.a
 -rw-r--r--	root/root	usr/lib32/libLLVMCoroutines.a
 -rw-r--r--	root/root	usr/lib32/libLLVMCoverage.a
+-rw-r--r--	root/root	usr/lib32/libLLVMDTLTO.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDWARFCFIChecker.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDWARFLinker.a
 -rw-r--r--	root/root	usr/lib32/libLLVMDWARFLinkerClassic.a
@@ -188,6 +191,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.21.1
 -rw-r--r--	root/root	usr/lib32/libLLVMOrcShared.a
 -rw-r--r--	root/root	usr/lib32/libLLVMOrcTargetProcess.a
 -rw-r--r--	root/root	usr/lib32/libLLVMPasses.a
+-rw-r--r--	root/root	usr/lib32/libLLVMPlugins.a
 -rw-r--r--	root/root	usr/lib32/libLLVMPowerPCAsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMPowerPCCodeGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMPowerPCDesc.a
@@ -215,6 +219,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.21.1
 -rw-r--r--	root/root	usr/lib32/libLLVMSparcDisassembler.a
 -rw-r--r--	root/root	usr/lib32/libLLVMSparcInfo.a
 -rw-r--r--	root/root	usr/lib32/libLLVMSupport.a
+-rw-r--r--	root/root	usr/lib32/libLLVMSupportLSP.a
 -rw-r--r--	root/root	usr/lib32/libLLVMSymbolize.a
 -rw-r--r--	root/root	usr/lib32/libLLVMSystemZAsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMSystemZCodeGen.a
@@ -256,8 +261,8 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.21.1
 -rw-r--r--	root/root	usr/lib32/libLLVMXCoreInfo.a
 -rw-r--r--	root/root	usr/lib32/libLLVMXRay.a
 -rw-r--r--	root/root	usr/lib32/libLLVMipo.a
-lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.21.1
--rwxr-xr-x	root/root	usr/lib32/libLTO.so.21.1
-lrwxrwxrwx	root/root	usr/lib32/libRemarks.so -> libRemarks.so.21.1
--rwxr-xr-x	root/root	usr/lib32/libRemarks.so.21.1
+lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.22.1
+-rwxr-xr-x	root/root	usr/lib32/libLTO.so.22.1
+lrwxrwxrwx	root/root	usr/lib32/libRemarks.so -> libRemarks.so.22.1
+-rwxr-xr-x	root/root	usr/lib32/libRemarks.so.22.1
 drwxr-xr-x	root/root	usr/share/

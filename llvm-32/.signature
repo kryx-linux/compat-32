@@ -1,7 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXVrV6EhRRF2YXrJAma4iekseDB/fgrr1slEmCiBgdpq/z9WKBFZq9+vPjEVcGbuueRGEKqgaX/5X2TAvt4iqrAY=
-SHA256 (Pkgfile) = 57e3e0e834236de58a04d1b2b191b01b88b00fa886ddcec233ac23ad2102d93e
-SHA256 (.footprint) = d21a7b5f756ee0af19924270cb0e244879b3895888801e4501a8ba1bac3b434e
-SHA256 (llvm-21.1.8.src.tar.xz) = d9022ddadb40a15015f6b27e6549a7144704ded8828ba036ffe4b8165707de21
-SHA256 (cmake-21.1.8.src.tar.xz) = 85735f20fd8c81ecb0a09abb0c267018475420e93b65050cc5b7634eab744de9
-SHA256 (third-party-21.1.8.src.tar.xz) = 7fe99424384aea529ffaeec9cc9dfb8b451fd1852c03fc109e426fe208a1f1a7
+RWSwxGo/zH7eXUCZwJ+RI2udT87nfaYsUPSsDutGuA2SXR6XtN87uWM4MfzEWmTxih7prAbTEJ6Rbsg0WMtZrC33KIlroMx2XAc=
+SHA256 (Pkgfile) = 4fd79ae8c77bab2dd56ffe8de8e2d24c64f490c1eb7b69b59e4006d5040c998e
+SHA256 (.footprint) = fc4d3a3219c489563d89ac66c4487404ac14368408f1e2e8294616770e451cec
+SHA256 (llvm-project-22.1.0.src.tar.xz) = 25d2e2adc4356d758405dd885fcfd6447bce82a90eb78b6b87ce0934bd077173
