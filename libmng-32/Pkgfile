@@ -1,5 +1,5 @@
-# Description: libmng - Mutliple Image Network Graphics 
-# URL: http://www.libmng.com
+# Description: libmng - Mutliple Image Network Graphics
+# URL: https://www.libmng.com
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: lcms2-32
 
@@ -9,15 +9,15 @@ release=1
 source=(https://downloads.sourceforge.net/project/libmng//libmng-devel/$version/libmng-$version.tar.gz)
 
 build() {
-	cd libmng-$version
+    cd libmng-$version
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--mandir=/usr/man
+    ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --mandir=/usr/man
 
-	make
-	make DESTDIR=$PKG install
+    make
+    make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{include,man}
+    rm -r $PKG/usr/{include,man}
 }
