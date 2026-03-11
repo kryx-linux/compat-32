@@ -26,7 +26,7 @@ build() {
         prt-get isinst directx-headers-32 spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='microsoft-experimental,'
         prt-get isinst glslang && PKGMK_MESA_VULKAN_DRIVERS+='amd,' PKGMK_MESA_VULKAN_LAYERS+='overlay,'
         prt-get isinst clang-32 glslang libclc lua python3-ply spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='intel,' PKGMK_MESA_VULKAN_LAYERS+='intel-nullhw,'
-        prt-get isinst spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='intel_hasvk,'
+        prt-get isinst clang-32 spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='intel_hasvk,'
         VULKAN_DRIVERS=${PKGMK_MESA_VULKAN_DRIVERS#,}virtio
         PKGMK_MESA_GALLIUM+='zink,'
     else
