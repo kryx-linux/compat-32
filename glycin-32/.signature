@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXR1kZQHgmd4zESQhM7VWREA5s7VqtHQvXiyWwMS6fRlNv4bH9Cz6BInJ9ZlGIoilTDKFrN2oWy5nW3YWuxjThgk=
-SHA256 (Pkgfile) = d6ad57779e11926c1b84ae45b8fe7cef139bb72f3d64bd1465240046ebdd7df1
+RWSwxGo/zH7eXTr7KZIQVGcqpLVsaY2FZaf9O3Ui/EfHWq2H/A/dsp8aZdbrip5obaAwr1A35JQdsxtEuSojS0VWKad22EUCPA0=
+SHA256 (Pkgfile) = 7c4a0c62645ca8792616d88993c1f376bc1ef618a1e9c1381854f53a036ebd0b
 SHA256 (.footprint) = 596b2f398ee7a9ac0c63f3066c1cf5f4685a0fb5fd950d64eca7c4b6a66f7d8b
-SHA256 (glycin-2.0.8.tar.bz2) = 5c9a4ebd12ab63d2a7213d7d3ccf80817cb1c2ca99d8b6ba2da73575bb6409a1
+SHA256 (glycin-2.1.0.tar.bz2) = f0b6dddc7c9dfb08a1adc567a8cc7acb52d88eb17831cddee50806c13e96d5bf
 SHA256 (i686) = c2b010fa789a9eeacbb47b51d829e5a728c95e3b91f4cf7e9c938821d22d7050
 SHA256 (cross.patch) = 4a30389efb6ed49067150925b75490622bc112eaf29e7ddad60212dd85070ede
