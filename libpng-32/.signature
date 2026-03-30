@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXS6RMKeejevcfx0xAcyzXOttTLpzSV59NOZg5q5JFaZbFwCiM1xNqqSjhOCSkntCBagAmxQTI5i5MbN0XD/Ffgs=
-SHA256 (Pkgfile) = ee7cb7278217ebf15354474367708115abe14d242fdecd00affaad958383de32
-SHA256 (.footprint) = 7913a6a74d76df79c5a9d0244e38320f9cb0a2a7c8c7f0a3814ac74366c7c7cb
-SHA256 (libpng-1.6.55.tar.xz) = d925722864837ad5ae2a82070d4b2e0603dc72af44bd457c3962298258b8e82d
+RWSwxGo/zH7eXRHrd+K4Fxc2N6qvV+ijGjOzhoIMtI19u6BgDFgkO+H8B6QyvueQYJOtZS+xyMCfYeERFugw6YIzgXyLCApfkgY=
+SHA256 (Pkgfile) = c399b2c6e85f1677315142020c48b81f31fad5607ef506cc039d3d082fe625b1
+SHA256 (.footprint) = 2e7a3ac4e07a024eb3c53eae0fc4bba60e347d80f29a232f50caaf496bde4929
+SHA256 (libpng-1.6.56.tar.xz) = f7d8bf1601b7804f583a254ab343a6549ca6cf27d255c302c47af2d9d36a6f18
 SHA256 (libpng-1.6.54-apng.patch) = b0c60014b84d1048aacef7b3dfeb6026c09a315691046bf7bfd99a8fdef6f225
