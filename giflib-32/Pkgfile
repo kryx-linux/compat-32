@@ -4,7 +4,7 @@
 # Depends on: giflib
 
 name=giflib-32
-version=6.1.2
+version=6.1.3
 release=1
 source=(https://sourceforge.net/projects/giflib/files/giflib-$version.tar.gz)
 
