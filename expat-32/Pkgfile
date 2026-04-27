@@ -6,10 +6,10 @@
 name=expat-32
 version=2.8.0
 release=1
-source=(https://downloads.sourceforge.net/project/${name%-*}/${name%-*}/$version/${name%-*}-$version.tar.bz2)
+source=(https://github.com/libexpat/libexpat/releases/download/R_${version//./_}/${name%-32}-$version.tar.xz)
 
 build() {
-    cd ${name%-*}-$version
+    cd ${name%-32}-$version
 
     ./configure \
         --prefix=/usr \
