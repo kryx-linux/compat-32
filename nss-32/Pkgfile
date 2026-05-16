@@ -4,7 +4,7 @@
 # Depends on: nspr-32 nss sqlite3-32 zlib-32
 
 name=nss-32
-version=3.123.1
+version=3.124
 release=1
 source=(https://ftp.mozilla.org/pub/security/nss/releases/NSS_${version//./_}_RTM/src/nss-$version.tar.gz
     nss-config.in nss.pc.in)
@@ -32,7 +32,7 @@ build() {
 
     cd dist/*.OBJ/lib
     install -t "$PKG/usr/lib32" *.so
-    install -t "$PKG/usr/lib32" -m644 libcrmf.a *.chk
+    install -t "$PKG/usr/lib32" -m644 *.chk
     install -m 0755 $SRC/nss-config.in $PKG/usr/bin/nss-config-32
 
     _version=$(printf "%i.%i.%i" ${version//./ })

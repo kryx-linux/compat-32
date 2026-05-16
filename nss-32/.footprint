@@ -2,7 +2,6 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/nss-config-32
 drwxr-xr-x	root/root	usr/lib32/
--rw-r--r--	root/root	usr/lib32/libcrmf.a
 -rw-r--r--	root/root	usr/lib32/libfreebl3.chk
 -rwxr-xr-x	root/root	usr/lib32/libfreebl3.so
 -rw-r--r--	root/root	usr/lib32/libfreeblpriv3.chk
