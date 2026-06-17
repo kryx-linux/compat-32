@@ -9,7 +9,9 @@ release=1
 source=(https://sourceforge.net/projects/freetype/files/freetype2/$version/freetype-$version.tar.xz)
 
 build() {
-    meson setup ${name%-*}-$version build \
+    prt-get isinst harfbuzz-32 || PKGMK_FREETYPE32+=' -D harfbuzz=disabled'
+
+    meson setup ${name%-*}-$version build $PKGMK_FREETYPE32 \
         --prefix=/usr \
         --libdir=/usr/lib32 \
         --buildtype=plain \
