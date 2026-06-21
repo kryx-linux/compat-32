@@ -4,21 +4,22 @@
 # Depends on: jq
 
 name=jq-32
-version=1.8.1
+version=1.8.2
 release=1
 source=(https://github.com/stedolan/jq/releases/download/jq-$version/jq-$version.tar.gz)
 
 build() {
-	cd jq-$version
+    cd jq-$version
 
-	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib32 \
-		--disable-maintainer-mode \
-		--with-oniguruma=builtin \
-		--disable-gtk-doc
+    ./configure \
+        --prefix=/usr \
+        --libdir=/usr/lib32 \
+        --disable-maintainer-mode \
+        --with-oniguruma=builtin \
+        --disable-gtk-doc
 
-	make
-	make DESTDIR=$PKG install
-	rm -r $PKG/usr/{bin,include,share}
+    make
+    make DESTDIR=$PKG install
+
+    rm -r $PKG/usr/{bin,include,share}
 }
