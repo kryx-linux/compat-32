@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXR2Xc9PdUMiSGvYaSyf2Pdo+/0DWLeQP5YxxQ5OpU38MadpzILDl+dIGUCWPRtGjtUh7KtW9mt9ePgkMTKX6JQA=
-SHA256 (Pkgfile) = d10f2173ac7e3a76ace08b9697cf0892f49d0786bb69cb2dc9b62ff5fe3900c5
-SHA256 (.footprint) = 6a4006313e624d809f1e12e2ef5bf47ad22341f40080464983ecb2cc59e18a75
-SHA256 (jansson-2.15.0.tar.bz2) = a7eac7765000373165f9373eb748be039c10b2efc00be9af3467ec92357d8954
+RWSwxGo/zH7eXWWMjoYxkEriU/PKzqMK340+qHXtbWPdjySsrupFWiB8MheXBkTVt9zadDvNYgu4quJKylsUGL6S5Zam/ogMQAY=
+SHA256 (Pkgfile) = a6c94a2ad27fafb02455948b2e9f6b171b031638de825e18aebccd199d194b74
+SHA256 (.footprint) = 3d0c7bf932544b462ebb0c331c263eefd8a2ff258ff0ae8f6b79cfedbafa0c59
+SHA256 (jansson-2.15.1.tar.bz2) = f9aa4b3ec8496fee69db94f06f3d76fd4a26b012ee9bf1e917078c2cd2841881

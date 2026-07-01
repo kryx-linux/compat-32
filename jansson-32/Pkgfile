@@ -4,7 +4,7 @@
 # Depends on: jansson
 
 name=jansson-32
-version=2.15.0
+version=2.15.1
 release=1
 source=(https://github.com/akheron/jansson/releases/download/v$version/${name%-*}-$version.tar.bz2)
 
