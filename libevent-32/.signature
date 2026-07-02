@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXZVF9rig8UHKzZ0o82wfJ9xU78vlBo8NRPE0vIuvSdh2Ur2I91g1ZnFbQB3MHX33T98GtgJsmWGCuLcD3WtKTwU=
-SHA256 (Pkgfile) = 8a4e873aa871fc65d2d881dc8a62fdefb81eac450c1632fe8d7e62b087a8ef21
-SHA256 (.footprint) = 0b6dbb18474f8e5e61833290d34e51e6df53ade44dbdad908bbf12e01a500b41
-SHA256 (libevent-2.1.12-stable.tar.gz) = 92e6de1be9ec176428fd2367677e61ceffc2ee1cb119035037a27d346b0403bb
+RWSwxGo/zH7eXXoDs+fn25oaaQG3454AgSoW/aFYTRqmKF5E2F8xvmIzMC7TukWL2kx0p1J6ABXnh6Ho7ZWq6shFoFkLQ9zjog0=
+SHA256 (Pkgfile) = c92476aa9a689a3a02db3fa3325997a48f9c0ee7099888d83ce1131560176490
+SHA256 (.footprint) = baf46133e2968af85fc3f7e2635bad6e9297982bd641ac3dac28991142e9cdf4
+SHA256 (libevent-2.1.13-stable.tar.gz) = f7e9383b8c0baa81b687e5b5eecc01beefaf1b19b64151d95ed61647fe7a315c
