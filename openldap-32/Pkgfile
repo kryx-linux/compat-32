@@ -4,7 +4,7 @@
 # Depends on: openldap openssl-32
 
 name=openldap-32
-version=2.6.13
+version=2.7.0
 release=1
 source=(https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-$version.tgz)
 
@@ -31,7 +31,7 @@ build() {
         --disable-bdb \
         --disable-hdb
 
-    # This is need to not get  fatal error: ldap_config.h: No such file or directory
+    # This is needed to not get `fatal error: ldap_config.h: No such file or directory`
     cd include
     make
     make DESTDIR=$PKG install
