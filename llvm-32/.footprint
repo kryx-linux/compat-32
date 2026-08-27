@@ -19,8 +19,10 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/CrossCompile.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/DetermineGCCCompatible.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/FileLock.cmake
+-rw-r--r--	root/root	usr/lib32/cmake/llvm/FindDIASDK.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/FindFFI.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/FindLibEdit.cmake
+-rw-r--r--	root/root	usr/lib32/cmake/llvm/FindLibXml2.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/FindLibpfm.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/FindOCaml.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/FindSphinx.cmake
@@ -47,9 +49,9 @@ drwxr-xr-x	root/root	usr/lib32/cmake/llvm/
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/UseLibtool.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/VersionFromVCS.cmake
 -rw-r--r--	root/root	usr/lib32/cmake/llvm/llvm-driver-template.cpp.in
-lrwxrwxrwx	root/root	usr/lib32/libLLVM-22.so -> libLLVM.so.22.1
-lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.22.1
--rwxr-xr-x	root/root	usr/lib32/libLLVM.so.22.1
+lrwxrwxrwx	root/root	usr/lib32/libLLVM-23.so -> libLLVM.so.23.1
+lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.23.1
+-rwxr-xr-x	root/root	usr/lib32/libLLVM.so.23.1
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64AsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64CodeGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMAArch64Desc.a
@@ -134,6 +136,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.22.1
 -rw-r--r--	root/root	usr/lib32/libLLVMFuzzMutate.a
 -rw-r--r--	root/root	usr/lib32/libLLVMFuzzerCLI.a
 -rw-r--r--	root/root	usr/lib32/libLLVMGlobalISel.a
+-rw-r--r--	root/root	usr/lib32/libLLVMHTTP.a
 -rw-r--r--	root/root	usr/lib32/libLLVMHexagonAsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMHexagonCodeGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMHexagonDesc.a
@@ -235,6 +238,7 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.22.1
 -rw-r--r--	root/root	usr/lib32/libLLVMTextAPI.a
 -rw-r--r--	root/root	usr/lib32/libLLVMTextAPIBinaryReader.a
 -rw-r--r--	root/root	usr/lib32/libLLVMTransformUtils.a
+-rw-r--r--	root/root	usr/lib32/libLLVMUBAwareInterpreter.a
 -rw-r--r--	root/root	usr/lib32/libLLVMVEAsmParser.a
 -rw-r--r--	root/root	usr/lib32/libLLVMVECodeGen.a
 -rw-r--r--	root/root	usr/lib32/libLLVMVEDesc.a
@@ -261,8 +265,8 @@ lrwxrwxrwx	root/root	usr/lib32/libLLVM.so -> libLLVM.so.22.1
 -rw-r--r--	root/root	usr/lib32/libLLVMXCoreInfo.a
 -rw-r--r--	root/root	usr/lib32/libLLVMXRay.a
 -rw-r--r--	root/root	usr/lib32/libLLVMipo.a
-lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.22.1
--rwxr-xr-x	root/root	usr/lib32/libLTO.so.22.1
-lrwxrwxrwx	root/root	usr/lib32/libRemarks.so -> libRemarks.so.22.1
--rwxr-xr-x	root/root	usr/lib32/libRemarks.so.22.1
+lrwxrwxrwx	root/root	usr/lib32/libLTO.so -> libLTO.so.23.1
+-rwxr-xr-x	root/root	usr/lib32/libLTO.so.23.1
+lrwxrwxrwx	root/root	usr/lib32/libRemarks.so -> libRemarks.so.23.1
+-rwxr-xr-x	root/root	usr/lib32/libRemarks.so.23.1
 drwxr-xr-x	root/root	usr/share/
