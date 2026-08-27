@@ -2,10 +2,10 @@
 # URL: https://www.mesa3d.org/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: elfutils-32 expat-32 libdrm-32 libglvnd-32 llvm-32 mesa xorg-libxdamage-32 xorg-libxrandr-32 xorg-libxshmfence-32 xorg-libxvmc-32 xorg-libxxf86vm-32
-# Optional: clang-32 glslang libclc libva-32 spirv-llvm-translator-32 vulkan-loader-32 wayland-protocols
+# Optional: clang-32 glslang mesa-libclc libva-32 spirv-llvm-translator-32 vulkan-loader-32 wayland-protocols
 
 name=mesa-32
-version=26.1.8
+version=26.2.1
 release=1
 source=(https://archive.mesa3d.org/mesa-$version.tar.xz
     x86-linux-gnu x86-linux-gnu-ccache)
@@ -16,16 +16,16 @@ build() {
     prt-get isinst ccache && local _cross_file='x86-linux-gnu-ccache' || local _cross_file='x86-linux-gnu'
 
     prt-get isinst directx-headers-32 && PKGMK_MESA_GALLIUM+='d3d12,'
-    prt-get isinst clang-32 libclc && PKGMK_MESA_GALLIUM+='crocus,iris,'
-    prt-get isinst clang-32 libclc rust-bindgen spirv-llvm-translator-32 && PKGMK_MESA+=' -D gallium-rusticl=true'
+    prt-get isinst clang-32 mesa-libclc && PKGMK_MESA_GALLIUM+='crocus,iris,'
+    prt-get isinst clang-32 mesa-libclc rust-bindgen spirv-llvm-translator-32 && PKGMK_MESA+=' -D gallium-rusticl=true'
     prt-get isinst libunwind-32 && PKGMK_MESA+=' -D libunwind=enabled'
     prt-get isinst libva-32 && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
     prt-get isinst lm_sensors-32 && PKGMK_MESA+=' -D lmsensors=enabled'
     if prt-get isinst vulkan-loader-32; then
-        prt-get isinst cbindgen clang-32 libclc rust-bindgen spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='nouveau,'
+        prt-get isinst cbindgen clang-32 mesa-libclc rust-bindgen spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='nouveau,'
         prt-get isinst directx-headers-32 spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='microsoft-experimental,'
         prt-get isinst glslang && PKGMK_MESA_VULKAN_DRIVERS+='amd,' PKGMK_MESA_VULKAN_LAYERS+='overlay,'
-        prt-get isinst clang-32 glslang libclc lua python3-ply spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='intel,' PKGMK_MESA_VULKAN_LAYERS+='intel-nullhw,'
+        prt-get isinst clang-32 glslang mesa-libclc lua python3-ply spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='intel,' PKGMK_MESA_VULKAN_LAYERS+='intel-nullhw,'
         prt-get isinst clang-32 spirv-llvm-translator-32 && PKGMK_MESA_VULKAN_DRIVERS+='intel_hasvk,'
         VULKAN_DRIVERS=${PKGMK_MESA_VULKAN_DRIVERS#,}virtio
         PKGMK_MESA_GALLIUM+='zink,'
