@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXZuEg8lwfEhilVi30qrakHPGQnuXfG9U5p2WYasXt+67rJxQv5uIyWoHGabVdVfJJQokp0W1+MKYDs887VYgGg4=
-SHA256 (Pkgfile) = f722ba7dabbfed436d80ca6baad23c721b0adcf59cfaf763084ef789351c040c
+RWSwxGo/zH7eXYNIcXjvW+495yx5dqM3e5OldIFoVjZygmHkPRzxtwa+nqlwKhJ37xg+anEiGG8h50BlK1ocv6yh8SEwrhco9gs=
+SHA256 (Pkgfile) = 259144fe74977b595ad9c35025973b523762087eb8be9f997d0b7dd43f1bfc07
 SHA256 (.footprint) = 58563fd32eb54ef83e750b418c0957a978ebebd11fb941c3979c30055435c00b
 SHA256 (rtmpdump-2.6.tar.gz) = 627ea7b61a14ae5820d3ab164c2e7ce3331a1dd362d8b5b8017bd217b1952743
+SHA256 (nettle-4.patch) = b9cbbcf14d9fb46962d541544f47226909a7bc7191e2be50cfd0c73c73c4b80d
