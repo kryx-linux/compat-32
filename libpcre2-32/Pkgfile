@@ -1,10 +1,10 @@
 # Description: Perl Compatible Regular Expressions
 # URL: https://www.pcre.org
-# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libpcre2
 
 name=libpcre2-32
-version=10.47
+version=10.48
 release=1
 source=(https://github.com/PhilipHazel/pcre2/releases/download/pcre2-$version/pcre2-$version.tar.gz)
 
