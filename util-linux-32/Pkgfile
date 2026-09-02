@@ -4,12 +4,13 @@
 # Depends on: bzip2-32 eudev-32 sqlite3-32
 
 name=util-linux-32
-version=2.42.2
+version=2.42.3
 release=1
-source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz)
+source=(https://www.kernel.org/pub/linux/utils/util-linux/v${version:0:4}/util-linux-$version.tar.xz
+    a323dddbcd1ed05a10e7e870b3e1a48b4ed44a43.patch)
 
 build() {
-    sed -r '/^  dependencies/s/lib_tinfo,//' -i util-linux-$version/meson.build
+    patch -Np1 -d util-linux-$version -i $SRC/a323dddbcd1ed05a10e7e870b3e1a48b4ed44a43.patch
 
     meson setup util-linux-$version build \
         --prefix=/usr \
