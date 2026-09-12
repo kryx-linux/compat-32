@@ -5,14 +5,14 @@
 # Optional: libheif-32 libjxl-32 librsvg-32
 
 name=glycin-32
-version=2.1.5
+version=2.2.0
 release=1
 source=(https://gitlab.gnome.org/GNOME/glycin/-/archive/$version/glycin-$version.tar.bz2
   i686
   cross.patch)
 
 build() {
-  patch -Np1 -d glycin-$version -i $SRC/cross.patch
+  #patch -Np1 -d glycin-$version -i $SRC/cross.patch
 
   prt-get isinst sccache && export RUSTC_WRAPPER=/usr/bin/sccache
   [[ ! -e $PKGMK_SOURCE_DIR/rust ]] && mkdir -p "$PKGMK_SOURCE_DIR/rust"
