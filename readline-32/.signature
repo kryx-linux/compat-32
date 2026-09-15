@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXdlgFk8s4FbcUPNVtDw5fCka9xIu4iOZOYePCt9MmaF9btuW9Fj89pLFiBMrXWbRMxLG0NGhuzphZF0HformLwk=
-SHA256 (Pkgfile) = 866f1a9e75e09483d9e74e043232d0203285c820d0d6c5516ddefbb982ca5d3c
+RWSwxGo/zH7eXczgQP16/yaWuWT+k0NK8Kfmi+65VaFz13xA1iVFS3+QROuK4iqawVJnazPer+ixLa0dmoibZ7wsIZtPgKftTw0=
+SHA256 (Pkgfile) = e7f9963d4ccd357c60701d5469549200cf3dd48a0e8933796ccef25484bccef0
 SHA256 (.footprint) = 4dc7a2c2eddffce683b0540d08edd39ee6fc51a6ffa419bace12ad19042ed67b
 SHA256 (readline-8.3.tar.gz) = fe5383204467828cd495ee8d1d3c037a7eba1389c22bc6a041f627976f9061cc
-SHA256 (readline-8.3.3.patch.gz) = c0040daf2bdb8c99dda4aed933e30da996b2f8e6048fa95eae801d78b8a26387
+SHA256 (readline-8.3.6.patch.gz) = 832689fb9c3aea1f5ca790cff6ddf6277cae01b2dfbd3d58beec01c3323a0629
