@@ -4,22 +4,22 @@
 # Depends on: cairo fontconfig-32 glib-32 xorg-libpixman-32 xorg-libxext-32 xorg-libxrender-32 xorg-xcb-util-32
 
 name=cairo-32
-version=1.18.4
+version=1.18.6
 release=1
-source=(https://gitlab.freedesktop.org/cairo/cairo/-/archive/$version/cairo-$version.tar.bz2)
+source=(https://cairographics.org/releases/cairo-$version.tar.xz)
 
 build() {
-	meson setup build ${name%-*}-$version \
-		--prefix=/usr \
-		--libdir=lib32 \
-		--buildtype=plain \
-		-D dwrite=disabled \
-		-D spectre=disabled \
-		-D symbol-lookup=disabled \
-		-D tests=disabled
+    meson setup build ${name%-*}-$version \
+        --prefix=/usr \
+        --libdir=lib32 \
+        --buildtype=plain \
+        -D dwrite=disabled \
+        -D spectre=disabled \
+        -D symbol-lookup=disabled \
+        -D tests=disabled
 
-	meson compile -C build
-	DESTDIR=$PKG meson install -C build
+    meson compile -C build
+    DESTDIR=$PKG meson install -C build
 
-	rm -r $PKG/usr/{bin,include}
+    rm -r $PKG/usr/{bin,include}
 }
