@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/compat-32.pub
-RWSwxGo/zH7eXYzdcjo8VSfH6pie3pbTccCs1U0G1uRFicM3BxX8bdyBNp9vHyLsor7myP04XDtcAMB5uj0zUOc2d0bD4DSOuw0=
-SHA256 (Pkgfile) = 9278451a8c3689d7f838bae8ba743a2789841f6311ad4806162c5f564fca6162
+RWSwxGo/zH7eXQ3Eb4cYn4CXwevquj1YZ5Q0Y+SR5X+eOpPSUt3IMU5qnvsmnFdF42dPXImmSjWjFO3HryrIQgbsfdygZyHrjwk=
+SHA256 (Pkgfile) = a1e90b994cfa961f144807ef25d36ab66d9e71b5a5d73d257f81ed04e6311ccd
 SHA256 (.footprint) = 108accda2c1febc3ea2f78090215aeea7697149adc4849d7ed46417626eb511f
-SHA256 (Vulkan-ValidationLayers-1.4.357.0.tar.gz) = 73180b11992a3554e97ebc18e6bf2b45ff9790ded9d87fc526c7bab865d1303f
+SHA256 (Vulkan-ValidationLayers-1.4.363.0.tar.gz) = 36720627913a591ae8ffc0f24b3c04f98af65242c9b7215d1944a85ff5b70e00
