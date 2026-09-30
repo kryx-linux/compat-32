@@ -6,25 +6,25 @@
 
 name=vulkan-loader-32
 _name=Vulkan-Loader
-version=1.4.357.0
+version=1.4.363.0
 _version=vulkan-sdk-$version
 release=1
 source=(https://github.com/KhronosGroup/Vulkan-Loader/archive/$_version/$_name-$version.tar.gz)
 
 build() {
-	prt-get isinst wayland-32 || PKGMK_VULKAN_LOADER+=' -D BUILD_WSI_WAYLAND_SUPPORT=OFF'
+    prt-get isinst wayland-32 || PKGMK_VULKAN_LOADER+=' -D BUILD_WSI_WAYLAND_SUPPORT=OFF'
 
-	export ASFLAGS='--32'
+    export ASFLAGS='--32'
 
-	cmake -S $_name-$_version -B build -G Ninja $PKGMK_VULKAN_LOADER \
-		-D CMAKE_INSTALL_PREFIX=/usr \
-		-D CMAKE_INSTALL_LIBDIR=lib32 \
-		-D CMAKE_BUILD_TYPE=Release \
-		-D CMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
-		-D CMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
-		-D CMAKE_SKIP_RPATH=ON \
-		-D BUILD_TESTS=OFF
+    cmake -S $_name-$_version -B build -G Ninja $PKGMK_VULKAN_LOADER \
+        -D CMAKE_INSTALL_PREFIX=/usr \
+        -D CMAKE_INSTALL_LIBDIR=lib32 \
+        -D CMAKE_BUILD_TYPE=Release \
+        -D CMAKE_C_FLAGS_RELEASE="${CFLAGS}" \
+        -D CMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS}" \
+        -D CMAKE_SKIP_RPATH=ON \
+        -D BUILD_TESTS=OFF
 
-	cmake --build build
-	DESTDIR=$PKG cmake --build build --target install
+    cmake --build build
+    DESTDIR=$PKG cmake --build build --target install
 }
