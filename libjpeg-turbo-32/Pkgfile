@@ -4,7 +4,7 @@
 # Depends on: libjpeg-turbo
 
 name=libjpeg-turbo-32
-version=3.2.0
+version=3.2.1
 release=1
 source=(https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/$version/${name%-*}-$version.tar.gz)
 
@@ -15,7 +15,8 @@ build() {
         -D CMAKE_BUILD_TYPE=Release \
         -D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
         -D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-        -D WITH_JPEG8=ON
+        -D WITH_JPEG8=ON \
+        -Wno-dev
 
     cmake --build build
     DESTDIR=$PKG cmake --install build
