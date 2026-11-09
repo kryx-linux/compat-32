@@ -1,10 +1,10 @@
-# Description: NVIDIA Linux Display Driver (production branch)
+# Description: NVIDIA Linux Display Driver (feature branch)
 # URL: http://www.nvidia.com/
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 # Depends on: libglvnd-32
 
 name=nvidia-32
-version=595.112.07
+version=620.70.06
 release=1
 source=(https://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run)
 
@@ -27,10 +27,11 @@ build() {
 	ln -s libEGL_nvidia.so.$version $PKG/usr/lib32/libEGL_nvidia.so.0
 
 	# driver component libraries
-	install -m 0755 libnvidia-eglcore.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-glcore.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-glsi.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-glvkspirv.so.$version $PKG/usr/lib32/
+	for C in allocator {e,}glcore gl{si,vkspirv} gpucomp; do
+		install -m 0755 libnvidia-${C}.so.$version $PKG/usr/lib32/
+		ln -s libnvidia-${C}.so.$version $PKG/usr/lib32/libnvidia-${C}.so.1
+		ln -s libnvidia-${C}.so.$version $PKG/usr/lib32/libnvidia-${C}.so
+	done
 
 	# vendor VDPAU library
 	install -D -m 0755 libvdpau_nvidia.so.$version $PKG/usr/lib32/vdpau/libvdpau_nvidia.so.$version
@@ -44,6 +45,9 @@ build() {
 	install -m 0755 libnvidia-ptxjitcompiler.so.$version $PKG/usr/lib32/
 	ln -s libnvidia-ptxjitcompiler.so.$version $PKG/usr/lib32/libnvidia-ptxjitcompiler.so.1
 	ln -s libnvidia-ptxjitcompiler.so.$version $PKG/usr/lib32/libnvidia-ptxjitcompiler.so
+	install -m 0755 libnvidia-nvvm.so.$version $PKG/usr/lib32/
+	ln -s libnvidia-nvvm.so.$version $PKG/usr/lib32/libnvidia-nvvm.so.1
+	ln -s libnvidia-nvvm.so.$version $PKG/usr/lib32/libnvidia-nvvm.so
 
 	# OpenCL libraries and config
 	install -m 0755 libOpenCL.so.1.0.0 $PKG/usr/lib32/
@@ -53,22 +57,22 @@ build() {
 
 	# TLS libraries
 	install -m 0755 libnvidia-tls.so.$version $PKG/usr/lib32/
+	ln -s libnvidia-tls.so.$version $PKG/usr/lib32/libnvidia-tls.so.1
+	ln -s libnvidia-tls.so.$version $PKG/usr/lib32/libnvidia-tls.so
+	#install -d $PKG/usr/lib32/tls
 
 	# monitoring and management API library
 	install -m 0755 libnvidia-ml.so.$version $PKG/usr/lib32/
 
 	# encoding/decoding libraries
-	install -m 0755 libnvcuvid.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-encode.so.$version $PKG/usr/lib32/
-	install -m 0755 libnvidia-fbc.so.$version $PKG/usr/lib32/
+	for C in nvcuvid nvidia-{encode,fbc}; do
+		install -m 0755 lib${C}.so.$version $PKG/usr/lib32/
+		ln -s lib${C}.so.$version $PKG/usr/lib32/lib${C}.so.1
+		ln -s lib${C}.so.$version $PKG/usr/lib32/lib${C}.so
+	done
 
 	# Optical Flow library
 	install -m 0755 libnvidia-opticalflow.so.$version $PKG/usr/lib32/
 	ln -s libnvidia-opticalflow.so.$version $PKG/usr/lib32/libnvidia-opticalflow.so.1
 	ln -s libnvidia-opticalflow.so.$version $PKG/usr/lib32/libnvidia-opticalflow.so
-
-	# gpucomp shader compilation library
-	install -m 0755 libnvidia-gpucomp.so.$version $PKG/usr/lib32/
-	ln -s libnvidia-gpucomp.so.$version $PKG/usr/lib32/libnvidia-gpucomp.so.1
-	ln -s libnvidia-gpucomp.so.$version $PKG/usr/lib32/libnvidia-gpucomp.so
 }
