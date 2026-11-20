@@ -4,7 +4,7 @@
 # Depends on: nspr-32 nss sqlite3-32 zlib-32
 
 name=nss-32
-version=3.133
+version=3.134
 release=1
 source=(https://ftp.mozilla.org/pub/security/nss/releases/NSS_${version//./_}_RTM/src/nss-$version.tar.gz
     nss-config.in nss.pc.in)
@@ -12,10 +12,6 @@ source=(https://ftp.mozilla.org/pub/security/nss/releases/NSS_${version//./_}_RT
 build() {
     #cd nss-${version//./_}
     cd nss-$version
-
-    sed -i nss/coreconf/Linux.mk \
-        -e 's|^CC.*=.*gcc$|#&|' \
-        -e 's|^CCC.*=.*g++$|#&|'
 
     export NSPR_INCLUDE_DIR=/usr/include/nspr
     export NSPR_LIB_DIR=/usr/lib32
@@ -26,7 +22,9 @@ build() {
     export XCFLAGS="${CFLAGS} -Wno-error"
     export NSS_DISABLE_GTESTS=1
 
-    make -j1 -C nss all
+    make -j1 -C nss all \
+        CC=gcc \
+        CCC=g++
 
     install -d $PKG/usr/{bin,lib32/pkgconfig}
 
