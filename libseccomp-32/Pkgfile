@@ -3,7 +3,7 @@
 # Maintainer: CRUX compat-32 Team, compat-32-ports at crux dot nu
 
 name=libseccomp-32
-version=2.6.1
+version=2.6.2
 release=1
 source=(https://github.com/seccomp/libseccomp/archive/v${version}/libseccomp-${version}.tar.gz)
 
