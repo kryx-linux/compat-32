@@ -4,15 +4,15 @@
 # Depends on: zlib-32 xz-32 zstd
 
 name=zstd-32
-version=1.5.7
+version=1.6.0
 release=1
 source=(https://github.com/facebook/zstd/archive/v$version/zstd-v$version.tar.gz)
 
 build() {
-	cd zstd-$version
+    cd zstd-$version
 
-	make HAVE_THREAD=1
-	PREFIX=/usr LIBDIR=/usr/lib32 PKGCONFIGDIR=/usr/lib32/pkgconfig make DESTDIR=$PKG install
+    make HAVE_THREAD=1
+    PREFIX=/usr LIBDIR=/usr/lib32 PKGCONFIGDIR=/usr/lib32/pkgconfig make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{share,include,bin}
+    rm -r $PKG/usr/{share,include,bin}
 }
